@@ -1,0 +1,1102 @@
+<!--
+
+
+            THEME #29
+            by Anyh Salinas - © 2016
+            www.anyhs-themes.tumblr.com
+            
+            
+ 
+    TERMS OF USE:
+    ♦ Don't remove/adulterate my credits;
+    ♦ Don't copy;
+    ♦ Don't use this theme as base to make your own theme(s);
+    ♦ Don't make available this theme on your blog/website without my permission.
+       
+       
+ 
+    CONTACT:
+    www.anyhs-themes.tumblr.com/contato
+ 
+ 
+ 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>{Title} {block:PostSummary}| {PostSummary}{/block:PostSummary}</title>
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    {block:Description} <meta name="description" content="{MetaDescription}" /> {/block:Description}
+    
+    <meta name="image:Background Image" content=""/>
+    
+    <meta name="color:Background" content="white"/>
+    <meta name="color:Posts" content="#000"/>
+    <meta name="color:Borda dos Posts" content="#000"/>
+    <meta name="color:Frase" content="#222"/>
+    <meta name="color:Descricao" content="#222"/>
+    <meta name="color:Titulos" content="#aaa"/>
+    <meta name="color:Fonte" content="#777"/>
+    <meta name="color:Links" content="#78d178"/>
+    
+    
+    <meta name="text:Frase" content="Welcome!">
+    
+    <meta name="text:Tamanho da Frase" content="40">
+    <meta name="text:Tamanho dos Textos" content="14">
+    <meta name="text:Tamanho dos Titulos" content="24">
+    
+    <meta name="text:Botao1 Link" content="/">
+    <meta name="text:Botao1 Titulo" content="Home">
+    <meta name="text:Botao2 Link" content="/ask">
+    <meta name="text:Botao2 Titulo" content="Ask">
+    <meta name="text:Botao3 Link" content="/submit">
+    <meta name="text:Botao3 Titulo" content="Submit">
+    <meta name="text:Botao4 Link" content="/archive">
+    <meta name="text:Botao4 Titulo" content="Archive">
+    
+    <meta name="text:Botao PopUp Titulo" content="Últimas postagens">
+    
+    <meta name="text:Instagram Link" content="">
+    <meta name="text:Twitter Link" content="">
+    <meta name="text:Facebook Link" content="">
+    <meta name="text:Youtube Link" content="">
+    <meta name="text:GooglePlus Link" content="">
+    
+    <meta name="select:Fonte da Frase" content="Patrick Hand"/>
+    <meta name="select:Fonte da Frase" content="Indie Flower"/>
+    <meta name="select:Fonte da Frase" content="Bad Script"/>
+    <meta name="select:Fonte da Frase" content="Sue Ellen Francisco"/>
+    <meta name="select:Fonte da Frase" content="Loved by the King"/>
+    <meta name="select:Fonte da Frase" content="Dawning of a New Day"/>
+    <meta name="select:Fonte da Frase" content="Mr De Haviland"/>
+    <meta name="select:Fonte da Frase" content="Miss Fajardose"/>
+    <meta name="select:Fonte da Frase" content="Monsieur La Doulaise"/>
+    <meta name="select:Fonte da Frase" content="Great Vibes"/>
+    <meta name="select:Fonte da Frase" content="Parisienne"/>
+    <meta name="select:Fonte da Frase" content="Rouge Script"/>
+    <meta name="select:Fonte da Frase" content="Sacramento"/>
+    <meta name="select:Fonte da Frase" content="Grand Hotel"/>
+    <meta name="select:Fonte da Frase" content="Lobster"/>
+	<meta name="select:Fonte da Frase" content="Mystery Quest"/>
+    <meta name="select:Fonte da Frase" content="Milonga"/>
+    <meta name="select:Fonte da Frase" content="Cinzel"/>
+    <meta name="select:Fonte da Frase" content="IM Fell English SC"/>
+    <meta name="select:Fonte da Frase" content="Special Elite"/>
+    <meta name="select:Fonte da Frase" content="Black Ops One"/>
+    <meta name="select:Fonte da Frase" content="UnifrakturMaguntia"/>
+    <meta name="select:Fonte da Frase" content="Astloch"/>
+    <meta name="select:Fonte da Frase" content="Megrim"/>
+    <meta name="select:Fonte da Frase" content="Amatic SC"/>
+    <meta name="select:Fonte da Frase" content="Graduate"/>
+    <meta name="select:Fonte da Frase" content="Bangers"/>
+    <meta name="select:Fonte da Frase" content="Codystar"/>
+    
+    <meta name="select:Fonte dos Titulos" content="Patrick Hand"/>
+    <meta name="select:Fonte dos Titulos" content="Indie Flower"/>
+    <meta name="select:Fonte dos Titulos" content="Bad Script"/>
+    <meta name="select:Fonte dos Titulos" content="Sue Ellen Francisco"/>
+    <meta name="select:Fonte dos Titulos" content="Loved by the King"/>
+    <meta name="select:Fonte dos Titulos" content="Dawning of a New Day"/>
+    <meta name="select:Fonte dos Titulos" content="Mr De Haviland"/>
+    <meta name="select:Fonte dos Titulos" content="Miss Fajardose"/>
+    <meta name="select:Fonte dos Titulos" content="Monsieur La Doulaise"/>
+    <meta name="select:Fonte dos Titulos" content="Great Vibes"/>
+    <meta name="select:Fonte dos Titulos" content="Parisienne"/>
+    <meta name="select:Fonte dos Titulos" content="Rouge Script"/>
+    <meta name="select:Fonte dos Titulos" content="Sacramento"/>
+    <meta name="select:Fonte dos Titulos" content="Grand Hotel"/>
+    <meta name="select:Fonte dos Titulos" content="Lobster"/>
+    <meta name="select:Fonte dos Titulos" content="Mystery Quest"/>
+    <meta name="select:Fonte dos Titulos" content="Milonga"/>
+    <meta name="select:Fonte dos Titulos" content="Cinzel"/>
+    <meta name="select:Fonte dos Titulos" content="IM Fell English SC"/>
+    <meta name="select:Fonte dos Titulos" content="Special Elite"/>
+    <meta name="select:Fonte dos Titulos" content="Black Ops One"/>
+    <meta name="select:Fonte dos Titulos" content="UnifrakturMaguntia"/>
+    <meta name="select:Fonte dos Titulos" content="Astloch"/>
+    <meta name="select:Fonte dos Titulos" content="Megrim"/>
+    <meta name="select:Fonte dos Titulos" content="Amatic SC"/>
+    <meta name="select:Fonte dos Titulos" content="Graduate"/>
+    <meta name="select:Fonte dos Titulos" content="Bangers"/>
+    <meta name="select:Fonte dos Titulos" content="Codystar"/>
+    
+    <meta name="select:Fonte dos Textos" content="Dosis"/>
+    <meta name="select:Fonte dos Textos" content="Yanone Kaffeesatz"/>
+    <meta name="select:Fonte dos Textos" content="Roboto Condensed"/>
+    <meta name="select:Fonte dos Textos" content="Share"/>
+    <meta name="select:Fonte dos Textos" content="Exo"/>
+    <meta name="select:Fonte dos Textos" content="Baumans"/>
+    <meta name="select:Fonte dos Textos" content="Ubuntu"/>
+    <meta name="select:Fonte dos Textos" content="Helvetica"/>
+    <meta name="select:Fonte dos Textos" content="Verdana"/>
+    <meta name="select:Fonte dos Textos" content="Georgia"/>
+    <meta name="select:Fonte dos Textos" content="Times New Roman"/>
+    
+    
+    <meta name="select:Cor dos enfeites" content="" title="Preto"/>
+    <meta name="select:Cor dos enfeites" content="-webkit-filter: invert(1); filter: invert(1);" title="Branco"/>
+    <meta name="select:Cor dos enfeites" content="-webkit-filter: invert(1) contrast(40%); filter: invert(1) contrast(40%);" title="Cinza Claro"/>
+    <meta name="select:Cor dos enfeites" content="-webkit-filter: contrast(60%); filter: contrast(60%);" title="Cinza Escuro"/>
+    <meta name="select:Cor dos enfeites" content="display:none;" title="Sem enfeites"/>
+    
+    <meta name="select:Cor do menu de redes sociais" content="" title="Preto"/>
+    <meta name="select:Cor do menu de redes sociais" content="-webkit-filter: invert(1); filter: invert(1);" title="Branco"/>
+    <meta name="select:Cor do menu de redes sociais" content="-webkit-filter: invert(1) contrast(40%); filter: invert(1) contrast(40%);" title="Cinza Claro"/>
+    <meta name="select:Cor do menu de redes sociais" content="-webkit-filter: contrast(60%); filter: contrast(60%);" title="Cinza Escuro"/>
+    
+
+    <meta name="select:Transparencia nas Fotos" content="1" title="0%"/>
+    <meta name="select:Transparencia nas Fotos" content=".8" title="20%"/>
+    <meta name="select:Transparencia nas Fotos" content=".6" title="40%"/>
+    <meta name="select:Transparencia nas Fotos" content=".4" title="60%"/>
+    
+    
+    <meta name="select:Efeito nas Fotos" title="Nenhum" content="none"/>
+    <meta name="select:Efeito nas Fotos" title="Colorful" content="saturate(220%)"/>
+    <meta name="select:Efeito nas Fotos" title="Deep" content="saturate(220%) contrast(1.3) brightness(.9)"/>
+    <meta name="select:Efeito nas Fotos" title="Dark" content="contrast(1.5) brightness(.9)"/>
+    <meta name="select:Efeito nas Fotos" title="Greyish" content="grayscale(40%) saturate(100%) contrast(120%)"/>
+    <meta name="select:Efeito nas Fotos" title="Black and White" content="grayscale(100%)"/>
+    <meta name="select:Efeito nas Fotos" title="Dark Black and White" content="grayscale(100%) contrast(1.3) brightness(.9)"/>
+    <meta name="select:Efeito nas Fotos" title="Sepia" content="sepia(1)"/>
+    <meta name="select:Efeito nas Fotos" title="Old" content="contrast(90%) sepia(50%) brightness(120%)"/>
+    <meta name="select:Efeito nas Fotos" title="Coffee" content="sepia(30%) saturate(180%)"/>
+    <meta name="select:Efeito nas Fotos" title="Vintage" content="sepia(30%) hue-rotate(-30deg) saturate(180%) contrast(90%) brightness(100%)"/>
+    <meta name="select:Efeito nas Fotos" title="Invertido" content="invert(1)"/>
+    
+    <meta name="if:Mostrar Descricao" content="1"/>
+    <meta name="if:Modo ebook" content="1"/>
+    
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!-- jquery -->
+
+    
+    
+<link href='https://fonts.googleapis.com/css?family=Patrick+Hand|Indie+Flower|Bad+Script|Sue+Ellen+Francisco|Loved+by+the+King|Dawning+of+a+New+Day|Mr+De+Haviland|Miss+Fajardose|Monsieur+La+Doulaise|Great+Vibes|Parisienne|Rouge+Script|Sacramento|Grand+Hotel|Lobster|Mystery+Quest|Milonga|Cinzel|IM+Fell+English+SC|Special+Elite|Black+Ops+One|UnifrakturMaguntia|Astloch|Megrim|Amatic+SC|Graduate|Bangers|Codystar' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Dosis|Yanone+Kaffeesatz|Roboto+Condensed|Share|Exo|Baumans|Ubuntu' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="https://static.tumblr.com/tiu5k68/xTkm8wqw2/tumblr-title-qtip.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+
+
+<style type="text/css">
+
+/********** BASE **********/
+body {margin: 0px; background: {color:Background} url('{image:Background Image}') fixed; color: {color:Fonte}; font-family: {select:Fonte dos Textos}; font-size: {text:Tamanho dos Textos}px;}
+
+::-webkit-scrollbar {width: 10px; height: 10px; background: {color:Background};}
+::-webkit-scrollbar-button:vertical {background: {color:Background}; height: 0px; display: block;}
+::-webkit-scrollbar-thumb:vertical {background: {color:Frase};}
+::-webkit-scrollbar-button:horizontal {background: {color:Background}; width: 0px; display: block; }
+::-webkit-scrollbar-thumb:horizontal {background: {color:Frase};}
+
+a {color: {color:Links}; transition: .5s; text-decoration: none;}
+a:hover {color: {color:Fonte};}
+
+a b {color: {color:Links};}
+a strong {color: {color:Links};}
+a i {color: {color:Links};}
+a em {color: {color:Links};}
+
+b a {color: {color:Links};}
+strong a {color: {color:Links};}
+i a {color: {color:Links};}
+em a {color: {color:Links};}
+
+ul {list-style: square; margin-left: -20px; }
+ol {margin-left: -20px; list-style: decimal-leading-zero;}
+
+blockquote {border-left: 3px solid {color:Fonte}; margin-left: 10px; padding: 5px; padding-left: 10px;}
+blockquote p {margin: 0px;}
+
+blockquote img {height: auto; 
+    {block:IndexPage}max-width: 200px;{/block:IndexPage}
+    {block:PermalinkPage}max-width: 460px;{/block:PermalinkPage}
+}
+
+.caixa hr {border: none; border-top: 1px dashed {color:Fonte}; margin: 0px 40px; opacity: .5; display: block;}
+
+pre {overflow-x: scroll; padding: 5px;}
+
+pre b {color: {color:Titulos};}
+pre strong {color: {color:Titulos};}
+pre i {color: {color:Titulos};}
+pre em {color: {color:Titulos};}
+
+pre::-webkit-scrollbar {width: 5px; height: 5px; background: {color:Posts};}
+pre::-webkit-scrollbar-button:horizontal {width: 0px; display: block;}
+pre::-webkit-scrollbar-thumb:horizontal {background: {color:Fonte}; }
+
+::selection {background: {color:Links}; color: {color:Background};}
+
+#qTip {margin: 0px 0 0 16px; text-align: left; display: none; position: absolute; z-index: 99; font-size: 10px; font-family: 'Ubuntu'; padding: 5px 5px; line-height: 10px; color: {color:Background}; background: {color:Links}; border: 1px solid {color:bg}; border-radius: 4px; text-transform: uppercase;}
+
+h1 {font-size: {text:Tamanho dos Titulos}px; color: {color:Titulos}; font-family: {select:Fonte dos Titulos}; font-weight: normal; margin: 0px;}
+
+h2 {font-weight: normal; color: {color:Titulos}; margin: 0px;}
+
+h3 {font-weight: normal; color: {color:Titulos}; margin: 0px;}
+
+
+/******************** SIDEBAR ********************/
+header {width: 500px; padding: 10px; margin: 0px auto; margin-top: 20px; text-align: center; font-family: 'Ubuntu', Verdana, sans-serif;}
+
+header h1 {font-size: {text:Tamanho da Frase}px; color: {color:Frase}; font-family: {select:Fonte da Frase};}
+
+header #desc {color: {color:Descricao}; margin: 0px auto 10px auto; width: 300px;}
+
+#menu {font-size: 11px; color: {color:Descricao};}
+#menu a {display: inline-block; padding: 4px 8px; background: {color:Frase}; color: {color:Background}; border-radius: 2px; margin: 0px 2px;}
+#menu a:hover {background: transparent; color: {color:Descricao}; transform: rotateX(360deg);}
+
+
+#menu span span {display: inline-block; padding: 4px 8px; background: {color:Frase}; color: {color:Background}; border-radius: 2px; margin: 0px 2px; cursor: pointer; transition: .5s;}
+#menu span span:hover {background: transparent; color: {color:Descricao}; transform: rotateX(360deg);}
+
+
+header .enfeite {width: 400px; height: 51px; margin: 0px auto; margin-top: 10px; margin-bottom: -5px; transform: rotateX(180deg); background: url('https://raw.githubusercontent.com/anyhsalinas/personal_content/master/themes/theme-29/enfeite.png') no-repeat; {select:Cor dos enfeites}}
+
+
+
+/****** REDES SOCIAIS ******/
+#social {position: fixed; right: 5px; top: 100px; z-index: 10; width: 24px; padding: 8px; {select:Cor do menu de redes sociais}}
+
+#social span {width: 24px; height: 24px; margin: 8px auto; position: relative; display: block;}
+#social span img {width: 24px; height: 24px; border-radius: 50% 50% 0% 50%; padding: 2px; transition: .5s;}
+#social span:hover img {border-radius: 50% 0%;}
+
+#social span .inf {position: absolute; right: 100%; bottom: 2px; font-size: 10px; text-transform: uppercase; margin-right: -100px; color: white; background: black; padding: 2px 4px; transition: .5s; opacity: 0; font-family: 'Ubuntu';}
+#social span .inf:after {content: ""; border: 3px solid transparent; border-left-color: black; position: absolute; left: 100%; top: 4px;}
+#social span:hover .inf {opacity: 1; margin-right: 5px;}
+
+
+
+/****** POP-UP ******/
+#popup {display: none; width: 620px; margin: 20px auto; padding: 10px; text-align: center;
+    {block:TagPage}display: none;{/block:TagPage}
+}
+
+#popup iframe {border: none; width: 620px; height: 340px; background: none;
+    {block:TagPage}display: none;{/block:TagPage}
+}
+
+#loadingding { {block:TagPage}display: none;{/block:TagPage} }
+#loadingding i {font-size: 16px; margin-top: 20px; }
+
+
+#popup-page {text-align: center; font-family: 'Ubuntu', sans-serif; font-size: 10px; position: relative; background: none;}
+
+#popup-page blockquote {width: 170px; border-left: none; display: inline-block; border: 1px solid {color:Borda dos posts}; background: {color:Posts}; padding: 5px; margin: 4px 5px; overflow: hidden;}
+
+#popup-page ul {margin: 0px; margin-left: -40px; height: 150px; overflow-y: scroll;}
+#popup-page ol {margin: 0px; margin-left: -40px; height: 150px; overflow-y: scroll;}
+
+#popup-page ul::-webkit-scrollbar {background: {color:Posts};}
+#popup-page ol::-webkit-scrollbar {background: {color:Posts};}
+
+#popup-page strong {font-weight: normal; background: {color:Frase}; color: {color:Background}; display: block; padding: 5px; font-size: 18px; line-height: 18px; margin-bottom: 5px;}
+
+#popup-page li {list-style: none; background: {color:Borda dos posts}; color: {color:Titulos}; margin-bottom: 1px; padding: 5px; margin-left: 10px; font-size: {text:Tamanho dos Textos};}
+#popup-page li:hover a {letter-spacing: 2px;}
+
+#popbot {
+    {block:TagPage}display: none;{/block:TagPage}
+}
+
+
+
+
+/******************** POSTS ********************/
+#posts {width: 520px; margin: 0px auto;
+    {block:IfModoebook}
+    {block:HomePage}display: none;{/block:HomePage}
+    {block:PermalinkPage}display: block;{/block:PermalinkPage}
+    {/block:IfModoebook}
+}
+.caixa {background: {color:Posts}; margin-bottom: 20px; padding: 10px; border: 1px solid {color:Borda dos posts}; width: 500px; position: relative;}
+
+.caixa h1 {text-transform: initial;}
+
+
+/*** TEXT ***/
+.text {}
+.text img {height: auto; transition: .5s; opacity: {select:Transparencia nas fotos}; filter: {select:Efeito nas fotos}; -webkit-filter: {select:Efeito nas fotos}; max-width: 500px; min-width: 500px;
+}
+
+.caixa:hover .text img {opacity: 1; filter: none; -webkit-filter: none;}
+
+.capt {}
+
+
+/*** PHOTO ***/
+#photo {}
+
+.imgp { transition: .5s; opacity: {select:Transparencia nas fotos}; filter: {select:Efeito nas fotos}; -webkit-filter: {select:Efeito nas fotos};
+	{block:IndexPage}min-width: 250px;{/block:IndexPage}
+    {block:PermalinkPage}min-width: 500px;{/block:PermalinkPage}
+}
+.caixa:hover .imgp {opacity: 1; filter: none; -webkit-filter: none;}
+
+.imgp img {min-width: 500px;}
+
+
+
+
+
+
+
+
+/********** QUOTES **********/
+#quote {text-indent: 10px; margin-top: 10px; position: relative; text-align: justify;}
+#quote:first-letter {color: {color:Titulos}; text-transform: uppercase; font-size: 30px; line-height: {text:Tamanho dos Textos}px; font-family: {select:Fonte dos Titulos};}
+
+.asp {font-family: 'georgia'; color: {color:Links}; opacity: .5; font-size: 70px; position: absolute;}
+
+.asp_left {top: 0px; }
+.asp_right {bottom: 20px; right: 10px;}
+
+#source {text-align: right; position: relative; margin-top: 10px; color: {color:Frase};}
+
+
+
+/********** CHATS **********/
+#chat {}
+#chat li {list-style: none;}
+#chat b {color: {color:Titulos}; text-transform: uppercase;}
+
+
+
+
+/********** AUDIO **********/
+.tumblr_audio_player {height: 150px;}
+
+
+#player {font-family: 'Ubuntu'; color: {color:Titulos}; font-size: 11px; padding: 5px; border: 1px solid {color:Borda dos posts}; border-top: none; margin-top: -3px;}
+#player b {}
+#player li {background: {color:Background}; color: {color:Titulos}; border-left: 4px solid {color:Frase}; font-family: 'Ubuntu'; padding: 5px; margin-bottom: 1px; list-style: none; transition: .5s;}
+#player li:hover {margin-left: 10px;}
+
+
+
+
+/********** ASKS **********/
+#ask_img {float: left; border: 5px solid {color:Frase}; background: {color:Frase}; position: relative; border-radius: 100%; overflow: hidden; }
+#ask_img img {margin-bottom: -4px; width: 40px; border-radius: 100%;}
+
+#question {background: {color:Posts}; padding: 10px; padding-bottom: 5px; border: 1px solid {color:Borda dos posts}; border-radius: 5px; margin-left: 60px; position: relative;}
+
+#question_seta {width: 10px; height: 11px; overflow: hidden; position: absolute; right: 100%; top: 10px;}
+.question_seta {width: 10px; height: 10px; background: {color:Posts}; border: 1px solid {color:Borda dos posts}; transform: rotate(45deg); margin-left: 5px;}
+
+.plaq {color: {color:Titulos}; border-top: 1px solid {color:Borda dos posts}; font-size: 9px; font-family: 'Ubuntu'; padding-top: 5px; margin-top: 10px; text-transform: uppercase;  text-align: center;}
+
+
+
+/********** SUBMITS **********/
+#submit {position: relative; margin-top: 5px;}
+
+#submit_img {margin: 0px; border: 2px solid {color:Links}; border-radius: 100%; width: 30px; overflow: hidden; position: absolute; right: 0px;}
+#submit_img img {width: 30px; margin-bottom: -3px;}
+
+
+
+
+
+
+/*** INFO INDEX ***/
+#info_index {border-top: 1px solid {color:Borda dos posts}; font-family: 'Ubuntu', verdana, sans-serif; color: {color:Titulos}; font-size: 10px; text-transform: uppercase; padding: 10px; padding-bottom: 0px; margin-top: 10px; text-align: center;}
+
+#info_index a {color: {color:Titulos}; }
+#info_index a:hover {color: {color:Links}; }
+
+#info_index li { list-style: none; display: inline-block; margin-right: 10px;}
+#info_index i {color: {color:Titulos}; }
+#info_index a:hover i {color: {color:Links}; transition: .5s;}
+
+
+#buttons {position: absolute; bottom: 10px; left: 100%; font-size: 13px; line-height: 13px; margin-left: 5px; text-align: center; opacity: 0; transition: .5s;}
+.caixa:hover #buttons {opacity: 1;}
+
+#buttons .but {background: rgba(0,0,0,.5); padding: 5px; margin-bottom: 1px; height: 13px; transition: .5s;}
+#buttons .but:hover {opacity: .8;}
+
+#buttons i {color: white;}
+
+
+
+
+
+/*** PMLINK ***/
+#pmlink {font-family: 'Ubuntu', verdana, sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0px;}
+
+#pmlink h1 {color: {color:Titulos}; text-transform: initial; font-family: {select:Fonte dos Titulos}; margin: 0px;}
+
+#pmlink ul {list-style: none; margin: 0px; margin: 10px 0px 20px 0px; margin-left: -40px;}
+#pmlink ul li {border-left: 3px solid {color:Links}; transition: .5s;}
+#pmlink ul li:hover {margin-left: 20px;}
+
+#pmlink ul i {color: {color:Links}; margin-right: 2px;}
+
+#pmlink ol {list-style: none; margin: 0px; margin-left: -40px; margin-top: 10px;}
+#pmlink li {padding: 5px; margin-bottom: 1px; position: relative;}
+
+#pmlink li img {float: left; margin: -2px; margin-right: 5px;}
+
+#pmlink ol .like, .reblog {transition: .5s; border: 1px solid {color:Borda dos Posts};}
+#pmlink ol .like:hover, .reblog:hover {margin-left: 40px;}
+
+
+#pmlink ol .like:after {content: " ❤ "; position: absolute; right: 5px; top: 5px;}
+#pmlink ol .reblog:after {content: " ⟳ "; position: absolute; right: 5px; top: 5px;}
+
+
+
+#pmlink .more_notes_link_container {margin-top: 10px;}
+
+
+
+
+
+
+
+/********** PAGINAÇÃO **********/
+#navigation {font-size: 12px; line-height: 14px; text-align: center;display: block; margin: 40px auto;
+    {block:IfModoebook}
+    {block:HomePage}display: none;{/block:HomePage}
+    {block:PermalinkPage}display: block;{/block:PermalinkPage}
+    {/block:IfModoebook}
+}
+
+#navigation .seta {margin: 0px 20px; display: inline-block; font-size: 10px;}
+
+#navigation .nav {transition: .9s; padding: 7px 10px; margin: 0px 4px; display: inline-block; position: relative;}
+#navigation .nav:hover {background: transparent;}
+
+
+#navigation .current {padding: 5px 10px; margin: 0px 2px; display: inline-block;}
+
+
+
+/*** rolagem infinita ***/
+#infscr-loading {font-size: 10px; font-family: 'Roboto Condensed'; text-transform: uppercase; z-index: 999; text-align: center; position: fixed; bottom: 40px; width: 100%; }
+#infscr-loading i {font-size: 10px;}
+#infscr-loading img {display: none;}
+
+
+
+
+/*** CUSTOM CSS ***/
+{CustomCSS}
+    
+
+/*** DON'T REMOVE THE CREDITS IF THE THEME WASN'T MADE BY YOU ***/
+#cred {z-index: 9999; background: {color:Posts}; border: 1px solid {color:Borda dos posts}; padding: 5px; font-family: 'Ubuntu', sans-serif; color: {color:Titulos}; position: fixed; right: -94px; bottom: 40px; font-size: 11px; transition: .5s;}
+#cred:hover {right: 0px;}
+#cred i {margin-right: 2px;}
+#cred span {color: {color:Links};}
+/*** DON'T REMOVE THE CREDITS IF THE THEME WASN'T MADE BY YOU ***/
+
+    
+</style>
+</head>
+
+<body onpageshow="abc();">
+
+
+
+<!------------------------- HEADER ------------------------->
+<header id="header">
+
+<a href="/"> <h1>{text:Frase}</h1> </a>
+
+{block:IfMostrarDescricao}
+<div id="desc"> <small> {Description} </small> </div>
+{/block:IfMostrarDescricao}
+
+
+<!---- MENU ---->
+<nav id="menu">
+
+{block:IfBotao1Link}
+<a href="{text:Botao1 Link}">{text:Botao1 Titulo}</a>
+{/block:IfBotao1Link}
+
+{block:IfBotao2Link}
+&diams;
+<a href="{text:Botao2 Link}">{text:Botao2 Titulo}</a>
+{/block:IfBotao2Link}
+
+{block:IfBotao3Link}
+&diams;
+<a href="{text:Botao3 Link}">{text:Botao3 Titulo}</a>
+{/block:IfBotao3Link}
+
+{block:IfBotao4Link}
+&diams;
+<a href="{text:Botao4 Link}">{text:Botao4 Titulo}</a>
+{/block:IfBotao4Link}
+
+{block:IfModoebook}
+{block:HomePage}
+<span id="popbot">
+&diams;
+<span onclick="popup();"> {text:Botao PopUp Titulo} </span>
+</span>
+{/block:HomePage}
+{/block:IfModoebook}
+
+</nav> <!-- #menu -->
+
+
+<div class="enfeite"></div>
+
+
+</header>
+
+
+<!--- REDES SOCIAIS --->
+<div id="social">
+    
+    {block:IfInstagramLink}
+    <a href="{text:Instagram Link}" target="_blank">
+    <span>
+        <div class="inf">Instagram</div>
+        <img src="https://raw.githubusercontent.com/anyhsalinas/personal_content/master/themes/theme-29/icon-instagram.png" />
+    </span>
+    </a>
+    {/block:IfInstagramLink}
+    
+    {block:IfTwitterLink}
+    <a href="{text:Twitter Link}" target="_blank">
+    <span>
+        <div class="inf">Twitter</div>
+        <img src="https://raw.githubusercontent.com/anyhsalinas/personal_content/master/themes/theme-29/icon-twitter.png" />
+    </span>
+    </a>
+    {/block:IfTwitterLink}
+    
+    {block:IfFacebookLink}
+    <a href="{text:Facebook Link}" target="_blank">
+    <span>
+        <div class="inf">Facebook</div>
+        <img src="https://raw.githubusercontent.com/anyhsalinas/personal_content/master/themes/theme-29/icon-facebook.png" />
+    </span>
+    </a>
+    {/block:IfFacebookLink}
+    
+    {block:IfYoutubeLink}
+    <span>
+    <a href="{text:Youtube Link}" target="_blank">
+        <div class="inf">Youtube</div>
+        <img src="https://raw.githubusercontent.com/anyhsalinas/personal_content/master/themes/theme-29/icon-youtube.png" />
+    </span>
+    </a>
+    {/block:IfYoutubeLink}
+    
+    {block:IfGooglePlusLink}
+    <a href="{text:GooglePlus Link}" target="_blank">
+    <span>
+        <div class="inf">Google+</div>
+        <img src="https://raw.githubusercontent.com/anyhsalinas/personal_content/master/themes/theme-29/icon-google.png" />
+    </span>
+    </a>
+    {/block:IfGooglePlusLink}
+    
+</div>
+
+
+
+
+
+<!-------------------- POPUP -------------------->
+{block:IfModoebook}
+{block:HomePage}
+
+
+<!--- LOADING --->
+<div id="loadingding" style="margin: 20px auto; text-align: center;">
+    {lang:Loading}...
+    <br>
+    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+</div>
+
+
+
+<div id="popup">
+    
+    <iframe src="{BlogURL}popup-page" id="popiframe"></iframe>
+    
+</div>
+
+
+{/block:HomePage}
+{/block:IfModoebook}
+
+
+
+
+
+
+
+
+
+
+<!------------------------- POSTS ------------------------->
+<div id="posts">
+{block:Posts}
+<div class="caixa" id="{PostID}">
+
+
+
+<!---- TEXT ---->
+{block:Text}
+<div id="text">
+
+{block:Title}<h1>{Title}</h1>{/block:Title}
+
+<div class="text">{Body}</div>
+
+</div> <!-- #text -->
+{/block:Text}
+
+
+
+
+<!---- PHOTO ---->
+{block:Photo}
+<div id="photo">
+
+<div class="imgp">
+{LinkOpenTag}<img src="{PhotoURL-500}" />{LinkCloseTag}
+</div>
+
+{block:Caption}<div class="text capt">{Caption}</div>{/block:Caption}
+
+</div> <!-- #photo -->
+{/block:Photo}
+
+
+
+
+<!---- PHOTOSET ---->
+{block:Photoset}
+<div id="photoset">
+
+<div class="imgp">
+{Photoset-500}
+</div>
+
+{block:Caption}<div class="text capt">{Caption}</div>{/block:Caption}
+
+</div> <!-- #photoset -->
+{/block:Photoset}
+
+
+
+
+<!---- VIDEO ---->
+{block:Video}
+<div id="video">
+
+<div class="imgp">
+{Video-500}
+</div>
+
+{block:Caption}<div class="text capt">{Caption}</div>{/block:Caption}
+
+</div> <!-- #video -->
+{/block:Video}
+
+
+
+
+<!---- AUDIO ---->
+{block:Audio}
+
+<div id="imgp">
+{block:AudioEmbed}{AudioEmbed-500}{/block:AudioEmbed}
+</div>
+
+<div id="player">
+{block:TrackName}<li><b>Track:</b> {TrackName}</li>{/block:TrackName}
+{block:Artist}<li><b>Artist:</b> {Artist}</li>{/block:Artist}
+{block:Album}<li><b>Album:</b> {Album}</li>{/block:Album}
+{block:PlayCount}<li>{lang:Played PlayCount times}</li>{/block:PlayCount} 
+{block:ExternalAudio}<li><b><a href="{ExternalAudioURL}" target="_blank">Download</a></b></li>{/block:ExternalAudio}
+</div>
+
+{block:Caption}<div class="capt">{Caption}</div>{/block:Caption}
+
+
+{/block:Audio}
+
+
+
+
+<!---- QUOTE ---->
+{block:Quote}
+
+<div class="asp asp_left">“</div>
+
+<div id="quote">
+{Quote}
+</div> <!-- #quote -->
+
+<div class="asp asp_right">”</div>
+
+{block:Source}
+<div id="source">
+&mdash; {Source}
+</div>{/block:Source}
+{/block:Quote}
+
+
+
+
+<!---- CHAT ---->
+{block:Chat}
+<div id="chat">
+
+{block:Title}<h1>{Title}</h1>{/block:Title}
+
+{block:Lines}<li>
+{block:Label}<b>{Label}</b>{block:Label}
+<span>{Line}</span>
+</li>{/block:Lines}
+
+</div> <!-- #chat -->
+{/block:Chat}
+
+
+
+
+<!---- LINK ---->
+{block:Link}
+<div id="link">
+
+<h1><a href="{URL}" {target}>{Name}</a></h1>
+
+{block:Excerpt}<a href="{URL}" {target}>{Excerpt}</a>{/block:Excerpt}
+
+{block:Description}
+<div class="text capt">{Description}</div>
+{/block:Description}
+
+
+</div> <!-- #links -->
+{/block:Link}
+
+
+
+
+<!---- ANSWER ---->
+{block:Answer}
+
+<div id="ask_img">
+<a href="{AskerURL}" target="_blank" title="{AskerName}">
+<img src="{AskerPortraitURL-64}" />
+</a>
+</div>
+
+
+<div id="question">
+
+    <div id="question_seta">
+        <div class="question_seta"></div>
+    </div>
+
+    {Question}
+    
+    <div class="plaq">
+    {lang:Asked by Asker 2}
+    </div>
+
+</div> <!-- #question -->
+
+
+<div class="capt">{Answer}</div>
+{/block:Answer}
+ 
+
+
+
+
+
+<!------ INFO INDEX ------>
+{block:IndexPage}
+<div id="info_index">
+
+<a href="{Permalink}" title="{lang:Permalink for this post}">
+
+<li> <i class="fa fa-calendar" aria-hidden="true"></i> {lang:Posted on DayOfMonth Month Year} </li>
+
+<li> <i class="fa fa-clock-o" aria-hidden="true"></i> {lang:Posted at FormattedTime} </li>
+
+<li> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> {NoteCountWithLabel} </li>
+
+</a>
+
+
+{block:Submission}
+<div id="submit">
+    
+    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+    
+    {block:PortugueseBR}Enviado via Submit por <a href="{SubmitterURL}" target="_blank">@{Submitter}</a> {/block:PortugueseBR}
+    {block:NotPortugueseBR}Submitted by <a href="{SubmitterURL}" target="_blank">@{Submitter}</a> {/block:NotPortugueseBR}
+</div> <!-- #submit -->
+{/block:Submission}
+
+
+</div> <!-- #info_index -->
+{/block:IndexPage}
+
+
+<!-- NOTAS -->
+{block:IndexPage}
+<div id="buttons">
+
+<a href="{Permalink}" title="{lang:Notes}">
+<div class="but"> <i class="fa fa-link" aria-hidden="true"></i> </div>
+</a>
+
+<div class="but"> {ReblogButton color="white" size="13"} </div>
+
+<div class="but"> {LikeButton color="white" size="13"} </div>
+
+</div> <!-- #buttons -->
+{/block:IndexPage}
+
+
+</div> <!-- .caixa -->
+
+
+
+<!------ LINK PERMANENT ------>
+{block:Date}
+{block:PermalinkPage}
+<div class="caixa">
+<div id="pmlink">
+
+<h1>Post Info:</h1>
+
+<ul>
+
+<li>
+<i class="fa fa-calendar" aria-hidden="true"></i> {lang:Posted on DayOfWeek DayOfMonth Month Year}
+</li>
+
+<li>
+<i class="fa fa-clock-o" aria-hidden="true"></i> {lang:Posted at FormattedTime} 
+</li>
+
+<li>
+<i class="fa fa-user" aria-hidden="true"></i> {lang:By PostAuthorName 2}
+</li>
+
+<li>
+<i class="fa fa-thumbs-up" aria-hidden="true"></i> {NoteCountWithLabel}
+</li>
+
+{block:RebloggedFrom}
+<li>
+<i class="fa fa-retweet" aria-hidden="true"></i> {lang:Reblogged from} <a href="{ReblogParentURL}" target="_blank">{ReblogParentName}</a>
+</li>
+
+<li>
+<i class="fa fa-home" aria-hidden="true"></i> {lang:Originally from ReblogRootName 2} 
+</li>
+{/block:RebloggedFrom}
+
+{block:ContentSource}
+<li>
+<i class="fa fa-copyright" aria-hidden="true"></i> {lang:Source}: <a href="{SourceURL}" target="_blank">{SourceTitle}</a>
+</li>
+{/block:ContentSource}
+
+{block:HasTags}
+<li>
+<i class="fa fa-tags" aria-hidden="true"></i> {lang:Tagged with}:
+{block:Tags}
+# <a href="{TagURL}">{Tag}</a>
+{/block:Tags}
+</li>
+{/block:HasTags}
+
+</ul>
+
+
+
+
+{block:PostNotes}
+<h1>{lang:Notes}</h1>
+{PostNotes}
+{/block:PostNotes}
+
+</div> <!-- #pmlink -->
+</div> <!-- .caixa -->
+{/block:PermalinkPage}
+{/block:Date}
+
+
+{/block:Posts}
+
+</div> <!-- #posts -->
+
+
+
+
+
+
+
+
+<div style="clear: both;"></div>
+
+
+
+
+
+
+
+
+
+
+<!------------------------- ROLAGEM INFINITA ------------------------->
+{block:Pagination}
+<div class="column navigation" id="navigation">
+{block:PreviousPage}<a href="{PreviousPage}" class="navigate" id="prevPage">{/block:PreviousPage}
+<div class="seta">
+<i class="fa fa-arrow-left" aria-hidden="true"></i>
+</div><!-- .seta -->
+{block:PreviousPage}</a>{/block:PreviousPage}
+
+
+{block:JumpPagination length="9"}
+
+{block:CurrentPage}
+<span class="current">{PageNumber}</span>
+{/block:CurrentPage}
+
+{block:JumpPage}
+<a href="{URL}">
+<span class="nav">{PageNumber}</span>
+</a>
+{/block:JumpPage}
+
+{/block:JumpPagination}
+
+
+{block:NextPage}<a href="{NextPage}" class="navigate seta" id="nextPage">{/block:NextPage}
+<div class="seta">
+<i class="fa fa-arrow-right" aria-hidden="true"></i>
+</div><!-- .seta -->
+{block:NextPage}</a>{/block:NextPage}
+</div>
+{/block:Pagination}
+
+
+
+
+
+
+
+
+
+
+<!-------------------- POPUP -------------------->
+<script type="text/javascript" defer="true">
+    
+    function popup() {
+        document.getElementById('popup').style.display='none';
+        document.getElementById('posts').style.display='block';
+        document.getElementById('navigation').style.display='block';
+        document.getElementById('popbot').innerHTML='&diams; <span onclick="popdown();"> {lang:Back} </span>';
+    }
+    
+    function popdown() {
+            document.getElementById('popup').style.display='block';
+            document.getElementById('posts').style.display='none';
+            document.getElementById('navigation').style.display='none';
+            document.getElementById('popbot').innerHTML='&diams; <span onclick="popup();"> {text:Botao PopUp Titulo} </span>';
+        }
+        
+</script>
+
+
+
+
+
+
+<!-------------------- IFRAME -------------------->
+<script type="text/javascript" defer="true">
+    
+    
+function abc() {
+    
+
+    document.getElementById("popup").style.display="block";
+    document.getElementById("loadingding").style.display="none";
+    
+    var popiframe = document.getElementById("popiframe");
+    var x = (popiframe.contentDocument || popiframe.contentWindow);
+    if (x.document)x = x.document;
+    
+    
+    x.getElementById("social").style.display="none";
+    x.getElementById("cred").style.display="none";
+    x.getElementById("header").style.display="none";
+    x.getElementsByTagName("body")[0].style.backgroundColor="none";
+    
+    var followbuttons = x.getElementsByClassName("tmblr-iframe");
+    
+    followbuttons[0].style.display="none";
+    
+    var caixa = x.getElementsByClassName("caixa");
+    caixa[0].style.borderWidth="0px";
+    caixa[0].style.width="590px";
+    caixa[0].style.marginLeft="-45px";
+    caixa[0].style.backgroundColor="{color:Background}";
+    caixa[0].style.textAlign="center";
+    
+    
+    /*** CORRIGINDO ERRO DOS LINKS ***/
+    var i;
+    for (i = 0; i < x.links.length; i++) {
+        x.links[i].target="_parent";
+    }
+    
+    
+    x.style.lineHeight="14px";
+    
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<!---- DON'T REMOVE THE CREDITS IF THE THEME ISN'T YOURS ---->
+<a href="http://anyhs-themes.tumblr.com" target="_blank"><div id="cred">
+<i class="fa fa-copyright" aria-hidden="true"></i> Theme by <span>Anyh S.</span>
+</div></a>
+<!---- DON'T REMOVE THE CREDITS IF THE THEME ISN'T YOURS ---->
+
+
+</body>
+</html>
