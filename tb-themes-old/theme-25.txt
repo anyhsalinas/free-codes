@@ -1,0 +1,503 @@
+<!--
+ 
+			THEME #25
+			by Anyh Salinas - © 2016
+			www.anyhs-themes.tumblr.com
+ 
+ 
+ 
+   ♦ Don't remove/adulterate my credits;
+   ♦ Don't copy;
+   ♦ Don't redistribute;
+   ♦ Don't use this theme as base to make other(s) theme(s).
+     
+  
+   CONTACT:
+   http://www.anyhs-themes.tumblr.com/contato
+ 
+ 
+ 
+-->
+
+<html>
+<head>
+    
+    <title>{Title}</title>
+    <link rel="shorcut icon" href="{favicon}" />
+    
+    
+    {block:IndexPage}
+<!------
+    MASONRY SCRIPTS SOURCE: http://creatre.tumblr.com/post/93242735110
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://static.tumblr.com/me5sfsd/12Qlmj66n/script.js"></script>
+
+<script type="text/javascript">
+$(window).load(function(){
+var $wall = $('#posts');
+$wall.imagesLoaded(function(){
+$wall.masonry({
+itemSelector: '.caixa',
+isAnimated : true
+});
+});
+$wall.infinitescroll({
+navSelector : "div#navigation",
+nextSelector : "div#navigation a#nextPage",
+itemSelector : '.caixa',
+loadingImg : "",
+loadingText : " ",
+donetext : " ",
+extraScrollPx : 0,
+bufferPx : 10000,
+debug : false,
+errorCallback: function() {
+$('#infscr-loading').animate({opacity: .8},2000).fadeOut('normal');
+}},
+function( newElements ) {
+var $newElems = $( newElements );
+$newElems.hide();
+$newElems.imagesLoaded(function(){
+$wall.masonry( 'appended', $newElems, {isAnimated: true, animationOptions: {duration: 250, easing: 'linear', queue: false}}, function(){$newElems.fadeIn('slow');} );
+});
+}); $('#posts').show(500);
+});
+</script>
+<!---- END MASONRY SCRIPTS -->
+{/block:IndexPage}
+    
+    
+    <meta name="image:Sidebar"/>
+    
+    <meta name="color:Background" content="#eee"/>
+    <meta name="color:Posts" content="#000"/>
+    <meta name="color:Titulos" content="#fff"/>    
+    <meta name="color:Fonte" content="#555"/>
+    <meta name="color:Links" content="#aca"/>
+    
+    <meta name="font:Fonte Textos"/>
+    <meta name="text:Tamanho da Fonte" content="11"/>
+    
+    <meta name="text:Link1" content="/"/>
+    <meta name="text:Link1Titulo" content="Home"/>
+    <meta name="text:Link2" content="/archive"/>
+    <meta name="text:Link2Titulo" content="Arquivo"/>
+    <meta name="text:Link3" content="/ask"/>
+    <meta name="text:Link3Titulo" content="Ask"/>
+    <meta name="text:Link4" content="/submit"/>
+    <meta name="text:Link4Titulo" content="Submit"/>
+    <meta name="text:Link5" content="/"/>
+    <meta name="text:Link5Titulo" content="F.A.Q."/>
+    <meta name="text:Link6" content="/"/>
+    <meta name="text:Link6Titulo" content="+ Links"/>
+    
+    <meta name="if:3 colunas" content="0"/>
+    <meta name="if:Notes em branco" content="1"/>
+    <meta name="if:Mostrar Descricao Imagens" content="1"/>
+    
+
+<!------ FONTE TITULOS ------>
+    <meta name="select:Fonte Titulos" content="Yanone Kaffeesatz" title="Yanone Kaffeesatz"/>
+<meta name="select:Fonte Titulos" content="Megrim" title="Megrim"/>
+<meta name="select:Fonte Titulos" content="Special Elite" title="Special Elite"/>
+<meta name="select:Fonte Titulos" content="Patrick Hand SC" title="Patrick Hand SC"/>
+<meta name="select:Fonte Titulos" content="Indie Flower" title="Indie Flower"/>
+<meta name="select:Fonte Titulos" content="Lobster" title="Lobster"/>
+<meta name="select:Fonte Titulos" content="Lily Script One" title="Lily Script One"/>
+<meta name="select:Fonte Titulos" content="Sacramento" title="Sacramento"/>
+<meta name="select:Fonte Titulos" content="Clicker Script" title="Clicker Script"/>
+<meta name="select:Fonte Titulos" content="Arial" title="Arial" />
+<meta name="select:Fonte Titulos" content="Verdana" title="Verdana" />
+<meta name="select:Fonte Titulos" content="Georgia" title="Georgia" />
+<meta name="select:Fonte Titulos" content="Times New Roman" title="Times New Roman" />
+    
+<!------ OPACIDADE IMAGENS ------>
+    <meta name="select:Opacidade Imagens" content="1" title="100%"/>
+    <meta name="select:Opacidade Imagens" content=".8" title="80%"/>
+    <meta name="select:Opacidade Imagens" content=".6" title="60%"/>
+    <meta name="select:Opacidade Imagens" content=".4" title="40%"/>
+    
+<!------ P&B ------>
+    <meta name="select:Escala de Cinza Imagens" content="0%" title="0%"/>
+    <meta name="select:Escala de Cinza Imagens" content="30%" title="30%"/>
+    <meta name="select:Escala de Cinza Imagens" content="70%" title="70%"/>
+    <meta name="select:Escala de Cinza Imagens" content="100%" title="100%"/>
+
+<!------ BORDAS ------>
+    <meta name="select:Arredondamento bordas" content="0px" title="0%"/>
+    <meta name="select:Arredondamento bordas" content="3px" title="3%"/>
+    <meta name="select:Arredondamento bordas" content="5px" title="5%"/>
+    <meta name="select:Arredondamento bordas" content="10px" title="10%"/>
+    <meta name="select:Arredondamento bordas" content="20px" title="20%"/>
+    
+    
+    
+    <link href='https://fonts.googleapis.com/css?family=Baumans|Yanone+Kaffeesatz|Megrim|Special+Elite|Patrick+Hand+SC|Indie+Flower|Lobster|Lily+Script+One|Sacramento|Clicker+Script' rel='stylesheet' type='text/css'>
+
+
+<style>
+
+body {background: {color:Background}; margin: 0px; color: {color:Fonte}; font-size: {text:Tamanho da Fonte}px; font-family: {font:Fonte Textos};}
+body::-webkit-scrollbar {width: 10px; height: 10px; background: {color:Background};}
+body::-webkit-scrollbar-button:vertical {background: ; height:0px; display:block;}
+body::-webkit-scrollbar-thumb:vertical {background: {color:Titulos}; border: 3px solid {color:Background};}
+body::-webkit-scrollbar-button:horizontal {background: ; width:0px; display:block;}
+body::-webkit-scrollbar-thumb:horizontal {background: {color:Titulos}; border: 3px solid {color:Background};}
+
+
+a {color: {color:Links}; transition: .5s; text-decoration: none;}
+a:hover {color: {color:Titulos}; text-decoration: underline;}
+
+
+b, strong, bold {color: {color:Fonte};}
+u, underline {color: {color:Fonte}; border-bottom: 1px dashed {color:Fonte}; text-decoration: none;}
+i, em {color: {color:Fonte};}
+s, strike {color: {color:Fonte};}
+
+p {margin: 5px 0px 5px 0px;}
+
+ul {margin: 2px 0px 2px 0px;}
+
+ol {margin: 2px 0px 2px 0px;}
+
+blockquote {background: {color:Posts}; padding: 5px 5px 5px 10px; border-left: 5px solid {color:Titulos}; margin: 5px 5px 5px 5px; color: {color:Titulos};}
+
+{block:IndexPage}
+blockquote img {max-width: 220px;}
+blockquote blockquote img {max-width: 210px;}
+blockquote blockquote blockquote img {max-width: 200px;}
+blockquote blockquote blockquote blockquote img {max-width: 190px;}
+{/block:IndexPage}
+
+/******************** SIDEBAR ********************/
+#side {top: 100px; position: fixed; width: 200px; height: 200px; background: {color:Background}; transform: scale(0.5) rotateY(180deg); transition: .5s;
+    {block:If3colunas} left: 80px; {/block:If3colunas}
+    {block:IfNot3colunas} left: 170px; {/block:IfNot3colunas}
+}
+#side:hover {transform: scale(1.0) rotateY(0deg);}
+
+#imgside {width: 200px; height: 200px; overflow: hidden; opacity: {select:Opacidade Imagens}; transition: .5s; position: relative; z-index: 1; border-bottom: 3px solid {color:Background};}
+#side:hover #imgside {opacity: 1; border-bottom: 3px solid {color:Titulos};}
+.imgside {width: 200px;}
+
+.esq {width: 100px; height: 226px; background: {color:Background}; transform: rotate(27deg); top: -34px; left: -46px; position: absolute; z-index: 1; border-right: 3px solid {color:Background}; transition: .5s;}
+#side:hover .esq {border-right: 3px solid {color:Titulos};}
+
+.dir {width: 100px; height: 226px; background: {color:Background}; transform: rotate(-27deg); top: -34px; right: -47px; position: absolute; z-index: 1; border-left: 3px solid {color:Background}; transition: .5s;}
+#side:hover .dir {border-left: 3px solid {color:Titulos};}
+
+
+#menu1 {width: 100px; height: 200px; text-align: left; position: absolute; top: 0px; left: 0px; overflow: hidden; background: none; transform: rotate(27deg); opacity: 0; transition: .5s; z-index: 2;}
+.menu1 {transform: rotate(-27deg); margin: 30px 0px 0px 20px;}
+#menu1 .bot {box-shadow: 3px 0px 0px {color:Posts} inset; padding-left: 9px;}
+#menu1 .bot:hover {box-shadow: 120px 0px 0px {color:Posts} inset; }
+#side:hover #menu1 {opacity: 1; left: -60px;}
+
+#menu2 {width: 100px; height: 200px; text-align: right; position: absolute; top: 0px; right: 0px; overflow: hidden; background: none; transform: rotate(-27deg); opacity: 0; transition: .5s; z-index: 2;}
+.menu2 {transform: rotate(27deg); margin: 27px 0px 0px -30px;}
+#menu2 .bot {box-shadow: -3px 0px 0px {color:Posts} inset; padding-right: 9px;}
+#menu2 .bot:hover {box-shadow: -120px 0px 0px {color:Posts} inset;}
+#side:hover #menu2 {opacity: 1; right: -60px;}
+
+#menu1 a {text-decoration: none;}
+#menu2 a {text-decoration: none;}
+
+.bot {background: {color:Titulos}; padding: 5px; margin-bottom: 5px; color: {color:Posts};  font-family: 'Yanone Kaffeesatz'; font-size: 11px; transition: .5s; font-weight: bold; width: 100px; letter-spacing: 1px;}
+.bot:hover {color: {color:Links}; letter-spacing: 3px;}
+
+
+#desc {text-align: center; margin-top: 10px; opacity: 0; transition: .5s; position: absolute; top: 50%; z-index: 0; font-style: italic;}
+#side:hover #desc {opacity: 1; top: 100%;}
+
+
+#cred {color: {color:Titulos}; font-size: 10px; text-transform: uppercase; font-family: calibri; position: fixed; bottom: 40px; right: 10px; text-align: center; width: 100px;}
+.theme {opacity: 1; transition: .5s;}
+#cred:hover .theme {opacity: 0;}
+
+.cred {opacity: 0; transition: .7s; color: {color:Fonte}; margin-top: -13px;}
+#cred:hover .cred {opacity: 1;}
+
+/******************** POSTS ********************/
+#posts {{block:If3colunas}width: 846px; margin-left: 380px;{/block:If3colunas}
+{block:IfNot3colunas}width: 564px; margin-left: 420px;{/block:IfNot3colunas}
+margin-top: 50px;  position: relative;}
+
+.caixa {padding: 10px; margin: 0px 10px 10px 0px;  float: left; position: relative; overflow: hidden; border: 1px solid {color:Posts};
+    border-radius: {select:Arredondamento bordas};
+    {block:IndexPage}width: 250px;{/block:IndexPage}
+    {block:PermalinkPage}width: 500px;{/block:PermalinkPage}
+}
+
+.caixa h1 {margin: 0px; font-family: {select:Fonte Titulos}; text-align: center; font-weight: normal; font-size: 25px; color: {color:Titulos};}
+
+
+/******************** IMAGES ********************/
+.imgp {opacity: {select:Opacidade Imagens}; -webkit-filter: grayscale({select:Escala de Cinza Imagens}); transition: .5s; margin: 0px;}
+.caixa:hover .imgp {opacity: 1; -webkit-filter: grayscale(0%);}
+
+.dscpt {{block:IfNotMostrarDescricaoImagens}
+{block:IndexPage} display: none; {/block:IndexPage}
+{block:IfNotMostrarDescricaoImagens}}
+
+.txt img {opacity: {select:Opacidade Imagens}; -webkit-filter: grayscale({select:Escala de Cinza Imagens}); transition: .5s; margin: 0px;}
+    
+.caixa:hover .txt img {opacity: 1; -webkit-filter: grayscale(0%);}
+
+/******************** ASK ********************/
+#ask {padding: 10px; background: {color:Posts}; color: {color:Titulos}; margin-bottom: 5px; text-align: center; position: relative;}
+#ask:after {content: " "; height: 0px; width: 0px; position: absolute; top: 100%; right: 19px; border: 6px solid transparent; border-top-color: {color:Posts};}
+
+#asker {display: inline-block; margin-bottom: 5px; width: 100%; line-height: 30px; font-size: 12px; font-family: 'Yanone Kaffeesatz', sans-serif; margin-top: 5px; text-align: right; border-bottom: 1px solid {color:Posts}; padding-bottom: 5px;}
+
+.imgask {border-radius: 100%; margin-right: 10px; float: right; opacity: {select:Opacidade Imagens}; -webkit-filter: grayscale({select:Escala de Cinza Imagens}); transition: .5s;}
+.caixa:hover .imgask {opacity: 1; -webkit-filter: grayscale(0%);}
+
+.asker_url {margin-right: 10px;}
+
+/******************** FRASES ********************/
+.aspinhas {float: left; font-family: 'georgia'; font-size: 65px; margin-top: 20px; color: {color:Titulos}; position: absolute; font-weight: bold; line-height: 15px; opacity: .3;}
+
+#quote {position: relative; text-indent: 10px; color: {color:Fonte};}
+#quote:first-letter {font-size: 30px; color: {color:Titulos}; font-family: {select:Fonte Titulos};}
+
+#source {text-align: right; margin-top: 10px; padding-top: 10px; border-top: 1px solid {color:Posts}; color: {color:Fonte};}
+
+/******************** CHAT ********************/
+.label {font-weight: bold;}
+.line {}
+
+/******************** NOTES ********************/
+#notes {opacity: 0; transition: .5s; position: absolute; bottom: -10px; right: -10px;}
+.caixa:hover #notes {opacity: 1; bottom: 5px; right: 5px;}
+
+.notb {background: {color:Titulos}; padding: 5px; margin: 2px; display: inline-block; float: left; color: {block:IfNotesembranco}#fff{/block:IfNotesembranco} {block:IfNotNotesembranco}#000{/block:IfNotNotesembranco}; font-size: 14px; line-height: 14px; font-family: 'Lorimer No 2', sans-serif; opacity: .7; transition: .5s; height: 14px; position: relative; border: 3px double {color:Posts}; border-radius: 5px; letter-spacing: 1px;}
+.notb:hover {opacity: 1;}
+
+/******************** PMLINK ********************/
+#pmlink {margin-top: 20px; text-align: center;}
+
+#pmlink ol {text-align: left; list-style: none; margin-left: -30px;}
+#pmlink li {margin-bottom: 2px; transition: .5s;}
+#pmlink li:hover {margin-left: 20px;}
+#pmlink li img {border-radius: 100%; margin-right: 5px;}
+
+
+
+/*** rolagem infinita ***/
+#infscr-loading {font-size: 10px; font-family: 'Baumans'; text-transform: uppercase; z-index: 999; text-align: center; position: fixed; bottom: 40px; width: 100%; }
+#infscr-loading i {font-size: 10px;}
+#infscr-loading img {display: none;}
+
+
+
+/*** Custom CSS ***/
+{CustomCSS}
+
+
+
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<!-------------------- SIDEBAR -------------------->
+<div id="side">
+
+<a href="/"><div id="imgside"><img src="{image:Sidebar}" class="imgside"/></div></a>
+
+    <div class="esq"></div> <div class="dir"></div>
+
+<div id="menu1">
+<div class="menu1">
+    <a href="{text:Link1}"><div class="bot">{text:Link1Titulo}</div></a>
+    <a href="{text:Link2}"><div class="bot">{text:Link2Titulo}</div></a>
+    <a href="{text:Link3}"><div class="bot">{text:Link3Titulo}</div></a>
+</div>
+</div>
+
+<div id="menu2">
+<div class="menu2">
+    <a href="{text:Link4}"><div class="bot">{text:Link4Titulo}</div></a>
+    <a href="{text:Link5}"><div class="bot">{text:Link5Titulo}</div></a>
+    <a href="{text:Link6}"><div class="bot">{text:Link6Titulo}</div></a>
+</div>
+</div>
+
+<div id="desc">{Description}</div>
+
+</div>
+
+<a href="http://anyhs-themes.tumblr.com" target="_blank">
+<div id="cred">
+    <div class="theme">&copy; Theme</div>
+    <div class="cred">Theme by: Anyh S.</div>
+</div>
+</a>
+
+<!-------------------- POSTS -------------------->
+<div id="posts">
+{block:Posts}
+<div class="caixa">
+ 
+<!--TEXTOS-->
+{block:Text}
+{block:Title}<h1>{Title}</h1>{/block:Title}
+<span class="txt">{Body}</span>
+{/block:Text}
+ 
+<!--FOTOS-->
+{block:Photo}
+{LinkOpenTag}
+{block:IndexPage}<img src="{PhotoURL-250}" class="imgp"/>{/block:IndexPage}
+{block:PermalinkPage}<img src="{PhotoURL-500}" class="imgp"/>{/block:PermalinkPage}
+{LinkCloseTag}
+{block:Caption}<span class="dscpt"><span class="txt">{Caption}</span></span>{/block:Caption}
+{/block:Photo}
+ 
+<!--PHOTOSET-->
+{block:Photoset}
+<div class="imgp">
+{block:IndexPage}{Photoset-250}{/block:IndexPage}
+{block:PermalinkPage}{Photoset-500}{/block:PermalinkPage}
+</div>
+{block:Caption}<span class="dscpt"><span class="txt">{Caption}</span></span>{/block:Caption}
+{/block:Photoset}
+ 
+<!--VIDEOS-->
+{block:Video}
+<div class="imgp">
+{block:IndexPage}{Video-250}{/block:IndexPage}
+{block:PermalinkPage}{Video-500}{/block:PermalinkPage}
+</div>
+{block:Caption}<span class="txt">{Caption}</span>{/block:Caption}
+{/block:Video}
+ 
+<!--MUSICAS-->
+{block:Audio}
+{block:ExternalAudio}(<a href="{ExternalAudioURL}">download!</a>){/block:ExternalAudio}
+{AudioPlayerWhite}
+{block:Caption}<span class="txt">{Caption}</span>{/block:Caption}
+{/block:Audio}
+ 
+<!--CITAÇÕES-->
+{block:Quote}
+<div class="aspinhas">“</div><div id="quote"><big>{Quote}</big></div>
+{block:Source}<div id="source">&mdash; {Source}</div>{/block:Source}
+{/block:Quote}
+ 
+<!--DIALOGOS-->
+{block:Chat}
+{block:Title}<h1>{Title}</h1>{/block:Title}
+<table>
+{block:Lines}
+<tr>
+{block:Label}<td class="label">{Label}</td>{block:Label}
+<td class="line">{Line}</td>
+</tr>
+{/block:Lines}
+</table>
+{/block:Chat}
+ 
+<!--LINKS-->
+{block:Link}
+<h1><a href="{URL}">{Name}</a></h1>
+{block:Description}<span class="txt">{Description}</span>{/block:Description}
+{/block:Link}
+ 
+<!--ASK-->
+{block:Answer}
+
+<div id="ask">{Question}</div>
+
+<div id="asker">
+<span class="asker_url">{Asker}</span>
+<a href="{AskerURL}" target="_blank" title="{AskerName}">
+<img src="{AskerPortraitURL-30}" class="imgask"/>
+</a>
+</div>
+
+<span class="txt">{Answer}</span>
+{/block:Answer}
+ 
+
+<!------ NOTAS ------>
+{block:IndexPage}
+<div id="notes">
+<a href="{Permalink}" title="Link Permanente"><div class="notb">{NoteCount}
+</div></a>
+
+<div class="notb">
+{block:IfNotesembranco}{LikeButton size=15 color=White}{/block:IfNotesembranco}
+{block:IfNotNotesembranco}{LikeButton size=15 color=Black}{/block:IfNotNotesembranco}
+</div>
+
+<div class="notb">
+{block:IfNotesembranco}{ReblogButton size=15 color=White}{/block:IfNotesembranco}
+{block:IfNotNotesembranco}{ReblogButton size=15 color=Black}{/block:IfNotNotesembranco}
+</div>
+</div>
+{/block:IndexPage}
+
+
+<!------ PMLINK ------>
+{block:PermalinkPage}
+<div id="pmlink">
+
+Postado dia {DayOfMonth}.{MonthNumberWithZero}.{Year} às {24Hour}:{Minutes}.
+
+<br/>
+ 
+{block:RebloggedFrom}
+Via <a href="{ReblogParentURL}" target="_blank">{ReblogParentName}</a>
+por <a href="{ReblogRootURL}" target="_blank">{ReblogRootName}</a>
+{/block:RebloggedFrom}.
+
+<br/>
+
+{NoteCount} notas.
+
+<br/>
+
+{block:HasTags}
+{block:Tags}
+# <a href="{TagURL}">{Tag}</a>
+{/block:Tags}
+{/block:HasTags}
+
+<br/>
+ 
+{block:ContentSource}
+<a href="{SourceURL}" target="_blank">Fonte</a>.
+{/block:ContentSource}
+
+{block:PostNotes}{PostNotes}{/block:PostNotes}
+
+</div>
+{/block:PermalinkPage}
+ 
+</div>
+{/block:Posts}
+</div>
+
+
+
+<!-- ROLAGEM INFINITA -->
+{block:IndexPage}
+<div class="column navigation" id="navigation">
+
+{block:PreviousPage}<a href="{PreviousPage}" class="navigate">{/block:PreviousPage}{block:PreviousPage}</a>{/block:PreviousPage}
+{block:NextPage}<a href="{NextPage}" class="navigate" id="nextPage">{/block:NextPage}{block:NextPage}</a>{/block:NextPage}
+
+</div>
+{/block:IndexPage}
+
+
+
+</body>
+</html>
