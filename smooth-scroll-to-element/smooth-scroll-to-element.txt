@@ -1,0 +1,45 @@
+<!-- SMOOTH SCROLL TO ELEMENT (by anyhs-themes.tumblr.com) -->
+<script>
+$(document).ready(function(){
+    
+var autoElementID = "#p2"; /** definir elemento **/
+var retreat = 40; /** definir recuo **/
+var animationSpeed = 1000; /** definir velocidade **/
+
+// automatic smooth scrooll
+if(location != "/") {
+    var autoElementTop = $(autoElementID).offset().top;
+    var autoElementTop = autoElementTop - retreat;
+    var autoElementTop = Math.round(autoElementTop);
+    $("html, body").animate({
+        scrollTop: autoElementTop + 'px'
+    }, animationSpeed);
+};
+
+// onclick smooth scrooll
+if (Boolean(location.hash)) {
+    var elementTop = $(location.hash).offset().top;
+    var elementTop = elementTop - retreat;
+    var elementTop = Math.round(elementTop);
+    $("html, body").animate({
+        scrollTop: elementTop + 'px'
+    }, animationSpeed);
+};
+$("a").click(function(){
+    let linkhref = $(this).attr("href");
+    if(linkhref.includes("#")) {
+        let hashPosition = linkhref.search("#");
+        var linkElementId = linkhref.slice(hashPosition);
+        var linkElementTop = $(linkElementId).offset().top;
+        var linkElementTop = linkElementTop - retreat;
+        var linkElementTop = Math.round(linkElementTop);
+        $("html, body").animate({
+            scrollTop: linkElementTop + 'px'
+        }, animationSpeed);
+        return false;
+    }
+});
+
+});
+</script>
+<!-- SMOOTH SCROLL TO ELEMENT (by anyhs-themes.tumblr.com) -->
