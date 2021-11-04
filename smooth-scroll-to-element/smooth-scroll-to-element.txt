@@ -2,7 +2,7 @@
 <script>
 $(document).ready(function(){
     
-var autoElementID = "#p2"; /** definir elemento **/
+var autoElementID = "#element-id"; /** definir elemento **/
 var retreat = 40; /** definir recuo **/
 var animationSpeed = 1000; /** definir velocidade **/
 
