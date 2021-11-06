@@ -6,8 +6,8 @@ var autoElementID = "#element-id"; /** definir elemento **/
 var retreat = 40; /** definir recuo **/
 var animationSpeed = 1000; /** definir velocidade **/
 
-// automatic smooth scrooll
-if(location != "/") {
+// automatic smooth scroll
+if(location.pathname != "/") {
     var autoElementTop = $(autoElementID).offset().top;
     var autoElementTop = autoElementTop - retreat;
     var autoElementTop = Math.round(autoElementTop);
@@ -16,7 +16,7 @@ if(location != "/") {
     }, animationSpeed);
 };
 
-// onclick smooth scrooll
+// onclick smooth scroll
 if (Boolean(location.hash)) {
     var elementTop = $(location.hash).offset().top;
     var elementTop = elementTop - retreat;
