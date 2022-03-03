@@ -1,0 +1,773 @@
+<!--
+ 
+            THEME #14
+            by Anyh Salinas - © 2016
+            www.anyhs-themes.tumblr.com
+ 
+ 
+ 
+  ♦ Don't remove/adulterate my credits;
+  ♦ Don't copy;
+  ♦ Don't redistribute;
+  ♦ Don't use this theme as base to make other(s) theme(s).
+   
+ 
+  CONTACT:
+  http://www.anyhs-themes.tumblr.com/contato
+ 
+ 
+ 
+-->
+<!DOCTYPE html>
+<head>
+    
+    <title>{Title}</title>
+    <link rel="shortcut icon" href="{Favicon}" />
+
+    
+    <meta name="image:Background" content="" />
+    <meta name="image:Header" content="http://static.tumblr.com/632ea64225062042e17041695a88e8d3/uqpwlfp/Hu7ntfaw1/tumblr_static_dxcjp9d9eh44ogos0g4swgogo.jpg" />
+    
+    <meta name="color:Background" content="#000" />
+    <meta name="color:Sidebar" content="#111" />
+    <meta name="color:Posts" content="#111" />
+    <meta name="color:Titulos" content="#da2424" />
+    <meta name="color:Fonte" content="#555" />
+    <meta name="color:Links" content="#3dbbe2" />
+    
+    <meta name="font:Fonte textos" content="Helvetica" />
+
+<!---------------- FONTE TITULOS ---------------->   
+    <meta name="select:Fonte Titulos" content="Lobster" title="Lobster" />
+    <meta name="select:Fonte Titulos" content="Megrim" title="Megrim" />
+    <meta name="select:Fonte Titulos" content="Special Elite" title="Special Elite" />
+    <meta name="select:Fonte Titulos" content="Black Ops One" title="Black Ops One" />
+    <meta name="select:Fonte Titulos" content="Arial" title="Arial" />
+    <meta name="select:Fonte Titulos" content="Calibri" title="Calibri" />
+    <meta name="select:Fonte Titulos" content="Georgia" title="Georgia" />
+    
+    <meta name="if:Rolagem Infinita" content="0" />
+    <meta name="if:Header Sem Repeticao" content="0" />
+    <meta name="if:Mostrar Moderadores" content="1" />
+    <meta name="if:Mostrar Parceria" content="1" />
+    <meta name="if:Mostrar Destaques" content="1" />
+    
+    <meta name="text:Altura do header" content="20" />
+    <meta name="text:Tamanho fonte" content="12" />
+
+<!---------------- MENU ---------------->  
+<meta name="text:Menu Botao1 Link" content="/"/>
+<meta name="text:Menu Botao1 Titulo" content="Home"/>   
+<meta name="text:Menu Botao2 Link" content="/ask"/>
+<meta name="text:Menu Botao2 Titulo" content="Ask"/>    
+<meta name="text:Menu Botao3 Link" content="/submit"/>
+<meta name="text:Menu Botao3 Titulo" content="Submit"/>    
+<meta name="text:Menu Botao4 Link" content=""/>
+<meta name="text:Menu Botao4 Titulo" content="Link4"/>
+<meta name="text:Menu Botao5 Link" content=""/>
+<meta name="text:Menu Botao5 Titulo" content="Link5"/>    
+<meta name="text:Menu Botao6 Link" content=""/>
+<meta name="text:Menu Botao6 Titulo" content="Link6"/>
+    
+<!---------------- MODERADORES ---------------->  
+<meta name="text:Moderador1 Nome" content="Anyh's Themes"/>
+<meta name="text:Moderador1 URL" content="anyhs-themes"/>
+<meta name="text:Moderador2 Nome" content="Nome do moderador"/>
+<meta name="text:Moderador2 URL" content="URL do moderador"/>
+<meta name="text:Moderador3 Nome" content="Nome do moderador"/>
+<meta name="text:Moderador3 URL" content=""/>
+<meta name="text:Moderador4 Nome" content="Nome do moderador"/>
+<meta name="text:Moderador4 URL" content=""/>
+<meta name="text:Moderador5 Nome" content="Nome do moderador"/>
+<meta name="text:Moderador5 URL" content=""/>
+<meta name="text:Moderador6 Nome" content="Nome do moderador"/>
+<meta name="text:Moderador6 URL" content=""/>
+
+<meta name="text:Titulo dos destaques" content="Destaques do mês:" />
+
+<!---------------- DESTAQUES ---------------->  
+<meta name="text:Destaque1 URL" content="anyhs-themes"/>
+<meta name="text:Destaque2 URL" content="URL do destaque"/>
+<meta name="text:Destaque3 URL" content=""/>
+<meta name="text:Destaque4 URL" content=""/>
+<meta name="text:Destaque5 URL" content=""/>
+<meta name="text:Destaque6 URL" content=""/>
+
+<!---------------- PARCEIROS ---------------->  
+<meta name="text:Parceiro1 URL" content="anyhs-themes"/>
+<meta name="text:Parceiro2 URL" content="URL do Parceiro"/>
+<meta name="text:Parceiro3 URL" content=""/>
+<meta name="text:Parceiro4 URL" content=""/>
+<meta name="text:Parceiro5 URL" content=""/>
+<meta name="text:Parceiro6 URL" content=""/>
+
+<link href='https://fonts.googleapis.com/css?family=Abel|Codystar|Lily+Script+One|Neucha|Lobster|Graduate|Play|Indie+Flower|Megrim|Amatic+SC|Lobster+Two|Special+Elite|Black+Ops+One|Audiowide|Astloch|UnifrakturMaguntia|Press+Start+2P|Amatic+SC|Lovers+Quarrel|Rouge+Script|Butterfly+Kids|Bad+Script|Miss+Fajardose|Monsieur+La+Doulaise|Yanone+Kaffeesatz|Patrick+Hand|Clicker+Script|Sacramento|Titillium+Web|Exo+2|Tulpen+One|Six+Caps|Wire+One|Dorsa|Baumans' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="https://static.tumblr.com/tiu5k68/xTkm8wqw2/tumblr-title-qtip.js"></script>
+
+<style>
+
+body {background: {color:Background} url('{image:Background}') fixed; margin: 0px; font-family: {font:Fonte textos}; font-size: {text:Tamanho fonte}px; color: {color:Fonte};}
+body::-webkit-scrollbar {width: 15px; height: 15px; background: {color:Background};}
+body::-webkit-scrollbar-button:vertical {background: ; height:0px; display:block;}
+body::-webkit-scrollbar-thumb:vertical {background: {color:Titulos}; border: 3px solid {color:Background};}
+body::-webkit-scrollbar-button:horizontal {background: ; width:0px; display:block;}
+body::-webkit-scrollbar-thumb:horizontal {background: {color:Titulos}; border: 3px solid {color:Background};}
+
+
+#qTip {margin: -10px 0 0 16px; text-align: left; display: none; position: absolute; z-index: 99; font-size: 10px; font-family: 'Baumans', sans-serif; background: {color:Titulos}; color: {color:Posts}; padding: 2px; box-shadow: 0px 0px 0px 1px {color:Links}, 0px 0px 0px 2px {color:Titulos}; font-weight: normal;}
+
+
+/******************** HEADER ********************/
+#header {width: 100%; position: relative; top: 0px; left: 0px; background: {color:Sidebar} url('{image:Header}') fixed; height: {text:Altura do header}px; 
+{block:IfHeadersemrepeticao}background-size: 100% auto;{/block:IfHeadersemrepeticao}}
+
+/*** MENU ***/
+#menu {text-align: center; width: 100%; left: 0px; top: 100%; margin-bottom: 5px; position: absolute; z-index: 10; background: {color:Background}; padding: 10px 0px 5px 0px; border-top: 5px solid {color:Sidebar}; font-family: 'Baumans', sans-serif; font-size: 10px; font-weight: bold; text-transform: uppercase;}
+.bot {transition: .5s; background: {color:Links}; color: {color:Posts}; padding: 5px; width: 80px; display: inline-block; margin: 0px 1px 5px 1px; box-shadow: none; border-bottom: 3px solid {color:Titulos};}
+.bot:hover {box-shadow: 100px 1px 0px {color:Titulos} inset; letter-spacing: 3px;}
+
+/******************** SIDEBAR ESQUERDA ********************/
+#lside {width: 250px; position: fixed; margin: -40px 0px 0px -260px; height: 100%; z-index: 11;}
+
+#box {padding: 10px; background: {color:Sidebar}; border-bottom: 1px dashed {color:Background}; margin-bottom: 10px;}
+
+#box li {list-style: none; font-size: 12px; font-family: 'Baumans', sans-serif; background: {color:Background}; padding: 2px; margin-bottom: 1px; border-left: 3px solid {color:Titulos}; box-shadow: 3px 0px 0px {color:Links} inset; text-indent: 5px; font-weight: bold; color: {color:Fonte};}
+
+.title {font-family: {select:Fonte Titulos}; font-size: 28px; background: {color:Titulos}; color: {color:Posts}; text-align: center; margin: -10px -10px 10px -10px; border-bottom: 3px solid {color:Links};}
+
+.port {float: left; margin: 0px 10px 0px 0px; transition: .5s; border: 4px solid {color:Links}; border-radius: 5px;}
+.port:hover {-webkit-filter: blur(1px);}
+
+.desc {margin-bottom: 10px; text-align: justify;}
+
+/*** MODS ***/
+#mods {text-align: center;}
+
+#mod {width: 42px; height: 42px; position: relative; display: inline-block; overflow: hidden; border: 4px solid {color:Links}; margin: 2px; border-radius: 5px;}
+#mod:hover span {bottom: 0px;}
+#mod:hover img {-webkit-filter: blur(1px); opacity: .6;}
+
+#mod img {width: 42px; transition: .5s;}
+#mod span {width: 32px; background: {color:Titulos}; color: {color:Posts}; padding: 5px; margin-top: -10px; position: absolute; left: 0px; bottom: -40px; opacity: .7; transition: .5s; border-radius: 0px 0px 3px 3px; text-shadow: 1px 1px 1px #000;}
+
+
+/******************** SIDEBAR DIREITA ********************/
+#rside {width: 250px; position: fixed; padding: 20px; z-index: 10; margin: -60px 0px 0px 550px; }
+
+/*** DESTAQUES ***/
+#dstqs {margin-top: 0px; text-align: center;}
+#dstqs #mod {width: 90px; height: 90px; border-radius: 100%;}
+#dstqs img {width: 90px; transition: .5s; border-radius: 100%;}
+
+#slide_out {width: 230px; overflow: hidden;}
+#slide {animation: slide 5s linear infinite alternate; width: 627px; height: 100px; position: relative;}
+
+@keyframes slide {
+    0%  {left: 0%;}
+    100% {left: -170%;}
+}
+
+#slide_out:hover #slide {animation-play-state: paused;}
+
+
+/*** PARCERIA ***/
+#parcs {text-align: center;}
+
+
+/******************** POSTS ********************/
+#posts {margin: 55px auto 0px auto; position: relative; width: 560px;}
+
+.caixa {padding: 20px; background: {color:Posts}; margin: 10px; border-bottom: 2px solid {color:Links}; position: relative; width: 500px;}
+
+
+/**** TEXTO ****/
+h1 {font-weight: normal; font-size: 30px; color: {color:Titulos}; font-family: {select:Fonte Titulos}; margin: 0px; text-align: center;}
+
+p {margin: 10px 0px 0px 0px;}
+
+.text img {}
+
+.text a {color: {color:Links}; transition: .5s;}
+.text a:hover {color: {color:Fonte};}
+
+ol {margin: 10px 0px 0px 0px;}
+ul {margin: 10px 0px 0px 0px;}
+
+blockquote {background: {color:Background}; padding: 10px; margin: 10px 0px 0px 0px;
+    box-shadow: -2px 0px 0px 0px {color:Posts},
+                -5px 0px 0px 0px {color:Background},
+                2px 0px 0px 0px {color:Posts},
+                5px 0px 0px 0px {color:Background};
+}
+
+
+a {color: {color:Links}; transition: .5s; text-decoration: none;}
+a:hover {color: {color:Fonte};}
+
+img {margin-bottom: -3px;}
+
+/**** QUOTE ****/
+#quote {text-indent: 10px;}
+#quote span {font-family: 'georgia'; font-size: 70px; position: absolute; opacity: .3; margin: -15px 0px 0px -15px;}
+#quote:first-letter {font-family: 'Rouge Script'; color: {color:Titulos}; font-size: 30px; line-height: 10px; margin-right: -2px;}
+
+.sour {font-weight: normal; text-align: right; padding: 10px; margin-top: 10px; background: {color:Background}; position: relative; font-family: 'Baumans', sans-serif; font-size: 12px;}
+.sour:after {content: ""; border: 1px solid transparent; width: 0px; height: 0px; border-bottom-color: {color:Background}; border-width: 10px; position: absolute; bottom: 100%; right: 20px;}
+
+
+
+/**** ASKS e SUBMITS ****/
+#ask {}
+
+#imgask img {width: 64px;}
+#imgask {float: right; width: 64px; border: 5px solid {color:Links}; position: relative; margin-bottom: 10px; margin-left: 10px;}
+#imgask:after {content: ""; border: 1px solid transparent; width: 0px; height: 0px; border-right-color: {color:Links}; border-width: 6px; position: absolute; right: 100%; margin-right: 5px;}
+#ask span {background: {color:Titulos}; display: block; padding: 10px; font-family: 'Baumans', sans-serif; font-size: 10px; margin-bottom: 10px; color: {color:Sidebar}; text-transform: uppercase; font-weight: bold;}
+
+#quest {background: {color:Background}; padding: 10px; margin: -10px 0px 10px 0px; text-align: center;}
+
+#reblogged_ask {margin-top: 10px;}
+#reblogged_ask #imgask {float: left; margin-left: 0px; margin-right: 10px;}
+#reblogged_ask #imgask:after {border-right-color: transparent; border-left-color: {color:Links}; left: 100%; margin-left: 5px;}
+#reblogged_ask span {}
+#reblogged_ask blockquote {box-shadow: none; padding: 0px; margin 0px}
+
+#reblogged_ask .tumblr_blog {}
+
+
+
+/********** LINK PERMANENTE **********/
+#pmlink {margin-top: 20px; padding-top: 20px; border-top: 1px dashed {color:Titulos}; font-family: 'Baumans', sans-serif; font-size: 12px; text-align: center;}
+
+#pmlink ol {text-align: left; list-style: none; margin-left: -40px;}
+
+#pmlink li {background: {color:Background}; padding: 5px; margin-bottom: 1px; transition: .5s; box-shadow: 27px 0px 0px {color:Fonte} inset;}
+#pmlink li:hover {margin-left: 30px;}
+
+#pmlink li img {border-radius: 100%; margin: -2px 8px -5px -2px; height: 20px; transition: .5s;}
+#pmlink li:hover img {transform: rotate(360deg);}
+
+
+/********** NOTAS **********/
+.caixa .as_notas {transition: .5s; text-align: center; margin: 0px; transform: scaleY(0.0); border-top: 1px solid transparent; opacity: 0; font-family: 'Baumans', sans-serif;}
+.caixa .as_notas a { color: {color:Titulos};}
+.caixa:hover .as_notas {transform: scaleY(1.0); margin: 10px 0px -5px 0px; padding-top: 10px; border-top: 1px solid {color:Background}; opacity: 1; letter-spacing: 5px;}
+
+/*** CRÉDITOS ***/
+#cred {color: {color:Titulos}; font-size: 10px; text-transform: uppercase; font-family: 'calibri', sans-serif; position: fixed; bottom: 60px; right: -40px; text-align: center; width: 100px; transform: rotate(-90deg); z-index: 999;}
+.theme {opacity: 1; transition: .5s;}
+#cred:hover .theme {opacity: 0;}
+ 
+.cred {opacity: 0; transition: .7s; color: {color:Fonte}; margin-top: -13px;}
+#cred:hover .cred {opacity: 1;}
+
+
+/*** PAGINAÇÃO ***/
+#pagi {font-family: 'Baumans', sans-serif; font-size: 14px; text-align: center; padding: 10px; background: {color:Sidebar}; border-top: 10px solid {color:Titulos}; border-bottom: 1px dashed {color:Background}; box-shadow: 0px 3px 0px {color:Links} inset;}
+
+#pagi span {background: {color:Titulos}; padding: 1px 5px; color: {color:Sidebar}; border-radius: 3px; border: 1px solid {color:Titulos}; transition: .5s; margin: 0px 1px;}
+#pagi .current {background: none; color: {color:Links}; border-color: {color:Links};}
+#pagi .seta {background: none; color: {color:Links}; font-size: 25px; font-weight: normal; border: none;}
+
+#pagi span:hover {background: {color:Links}; border: 1px solid {color:Links}; }
+#pagi .current:hover {background: {color:Sidebar}; color: {color:Titulos};}
+#pagi .seta:hover {background: {color:Sidebar}; color: {color:Titulos}; border: none;}
+
+
+</style>
+</head>
+
+<body>
+
+<!--- CREDITOS --->
+<a href="http://anyhs-themes.tumblr.com" target="_blank">
+<div id="cred">
+    <div class="theme">&copy; Theme</div>
+    <div class="cred">Theme by: Anyh S.</div>
+</div>
+</a>
+
+<div id="header">
+
+<!---------- MENU ---------->
+<nav id="menu">
+<a href="{text:Menu Botao1 Link}"> <div class="bot"> {text:Menu Botao1 Titulo} </div> </a>
+
+{block:IfMenuBotao2Link} <a href="{text:Menu Botao2 Link}"> <div class="bot"> {text:Menu Botao2 Titulo} </div> </a> {/block:IfMenuBotao2Link}
+
+{block:IfMenuBotao3Link} <a href="{text:Menu Botao3 Link}"> <div class="bot"> {text:Menu Botao3 Titulo} </div> </a> {/block:IfMenuBotao3Link}
+
+{block:IfMenuBotao4Link} <a href="{text:Menu Botao4 Link}"> <div class="bot"> {text:Menu Botao4 Titulo} </div> </a> {/block:IfMenuBotao4Link}
+
+{block:IfMenuBotao5Link} <a href="{text:Menu Botao5 Link}"> <div class="bot"> {text:Menu Botao5 Titulo} </div> </a> {/block:IfMenuBotao5Link}
+
+{block:IfMenuBotao6Link} <a href="{text:Menu Botao6 Link}"> <div class="bot"> {text:Menu Botao6 Titulo} </div> </a> {/block:IfMenuBotao6Link}
+    
+</nav>
+
+</div>
+
+
+<!---------------------------- CONTENT ---------------------------->
+<div id="posts">
+
+<!---------------------------- LEFT SIDE ---------------------------->
+<div id="lside">
+
+<div id="box">
+<a href="/"><div class="title">{Title}</div></a>
+<a href="/"><img src="{PortraitURL-64}" class="port" /></a>
+<div class="desc">{Description}</div>
+</div>
+
+
+<!------- MODS ------->
+{block:IfMostrarModeradores}
+<div id="box">
+<div id="mods">
+
+<div class="title">Moderadores:</div>
+
+<!-- MOD1 -->
+<a href="http://{text:Moderador1 URL}.tumblr.com" target="_blank" title="{text:Moderador1 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Moderador1 URL}.tumblr.com/avatar/96/" /> <span>{text:Moderador1 Nome}</span> </div>
+</a>
+
+
+<!-- MOD2 -->
+{block:IfModerador2URL}
+<a href="http://{text:Moderador2 URL}.tumblr.com" target="_blank" title="{text:Moderador2 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Moderador2 URL}.tumblr.com/avatar/96/" /> <span>{text:Moderador2 Nome}</span> </div>
+</a>
+{/block:IfModerador2URL}
+
+<!-- MOD3 -->
+{block:IfModerador3URL}
+<a href="http://{text:Moderador1 URL}.tumblr.com" target="_blank" title="{text:Moderador3 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Moderador3 URL}.tumblr.com/avatar/96/" /> <span>{text:Moderador3 Nome}</span> </div>
+</a>
+{/block:IfModerador3URL}
+
+<!-- MOD4 -->
+{block:IfModerador4URL}
+<a href="http://{text:Moderador4 URL}.tumblr.com" target="_blank" title="{text:Moderador4 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Moderador4 URL}.tumblr.com/avatar/96/" /> <span>{text:Moderador4 Nome}</span> </div>
+</a>
+{/block:IfModerador4URL}
+
+<!-- MOD5 -->
+{block:IfModerador5URL}
+<a href="http://{text:Moderador5 URL}.tumblr.com" target="_blank" title="{text:Moderador5 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Moderador5 URL}.tumblr.com/avatar/96/" /> <span>{text:Moderador5 Nome}</span> </div>
+</a>
+{/block:IfModerador5URL}
+
+<!-- MOD6 -->
+{block:IfModerador6URL}
+<a href="http://{text:Moderador6 URL}.tumblr.com" target="_blank" title="{text:Moderador6 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Moderador6 URL}.tumblr.com/avatar/96/" /> <span>{text:Moderador6 Nome}</span> </div>
+</a>
+{/block:IfModerador6URL}
+
+
+</div>
+</div>
+{/block:IfMostrarModeradores}
+
+
+{block:IfNotRolagemInfinita}
+{block:Pagination}
+<div id="pagi">
+
+{block:PreviousPage}
+<a href="{PreviousPage}"><span class="seta">«</span></a>
+{/block:PreviousPage}
+ 
+{block:JumpPagination length="5"}
+{block:CurrentPage}<span class="current">{PageNumber}</span>{/block:CurrentPage}
+{block:JumpPage}<a href="{URL}"><span>{PageNumber}</span></a>{/block:JumpPage}
+{/block:JumpPagination}
+ 
+{block:NextPage}
+<a href="{NextPage}"><span class="seta">»</span></a>
+{/block:NextPage}
+
+</div>
+{/block:Pagination}
+{/block:IfNotRolagemInfinita}
+
+
+</div>
+
+
+
+
+
+
+
+<!------------------- SIDEBAR ESQUERDA ------------------->
+<div id="rside">
+
+
+<!---------- DESTAQUES ---------->
+{block:IfMostrarDestaques}
+<div id="box">
+<div id="dstqs">
+<div class="title">{text:Titulo dos destaques}</div>
+
+<div id="slide_out">
+<div id="slide">
+
+<!-- DESTAQUE1 -->
+<a href="http://{text:Destaque1 URL}.tumblr.com" target="_blank" title="{text:Destaque1 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Destaque1 URL}.tumblr.com/avatar/96/" /> </div>
+</a>
+
+<!-- DESTAQUE2 -->
+{block:IfDestaque2URL}
+<a href="http://{text:Destaque2 URL}.tumblr.com" target="_blank" title="{text:Destaque2 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Destaque2 URL}.tumblr.com/avatar/96/" /> </div>
+</a>
+{/block:IfDestaque2URL}
+
+<!-- DESTAQUE3 -->
+{block:IfDestaque3URL}
+<a href="http://{text:Destaque3 URL}.tumblr.com" target="_blank" title="{text:Destaque3 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Destaque3 URL}.tumblr.com/avatar/96/" /> </div>
+</a>
+{/block:IfDestaque3URL}
+
+<!-- DESTAQUE4 -->
+{block:IfDestaque4URL}
+<a href="http://{text:Destaque4 URL}.tumblr.com" target="_blank" title="{text:Destaque4 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Destaque4 URL}.tumblr.com/avatar/96/" /> </div>
+</a>
+{/block:IfDestaque4URL}
+
+<!-- DESTAQUE5 -->
+{block:IfDestaque5URL}
+<a href="http://{text:Destaque5 URL}.tumblr.com" target="_blank" title="{text:Destaque5 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Destaque5 URL}.tumblr.com/avatar/96/" /> </div>
+</a>
+{/block:IfDestaque5URL}
+
+<!-- DESTAQUE6 -->
+{block:IfDestaque6URL}
+<a href="http://{text:Destaque6 URL}.tumblr.com" target="_blank" title="{text:Destaque6 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Destaque6 URL}.tumblr.com/avatar/96/" /> </div>
+</a>
+{/block:IfDestaque6URL}
+
+</div>
+</div>
+
+</div>
+</div>
+{/block:IfMostrarDestaques}
+
+
+
+
+
+<!---------- PARCERIA ---------->
+{block:IfMostrarParceria}
+<div id="box">
+<div id="parcs">
+
+<div class="title">Parceiros:</div>
+
+<!-- PARÇA1 -->
+<a href="http://{text:Parceiro1 URL}.tumblr.com" target="_blank" title="{text:Parceiro1 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Parceiro1 URL}.tumblr.com/avatar/96/" /> </div>
+</a>
+
+<!-- PARÇA2 -->
+{block:IfParceiro2URL}
+<a href="http://{text:Parceiro2 URL}.tumblr.com" target="_blank" title="{text:Parceiro2 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Parceiro2 URL}.tumblr.com/avatar/96/" /> </div>
+</a>
+{/block:IfParceiro2URL}
+
+<!-- PARÇA3 -->
+{block:IfParceiro3URL}
+<a href="http://{text:Parceiro3 URL}.tumblr.com" target="_blank" title="{text:Parceiro3 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Parceiro3 URL}.tumblr.com/avatar/96/" /> </div>
+</a>
+{/block:IfParceiro3URL}
+
+<!-- PARÇA4 -->
+{block:IfParceiro4URL}
+<a href="http://{text:Parceiro4 URL}.tumblr.com" target="_blank" title="{text:Parceiro4 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Parceiro4 URL}.tumblr.com/avatar/96/" /> </div>
+</a>
+{/block:IfParceiro4URL}
+
+<!-- PARÇA5 -->
+{block:IfParceiro5URL}
+<a href="http://{text:Parceiro5 URL}.tumblr.com" target="_blank" title="{text:Parceiro5 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Parceiro5 URL}.tumblr.com/avatar/96/" /> </div>
+</a>
+{/block:IfParceiro5URL}
+
+<!-- PARÇA6 -->
+{block:IfParceiro6URL}
+<a href="http://{text:Parceiro6 URL}.tumblr.com" target="_blank" title="{text:Parceiro6 URL}">
+<div id="mod"> <img src="https://api.tumblr.com/v2/blog/{text:Parceiro6 URL}.tumblr.com/avatar/96/" /> </div>
+</a>
+{/block:IfParceiro6URL}
+
+
+    
+</div>
+</div>
+{/block:IfMostrarParceria}
+
+
+
+
+
+
+<!---------- INFO ---------->
+<div id="box">
+<div class="title">Info:</div>
+
+<li>Pessoas online: <script language="JavaScript">var fhs = document.createElement('script');var fhs_id = "5599602";
+var ref = (''+document.referrer+'');var pn =  window.location;var w_h = window.screen.width + " x " + window.screen.height;
+fhs.src = "//freehostedscripts.net/ocounter.php?site="+fhs_id+"&e1=&e2=&r="+ref+"&wh="+w_h+"&a=1&pn="+pn+"";
+document.head.appendChild(fhs);document.write("<span id='o_"+fhs_id+"'></span>");
+</script>
+ </li>
+
+<li> Total de visitas: <script language="JavaScript">var fhsh = document.createElement('script');var fhs_id_h = "3326256";
+fhsh.src = "//freehostedscripts.net/ocount.php?site="+fhs_id_h+"&name=&a=1";
+document.head.appendChild(fhsh);document.write("<span id='h_"+fhs_id_h+"'></span>");
+</script>
+ </li>
+
+<li> <span>Theme por:</span> <a href="http://anyhs-themes.tumblr.com" target="_blank">Anyh S.</a> </li>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<!------------------- POSTS -------------------->
+{block:Posts}
+<div class="caixa">
+
+<!--SUBMIT-->
+{block:Submission}
+<div id="ask">
+<a href="{SubmitterURL}" target="_blank" title="{Submitter}">
+<figure id="imgask"><img src="{SubmitterPortraitURL-64}"/></figure>
+</a>
+
+<span><a href="{SubmitterURL}" target="_blank">{Submitter}</a> mandou via Submit:</span>
+</div>
+{/block:Submission}
+ 
+<!--TEXTOS-->
+{block:Text}
+{block:Title}<h1>{Title}</h1>{/block:Title}
+<div class="text">{Body}</div>
+{/block:Text}
+ 
+ 
+<!--FOTOS-->
+{block:Photo}
+<center><img src="{PhotoURL-500}" style="margin: 0px auto;"/></center>
+
+{block:Caption}<div class="capt">{Caption}</div>{/block:Caption}
+
+{/block:Photo}
+ 
+ 
+<!--PHOTOSET-->
+{block:Photoset}
+{Photoset-500}
+
+{block:Caption}<div class="capt">{Caption}</div>{/block:Caption}
+{/block:Photoset}
+ 
+ 
+<!--VIDEOS-->
+{block:Video}
+{Video-500}
+
+{block:Caption}<div class="capt">{Caption}</div>{/block:Caption}
+
+{/block:Video}
+
+ 
+<!--MUSICAS-->
+{block:Audio}
+{block:ExternalAudio}(<a href="{ExternalAudioURL}">download!</a>){/block:ExternalAudio}
+{AudioPlayerWhite}
+{block:Caption}<div class="capt">{Caption}</div>{/block:Caption}
+{/block:Audio}
+
+ 
+<!--CITAÇÕES-->
+{block:Quote}
+<div id="quote">
+<span>“</span>{Quote}
+</div>
+{block:Source}<div class="sour">&mdash; {Source}</div>{/block:Source}
+{/block:Quote}
+ 
+ 
+<!--DIALOGOS-->
+{block:Chat}
+{block:Title}{Title}{/block:Title}
+<table>
+{block:Lines}
+<tr>
+{block:Label}<td>{Label}</td>{block:Label}
+<td>{Line}</td>
+</tr>
+{/block:Lines}
+</table>
+{/block:Chat}
+ 
+ 
+<!--LINKS-->
+{block:Link}
+<a href="{URL}"><h1>{Name}</h1></a>
+{block:Description}<div class="text">{Description}</div>{/block:Description}
+{/block:Link}
+ 
+ 
+<!--ASK-->
+{block:Answer}
+{block:NotReblog}
+<div id="ask">
+<a href="{AskerURL}" target="_blank" title="{AskerName}">
+<figure id="imgask"><img src="{AskerPortraitURL-64}" /></figure>
+</a>
+<span>{Asker} perguntou:</span>
+<div id="quest">{Question}</div>
+
+<div class="text">{Answer}</div>
+</div>
+{/block:NotReblog}
+{/block:Answer}
+
+<!--ASK REBLOGADA-->
+{block:Answer}
+{block:RebloggedFrom}
+<div id="ask">
+
+<a href="{AskerURL}" target="_blank" title="{AskerName}">
+<figure id="imgask"><img src="{AskerPortraitURL-64}" /></figure>
+</a>
+<span>{Asker} perguntou:</span>
+<div id="quest">{Question}</div>
+
+<div id="reblogged_ask">
+<a href="{ReblogRootURL}" target="_blank" title="{ReblogRootName}">
+<div id="imgask"><img src="{ReblogRootPortraitURL-64}"/></div>
+</a>
+
+<span><a href="{ReblogRootURL}" target="_blank">{ReblogRootName}</a> respondeu:</span>
+<div id="quest">{Answer}</div>
+</div>
+
+</div>
+{/block:RebloggedFrom}
+{/block:Answer}
+
+
+<!------ NOTES ------>
+{block:IndexPage}
+<div class="as_notas">
+<a href="{Permalink}">{NoteCount} notas </a>
+</div> 
+{/block:IndexPage}
+ 
+<!------ PMLINK ------>
+{block:PermalinkPage}
+<div id="pmlink">
+
+{block:Date}Postado dia {DayOfMonth}.{MonthNumberWithZero}.{Year} às {24Hour}:{Minutes}{/block:Date}
+ 
+{block:RebloggedFrom}
+<br>
+Reblogado de <a href="{ReblogParentURL}" target="_blank">{ReblogParentName}</a>, postado por <a href="{ReblogRootURL}" target="_blank">{ReblogRootName}</a>
+{/block:RebloggedFrom}
+
+{block:Date}<br>{NoteCount} notas{/block:Date}
+ 
+{block:HasTags}
+<br>
+Tags: {block:Tags}<a href="{TagURL}">#{Tag}</a>{/block:Tags}
+{/block:HasTags}
+
+{block:ContentSource}
+<br>
+Fonte: <a href="{SourceURL}" target="_blank">{SourceTitle}</a>
+{/block:ContentSource}
+ 
+{block:PostNotes}{PostNotes-64}{/block:PostNotes}
+
+</div>
+{/block:PermalinkPage}
+
+</div>
+{/block:Posts}
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+/*** CONTADOR (by: www.themesltd.com) ***/
+.counter-style-text {
+float: none;
+display: table;
+box-sizing: border-box;
+    font-family: 'Baumans', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    height: 14px;
+    line-height: 14px;
+    text-decoration: none;
+	color: {color:Fonte};
+}
+
+</style>
+
+
+{block:IfRolagemInfinita}
+{block:IndexPage}
+<div class="column navigation" id="navigation">
+{block:Pagination}
+{block:PreviousPage}<a href="{PreviousPage}" class="navigate">{/block:PreviousPage}{block:PreviousPage}</a>{/block:PreviousPage}
+{block:NextPage}<a href="{NextPage}" class="navigate" id="nextPage">{/block:NextPage}{block:NextPage}</a>{/block:NextPage}{/block:Pagination}
+</div>
+{/block:IndexPage}
+{/block:IfRolagemInfinita}
+
+</body>
+</html>
