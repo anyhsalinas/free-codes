@@ -1,0 +1,485 @@
+<!--
+ 
+			THEME #06
+			by Anyh Salinas - © 2016
+			www.anyhs-themes.tumblr.com
+ 
+ 
+ 
+   ♦ Don't remove/adulterate my credits;
+   ♦ Don't copy;
+   ♦ Don't redistribute;
+   ♦ Don't use this theme as base to make other(s) theme(s).
+     
+  
+   CONTACT:
+   http://www.anyhs-themes.tumblr.com/contato
+ 
+ 
+ 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+ 
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}" />
+ 
+{block:IndexPage}
+<!------
+    MASONRY SCRIPTS SOURCE: http://creatre.tumblr.com/post/93242735110
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://static.tumblr.com/me5sfsd/12Qlmj66n/script.js"></script>
+
+<script type="text/javascript">
+$(window).load(function(){
+var $wall = $('#posts');
+$wall.imagesLoaded(function(){
+$wall.masonry({
+itemSelector: '.caixa',
+isAnimated : true
+});
+});
+$wall.infinitescroll({
+navSelector : "div#navigation",
+nextSelector : "div#navigation a#nextPage",
+itemSelector : '.caixa',
+loadingImg : "",
+loadingText : " ",
+donetext : " ",
+extraScrollPx : 0,
+bufferPx : 10000,
+debug : false,
+errorCallback: function() {
+$('#infscr-loading').animate({opacity: .8},2000).fadeOut('normal');
+}},
+function( newElements ) {
+var $newElems = $( newElements );
+$newElems.hide();
+$newElems.imagesLoaded(function(){
+$wall.masonry( 'appended', $newElems, {isAnimated: true, animationOptions: {duration: 250, easing: 'linear', queue: false}}, function(){$newElems.fadeIn('slow');} );
+});
+}); $('#posts').show(500);
+});
+</script>
+<!---- END MASONRY SCRIPTS -->
+{/block:IndexPage}
+ 
+<meta name="image:Background"/>
+<meta name="image:Foto"/>
+ 
+<meta name="if:Posts em Grade" content="1"/>
+<meta name="if:Rolagem Infinita" content="0"/>
+<meta name="if:Mostrar Descricao das Fotos" content="1"/>
+<meta name="if:Imagens preto e branco" content="1"/>
+<meta name="if:Notes em Preto" content="1"/>
+<meta name="if:Sombra nas letras" content="1"/>
+ 
+<meta name="color:Background" content="#000"/>
+<meta name="color:Posts" content="#111"/>
+<meta name="color:Titulos" content="#777"/>
+<meta name="color:Fonte" content="#555"/>
+<meta name="color:Links" content="#fff"/>
+ 
+<meta name="text:Frase" content="Bem-vindos ao meu tumblr!"/>
+<meta name="text:Tamanho Fonte" content="11"/>
+ 
+<link href='https://fonts.googleapis.com/css?family=Baumans|Grand+Hotel|Lobster|Rouge+Script|Sacramento|Amatic+SC|Black+Ops+One' rel='stylesheet' type='text/css'>
+
+<meta name="select:Numero de colunas" content="996px" title="3 colunas"/>
+<meta name="select:Numero de colunas" content="604px" title="2 colunas"/>
+<meta name="select:Numero de colunas" content="302px" title="1 coluna (p/ deixar os posts maiores ative a opção 'Posts em Grade')"/>
+ 
+<meta name="select:Fonte Titulos" content="Lobster"/>
+<meta name="select:Fonte Titulos" content="Grand Hotel" />
+<meta name="select:Fonte Titulos" content="Rouge Script"/>
+<meta name="select:Fonte Titulos" content="Sacramento"/>
+<meta name="select:Fonte Titulos" content="Baumans"/>
+<meta name="select:Fonte Titulos" content="Amatic SC"/>
+<meta name="select:Fonte Titulos" content="Black Ops One"/>
+<meta name="select:Fonte Titulos" content="Arial" title="Arial"/>
+<meta name="select:Fonte Titulos" content="Verdana" title="Verdana"/>
+<meta name="select:Fonte Titulos" content="Georgia" title="Georgia"/>
+<meta name="select:Fonte Titulos" content="Times New Roman" title="Times New Roman"/>
+ 
+<meta name="font:Fonte Textos" content="Helvetica"/>
+ 
+ 
+<meta name="select:Opacidade das imagens" content="10" title="100%"/>
+<meta name="select:Opacidade das imagens" content=".8" title="80%"/>
+<meta name="select:Opacidade das imagens" content=".6" title="60%"/>
+<meta name="select:Opacidade das imagens" content=".4" title="40%"/>
+ 
+<meta name="text:Link1" content="/"/>
+<meta name="text:Link1 Titulo" content="Home"/>
+<meta name="text:Link2" content=""/>
+<meta name="text:Link2 Titulo" content="Link2"/>
+<meta name="text:Link3" content=""/>
+<meta name="text:Link3 Titulo" content="Link3"/>
+<meta name="text:Link4" content=""/>
+<meta name="text:Link4 Titulo" content="Link4"/>
+<meta name="text:Link5" content=""/>
+<meta name="text:Link5 Titulo" content="Link5"/>
+<meta name="text:Link6" content=""/>
+<meta name="text:Link6 Titulo" content="Link6"/>
+<meta name="text:Link7" content=""/>
+<meta name="text:Link7 Titulo" content="Link7"/>
+ 
+<style>
+/******************* BASE *********************/
+body {background: {color:Background} url('{image:Background}') fixed; margin: 0px; font-size: {text:Tamanho Fonte}px; color: {color:Fonte}; font-family: {font:Fonte Textos}; {block:IfSombranasletras} text-shadow: 1px 1px 0px #000;{block:IfSombranasletras}}
+body::-webkit-scrollbar {width: 10px; height: 10px; background: {color:Posts}; overflow: scroll;}
+body::-webkit-scrollbar-button:vertical {background: ; height:0px; display:block;}
+body::-webkit-scrollbar-thumb:vertical {background: {color:Titulos};}
+body::-webkit-scrollbar-button:horizontal {background: ; width:0px; display:block;}
+body::-webkit-scrollbar-thumb:horizontal {background: {color:Titulos};}
+ 
+a {-webkit-transition-duration: .5s; -moz-transition-duration: .5s; -o-transition-duration: .5s; color: {color:Links}; text-decoration: none;}
+a:hover {color: {color:Titulos};}
+ 
+a b, bold, strong {color: {color:Links};}
+a i, em {color: {color:Links};}
+a u, underline {color: {color:Links};}
+a s, strike, del {color: {color:Links};}
+ 
+b, bold, strong {color: {color:Fonte};}
+i, em {color: {color:Fonte};}
+u, underline {color: {color:Fonte};}
+s, strike, del {color: {color:Fonte};}
+ 
+blockquote {border-left: 5px solid {color:Titulos}; padding-left: 10px; margin-left: 5px;}
+ 
+ 
+/******** CRÉDITOS -- NÃO REMOVA :) ********/
+#cred {background: {color:Posts}; color: {color:Titulos}; padding: 0px 2px 0px 2px; position: fixed; right: 10px; bottom: 100px; border-radius: 100%; z-index: 9999; font-family: 'Calibri'; font-size: 9px; font-weight: bold; text-transform: uppercase;}
+#cred big {font-family: 'ARIAL'; font-size: 12px;}
+.creds {position: absolute; width: 80px; padding: 5px; background: {color:Posts}; bottom: 0px; right: -40px; -webkit-transition-duration: .5s; -moz-transition-duration: .5s; -o-transition-duration: .5s; opacity: 0; border-radius: 3px; -webkit-transform: scale(0.1); -moz-transform: scale(0.1); -o-transform: scale(0.1); z-index: 9999;}
+#cred:hover .creds {bottom: 22px; right: 0px; opacity: 1; -webkit-transform: scale(1.0); -moz-transform: scale(1.0); -o-transform: scale(1.0);}
+ 
+/********************* SIDEBAR ************************/
+#side {width: 220px; position: fixed; left: 60px;}
+ 
+#frase {font-family: {select:Fonte Titulos}; font-size: 25px; color: {color:Titulos}; margin-bottom: 10px; padding: 0px 5px 0px 5px; text-align: center;}
+ 
+#pack {width: 220px;}
+ 
+#menu {font-family: 'Baumans'; font-size: 8px; width: 100px; margin-top: 0px; float: left; text-align: center;}
+.botao {-webkit-transition-duration: .5s; -moz-transition-duration: .5s; -o-transition-duration: .5s; background: {color:Posts}; padding: 6px; text-transform: uppercase; color: {color:Titulos}; margin-bottom: -4px;}
+.botao:hover {color: {color:Posts}; background: {color:Titulos}; text-shadow: none;}
+ 
+.divb {height: 5px; width: 100px;}
+ 
+#port {background: {color:Posts}; padding: 10px; display: inline-block; margin-left: 5px;}
+.port {width: 95px; margin-bottom: -3px; -webkit-transition-duration: .5s; -moz-transition-duration: .5s; -o-transition-duration: .5s; opacity: .7;}
+#side:hover .port {opacity: 10;}
+ 
+#pag {padding: 5px; font-size: 10px; font-family: 'Calibri'; text-transform: uppercase; background: {color:Posts}; margin-top: 5px; text-align: center;}
+ 
+#imgside {width: 200px; background: {color:Posts}; padding: 10px; margin-top: 5px;}
+.imgside {-webkit-transition-duration: .5s; -moz-transition-duration: .5s; -o-transition-duration: .5s; width: 200px; opacity: .7; margin-bottom: -3px;}
+#side:hover .imgside {opacity: 10;}
+ 
+#desc {background: {color:Posts}; color: {color:Titulos}; text-align: justify; padding: 10px; margin-top: 5px; height: 30px; overflow-y: scroll; font-size: 10px; font-family: 'Baumans'; text-transform: uppercase; line-height: 10px;}
+#desc::-webkit-scrollbar {width: 10px; height: 10px; background: {color:Posts};}
+#desc::-webkit-scrollbar-button:vertical {background: ; height:0px; display:block;}
+#desc::-webkit-scrollbar-thumb:vertical {background: {color:Titulos}; border: 2px solid {color:Posts};}
+#desc::-webkit-scrollbar-button:horizontal {background: ; width:0px; display:block;}
+#desc::-webkit-scrollbar-thumb:horizontal {background: {color:Titulos};}
+ 
+#menu2 {font-family: 'Baumans'; font-size: 10px; width: 220px; margin-top: 5px; text-align: center; min-height: 18px;}
+.bot {-webkit-transition-duration: .5s; -moz-transition-duration: .5s; -o-transition-duration: .5s; background: {color:Posts}; padding: 6px 5px 5px 5px; text-transform: uppercase; color: {color:Titulos}; float: left; width: 98px;}
+.bot:hover {color: {color:Posts}; background: {color:Titulos}; text-shadow: none;}
+ 
+.divc {height: 10px; width: 4px; float: left;}
+ 
+/******************** POSTS ************************/
+#posts {margin-top: 40px; margin-left: 285px;
+{block:IfPostsemGrade}width: {select:Numero de Colunas}; {/block:IfPostsemGrade}
+{block:IfNotPostsemGrade}width: 562px; {/block:IfNotPostsemGrade}
+ 
+{block:PermalinkPage} width: 500px;{/block:PermalinkPage}
+}
+
+.caixa {padding: 10px; overflow: hidden; background: {color:Posts}; text-align: justify; margin: 0px 5px 5px 0px; float: left; position: relative;
+{block:IfPostsemGrade}width: 250px;{/block:IfPostsemGrade}
+{block:IfNotPostsemGrade}width: 500px;{/block:IfNotPostsemGrade}
+{block:PermalinkPage} width: 500px;{/block:PermalinkPage}
+}
+ 
+.title {font-size: 25px; font-family: {select:Fonte Titulos}; color: {color:Titulos}; text-align: center;}
+ 
+ 
+.imgp {-webkit-transition-duration: .5s; -moz-transition-duration: .5s; -o-transition-duration: .5s; opacity: {select:Opacidade das imagens}; margin-bottom: -3px; {block:PermalinkPage}margin-bottom: none;{/block:PermalinkPage} {block:IfImagenspretoebranco}-webkit-filter: grayscale(100%);{/block:IfImagenspretoebranco}}
+.caixa:hover .imgp {opacity: 1; -webkit-filter: grayscale(0%);}
+ 
+.capt {}
+.capt b, strong, bold {color: {color:Fonte};}
+.capt u, underline {color: {color:Fonte};}
+.capt i, em {color: {color:Fonte};}
+.capt s, strike {color: {color:Fonte};}
+.capt img{{block:IfImagenspretoebranco}-webkit-filter: grayscale(100%);{/block:IfImagenspretoebranco} -webkit-transition-duration: .5s; -moz-transition-duration: .5s; -o-transition-duration: .5s; opacity: {select:Opacidade das imagens}; max-width: 220px; height: auto;}
+.caixa:hover .capt img {-webkit-filter: grayscale(0%); opacity: 100;}
+ 
+#photo_description {
+    {block:IfNotMostrarDescricaodasFotos} display: none; {/block:IfNotMostrarDescricaodasFotos}
+}
+ 
+#notes {background: none; width: auto; padding: 5px; height: 15px; position: absolute; top: 80%; right: 10px; font-size: 10px; font-family: 'Calibri'; opacity: 0; -webkit-transition-duration: .5s; -moz-transition-duration: .5s; -o-transition-duration: .5s;
+{block:IfNotesemPreto}color: #000; background: rgba(255,255,255,.5);{/block:IfNotesemPreto}
+{block:IfNotNotesemPreto}color: #fff; background: rgba(0,0,0,.5);{/block:IfNotNotesemPreto}
+}
+.caixa:hover #notes {opacity: 1; top: 10px;}
+
+.notb {float: right; margin-right: 10px; -webkit-transform: scale(0.6); -moz-transform: scale(0.6); -o-transform: scale(0.6); margin-right: -1px;}
+.notc {float: left; margin-left: 0px;
+{block:IfNotesemPreto}color: #000;{/block:IfNotesemPreto}
+{block:IfNotNotesemPreto}color: #fff;{/block:IfNotNotesemPreto}}
+ 
+#info {font-size: 10px; padding-top: 10px; margin: 10px 10px 0px 10px; border-top: 1px dashed {color:Background};}
+#info ol {list-style: none; margin-left: -30px; font-size: 10px; text-transform: uppercase;}
+#info li {padding-bottom: 3px; -webkit-transition-duration: .5s; -moz-transition-duration: .5s; -o-transition-duration: .5s;}
+#info li:hover {margin-left: 30px;}
+#info img {border-radius: 100px 100px 0px 100px; width: 12px; margin: 0px 4px 0px 0px; border: 2px solid {color:Links}; -webkit-transition-duration: .5s; -moz-transition-duration: .5s; -o-transition-duration: .5s;}
+#info li:hover img{-webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -o-transform: rotate(360deg);}
+ 
+/*********** QUOTES **********/
+.aspinhas {float: left; font-family: 'georgia'; font-size: 65px; margin-top: 20px; color: {color:Fonte}; position: absolute; font-weight: bold; line-height: 15px; opacity: .3;}
+#quote {text-indent: 0px; color: {color:Fonte}; margin-left: 10px; margin-top: 10px;}
+#quote:first-letter {font-size: 35px; color: {color:Titulos}; font-family: {select:Fonte Titulos}; margin: -8px 2px -8px 0px; float: left;}
+#source {text-align: right; margin-top: 15px; padding-top: 10px; border-top: 1px dashed {color:Background}; color: {color:Titulos};}
+ 
+/*** DIÁLOGOS ***/
+table {font-size: 11px;}
+.name {color: {color:Titulos}; float: left;}
+.name b{color: {color:Titulos};}
+.words {color: {color:Fonte}; float: left;}
+ 
+/****** ASK ******/
+.quest {background: {color:Posts}; color: {color:Titulos}; padding: 5px; margin-left: 0px; position: relative; top: 3px; border: 1px dashed {color:Background}; border-radius: 29px 0px 0px 0px;}
+ 
+.imgask {float: left; margin-top: -5px; margin-left: -5px; margin-right: 5px; border: 5px solid {color:Fonte}; -webkit-transition-duration: .5s; -moz-transition-duration: .5s; -o-transition-duration: .5s; border-radius: 100%; width: 50px; position: relative;}
+ 
+.plaq {background: {color:Fonte}; color: {color:Posts}; font-size: 10px; font-family: 'Baumans'; text-transform: uppercase; padding: 3px 3px 1px 20px; text-shadow: none; text-align: left; margin: 0px 0px 0px 10px; display: block; margin-bottom: 5px;}
+ 
+.captask {margin-top: 20px; text-align: center;}
+
+
+/** rolagem infinita **/
+.tumblrAutoPager_page_separator {display: none;}
+.tumblrAutoPager_page_info {display: none;}
+
+
+
+/*** Custom CSS ***/
+{CustomCSS}
+
+
+
+ 
+</style>
+</head>
+ 
+<body>
+ 
+ 
+ 
+ 
+<!----------------- CRÉDITOS -- NÃO REMOVA :) -------------->
+<a href="http://anyhs-themes.tumblr.com" target="_blank">
+<div id="cred"><big>&copy;</big><div class="creds">Theme por: Anyh S.</div></div>
+</a>
+ 
+ 
+<!------------------------- SIDEBAR -------------------------------->
+<div id="side">
+<a href="/"><div id="frase">{text:Frase}</div></a>
+<div id="pack">
+<div id="menu">
+<a href="{text:Link1}"><div class="botao">{text:Link1 Titulo}</div></a>
+<div class="divb"></div>
+<a href="{text:Link2}"><div class="botao">{text:Link2 Titulo}</div></a>
+<div class="divb"></div>
+<a href="{text:Link3}"><div class="botao">{text:Link3 Titulo}</div></a>
+<div class="divb"></div>
+<a href="{text:Link4}"><div class="botao">{text:Link4 Titulo}</div></a>
+<div class="divb"></div>
+<a href="{text:Link5}"><div class="botao">{text:Link5 Titulo}</div></a>
+</div>
+<div id="port"><img src="{PortraitURL-128}" class="port"/></div>
+</div>
+<div id="desc">{Description}</div>
+ 
+{block:IfNotRolagemInfinita}
+{block:Pagination}
+<div id="pag">
+{block:PreviousPage}<a href="{PreviousPage}"><big>&laquo;</big></a>{/block:PreviousPage} Página {CurrentPage}/{TotalPages}
+{block:NextPage}<a href="{NextPage}"><big>&raquo;</big></a>{/block:NextPage}
+</div>
+{/block:Pagination}
+{/block:IfNotRolagemInfinita}
+ 
+<div id="imgside"><img src="{image:Foto}" class="imgside"/></div>
+<div id="menu2">
+<a href="{text:Link6}"><div class="bot">{text:Link6 Titulo}</div></a>
+<div class="divc"></div>
+<a href="{text:Link7}"><div class="bot">{text:Link7 Titulo}</div></a>
+</div>
+</div>
+ 
+ 
+ 
+<!-------------------- POSTS ------------------->
+<div id="posts">
+{block:Posts}
+<div id="caixa">
+<div class="caixa">
+ 
+<!--TEXTOS-->
+{block:Text}
+{block:Title}<div class="title">{Title}</div>{/block:Title}
+<div class="capt">{Body}</div>
+{/block:Text}
+ 
+<!--FOTOS-->
+{block:Photo}
+<center>
+{block:IndexPage}
+{block:IfPostsemGrade}{LinkOpenTag}<img src="{PhotoURL-250}" class="imgp"/>{LinkCloseTag}{/block:IfPostsemGrade}
+{block:IfNotPostsemGrade}{LinkOpenTag}<img src="{PhotoURL-500}" class="imgp"/>{LinkCloseTag}{/block:IfNotPostsemGrade}
+{/block:IndexPage}
+ 
+{block:PermalinkPage}{LinkOpenTag}<img src="{PhotoURL-500}" class="imgp"/>{LinkCloseTag}{/block:PermalinkPage}
+</center>
+{block:Caption}<div class="capt" id="photo_description">{Caption}</div>{/block:Caption}
+{/block:Photo}
+ 
+<!--PHOTOSET-->
+{block:Photoset}
+<div class="imgp"><center>
+{block:IndexPage}
+{block:IfPostsemGrade}{Photoset-250}{/block:IfPostsemGrade}
+{block:IfNotPostsemGrade}{Photoset-500}{/block:IfNotPostsemGrade}
+{/block:IndexPage}
+ 
+{block:PermalinkPage}{Photoset-500}{/block:PermalinkPage}
+</center></div>
+{block:Caption}<div class="capt" id="photo_description">{Caption}</div>{/block:Caption}
+{/block:Photoset}
+ 
+<!--VIDEOS-->
+{block:Video}
+<div class="imgp"><center>
+{block:IndexPage}
+{block:IfPostsemGrade}{Video-250}{/block:IfPostsemGrade}
+{block:IfNotPostsemGrade}{Video-500}{/block:IfNotPostsemGrade}
+{/block:IndexPage}
+ 
+{block:PermalinkPage}{Video-500}{/block:PermalinkPage}
+</center></div>
+{block:Caption}<div class="capt" id="photo_description">{Caption}</div>{/block:Caption}
+{/block:Video}
+ 
+<!--MUSICAS-->
+{block:Audio}
+{block:ExternalAudio}(<a href="{ExternalAudioURL}">download!</a>){/block:ExternalAudio}
+<center>{AudioPlayerBlack}</center>
+{block:Caption}<div class="capt">{Caption}</div>{/block:Caption}
+{/block:Audio}
+ 
+<!--FRASES-->
+{block:Quote}
+<div class="aspinhas">“</div><div id="quote">{Quote}</div>
+{block:Source}<div id="source">&mdash; {Source}</div>{/block:Source}
+{/block:Quote}
+ 
+<!--DIALOGOS-->
+{block:Chat}
+{block:Title}<div class="title">{Title}</div>{/block:Title}
+<table>
+{block:Lines}
+<tr>
+{block:Label}<td class="name"><b>{Label}</b></td>{block:Label}
+<td class="words">{Line}</td>
+</tr>
+{/block:Lines}
+</table>
+{/block:Chat}
+ 
+<!--LINKS-->
+{block:Link}
+<div class="title"><a href="{URL}">{Name}</a></div>
+{block:Description}<div id="capt">{Description}</div>{/block:Description}
+{/block:Link}
+ 
+<!--ASK-->
+{block:Answer}
+<div class="quest">
+<a href="{AskerURL}" target="_blank"><img src="{AskerPortraitURL-64}" class="imgask"/></a>
+<div class="plaq">{AskerName} pergunta:</div>
+<i>“{Question}”</i></div>
+<div class="captask">{Answer}</div>
+{/block:Answer}
+ 
+{block:IndexPage}
+<div id="notes">
+ 
+{block:IfNotesemPreto}
+<a href="{Permalink}" title="Notas"><div class="notc">{DayOfMonthWithZero}.{MonthNumberWithZero}.{Year} | {NoteCount} notas |</div></a>
+<a href="{ReblogURL}" title="Reblogar" target="_blank">
+<div class="notb">{ReblogButton size=15 color=Black}</div></a>
+<div class="notb">{LikeButton size=15 color=Black}</div>
+{/block:IfNotesemPreto}
+ 
+{block:IfNotNotesemPreto}
+<a href="{Permalink}" title="Notas"><div class="notc">{DayOfMonthWithZero}.{MonthNumberWithZero}.{Year} | {NoteCount} notas |</div></a>
+<a href="{ReblogURL}" title="Reblogar" target="_blank">
+<div class="notb">{ReblogButton size=15 color=White}</div></a>
+<div class="notb">{LikeButton size=15 color=White}</div>
+{/block:IfNotNotesemPreto}
+</div>
+{/block:IndexPage}
+ 
+{block:PermalinkPage}
+<div id="info">
+<center>
+Postado dia <b>{DayOfMonth}.{MonthNumberWithZero}.{Year}</b> às <b>{24HourWithZero}:{Minutes}</b>.
+</br>
+{block:RebloggedFrom} Via: <a href="{ReblogParentURL}">{ReblogParentName}</a>.{/block:RebloggedFrom} {block:ContentSource}Fonte: <a href="{SourceURL}" target="_blank">{SourceTitle}</a>.{/block:ContentSource}
+</br>
+{block:HasTags}Tags: {block:Tags}#<a href="{TagURL}">{Tag}</a> {/block:Tags}{/block:HasTags}
+</center>
+ 
+{block:PostNotes}{PostNotes}{/block:PostNotes}
+</div>
+{/block:PermalinkPage}
+ 
+</div>
+</div>
+{/block:Posts}
+</div>
+ 
+ 
+ 
+<!-- ROLAGEM INFINITA -->
+{block:IndexPage}
+{block:IfRolagemInfinita}
+<div class="column navigation" id="navigation">
+
+{block:PreviousPage}<a href="{PreviousPage}" class="navigate">{/block:PreviousPage}{block:PreviousPage}</a>{/block:PreviousPage}
+{block:NextPage}<a href="{NextPage}" class="navigate" id="nextPage">{/block:NextPage}{block:NextPage}</a>{/block:NextPage}
+
+</div>
+{/block:IfRolagemInfinita}
+{/block:IndexPage}
+
+
+    
+    
+
+ 
+</body>
+</html>
