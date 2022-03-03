@@ -1,0 +1,429 @@
+<!--
+ 
+			THEME #05
+			by Anyh Salinas - © 2016
+			www.anyhs-themes.tumblr.com
+ 
+ 
+ 
+   ♦ Don't remove/adulterate my credits;
+   ♦ Don't copy;
+   ♦ Don't redistribute;
+   ♦ Don't use this theme as base to make other(s) theme(s).
+     
+  
+   CONTACT:
+   http://www.anyhs-themes.tumblr.com/contato
+ 
+ 
+ 
+-->
+
+<!DOCTYPE>
+<html>
+<head>
+ 
+<title>{Title}</title>
+<link rel="shortcut icon" href="{favicon}" />
+
+
+{block:IndexPage}
+<!------
+    MASONRY SCRIPTS SOURCE: http://creatre.tumblr.com/post/93242735110
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://static.tumblr.com/me5sfsd/12Qlmj66n/script.js"></script>
+
+<script type="text/javascript">
+$(window).load(function(){
+var $wall = $('#posts');
+$wall.imagesLoaded(function(){
+$wall.masonry({
+itemSelector: '.caixa',
+isAnimated : true
+});
+});
+$wall.infinitescroll({
+navSelector : "div#navigation",
+nextSelector : "div#navigation a#nextPage",
+itemSelector : '.caixa',
+loadingImg : "",
+loadingText : " ",
+donetext : " ",
+extraScrollPx : 0,
+bufferPx : 10000,
+debug : false,
+errorCallback: function() {
+$('#infscr-loading').animate({opacity: .8},2000).fadeOut('normal');
+}},
+function( newElements ) {
+var $newElems = $( newElements );
+$newElems.hide();
+$newElems.imagesLoaded(function(){
+$wall.masonry( 'appended', $newElems, {isAnimated: true, animationOptions: {duration: 250, easing: 'linear', queue: false}}, function(){$newElems.fadeIn('slow');} );
+});
+}); $('#posts').show(500);
+});
+</script>
+<!---- END MASONRY SCRIPTS -->
+{/block:IndexPage}
+ 
+<meta name="color:Background" content="#111"/>
+<meta name="color:Fonte" content="#aaaaaa"/>
+<meta name="color:Posts" content="#000000"/>
+<meta name="color:Links" content="#5ca2a3"/>
+<meta name="color:Titulos" content="#ffffff"/>
+ 
+<meta name="image:Background" content=""/>
+<meta name="image:Sidebar Fundo" content="https://static.tumblr.com/0f634b59f654faa0e167bcb582961403/uqpwlfp/a9Bnsr3kq/tumblr_static_1nmu6vmu9o4gcokgoogw400kg.jpg"/>
+<meta name="image:Sidebar Foto" content="https://secure.static.tumblr.com/52cd22c0761d671673c2b893ba9e6534/uqpwlfp/3vinsr3kr/tumblr_static_1v1f8oqdctlw4ww0888ockw04.jpg"/>
+
+<meta name="text:Tamanho Fonte" content="11"/>
+<meta name="text:Tamanho Frase" content="30"/>
+<meta name="text:Tamanho Titulos" content="25"/>
+<meta name="text:Frase Topo Sidebar" content="Breathe today!"/>
+
+<meta name="text:Link1" content="/"/>
+<meta name="text:Titulo do Link1" content="Link 1"/>
+<meta name="text:Link2" content="/"/>
+<meta name="text:Titulo do Link2" content="Link 2"/>
+<meta name="text:Link3" content="/"/>
+<meta name="text:Titulo do Link3" content="Link 3"/>
+<meta name="text:Link4" content="/"/>
+<meta name="text:Titulo do Link4" content="Link 4"/>
+<meta name="text:Link5" content="/"/>
+<meta name="text:Titulo do Link5" content="Link 5"/>
+
+<meta name="if:Fotos em preto e branco" content="1"/>
+
+<meta name="font:Fonte Textos" content="Helvetica"/>
+
+<link href='https://fonts.googleapis.com/css?family=Lobster|Grand+Hotel|Rouge+Script|Sacramento|Baumans|Orbitron|Poiret+One|Megrim|Cinzel|Amatic+SC|Black+Ops+One|Special+Elite' rel='stylesheet' type='text/css'>
+
+<meta name="select:Fonte Titulos" content="Lobster"/>
+<meta name="select:Fonte Titulos" content="Grand Hotel"/>
+<meta name="select:Fonte Titulos" content="Rouge Script"/>
+<meta name="select:Fonte Titulos" content="Sacramento"/>
+<meta name="select:Fonte Titulos" content="Baumans"/>
+<meta name="select:Fonte Titulos" content="Orbitron"/>
+<meta name="select:Fonte Titulos" content="Poiret One"/>
+<meta name="select:Fonte Titulos" content="Megrim"/>
+<meta name="select:Fonte Titulos" content="Cinzel"/>
+<meta name="select:Fonte Titulos" content="Amatic SC"/>
+<meta name="select:Fonte Titulos" content="Black Ops One"/>
+<meta name="select:Fonte Titulos" content="Special Elite"/>
+<meta name="select:Fonte Titulos" content="Georgia"/>
+<meta name="select:Fonte Titulos" content="Helvetica"/>
+
+<style>
+ 
+/*** BODY ***/
+body {margin: 0px; background: {color:Background} fixed url('{image:Background}'); font-size: {text:Tamanho Fonte}px; font-family: {font:Fonte Textos}; color: {color:Fonte}; overflow-y: scroll;}
+
+/*** BARRA DE ROLAGEM ***/
+body::-webkit-scrollbar {width:5px; height:5px; background: {color:Posts};}
+body::-webkit-scrollbar-button:vertical {background:; height:0px; display:block;}
+body::-webkit-scrollbar-thumb:vertical {background-color: {color:Titulos};}
+body::-webkit-scrollbar-button:horizontal {background: ; width:0px; display:block;}
+body::-webkit-scrollbar-thumb:horizontal {background-color: {color:Titulos};}
+
+img {margin-bottom: -3px;}
+
+blockquote {border-left: 3px double {color:Fonte}; padding-left: 5px; margin-left: 10px;}
+blockquote img{ transition-duration: .5s;
+{block:IndexPage} {block:IfFotosempretoebranco} -webkit-filter: grayscale(100%); {/block:IfFotosempretoebranco} opacity: .80;{/block:IndexPage}
+{block:PermalinkPage}opacity: .80;{/block:PermalinkPage}}
+blockquote:hover img{opacity: 100; -webkit-filter: grayscale(0%); }
+ 
+a {color: {color:Links}; text-decoration: none; transition-duration: .5s;}
+a:hover {color: {color:Titulos};}
+ 
+/****** SIDEBAR ******/
+#sidebar {width: 220px; height: 709px; background: {color:Posts} url('{image:Sidebar Fundo}'); background-size: auto 100%; top: 0px; left: 0px; position: fixed; z-index: 3; padding: 0px 10px 0px 10px; text-align: center; border-right: 3px solid {color:Posts};}
+ 
+.afrase {font-size: {text:Tamanho Frase}px; font-family: {select:Fonte Titulos}; margin-top: 30px; color: {color:Titulos}; text-shadow: 1px 1px 1px {color:Posts};}
+ 
+#imgsideback {width: 150px; margin-top: 30px; border: 3px double {color:Posts}; overflow: hidden; position: relative;}
+.imgside {width: 150px; opacity: .80; transition-duration: .5s;}
+#imgsideback:hover .imgside {opacity: 100;}
+ 
+.descricao {margin-top: 30px; color: {color:Titulos}; height: auto; text-shadow: 1px 1px 1px {color:Posts};}
+ 
+/*** CRÉDITOS ***/
+#cred {color: {color:Titulos}; font-size: 10px; text-transform: uppercase; font-family: 'calibri', sans-serif; position: fixed; bottom: 60px; right: -40px; text-align: center; width: 100px; transform: rotate(-90deg); z-index: 999;}
+.theme {opacity: 1; transition: .5s;}
+#cred:hover .theme {opacity: 0;}
+ 
+.cred {opacity: 0; transition: .7s; color: {color:Fonte}; margin-top: -13px;}
+#cred:hover .cred {opacity: 1;}
+ 
+
+/****** MENU ******/
+#menu {left: 244px; top: 30px; position: fixed; font-size: 10px; font-family: 'Baumans';}
+
+#botao1 {background: transparent; width: 70px; height: 10px; padding: 3px; position: absolute; overflow: hidden; color:{color:Titulos}; margin-left: -55px; transition-duration: .5s; margin-top: 120px;}
+#botao1:hover {margin-left: -10px;}
+
+#botao2 {background: transparent; width: 70px; height: 10px; padding: 3px; position: absolute; overflow: hidden; color: {color:Titulos}; margin-left: -55px; transition-duration: .5s; margin-top: 140px;}
+#botao2:hover {margin-left: -10px;}
+
+#botao3 {background: transparent; width: 70px; height: 10px; padding: 3px; position: absolute; overflow: hidden; color: {color:Titulos}; margin-left: -55px; transition-duration: .5s; margin-top: 160px;}
+#botao3:hover {margin-left: -10px;}
+
+#botao4 {background: transparent; width: 70px; height: 10px; padding: 3px; position: absolute; overflow: hidden; color: {color:Titulos}; margin-left: -55px; transition-duration: .5s; margin-top: 180px;}
+#botao4:hover {margin-left: -10px;}
+
+#botao5 {background: transparent; width: 70px; height: 10px; padding: 3px; position: absolute; overflow: hidden; color: {color:Titulos}; margin-left: -55px; transition-duration: .5s; margin-top: 200px;}
+#botao5:hover {margin-left: -10px;}
+
+.botao {background: {color:Posts}; width: 60px; height: 60px; position: absolute; transform: rotate(45deg); margin: -28px 0px 0px -18px; transition-duration: .9s; border: 3px double {color:Titulos};}
+.botao:hover {background: ;}
+
+.botao_link {text-align: right; width: 50px; position: absolute; z-index: 1; color: {color:Titulos};}
+ 
+/****** POSTS ******/
+#posts {width: 902px; position: relative; margin-top: 70px; margin-left: 340px;}
+ 
+.caixa {background: {color:Posts}; padding: 10px; text-align: justify; overflow: hidden; float: left;
+{block:IndexPage} width: 250px; position: relative; margin: 0px 3px 3px 0px;{/block:IndexPage}
+{block:PermalinkPage}width: 500px; margin-left: 150px;{/block:PermalinkPage}}
+ 
+.imgpost { transition-duration: .5s;
+{block:IndexPage} {block:IfFotosempretoebranco} -webkit-filter: grayscale(100%); {/block:IfFotosempretoebranco} opacity: .80;{/block:IndexPage}
+{block:PermalinkPage}opacity: .80;{/block:PermalinkPage}}
+.imgpost:hover {opacity: 100; -webkit-filter: grayscale(0%);}
+
+ 
+.title {font-size: {text:Tamanho Titulos}px; font-family: {select:Fonte Titulos}; text-align: center; color: {color:Titulos};}
+ 
+/*** ASK ***/
+.imgask {position: absolute;}
+.aasker {background: {color:Fonte}; color: {color:Posts}; font-size: 10px; padding: 10px 10px 9px 35px; text-align: left; font-family: 'Baumans';}
+.aasker a {color: {color:Posts}; font-weight: bold;}
+.aask {background: {color:Background}; color: {color:Fonte}; padding: 10px; border-bottom: 3px double {color:Posts}; text-align: center;}
+ 
+/*** DIÁLOGO ***/
+table {margin: 0px;}
+.nome {color: {color:Titulos}; font-family: 'Baumans'; text-align: right; padding: 5px; border: 1px solid {color:Background}; margin: 0px;}
+.fala {padding: 5px; border: 1px solid {color:Background}; margin: 0px;}
+ 
+/*** INFO POSTS ***/
+.caixa:hover #info {opacity: 100; top: 12px; left: 12px;}
+ 
+#info {background: none; transition-duration: .5s; font-family:'Baumans'; width: 264px; position: absolute; top: -11px; left: 12px; opacity: 0;}
+#info a {color: #fff; background: rgba(0,0,0,.5); padding: 5px; font-size: 13px; border-radius: 5px; float: left; margin-right: 2px;}
+
+.like_button {background: rgba(0,0,0,.5); padding: 5px 5px 2px 5px; font-size: 13px; border-radius: 5px; float: left; margin-right: 2px;}
+ 
+.mini {width: 25px; border-radius: 5px; border: 3px double {color:Titulos}; opacity: .80;  transition-duration: .5s;}
+.mini:hover {opacity: 100;}
+ 
+#infop {background: none; padding-top: 5px; font-size: 10px; font-family:'Baumans'; color: {color:Titulos}; width: 520px; border-top: 3px double {color:Background}; margin: 10px 5px 0px -10px;}
+#infop ol {margin: 5px 0px 0px -30px; list-style: none; width: 500px;}
+#infop ol li {padding: 5px 0px 8px 5px; background: {color:Background}; margin-bottom: 1px; transition: .5s;}
+#infop ol li:hover {margin-left: 40px}
+#infop ol img {margin: -5px 5px -10px -5px; border: 5px solid {color:Links};}
+ 
+.origin {float: right;}
+ 
+ 
+ 
+ 
+/*** Custom CSS ***/
+{CustomCSS}
+ 
+
+ 
+</style>
+</head>
+<body>
+ 
+
+<!--- CREDITOS --->
+<a href="http://anyhs-themes.tumblr.com" target="_blank">
+<div id="cred">
+    <div class="theme">&copy; Theme</div>
+    <div class="cred">Theme by: Anyh S.</div>
+</div>
+</a>
+ 
+
+<div id="sidebar">
+<a href="/"><div class="afrase">{text:Frase Topo Sidebar}</div></a>
+
+<center>
+<div id="imgsideback">
+<img src="{image:Sidebar Foto}" class="imgside"/>
+</div>
+</center>
+
+<div class="descricao">{Description}</div>
+</div>
+ 
+ 
+<div id="menu">
+<a href="{text:Link1}" id="botao1"><div class="botao_link">{text:Titulo do Link1}</div><div class="botao"></div></a>
+<a href="{text:Link2}" id="botao2"><div class="botao_link">{text:Titulo do Link2}</div><div class="botao"></div></a>
+<a href="{text:Link3}" id="botao3"><div class="botao_link">{text:Titulo do Link3}</div><div class="botao"></div></a>
+<a href="{text:Link4}" id="botao4"><div class="botao_link">{text:Titulo do Link4}</div><div class="botao"></div></a>
+<a href="{text:Link5}" id="botao5"><div class="botao_link">{text:Titulo do Link5}</div><div class="botao"></div></a>
+</div>
+ 
+ 
+<!---------- POSTS ---------->
+<div id="posts">
+{block:Posts}
+<div class="caixa">
+ 
+<!--TEXTOS-->
+{block:Text}
+<div class="caixinha">
+{block:Title}
+<div class="title"><center>{Title}</center></div>
+{/block:Title}
+<div class="capt">{Body}</div>
+</div>
+{/block:Text}
+ 
+ 
+<!--FOTOS-->
+{block:Photo}
+<div class="caixinha">
+<center>
+{block:IndexPage}{LinkOpenTag}<img src="{PhotoURL-250}" class="imgpost"/>{LinkCloseTag}{/block:IndexPage}
+{block:PermalinkPage}{LinkOpenTag}<img src="{PhotoURL-500}" class="imgpost"/>{LinkCloseTag}{/block:PermalinkPage}
+</center>
+{block:Caption}<div class="capt">{Caption}</div>{/block:Caption}
+</div>
+{/block:Photo}
+ 
+<!--PHOTOSET-->
+{block:Photoset}
+<div class="caixinha">
+<div class="imgpost">
+{block:IndexPage}<center>{Photoset-250}</center>{/block:IndexPage}
+{block:PermalinkPage}<center>{Photoset-500}</center>{/block:PermalinkPage}
+</div>
+{block:Caption}
+<div class="capt">{Caption}</div>
+{/block:Caption}
+</div>
+{/block:Photoset}
+ 
+<!--VIDEOS-->
+{block:Video}
+<div class="caixinha">
+<div class="imgpost">
+{block:IndexPage}<center>{Video-250}</center>{/block:IndexPage}
+{block:PermalinkPage}<center>{Video-500}</center>{/block:PermalinkPage}
+</div>
+{block:Caption}<div class="capt">{Caption}</div>{/block:Caption}
+</div>
+{/block:Video}
+ 
+<!--MUSICAS-->
+{block:Audio}
+<div class="caixinha">
+{block:ExternalAudio}
+<div class="imgpost">(<a href="{ExternalAudioURL}">download!</a>){/block:ExternalAudio}
+{AudioPlayerGrey}
+{block:Caption}<div class="capt">{Caption}</div>{/block:Caption}
+</div>
+{/block:Audio}
+ 
+<!--FRASES-->
+{block:Quote}
+<div class="caixinha">
+<div class="title"><big>"</big>{Quote}<big>"</big></div>
+{block:Source}<div style="margin-top: 10px; float: right;">&mdash; {Source}</div>{/block:Source}
+</div>
+{/block:Quote}
+   
+<!--DIALOGOS-->
+{block:Chat}
+<div class="caixinha">
+{block:Title}<div class="title">{Title}</div>{/block:Title}
+<table>
+{block:Lines}
+<tr>
+{block:Label}<td class="nome">{Label}</td>{block:Label}
+<td class="fala">{Line}</td>
+</tr>
+{/block:Lines}
+</table>
+</div>
+{/block:Chat}
+ 
+<!--LINKS-->
+{block:Link}
+<div class="caixinha">
+<div class="title"><a href="{URL}">{Name}</a></div>
+{block:Description}<div class="capt">{Description}</div>{/block:Description}
+</div>
+{block:Link}
+ 
+<!--ASK-->
+{block:Answer}
+<div class="caixinha">
+<a href="{AskerURL}" target="_blank"><img src="{AskerPortraitURL-30}" class="imgask"/></a>
+<div class="aasker">{Asker} pergunta:</div>
+<div class="aask">{Question}</div>
+<div class="capt">{Answer}</div>
+</div>
+{/block:Answer}
+       
+ 
+{block:IndexPage}
+<div id="info">
+<a href="{Permalink}">{NoteCount}</a>
+{ReblogButton color=White size=15}
+{LikeButton color=White size=15}
+</div>
+{/block:IndexPage}
+
+ 
+{block:PermalinkPage}
+{block:Date}
+<div id="infop">
+<center> Publicado dia {DayOfMonth}.{MonthNumberWithZero}.{Year} às {24Hour}hs{Minutes}
+<br>
+{block:RebloggedFrom}Via <a href="{ReblogParentURL}">{ReblogParentName}</a>, por <a href="{ReblogRootURL}">{ReblogRootName}</a>{/block:RebloggedFrom}
+<br>
+{block:HasTags}Tags: {block:Tags}#<a href="{TagURL}">{Tag}</a> {/block:Tags}{/block:HasTags}</a>
+</center>
+
+
+{block:PostNotes}{PostNotes}{/block:PostNotes}
+</div>
+ 
+<p class="origin">{block:ContentSource}( <a href="{SourceURL}" target="_blank">Postagem original</a> ){/block:ContentSource}</p>
+
+{/block:Date}
+{/block:PermalinkPage}
+ 
+
+</div>
+{/block:Posts}
+</div>
+ 
+
+
+
+
+<!-- ROLAGEM INFINITA -->
+{block:IndexPage}
+<div class="column navigation" id="navigation">
+
+{block:PreviousPage}<a href="{PreviousPage}" class="navigate">{/block:PreviousPage}{block:PreviousPage}</a>{/block:PreviousPage}
+{block:NextPage}<a href="{NextPage}" class="navigate" id="nextPage">{/block:NextPage}{block:NextPage}</a>{/block:NextPage}
+
+</div>
+{/block:IndexPage}
+
+
+
+
+ 
+</body>
+</html>
