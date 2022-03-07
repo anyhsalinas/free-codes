@@ -1,0 +1,4687 @@
+<!--
+ 
+ 
+           — THEME #001: GENESIS —
+           by Anyh Salinas © 2022
+           http://anyhs-themes.tumblr.com
+           
+           (Last update: 21/02/2022 — 11:57hrs)
+
+
+
+    TERMS OF USE (en):
+    ♦ Don't remove, adulterate, modify or move my credits;
+    ♦ Don't redistribute this code or parts of it;
+    ♦ Don't take this code or parts of it to create/upgrade other code(s);
+    ♦ Inspiration is allowed, as long as you don't fully copy my designs.
+    
+    TERMOS DE USO (pt):
+    ♦ Não remova, adultere, modifique ou mova meus créditos;
+    ♦ Não redistribua este código ou partes dele;
+    ♦ Não pegue este código ou partes dele para criar/aprimorar outro código;
+    ♦ Inspirar-se é permitido, desde que não copie inteiramente meus designs.
+    
+    
+    CREDITS/CRÉDITOS:
+    ♦ Masonry: https://masonry.desandro.com/
+    ♦ Infinite Scroll: https://github.com/paulirish/infinitescroll
+    ♦ Smooth Scroll: https://github.com/gblazex/smoothscroll
+    ♦ Photosets: https://annasthms.github.io/photosets/
+    ♦ Tooltips: http://manos.malihu.gr/style-my-tooltips-jquery-plugin/
+    ♦ Fonts: https://fonts.google.com
+    ♦ Icons: FontAwesome (https://fontawesome.com/)
+             LinearIcons (https://linearicons.com/)
+             CappuccIcons (https://cappuccicons.com/)
+    
+    
+    DEVELOPER CONTACT/CONTATO DO DESENVOLVEDOR:
+    ♦ https://anyhs-themes.tumblr.com/contact
+ 
+-->
+<html>
+<head>
+
+
+<!-- jquery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!-- jquery -->
+
+
+<!-- icons -->    
+<script src="https://kit.fontawesome.com/f7e4f513cb.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"/>
+<script src="https://pull.cappuccicons.com/cpf.js"></script>
+<!-- icons -->
+
+<!-- Photosets (by @annasthms & @eggdesign) -->
+<link href="https://static.tumblr.com/0podkko/oDSpg7y88/photosets.css" rel="stylesheet"/>
+<!-- Photosets (by @annasthms & @eggdesign) -->
+
+
+    <meta name="image:Background" content=""/>
+    <meta name="image:Extra Borders Background" content="https://static.tumblr.com/427cbe400fe577c1f4f6654df8f1104e/uqpwlfp/qePp9lzpd/tumblr_static_5nwg6ldelgwsgc4ogow80ks4g.jpg"/>
+    
+    <meta name="color:Background" content="#eee"/>
+    <meta name="color:Header" content="#fff"/>
+    <meta name="color:Header Font" content="#444444"/>
+    <meta name="color:Titles Background" content="#f5f5f5"/>
+    <meta name="color:Titles Font" content="#444"/>
+    <meta name="color:Posts Background" content="#fff"/>
+    <meta name="color:Posts Font" content="#a2a2a2"/>
+    <meta name="color:Links" content="#86ac6d"/>
+    <meta name="color:Borders" content="#ddd"/>
+    <meta name="color:Extra Borders Background" content="#aaa"/>
+    <meta name="color:Shadows" content="#aaa"/>
+    <meta name="color:Highlights Background" content="#fafafa"/>
+    <meta name="color:Highlights Font" content="#656565"/>
+    <meta name="color:Notes Background" content="#f5f5f5"/>
+    <meta name="color:Notes Font" content="#444"/>
+    <meta name="color:Notes Font Hover" content="#86ac6d"/>
+    
+    
+    <!-- select: posts columns -->
+    <meta name="select:Number of Columns" content="20%" title="5 Columns"/>
+    <meta name="select:Number of Columns" content="25%" title="4 Columns"/>
+    <meta name="select:Number of Columns" content="33.3%" title="3 Columns"/>
+    <meta name="select:Number of Columns" content="50%" title="2 Columns"/>
+    <meta name="select:Number of Columns" content="100%" title="1 Column"/>
+
+
+    <!-- select options: fonts: titles -->
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC|Lobster|Grand Hotel|Sacramento|Rouge Script|UnifrakturMaguntia|Astloch|Megrim|Amatic SC|Special Elite|Vidaloka|Anton|Share Tech Mono|Oranienbaum|Wire One|Abril Fatface|VT323|La Belle Aurore|Reenie Beanie|Economica' rel='stylesheet' type='text/css'/>
+    <meta name="select:Titles Font" content="Quicksand"/>
+    <meta name="select:Titles Font" content="Dosis"/>
+    <meta name="select:Titles Font" content="Economica"/>
+    <meta name="select:Titles Font" content="Wire One"/>
+    <meta name="select:Titles Font" content="Rajdhani"/>
+    <meta name="select:Titles Font" content="Play"/>
+    <meta name="select:Titles Font" content="Teko"/>
+    <meta name="select:Titles Font" content="Anton"/>
+    <meta name="select:Titles Font" content="Abril Fatface"/>
+    <meta name="select:Titles Font" content="Vidaloka"/>
+    <meta name="select:Titles Font" content="Oranienbaum"/>
+    <meta name="select:Titles Font" content="Special Elite"/>
+    <meta name="select:Titles Font" content="Miriam Libre"/>
+    <meta name="select:Titles Font" content="Share Tech Mono"/>
+    <meta name="select:Titles Font" content="VT323"/>
+    <meta name="select:Titles Font" content="Megrim"/>
+    <meta name="select:Titles Font" content="Amatic SC"/>
+    <meta name="select:Titles Font" content="Patrick Hand"/>
+    <meta name="select:Titles Font" content="Reenie Beanie"/>
+    <meta name="select:Titles Font" content="La Belle Aurore"/>
+    <meta name="select:Titles Font" content="Rouge Script"/>
+    <meta name="select:Titles Font" content="Sacramento"/>
+    <meta name="select:Titles Font" content="Grand Hotel"/>
+    <meta name="select:Titles Font" content="Lobster"/>
+    <meta name="select:Titles Font" content="Astloch"/>
+    <meta name="select:Titles Font" content="UnifrakturMaguntia"/>
+    <!-- select options: fonts: texts -->
+    <link href='https://fonts.googleapis.com/css?family=Dosis:400,700|Patrick Hand:400,700|Roboto Condensed:400,700|Roboto Mono:400,700|Ubuntu:400,700|Baumans|Rajdhani:400,700|Play:400,700|Quicksand:400,700|Teko:300,600|Miriam Libre:400,700|ABeeZee:' rel='stylesheet' type='text/css'/>
+    <meta name="select:Posts Font" content="Quicksand"/>
+    <meta name="select:Posts Font" content="Dosis"/>
+    <meta name="select:Posts Font" content="Roboto Condensed"/>
+    <meta name="select:Posts Font" content="Arial"/>
+    <meta name="select:Posts Font" content="Verdana"/>
+    <meta name="select:Posts Font" content="Ubuntu"/>
+    <meta name="select:Posts Font" content="ABeeZee"/>
+    <meta name="select:Posts Font" content="Baumans"/>
+    <meta name="select:Posts Font" content="Rajdhani"/>
+    <meta name="select:Posts Font" content="Play"/>
+    <meta name="select:Posts Font" content="Teko"/>
+    <meta name="select:Posts Font" content="VT323"/>
+    <meta name="select:Posts Font" content="Share Tech Mono"/>
+    <meta name="select:Posts Font" content="Miriam Libre"/>
+    <meta name="select:Posts Font" content="Times New Roman"/>
+    <meta name="select:Posts Font" content="Georgia"/>
+    <meta name="select:Posts Font" content="Patrick Hand"/>
+    <meta name="select:Posts Font" content="La Belle Aurore"/>
+    <meta name="select:Posts Font" content="Reenie Beanie"/>
+    
+    <!-- select options: fonts: quotes -->
+    <meta name="select:Quotes Font" content="Quicksand"/>
+    <meta name="select:Quotes Font" content="Dosis"/>
+    <meta name="select:Quotes Font" content="Roboto Condensed"/>
+    <meta name="select:Quotes Font" content="Arial"/>
+    <meta name="select:Quotes Font" content="Verdana"/>
+    <meta name="select:Quotes Font" content="Ubuntu"/>
+    <meta name="select:Quotes Font" content="Baumans"/>
+    <meta name="select:Quotes Font" content="Rajdhani"/>
+    <meta name="select:Quotes Font" content="Play"/>
+    <meta name="select:Quotes Font" content="Teko"/>
+    <meta name="select:Quotes Font" content="VT323"/>
+    <meta name="select:Quotes Font" content="Share Tech Mono"/>
+    <meta name="select:Quotes Font" content="Miriam Libre"/>
+    <meta name="select:Quotes Font" content="Times New Roman"/>
+    <meta name="select:Quotes Font" content="Georgia"/>
+    <meta name="select:Quotes Font" content="Patrick Hand"/>
+    <meta name="select:Quotes Font" content="La Belle Aurore"/>
+    <meta name="select:Quotes Font" content="Reenie Beanie"/>
+    
+    <!-- select options: fonts: notes -->
+    <meta name="select:Notes Font" content="Quicksand"/>
+    <meta name="select:Notes Font" content="Dosis"/>
+    <meta name="select:Notes Font" content="Roboto Condensed"/>
+    <meta name="select:Notes Font" content="Arial"/>
+    <meta name="select:Notes Font" content="Verdana"/>
+    <meta name="select:Notes Font" content="Ubuntu"/>
+    <meta name="select:Notes Font" content="Baumans"/>
+    <meta name="select:Notes Font" content="Rajdhani"/>
+    <meta name="select:Notes Font" content="Play"/>
+    <meta name="select:Notes Font" content="Teko"/>
+    <meta name="select:Notes Font" content="VT323"/>
+    <meta name="select:Notes Font" content="Share Tech Mono"/>
+    <meta name="select:Notes Font" content="Miriam Libre"/>
+    <meta name="select:Notes Font" content="Times New Roman"/>
+    <meta name="select:Notes Font" content="Georgia"/>
+    
+    <!-- select options: titles tyle -->
+    <meta name="select:Titles Style" content="" title="Titles Style 1"/>
+    <meta name="select:Titles Style" content="background: none; border:none; padding-bottom: 0px;" title="Titles Style 2"/>
+    
+    <!-- select options: notes tyle -->
+    <meta name="select:Notes Style" content="style1" title="Notes Style 1"/>
+    <meta name="select:Notes Style" content="style2" title="Notes Style 2"/>
+    <meta name="select:Notes Style" content="style3" title="Notes Style 3"/>
+    <meta name="select:Notes Style" content="style4" title="Notes Style 4"/>
+    <meta name="select:Notes Style" content="style5" title="Notes Style 5"/>
+    <meta name="select:Notes Style" content="style6" title="Notes Style 6"/>
+    
+    <!-- select options: blockquotes tyle -->
+    <meta name="select:Blockquotes Style" content="" title="Blockquote Style 1"/>
+    <meta name="select:Blockquotes Style" content="border: none; border-left: 1px solid; background: transparent; border-radius: 0px; padding-top: 0px; padding-bottom: 0px; margin-left: 40px;" title="Blockquote Style 2"/>
+    
+    <!-- select options: shadow tyle -->
+    <meta name="select:Shadow Style" content="0px 0px 0px 0px" title="No Shadows"/>
+     <meta name="select:Shadow Style" content="1px 1px 1px 0px" title="Shadow Style 1"/>
+     <meta name="select:Shadow Style" content="2px 2px 2px 0px" title="Shadow Style 2"/>
+    <meta name="select:Shadow Style" content="2px 2px 5px 0px" title="Shadow Style 3"/>
+    <meta name="select:Shadow Style" content="4px 4px 8px 0px" title="Shadow Style 4"/>
+    <meta name="select:Shadow Style" content="3px 3px 0px 0px" title="Shadow Style 5"/>
+    <meta name="select:Shadow Style" content="5px 5px 0px 0px" title="Shadow Style 6"/>
+    <meta name="select:Shadow Style" content="0px 0px 5px 2px" title="Shadow Style 7"/>
+    <meta name="select:Shadow Style" content="0px 0px 10px 5px" title="Shadow Style 8"/>
+    <meta name="select:Shadow Style" content="0px 0px 0px 5px" title="Shadow Style 9"/>
+    <meta name="select:Shadow Style" content="0px 0px 0px 9px" title="Shadow Style 10"/>
+    
+    <!-- select options: round corners -->
+    <meta name="select:Round Corners" content="0px"/>
+    <meta name="select:Round Corners" content="3px"/>
+    <meta name="select:Round Corners" content="5px"/>
+    <meta name="select:Round Corners" content="10px"/>
+    <meta name="select:Round Corners" content="20px"/>
+    
+    <!-- select options: round corners on images -->
+    <meta name="select:Round Corners on Images" content="0px"/>
+    <meta name="select:Round Corners on Images" content="3px"/>
+    <meta name="select:Round Corners on Images" content="5px"/>
+    <meta name="select:Round Corners on Images" content="10px"/>
+    <meta name="select:Round Corners on Images" content="20px"/>
+
+    <!-- select options: image transparency -->
+    <meta name="select:Images Transparency" content="1" title="0%"/>
+    <meta name="select:Images Transparency" content=".8" title="20%"/>
+    <meta name="select:Images Transparency" content=".6" title="40%"/>
+    <meta name="select:Images Transparency" content=".4" title="60%"/>
+    <!-- select options: image effects -->
+    <meta name="select:Images Effect" title="None" content="none"/>
+    <meta name="select:Images Effect" title="Black and White" content="grayscale(100%)"/>
+    <meta name="select:Images Effect" title="Dark Black and White" content="grayscale(100%) contrast(1.3) brightness(.9)"/>
+    <meta name="select:Images Effect" title="Greyish" content="grayscale(40%) saturate(100%) contrast(120%)"/>
+    <meta name="select:Images Effect" title="Dark" content="contrast(1.5) brightness(.9)"/>
+    <meta name="select:Images Effect" title="Sepia" content="sepia(1)"/>
+    <meta name="select:Images Effect" title="Old" content="contrast(50%) sepia(50%) brightness(120%)"/>
+    <meta name="select:Images Effect" title="Coffee" content="sepia(30%) saturate(180%)"/>
+    <meta name="select:Images Effect" title="Vintage" content="sepia(30%) hue-rotate(-30deg) saturate(180%) contrast(90%) brightness(100%)"/>
+    <meta name="select:Images Effect" title="Colorful" content="saturate(220%)"/>
+    <meta name="select:Images Effect" title="Deep" content="saturate(220%) contrast(1.3) brightness(.9)"/>
+    <meta name="select:Images Effect" title="Inverted" content="invert(1)"/>
+    
+    <meta name="if:Borders" content="1"/>
+    <meta name="if:Borders on Images" content="0"/>
+    <meta name="if:Extra Borders" content="1"/>
+    <meta name="if:Margin on Images" content="0"/>
+    <meta name="if:First Captions Header" content="1"/>
+    <meta name="if:Photos Caption" content="0"/>
+    <meta name="if:Number of Likes" content="0"/>
+    <meta name="if:Share Buttons" content="1"/>
+    <meta name="if:Post Author" content="0"/>
+    <meta name="if:Related Posts" content="1"/>
+    <meta name="if:Infinite Scroll" content="0"/>
+    <meta name="if:Smooth Scroll" content="1"/>
+    <meta name="if:Custom Tooltips" content="1"/>
+    
+    
+    <!-- text options: several stuff -->
+    <meta name="text:Scrollbar Thickness" content="8"/>
+    <meta name="text:Layout Width" content="100%"/>
+    <meta name="text:Posts Max Height" content="auto"/>
+    <meta name="text:Posts Spacing" content="10"/>
+    <meta name="text:Posts Padding Thickness" content="20"/>
+    <meta name="text:Notes Padding Thickness" content="5"/>
+    <meta name="text:Borders Thickness" content="1"/>
+    <meta name="text:Extra Borders Thickness" content="10"/>
+    <meta name="text:Images Spacing" content="5"/>
+    
+    <!-- text options: fonts size -->
+    <meta name="text:Header Font Size" content="20"/>
+    <meta name="text:Titles Font Size" content="28"/>
+    <meta name="text:Posts Font Size" content="13"/>
+    <meta name="text:Quotes Font Size" content="17"/>
+    <meta name="text:Notes Font Size" content="9"/>
+    
+    <!-- text options: menu buttons -->
+    <meta name="text:Plus Button Title" content="More"/>
+    <meta name="text:Plus Button Icon" content="&lt;span class='lnr lnr-chevron-down'&gt;&lt;/span&gt;"/>
+    
+    <meta name="text:Button1 Link" content="/"/>
+    <meta name="text:Button1 Title" content="Home"/>
+    <meta name="text:Button1 Icon" content="&lt;span class='lnr lnr-home'&gt;&lt;/span&gt;"/>
+    <meta name="text:Button2 Link" content="/ask"/>
+    <meta name="text:Button2 Title" content="Ask"/>
+    <meta name="text:Button2 Icon" content="&lt;span class='lnr lnr-bubble'&gt;&lt;/span&gt;"/>
+    <meta name="text:Button3 Link" content="/submit"/>
+    <meta name="text:Button3 Title" content="Submit"/>
+    <meta name="text:Button3 Icon" content="&lt;span class='lnr lnr-envelope'&gt;&lt;/span&gt;"/>
+    <meta name="text:Button4 Link" content="/random"/>
+    <meta name="text:Button4 Title" content="Random"/>
+    <meta name="text:Button4 Icon" content="&lt;span class='lnr lnr-dice'&gt;&lt;/span&gt;"/>
+    <meta name="text:Button5 Link" content="/archive"/>
+    <meta name="text:Button5 Title" content="Archive"/>
+    <meta name="text:Button5 Icon" content="&lt;span class='lnr lnr-history'&gt;&lt;/span&gt;"/>
+    <meta name="text:Button6 Link" content="/rss"/>
+    <meta name="text:Button6 Title" content="RSS"/>
+    <meta name="text:Button6 Icon" content="&lt;span class='lnr lnr-code'&gt;&lt;/span&gt;"/>
+    <meta name="text:Button7 Link" content=""/>
+    <meta name="text:Button7 Title" content="About"/>
+    <meta name="text:Button7 Icon" content="&lt;span class='lnr lnr-user'&gt;&lt;/span&gt;"/>
+    <meta name="text:Button8 Link" content=""/>
+    <meta name="text:Button8 Title" content="Authorship"/>
+    <meta name="text:Button8 Icon" content="&lt;span class='lnr lnr-pencil'&gt;&lt;/span&gt;"/>
+    <meta name="text:Button9 Link" content=""/>
+    <meta name="text:Button9 Title" content="Tags"/>
+    <meta name="text:Button9 Icon" content="&lt;span class='lnr lnr-tag'&gt;&lt;/span&gt;"/>
+    <meta name="text:Button10 Link" content=""/>
+    <meta name="text:Button10 Title" content="Links"/>
+    <meta name="text:Button10 Icon" content="&lt;span class='lnr lnr-list'&gt;&lt;/span&gt;"/>
+    
+    
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    
+    <title>  
+    {block:PostSummary}{PostSummary} | {/block:PostSummary}
+    {block:SearchPage}{lang:Search results for SearchQuery} | {/block:SearchPage}
+    {block:TagPage}{lang:Posts tagged Tag} | {/block:TagPage}
+    {Title}
+    </title>
+    <link rel="shortcut icon" href="{Favicon}"/>
+    <link rel="alternate" type="application/rss+xml" href="{RSS}"/>
+    {block:Description} <meta name="description" content="{MetaDescription}" /> {/block:Description}
+    
+    
+
+<style>
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {height: 100%;}
+
+body {
+    margin: 0px;
+    background: {color:Background} url('{image:Background}') fixed;
+    background-size: cover;
+    background-position: center;
+    color: {color:Posts Font};
+    font-size: {text:Posts Font Size}px;
+    font-family: {select:Posts Font};
+}
+
+::-webkit-scrollbar {
+    width: {text:Scrollbar Thickness}px;
+    height: {text:Scrollbar Thickness}px;
+    background: {color:Background};
+}
+::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal {
+    background: {color:Posts Background};
+    transition: 0.5s;
+    border-radius: {select:Round Corners};
+    
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    
+    {block:IfExtraBorders}
+    background: {color:Extra Borders Background} url('{image:Extra Borders Background}');
+    {/block:IfExtraBorders}
+}
+::-webkit-scrollbar-thumb:vertical:hover, ::-webkit-scrollbar-thumb:horizontal:hover {background: {color:Titles Font};}
+
+.caixa::-webkit-scrollbar {background: {color:Posts Background};}
+.caixa::-webkit-scrollbar-thumb:vertical {background: {color:Titles Font};}
+
+
+::selection, ::-moz-selection {
+    color: {color:Posts Background};
+    background: {color:Links};
+}
+
+
+/** tooltips **/
+#s-m-t-tooltip{
+    /* basic */
+    max-width: 300px;
+    z-index: 99999999999;
+    margin: 14px 14px 7px 12px;
+    transition: 0.5s;
+    /* style and design */
+    padding: {text:Notes Padding Thickness}px calc({text:Notes Padding Thickness}px + 5px);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: {text:Notes Font Size}px;
+    line-height: calc({text:Notes Font Size}px + 5px);
+    font-family: {select:Notes Font};
+    color: {color:Posts Font};
+    background: {color:Posts Background};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    box-shadow: {select:Shadow Style} {color:Shadows};
+    border-radius: {select:Round Corners};
+}
+/** tooltips **/
+
+
+a {
+    text-decoration: none;
+    color: {color:Links};
+    word-break: break-word;
+}
+a:hover {color: {color:Posts Font};}
+
+a, i {transition: .5s;}
+
+hr {
+    display: table;
+    margin: 0px auto;
+    width: 50%;
+    opacity: .3;
+    border: none;
+    border-top: 1px solid {color:Posts Font};
+}
+
+a b, a strong, a i, a em, b a, strong a, i a, em a {color: {color:Links};}
+
+h1, h2, h3, h4, h5, h6 {
+    display: block;
+    font-weight: normal;
+    font-family: {select:Titles Font};
+    margin: 0px;
+    margin-bottom: {text:Posts Padding Thickness}px;
+    padding: calc({text:Posts Padding Thickness}px / 2) {text:Posts Padding Thickness}px;
+    color: {color:Posts Font};
+    transition: .5s;
+}
+h1 {
+    text-align: center;
+    margin: 0px !important;
+    padding: calc({text:Posts Padding Thickness}px / 2);
+    color: {color:Titles Font};
+    font-size: {text:Titles Font Size}px;
+    background: {color:Titles Background};
+    {block:IfBorders}
+    border-top: {text:Borders Thickness}px solid {color:Borders};
+    border-bottom: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    
+    {select:Titles Style}
+}
+h2 {font-size: calc({text:Titles Font Size}px - 5px);}
+h3 {font-size: calc({text:Titles Font Size}px - 10px);}
+
+h1 a {color: {color:Titles Font};}
+h1 a:hover {color: {color:Links};}
+
+.caixa .post-content h1:first-child, #permalink .caixa h1:first-child {border-top: 0px;}
+
+/** if h1 is :first-child of a .reblog-content [start] **/
+.text h1:first-child, .text .reblog-content + h1:first-child, .text .reblog-content p[style]:first-child + h1 {
+    margin-top: calc({text:Posts Padding Thickness}px - {text:Posts Padding Thickness}px);
+    border-top: none;
+}
+/** if h1 is :first-child of a .reblog-content [end] **/
+
+ol, ul {padding-left: {text:Posts Padding Thickness}px;}
+
+pre {
+    padding: 5px;
+    overflow-x: scroll;
+    background: {color:Highlights Background};
+    color: {color:Highlights Font};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+
+code, .npf_chat {font-family: "Courier New", Consolas;}
+
+
+blockquote {
+    margin: {text:Posts Padding Thickness}px;
+    background: {color:Highlights Background};
+    color: {color:Highlights Font};
+    border-radius: {select:Round Corners};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    
+    {select:Blockquotes Style}
+}
+blockquote img {
+    width: 100%;
+    height: auto;
+}
+
+blockquote p:first-child {margin-top: 0px;}
+
+
+/** text content spacing **/
+h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, pre {
+    margin: calc({text:Posts Padding Thickness}px / 2) {text:Posts Padding Thickness}px;
+    
+    {block:IfNotPhotosCaption}
+    {block:IndexPage}
+    margin-bottom: 0px;
+    {/block:IndexPage}
+    {/block:IfNotPhotosCaption}
+}
+
+p:first-child, ol:first-child, ul:first-child, blockquote:first-child, pre:first-child {
+     margin-top: {text:Posts Padding Thickness}px !important;
+}
+p:last-child, ol:last-child, ul:last-child, blockquote:last-child, pre:last-child {
+     margin-bottom: {text:Posts Padding Thickness}px !important;
+ }
+
+/** "read more" buttons **/
+.read-more-prev {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 15px;
+    background: {color:Posts Background};
+    box-shadow: 0px -10px 10px 10px {color:Posts Background};
+    z-index: 2;
+}
+.read-more, .tmblr-truncated-link {
+    position: absolute;
+    bottom: 0px;
+    z-index: 3;
+    width: 100%;
+}
+.read-more a, .tmblr-truncated-link a {
+    display: table;
+    margin: 0px auto 10px auto;
+    text-align: center;
+    padding: {text:Notes Padding Thickness}px calc({text:Notes Padding Thickness}px + 3px);
+    background: {color:Notes Background};
+    color: {color:Notes Font};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    box-shadow: {select:Shadow Style} {color:Shadows};
+    border-radius: {select:Round Corners};
+}
+.read-more a:hover, .tmblr-truncated-link a:hover {
+    background: {color:Posts Background};
+    color: {color:Posts Font};
+}
+
+
+
+/***** quotes *****/
+.quote, .npf_quote {
+    position: relative;
+    margin: {text:Posts Padding Thickness}px;
+    margin-top: calc({text:Posts Padding Thickness}px + 5px);
+    font-size: {text:Quotes Font Size}px;
+    line-height: calc({text:Quotes Font Size}px + 5px);
+    font-family: {select:Quotes Font} !important;
+    color: {color:Font};
+    text-align: center;
+    z-index: 1;
+    text-indent: 10px;
+}
+.quote:first-letter, .npf_quote:first-letter {
+    font-size: calc({text:Quotes Font Size}px + 50%);
+    line-height: {text:Quotes Font Size}px;
+    font-family: {select:Titles Font};
+}
+.quote:before, .npf_quote:before, .quote:after, .npf_quote:after {
+    font-family: 'Georgia', sans-serif;
+    font-size: 40px;
+    line-height: {text:Quotes Font Size}px;
+    vertical-align: middle;
+    opacity: .2;
+    position: absolute;
+    z-index: 0;
+}
+.quote:before, .npf_quote:before {
+    content: "❝";
+    top: 0px;
+    left: -10px;
+}
+.quote:after, .npf_quote:after {
+    content: "❞";
+    bottom: -12px;
+    right: 0px;
+}
+
+
+.quote-source {
+    text-align: right;
+    margin: {text:Posts Padding Thickness}px;
+}
+
+
+/** chats **/
+.chat {
+    list-style: none;
+    padding: 0px;
+}
+.chat li {margin-bottom: 2px;}
+
+
+/***** IMAGES *****/
+figure {
+    margin: 0px;
+    width: 100%;
+}
+figure img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0px;
+    border-radius: {select:Round Corners on Images};
+    margin-bottom: -3px;
+}
+figure a, figure a.post_media_photo_anchor {}
+
+.caixa figure.tmblr-full {
+    margin-bottom: {text:Images Spacing}px;
+}
+.caixa figure.tmblr-full img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.photo, .photogroup, .photoset-container {
+    {block:IfMarginonImages}
+    margin: {text:Posts Padding Thickness}px;
+    {/block:IfMarginonImages}
+    
+    {block:IfNotPhotosCaption}
+    {block:IndexPage}
+    margin-bottom: {text:Posts Padding Thickness}px;
+    
+    {block:IfNotMarginonImages}
+    margin-bottom: 0px;
+    {/block:IfNotMarginonImages}
+    {/block:IndexPage}
+    {/block:IfNotPhotosCaption}
+}
+
+.photoset-container:last-child {
+    {block:IfNotMarginonImages}
+    margin-bottom: 0px;
+    {/block:IfNotMarginonImages}
+}
+
+.photogroup .tmblr-full + .npf_row {margin-top: {text:Images Spacing}px !important;}
+
+figure.mid-res, figure.high-res {display: none;}
+
+/** if: borders on images **/
+{block:IfBordersonImages}
+.caixa figure img {
+    border: {text:Borders Thickness}px solid {color:Borders};
+}
+.caixa .npf_row figure img {border: {text:Borders Thickness}px solid {color:Borders} !important;}
+
+{block:IfNotMarginonImages}
+.caixa figure.tmblr-full img {
+    border-left: 0px;
+    border-right: 0px;
+}
+.caixa figure.tmblr-full:first-child img {border-top: 0px;}
+.caixa figure.tmblr-full:last-child img {border-bottom: 0px;}
+
+.caixa .npf_row:first-child .npf_col figure img {margin-top: 0px !important;}
+.caixa .npf_row:last-child .npf_col figure img {margin-bottom: 0px !important;}
+
+.caixa .npf_row .npf_col:first-child figure img {border-left: 0px !important;}
+.caixa .npf_row .npf_col:last-child figure img {border-right: 0px !important;}
+
+{/block:IfNotMarginonImages}
+{/block:IfBordersonImages}
+
+
+/***** PHOTOSETS *****/
+[photoset-layout] {
+  grid-column-gap: 0px; /* this is the gap between the columns */
+  grid-row-gap: 0px; /* this is the gap between the rows */
+  grid-gap: {text:Images Spacing}px; /* this is the gap between both the rows and the columns; you should probably use this if they are the same value */
+}
+[photoset-layout] img {
+    cursor: pointer;
+    margin-bottom: 0px !important;
+}
+
+figure.photoset-figure {height: 100%;}
+figure.photoset-figure img {}
+
+/** npf photosets **/
+.npf_row {
+    margin: 0px 0px {text:Images Spacing}px 0px !important;
+}
+.npf_col {
+    margin: 0px calc({text:Images Spacing}px / 4);
+}
+.npf_col:first-child {margin-left: 0px;}
+.npf_col:last-child {margin-right: 0px;}
+
+
+/** images filters **/
+img, .video-player iframe, .audio-content .audio-player iframe {
+    opacity: {select:Images transparency};
+    filter: {select:Images effect};
+    -webkit-filter: {select:Images effect};
+    transition: .5s;
+}
+
+figure:hover img, img:hover, .caixa:hover img, .caixa:hover .video-player iframe, .caixa:hover .audio-content .audio-player iframe {
+    opacity: 1;
+    filter: none;
+    -webkit-filter: none;
+}
+
+
+
+/***** EXIF *****/
+.exif, .caption.exif {
+    margin: 10px;
+}
+.exif table {
+    list-style: none;
+    display: inline-table;
+    padding: 0px;
+}
+.exif table th, .exif table td {
+    display: inline-table;
+    margin: 3px;
+    padding: {text:Notes Padding Thickness}px;
+    line-height: {text:Notes Font Size}px;
+    font-size: {text:Notes Font Size}px;
+    font-family: {select:Notes Font};
+    background: {color:Posts Background};
+    color: {color:Posts Font};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    border-radius: {select:Round Corners on Images};
+}
+.exif table td {
+    padding: calc({text:Notes Padding Thickness}px - 2px);
+}
+.exif table td i {
+    margin-right: 2px;
+}
+
+
+
+/** AUDIO POSTS **/
+.video-player, .audio-content {
+    padding: 0px;
+    background: {color:Posts Background};
+    overflow: hidden;
+    
+    {block:IfBorders}
+    border-bottom: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    
+    {block:IfMarginonImages}
+    margin: {text:Posts Padding Thickness}px;
+    border-radius: {select:Round Corners on Images};
+
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    
+    {/block:IfMarginonImages}
+
+}
+.video-player, .embed_iframe {
+    width: 100%;
+    min-height: 300px;
+}
+
+.audio-player {
+    height: 80px;
+    overflow: hidden;
+    {block:IfBorders}
+    border-bottom: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+iframe.tumblr_audio_player {
+    width: 100% !important;
+    height: auto;
+}
+
+
+.audio-info {
+    position: relative;
+}
+.audio-info table {
+    border-spacing: 0px;
+    margin: 0px;
+}
+.audio-info table tr td {
+    padding: calc({text:Posts Padding Thickness}px / 2);
+    background: {color:Highlights Background};
+    color: {color:Highlights Font};
+    {block:IfBorders}
+    border-bottom: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    
+    {block:IfNotBorders}
+    margin-bottom: 1px;
+    {/block:IfNotBorders}
+}
+.audio-info table tr td:not(:first-child) {width: 100%;}
+.audio-info table tr td:first-child {
+    text-align: center;
+    background: {color:Notes background};
+    color: {color:Notes font};
+    white-space: pre;
+    {block:IfBorders}
+    border-right: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+.audio-info i {
+    color: {color:Notes font};
+    margin-right: 5px;
+}
+.audio-info table tr:last-child td {border-bottom: none;}
+
+
+
+
+/** npf audio & video **/
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+
+/** LINK POSTS **/
+.link_post a.link {
+    display: block;
+    margin: {text:Posts Padding Thickness}px;
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    border-radius: {select:Round Corners on Images};
+    overflow: hidden;
+}
+.link_post a.link i {
+    font-size: calc({text:Titles Font Size}px - 5px);
+    color: {color:Titles Font};
+    margin-right: 5px;
+}
+
+.link_post a.link h1 {margin: 0px}
+.link_post a.link .excerpt {
+    text-align: center;
+    background: {color:Highlights Background};
+    color: {color:Links};
+    margin: 0px !important;
+    padding: {text:Posts Padding Thickness}px;
+    transition: .5s;
+}
+.link_post a.link:hover .excerpt {color: {color:Highlights Font};}
+
+.link_post a.link:hover, .link_post a.link:hover h1, .link_post a.link:hover i {color: {color:Links};}
+
+/** npf links **/
+.npf-link-block {
+    margin: 0px;
+    border-radius: {select:Round Corners on Images};
+    
+    {block:IfMarginonImages}
+    margin: {text:Posts Padding Thickness}px;
+    {/block:IfMarginonImages}
+}
+
+
+
+/*** ANSWER/ASK ***/
+#ask_form, #submit_form {margin: {text:Posts Padding Thickness}px;}
+
+.ask_post {}
+
+.ask-content {
+    {block:IfMarginonImages}
+    margin: {text:Posts Padding Thickness}px;
+    {/block:IfMarginonImages}
+}
+
+.ask-portrait {
+    float: left;
+    position: relative;
+    background: {color:Posts Background};
+    width: 70px;
+    height: 70px;
+    margin: 0px 20px 10px 0px;
+    z-index: 1;
+    {block:IfBorders}
+    border-right: {text:Borders Thickness}px solid {color:Borders};
+    border-bottom: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+.ask-portrait figure {
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+    border-radius: {select:Round Corners on Images} 0px {select:Round Corners on Images} 0px !important;
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+.ask-portrait figure img {
+    width: 100%;
+    height: auto;
+    padding-bottom: -1px;
+    border-radius: 0px;
+    border-radius: {select:Round Corners on Images} 0px {select:Round Corners on Images} 0px;
+}
+
+
+
+.question, .answer {
+    padding: {text:Posts Padding Thickness}px;
+    margin-bottom: {text:Posts Padding Thickness}px;
+    margin-left: 0px;
+    min-height: 40px;
+    position: relative;
+    background: {color:Highlights background};
+    color: {color:Highlights font};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    border-radius: 0px 0px {select:Round Corners on Images} {select:Round Corners on Images};
+}
+
+.question {
+    {block:IfNotMarginonImages}
+    border-left: 0px;
+    border-right: 0px;
+    {/block:IfNotMarginonImages}
+}
+
+.text.answer {
+    padding: 1px 0px !important;
+    
+    margin: {text:Posts Padding Thickness}px;
+    margin-top: -{text:Posts Padding Thickness}px;
+    
+    {block:IfBorders}
+    border-top: none;
+    {/block:IfBorders}
+}
+
+.text.answer pre, .text.answer blockquote {background: {color:Posts Background};}
+
+/** asker **/
+.sign, .sign2 {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    line-height: calc({text:Notes Font Size}px + 2px);
+    font-size: {text:Notes Font Size}px;
+    font-family: {select:Notes Font};
+    color: {color:Notes font};
+    background: {color:Notes background};
+    border-radius: {select:Round Corners on Images};
+}
+.sign {
+    margin: -20px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    border-radius: 0px {select:Round Corners on Images} 0px 0px;
+    {block:IfBorders}
+    border-bottom: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+.sign a, .sign2 a {color: {color:Posts Links};}
+.sign a:before {content: "@";}
+
+.sign2 {border-radius: {select:Round Corners on Images} {select:Round Corners on Images} 0px 0px;}
+
+
+.question-arrow {
+    position: absolute;
+    top: 10px;
+    left: 65px;
+    z-index: 1;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background: {color:Notes background};
+    {block:IfBorders}
+    border-left: {text:Borders Thickness}px solid {color:Borders};
+    border-bottom: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+.question-arrow-content {}
+
+
+/** answerer **/
+.sign2 {
+    position: relative;
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    
+    {block:IfNotMarginonImages}
+    margin: {text:Posts Padding Thickness}px;
+    {/block:IfNotMarginonImages}
+    
+    margin-top: calc(-{text:Posts Padding Thickness}px / 2);
+    z-index: 2;
+}
+.sign2 .question-arrow {
+    transform: rotate(-45deg);
+    left: 30px;
+    top: calc(100% - 4px);
+}
+.answerer:before {content: "@";}
+
+
+
+/** CAPTIONS **/
+.caption {
+    position: relative;
+    
+    
+    {block:IfNotPhotosCaption}
+    {block:IndexPage}
+    transition: .7s;
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    max-height: 90%;
+    overflow: hidden;
+    background: {color:Posts Background};
+    z-index: 2;
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+    opacity: 0;
+    {block:IfBorders}
+    border-top: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    {/block:IndexPage}
+    {/block:IfNotPhotosCaption}
+    
+}
+
+.caixa:hover .caption {
+    {block:IfNotPhotosCaption}
+    {block:IndexPage}
+    transform: scaleY(1);
+    opacity: 1;
+    {/block:IndexPage}
+    {/block:IfNotPhotosCaption}
+}
+
+.text_post {}
+.text.reblog-list {}
+.text.reblog-list .reblog-caption {}
+.text.reblog-list .reblog-header {
+    padding: {text:Notes Padding Thickness}px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: {color:Notes Background};
+    color: {color:Notes Font};
+    font-family: {select:Notes Font};
+    font-size: {text:Notes Font Size}px;
+    line-height: {text:Notes Font Size}px;
+    {block:IfBorders}
+    border-top: {text:Borders Thickness}px solid {color:Borders};
+    border-bottom: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+.text.reblog-list:first-child .reblog-caption:first-child .reblog-header {border-top:none;}
+
+/** if .reblog-list has a h1 right before it [start] **/
+h1 + .text.reblog-list:first- .reblog-caption:first-child {margin-top: 0px !important;}
+h1 + .text.reblog-list .reblog-caption:first-child .reblog-header {border-top: none;}
+/** if .reblog-list has a h1 right before it [end] **/
+
+.text.reblog-list .reblog-header .tumblr_blog:after, .text.reblog-list .reblog-header .inactive-username:after {content: ":";}
+.text.reblog-list .captions-avatar {
+    width: calc({text:Notes Font Size}px + 2px);
+    height: calc({text:Notes Font Size}px + 2px);
+    border-radius: {select:Round Corners};
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: -2px;
+}
+.text.reblog-list .captions-avatar img {
+    width: 100%;
+    height: auto;
+}
+.text.reblog-list .reblog-content {
+    margin-bottom: -10px;
+
+}
+
+
+/** if "first captions header" is off **/
+.caixa .reblog-caption:first-of-type .reblog-header {
+    {block:IfNotFirstCaptionsHeader}
+    display: none;
+    {/block:IfNotFirstCaptionsHeader}
+}
+
+.hidden-captions {
+    display: none;
+}
+
+
+
+
+/********** related posts **********/
+#related-posts {
+    position: relative;
+    display: table;
+    text-align: center;
+}
+
+#related-posts .related-title.caixa {
+    width: calc(100% - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
+}
+#related-posts .related-title.caixa .caixa-content {
+    height: auto;
+    background: {color:Titles Background} !important;
+    color: {color:Titles Font};
+    padding: 0px;
+}
+#related-posts .related-title.caixa h1 {
+    border: none;
+    padding: 10px;
+    margin: 0px;
+    font-size: {text:Titles Font size}px
+}
+
+
+#related-posts .related-posts-grid {
+    display: grid;
+    grid: auto / 33.3% 33.3% 33.3%;
+    text-align: center;
+    margin: calc({text:Posts Spacing}px - 5px);
+}
+
+#related-posts .caixa {
+    display: inline-block;
+    overflow: hidden;
+    margin: 5px;
+    font-size: 11px;
+    max-height: 150px;
+}
+#related-posts .caixa-content {
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    height: calc(100% - 20px);
+}
+
+#related-posts .caixa:not(.related-title) .caixa-content:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: calc({text:Posts Padding Thickness}px - 10px);
+    background: {color:Posts Background};
+    box-shadow: 0px 0px 10px 10px {color:Posts Background};
+}
+
+
+
+
+#related-posts .caixa figure, #related-posts .photogroup, #related-posts .photoset-grid {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#related-posts .photoset-grid figure {width: 100%;}
+
+#related-posts .caixa figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#related-posts .caixa h1, #related-posts .caixa h2 {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#related-posts .caixa blockquote {
+    text-align: left;
+    margin: 0px;
+}
+#related-posts .caixa blockquote figure {
+    width: calc(100% + 10px);
+}
+
+
+
+.related-post-link, .related-post-link .cover, .related-post-link .icon {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.related-post-link {z-index: 7;}
+
+.related-post-link .cover, .related-post-link .icon {transition: .5s;}
+
+.related-post-link .cover {
+    opacity: 0;
+    background: {color:Posts Background};
+    z-index: 5;
+}
+#related-posts .caixa:hover .related-post-link .cover {opacity: .9;}
+
+.related-post-link .icon {
+    opacity: 0;
+    line-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    z-index: 6;
+}
+.related-post-link .icon i {
+    display: table;
+    margin: 0px auto;
+    font-size: 500%;
+    color: {color:Posts Font};
+}
+#related-posts .caixa:hover .related-post-link .icon {opacity: 1;}
+
+
+
+
+
+/******************** HEADER ********************/
+#header {
+    position: relative;
+    width: {text:Layout Width};
+    margin: 0px auto;
+    z-index: 4;
+}
+
+#header .caixa {margin: 0px;}
+
+#header .description {text-align: center;}
+
+
+/** desktop header **/
+#desktop-header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 0px;
+    font-size: {text:Header Font Size}px;
+    line-height: {text:Header Font Size}px;
+}
+#desktop-header .desktop-header-content {
+    width: calc({text:Layout Width} + ({text:Posts Spacing}px * 2));
+    display: table;
+    border-spacing: calc({text:Posts Spacing}px * 2);
+    margin: 0px auto;
+}
+#desktop-header .caixa {
+    display: table-cell;
+    vertical-align: middle;
+    {block:IfNotExtraBorders}
+    background: {color:Header};
+    {/block:IfNotExtraBorders}
+    overflow: visible;
+}
+#desktop-header .caixa-content {
+    height: 100%;
+    background: {color:Header};
+    vertical-align: middle;
+    text-align: center;
+    overflow: visible;
+    border-radius: {select:Round Corners};
+}
+
+#desktop-header .caixa:first-of-type {width: calc({text:Header Font Size}px + {text:Posts Padding Thickness}px);}
+
+#desktop-header .portrait {
+    border-radius: {select:Round Corners};
+    overflow: hidden;
+}
+#desktop-header .portrait img {
+    display: block;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    margin-left: -1px;
+    border-radius: 0px;
+}
+
+#desktop-header .title {
+    background: none;
+    border: none;
+    padding: 0px;
+    color: {color:Header Font};
+    font-size: calc({text:Header Font Size}px + 5px);
+    white-space: pre;
+}
+#desktop-header .title a {
+    padding: 10px;
+    display: block;
+    color: {color:Header Font};
+}
+#desktop-header .title a:hover {color: {color:Links};}
+
+
+/** desktop menu **/
+#desktop-menu {
+    display: flex;
+    font-size: {text:Header Font Size}px;
+}
+#desktop-menu .menu-button {
+    flex: 1;
+    margin: 0px;
+    {block:IfBorders}
+    border-left: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+#desktop-menu .menu-button:first-child {border: none;}
+
+#desktop-menu .menu-button a {
+    color: {color:Header Font};
+    padding: 10px;
+    display: block;
+}
+#desktop-menu .menu-button i {color: {color:Header Font};}
+
+#desktop-menu .menu-button a:hover, #desktop-menu .menu-button a:hover i {color: {color:Links};}
+
+
+#desktop-menu .menu-title {display: none;}
+
+#desktop-menu .plus-btn {position: relative;}
+#desktop-menu .plus-btn-content {
+    position: absolute;
+    right: -1px;
+    top: 100%;
+    {block:IfExtraBorders}
+    right: calc(-{text:Extra Borders Thickness}px - 1px);
+    top: calc(100% + {text:Extra Borders Thickness}px);
+    {/block:IfExtraBorders}
+    margin-top: 10px;
+    width: 100%;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: 100% 0%;
+}
+#desktop-menu .plus-btn-content .caixa-content {
+    background: {color:Posts Background};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    border-radius: {select:Round Corners};
+    overflow: hidden;
+}
+
+#desktop-menu .plus-btn:hover .plus-btn-content {
+    transform: scaleY(1);
+    width: 500px;
+}
+
+#desktop-menu .description {margin-bottom: {text:Posts Padding Thickness}px;}
+
+#main-searchbar {
+    width: 100%;
+    {block:IfBorders}
+    border-top: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+
+
+/** mobile header **/
+#mobile-header .caixa:first-of-type {
+    padding: 0px;
+    border-radius: 0px;
+    border: none;
+    {block:IfBorders}
+    border-bottom: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    {block:IfExtraBorders}
+    padding-bottom: {text:Extra Borders Thickness}px;
+    {/block:IfExtraBorders}
+    overflow: visible;
+}
+
+#mobile-header .caixa-content {
+    overflow: visible;
+    border-radius: 0px;
+}
+
+#mobile-header .header-top {
+    display: table;
+    width: 100%;
+    {block:IfBorders}
+    border-bottom: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+
+#mobile-menu.menu {
+    position: relative;
+    display: table-cell;
+    border-collapse: collapse;
+    width: calc({text:Header Font Size}px + 5px + 20px);
+    vertical-align: middle;
+}
+
+#mobile-menu .dropdown-button {
+    cursor: pointer;
+    text-align: center;
+    color: {color:Header Font};
+    font-size: calc({text:Header Font Size}px + 5px);
+    line-height: calc({text:Header Font Size}px + 5px);
+    padding: 10px;
+}
+
+#mobile-menu .dropdown {
+    position: absolute;
+    width: 500%;
+    top: 100%;
+    left: 0px;
+    z-index: 10;
+    background: {color:Header};
+    color: {color:Header Font};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    display: none;
+}
+
+#mobile-menu .menu-button {
+    border: none;
+    {block:IfBorders}
+    border-bottom: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+#mobile-menu .menu-button:last-child {border: none;}
+#mobile-menu .menu-button a {
+    display: block;
+    padding: 10px;
+    color: {color:Header Font}
+}
+#mobile-menu .menu-button a:hover {color: {color:Links};}
+
+#mobile-menu .menu-button:first-of-type {border-left: none;}
+
+#mobile-menu .menu-title {margin-left: 5px;}
+
+
+#mobile-header .title {
+    background: {color:Header};
+    color: {color:Header Font};
+    display: table-cell;
+    border: none;
+    {block:IfBorders}
+    border-left: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+#mobile-header .title a {color: {color:Header Font};}
+#mobile-header .title a:hover {color: {color:Links};}
+
+
+#mobile-search.caixa {
+    display: table;
+    margin: 0px auto;
+    margin-top: {text:Posts Spacing}px;
+    width: calc(100% - ({text:Posts Spacing}px * 4) {block:IfExtraBorders}
+    - ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders});
+}
+
+
+/********** SEARCH FORM [start] ***/
+.search {
+    position: relative;
+    margin-bottom: -1px;
+}
+.search .search-content {
+    padding: 0px;
+    background: {color:Posts Background};
+}
+
+.search table {
+    position: relative;
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0px;
+    text-align: left;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+.search.caixa table tr, .search.caixa table td {
+    margin: 0px;
+}
+
+.search.caixa form {
+    margin: 0px;
+    overflow: hidden;
+}
+.search-form form input {
+    border: none;
+    outline: none;
+    width: calc(100% - 15px);
+    padding: 10px;
+    background: {color:Posts Background};
+    color: {color:Posts Font};
+    font-family: {select:Posts Font};
+    font-size: {text:Posts Font Size}px;
+    line-height: {text:Posts Font Size}px;
+    transition: .5s;
+    opacity: .5;
+    z-index: 1;
+}
+.search-form form input::placeholder {
+    font-style: italic;
+}
+.search-form form input:hover {
+    color: {color:Posts Titles Font};
+    opacity: 1;
+}
+
+
+.search-button {
+    position: relative;
+    cursor: pointer;
+    padding: 5px 5px 3px 5px;
+    text-align: center;
+    background: {color:Notes Background};
+    color: {color:Notes Font};
+    font-size: {text:Posts Font Size}px;
+    line-height: {text:Posts Font Size}px;
+    border: none;
+    transition: .5s;
+    {block:IfBorders}
+    border-left: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    z-index: 2;
+}
+.search-button:hover {
+    background: {color:Posts Background};
+    color: {color:Links};
+}
+/********** SEARCH FORM [end] ***/
+
+
+
+
+
+
+
+/**** CONTENT ****/
+#content {
+    position: relative;
+    width: {text:Layout Width};
+    min-height: 540px;
+    margin: 0px auto;
+    margin-top: calc({text:Header Font Size}px + ({text:Posts Padding Thickness}px * 2) + ({text:Posts Spacing}px * 2) {block:IfExtraBorders}+ ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}+ ({text:Borders Thickness}px * 2){/block:IfBorders});
+    {block:PermalinkPage}
+    width: 85%;
+    {/block:PermalinkPage}
+}
+
+
+
+
+
+/****************************************** POSTS [start] **/
+#posts-section {
+    width: 100%;
+    /*margin-top: calc({text:Header Font Size}px + ({text:Posts Padding Thickness}px * 2) + {text:Posts Spacing}px * 2);*/
+}
+
+#posts, #filter-pages {margin: 0px auto;}
+
+#filter-pages {
+    display: table;
+    white-space: nowrap;
+}
+
+#posts {width: 100%;}
+
+/** CAIXAS / BOXES **/
+.caixa {
+    overflow: hidden;
+    margin: {text:Posts Spacing}px;
+    border-radius: {select:Round Corners};
+    box-shadow: {select:Shadow Style} {color:Shadows};
+    background: {color:Posts Background};
+    
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    
+    {block:IfExtraBorders}
+    background: {color:Extra Borders Background} url('{image:Extra Borders Background}');
+    padding: {text:Extra Borders Thickness}px;
+    {/block:IfExtraBorders}
+}
+.caixa-content {
+    position: relative;
+    overflow: hidden;
+    background: {color:Posts Background};
+    
+    {block:IfPhotosCaption}
+    padding-bottom: 0px;
+    {/block:IfPhotosCaption}
+    
+    {block:IfExtraBorders}
+    border-radius: calc({select:Round Corners} - ({select:Round Corners} / 2));
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    {/block:IfExtraBorders}
+}
+
+.caixa.post {
+    width: calc({select:Number of Columns} - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
+    
+    {block:IndexPage}
+    max-width: 600px;
+    {/block:IndexPage}
+    
+    {block:PermalinkPage}
+    width: calc(60% - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
+    margin: {text:Posts Spacing}px auto;
+    {/block:PermalinkPage}
+}
+.caixa.post.hasdate {
+    {block:PermalinkPage}
+    margin: {text:Posts Spacing}px;
+    float: left;
+    {/block:PermalinkPage}
+}
+
+.post-content {
+    position: relative;
+    margin: 0px;
+}
+
+
+/** filter pages / tag and keyword search pages **/
+#filter-pages {
+    {block:PermalinkPage}
+    display: none;
+    {/block:PermalinkPage}
+}
+#filter-pages .caixa {
+    width: calc(100% - {text:Posts Padding Thickness}px {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
+}
+
+#filter-pages .caixa-content {padding: 0px;}
+
+#filter-pages .caixa h1:first-child {margin: 0px;}
+
+#filter-pages .caixa p i {margin-left: 5px;}
+
+#filter-pages .caixa p, #pnf-content .p {
+    text-align: center;
+    margin-bottom: calc({text:Posts Padding Thickness}px / 2);
+}
+#filter-pages .read-more.back-button, #pnf-content .read-more.back-button {
+    position: relative;
+    margin-bottom: calc({text:Posts Padding Thickness}px / 2) !important;
+}
+
+#pnf-content h1 {
+    margin: 0px;
+    margin-bottom: {text:Posts Padding Thickness}px;
+}
+
+/** if no results found **/
+#filter-pages .search_query, #filter-pages .tag {color: {color:Titles font}; margin-right: 5px;}
+#filter-pages .search_query:before {content: "“";}
+#filter-pages .tag:before {content: "“#";}
+#filter-pages .search_query:after, #filter-pages .tag:after {content: "”";}
+/** if no results found **/
+
+
+
+
+/***** POST MENU / POST INFO / NOTES *****/
+.post-menu {
+    position: relative;
+    z-index: 3;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: {color:Notes Font};
+    font-family: {select:Notes Font};
+    font-size: {text:Notes Font Size}px;
+}
+.post-menu .left, .post-menu .right {display: inline-block;}
+.post-menu .button, .post-menu .button i {
+    display: inline-table;
+    transition: .7s;
+    border-radius: {select:Round Corners};
+}
+.post-menu .button:hover, .post-menu .button:hover i {color: {color:Notes Font Hover};}
+
+.post-menu a, .post-menu i {
+    color: {color:Notes Font};
+}
+
+/***** POST MENU STYLES *****/
+
+/** notes styles 1 & 2 **/
+.post-menu.style1, .post-menu.style2 {
+    padding: {text:Notes Padding Thickness}px;
+    background: {color:Notes Background};
+}
+.post-menu.style1.top {
+    {block:IfBorders}
+    border-bottom: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+.post-menu.style2.top {display: none;}
+.post-menu.style1.bottom, .post-menu.style2.bottom {
+    margin-top: {text:Posts Padding Thickness}px;
+    {block:IfBorders}
+    border-top: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    {block:IfPhotosCaption}
+    margin-bottom: 0px;
+    {/block:IfPhotosCaption}
+}
+.post-menu.style1 .right, .post-menu.style2 .right {float: right;}
+
+.post-menu.style1 .button, .post-menu.style2 .button {
+    margin: 0px 2px;
+}
+
+
+/** notes styles 3 & 4 **/
+.post-menu.style3, .post-menu.style4 {
+    position: absolute;
+    transition: .5s;
+}
+.post-menu.style3.top {
+    top: calc({text:Posts Padding Thickness}px / 2);
+    left: -50%;
+    opacity: 0;
+}
+.post-menu.style4.top {display: none;}
+.post-menu.style3.bottom {
+    bottom: calc({text:Posts Padding Thickness}px / 2);
+    right: -50%;
+    opacity: 0;
+}
+.post-menu.style4.bottom {
+    top: calc({text:Posts Padding Thickness}px / 2);
+    right: -50%;
+    opacity: 0;
+}
+
+.caixa:hover .post-menu.style3.top {
+    left: calc({text:Posts Padding Thickness}px / 2);
+    opacity: 1;
+}
+.caixa:hover .post-menu.style3.bottom {
+    right: calc({text:Posts Padding Thickness}px / 2);
+    opacity: 1;
+}
+.caixa:hover .post-menu.style4.bottom {
+    right: calc({text:Posts Padding Thickness}px / 2);
+    opacity: 1;
+}
+
+.post-menu.style3 .button, .post-menu.style4 .button {
+    padding: {text:Notes Padding Thickness}px;
+    margin: 0px 1px;
+    background: {color:Notes Background};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    box-shadow: {select:Shadow Style} {color:Shadows};
+}
+.post-menu.style3 .button:hover, .post-menu.style4 .button:hover {
+    background: {color:Background};
+}
+
+/** notes styles 5 & 6 **/
+.post-menu.style5.bottom, .post-menu.style6.bottom {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: .7s;
+    display: flex;
+    align-items: center;
+}
+.caixa:hover .post-menu.style5.bottom, .caixa:hover .post-menu.style6.bottom {opacity: 1;}
+
+.post-menu.style5.bottom {background: rgba(0,0,0,.9);}
+.post-menu.style6.bottom {background: rgba(255,255,255,.9);}
+
+.post-menu.style5.top, .post-menu.style6.top {display: none;}
+
+.post-menu.style5.bottom .post-menu-content, .post-menu.style6.bottom .post-menu-content {
+    display: table;
+    margin: 0px auto;
+}
+
+.post-menu.style5.bottom .left, .post-menu.style6.bottom .left, .post-menu.style5.bottom .right, .post-menu.style6.bottom .right {
+    display: table;
+    margin: 0px auto;
+}
+
+.post-menu.style5 .button, .post-menu.style6 .button {
+    padding: 10px;
+    margin: 2px;
+    font-size: 20px;
+    background: {color:Notes Background};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    box-shadow: {select:Shadow Style} {color:Shadows};
+}
+.post-menu.style5 .button:hover, .post-menu.style6 .button:hover {
+    background: {color:Posts Background};
+    color: {color:Posts Font};
+}
+.post-menu.style5 .button:hover i, .post-menu.style6 .button:hover i {color: {color:Posts Font};} 
+
+
+/** custom like button **/
+.like_wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.like_button {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc({text:Notes Font Size}px + 2px);
+    height: calc({text:Notes Font Size}px + 2px);
+    z-index: 10;
+    border: 1px solid #aca;
+    cursor: pointer;
+    opacity: 0.000001;
+}
+.like_button iframe {
+    width: 100% !important;
+    height: 100% !important;
+    cursor: pointer;
+}
+
+.like_button iframe:hover + .olike a {color: {color:Titles Font} !important;}
+.like_button:hover + .olike a {color: {color:Titles Font} !important;}
+.like_button.liked + .olike i {color: #ff1a1a !important;}
+
+
+
+/***** PERMALINK *****/
+#permalink {
+    width: 40%;
+    height: auto;
+    float: right;
+    margin-top: {text:Posts Spacing}px;
+}
+#permalink .caixa:first-of-type {margin-top: 0px;}
+
+#permalink h1 i, #related-posts h1 i {
+    font-size: calc({text:Titles Font size}px - 12px) !important;
+    vertical-align: 20%;
+}
+
+/** share buttons **/
+#permalink .share {
+    width: calc(100% - ({text:Posts Padding Thickness}px * 2));
+    text-align: center;
+    margin: {text:Posts Padding Thickness}px;
+}
+#permalink .share a {
+    display: inline-table;
+    margin: 2px;
+    padding: 8px 6px 5px 6px;
+    min-width: 20px;
+    text-align: center;
+    font-size: 16px;
+    background: {color:Notes Background};
+    color: {color:Notes Font};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    box-shadow: {select:Shadow Style} {color:Shadows};
+    border-radius: {select:Round Corners};
+    transform: rotate(0deg);
+}
+#permalink .share a i {color: {color:Notes Font};}
+#permalink .share a:hover {
+    background: {color:Background};
+    transform: rotate(-30deg);}
+#permalink .share a:hover i {color: {color:Posts Font};}
+
+
+/** post info **/
+#permalink table, #permalink ol {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: {text:Notes Font Size}px;
+    font-family: {select:Notes Font};
+    margin: {text:Posts Padding Thickness}px;
+    width: calc(100% - ({text:Posts Padding Thickness}px * 2));
+}
+#permalink table {
+    border-collapse: collapse;
+}
+#permalink table td {
+    padding: {text:Notes Padding Thickness}px;
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    background: {color:Highlights Background};
+    color: {color:Highlights Font};
+    transition: .5s;
+}
+
+#permalink table tr td:first-child {
+    text-align: center;
+    background: {color:Notes Background};
+    color: {color:Notes Font};
+    padding: {text:Notes Padding Thickness}px;
+    width: {text:Notes Font Size}px;
+}
+#permalink table td i {margin: 0px;}
+
+#permalink table tr:hover td:last-child {
+    background: {color:Background};
+}
+
+
+/** post notes **/
+#permalink ol {
+    list-style: decimal-leading-zero inside;
+    overflow-y: scroll;
+    max-height: 300px;
+    font-size: {text:Notes Font Size}px;
+    padding: 0px;
+}
+#permalink ol::marker {
+    color: {color:Notes Font};
+}
+
+#permalink ol li {
+    transition: .5s;
+    padding: {text:Notes Padding Thickness}px calc({text:Notes Padding Thickness}px + 5px);
+    margin-bottom: 1px;
+    margin-right: 5px;
+    line-height: 25px;
+    /** check \i/ **/
+    box-shadow: 30px 0px 0px {color:Notes Background} inset {block:IfBorders}, 31px 0px 0px {color:Borders} inset{/block:IfBorders};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    background: {color:Highlights Background};
+    color: {color:Notes Font};
+}
+#permalink ol li span {color: {color:Highlights Font};}
+#permalink ol li img {
+    width: 20px;
+    vertical-align: middle;
+    margin: 0px calc({text:Notes Padding Thickness}px + 5px);
+}
+
+#permalink ol li:hover {
+    margin-left: 40px;
+    background: {color:Background};
+}
+
+#permalink .more_notes_link_container {
+    background: none;
+    list-style: none;
+    box-shadow: none; 
+    text-decoration: underline;
+} 
+#permalink .more_notes_link_container:hover {margin-left: 0px;}
+#permalink .more_notes_link_container:hover a {letter-spacing: 2px;}
+
+
+#permalink .note blockquote {
+    margin: 5px 0px 0px 40px;
+    padding: 0px 0px 0px 10px;
+}
+
+
+/**** permalink pagination ****/
+#permalink-navigation {
+    display: table;
+    width: calc(100% - 10px);
+    margin: 10px auto;
+    text-align: center;
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: flex-start; /* Safari 7.0+ */
+    display: flex;
+    align-items: flex-start;
+}
+
+#permalink-navigation a {
+    display: inline-table;
+    width: calc(100% - 50px);
+}
+#permalink-navigation a, #permalink-navigation a:hover {box-shadow: none;}
+
+#permalink-navigation .button {
+    display: inline-table; 
+    width: calc(100% - 54px);
+    padding: 20px;
+    margin: 5px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    background: {color:Notes Background};
+    color: {color:Notes Font};
+    border-radius: {select:Round Corners};
+    transition: 0.5s;
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+#permalink-navigation .button i {color: {color:Posts Font};}
+
+
+#permalink-navigation .button.withlink {
+    display: inline-table;
+    width: calc(100% - 50px);
+    background: {color:Posts Background};
+    color: {color:Posts Font};
+}
+#permalink-navigation a .button.withlink, #permalink-navigation .button.withlink i {color: {color:Notes Font};}
+
+#permalink-navigation .button.withlink:hover {background: {color:Posts Background};}
+
+#permalink-navigation a .button.withlink:hover, #permalink-navigation .button.withlink:hover i {color: {color:Posts Font};}
+
+
+
+
+
+
+
+/********** PAGINATION **********/
+#pagination {
+    display: table;
+    margin: 40px auto;
+    color: {color:Notes Font};
+    font-family: {select:Notes Font};
+    padding: {text:Notes Padding Thickness}px;
+}
+#pagination .pagination-content {
+    text-align: center;
+    font-size: {text:Notes Font Size}px;
+    background: none;
+    border: none;
+}
+#pagination .button {
+    width: {text:Notes Font Size}px;
+    height: {text:Notes Font Size}px;
+    display: inline-table;
+    position: relative;
+    overflow: hidden;
+    margin: 1px;
+    padding: {text:Notes Padding Thickness}px calc({text:Notes Padding Thickness}px + 1px);
+    background: {color:Notes Background};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    box-shadow: {select:Shadow Style} {color:Shadows};
+    border-radius: {select:Round Corners};
+    box-sizing: content-box;
+}
+#pagination .current {
+    background: {color:Posts Background};
+    color: {color:Posts Font};
+}
+
+
+#pagination a, #pagination a i {color: {color:Notes Font};}
+#pagination a:hover, #pagination a:hover i {color: {color:Notes Font Hover};}
+
+
+
+/** infinite scroll **/
+#infscr-loading {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+    display: none;
+}
+#infscr-loading .caixa.infscr-loading-content {
+    display: table;
+    margin: 0px auto;
+}
+#infscr-loading .caixa.infscr-loading-content .caixa-content {
+    padding: {text:Notes Padding Thickness}px;
+    font-size: {text:Posts Font Size}px;
+}
+#infscr-loading img {display:none;}
+
+
+/** footer **/
+#footer {
+    position: relative;
+    display: table;
+    width: 100%;
+    margin: 0px;
+    margin-top: 40px;
+    z-index: 0;
+    {block:IfInfiniteScroll}
+    {block:IndexPage}
+    display: none;
+    {/block:IndexPage}
+    {/block:IfInfiniteScroll}
+}
+#footer .caixa {
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    border: none;
+    z-index: inherit;
+    
+    {block:IfExtraBorders}
+    padding-top: {text:Extra Borders Thickness}px;
+    {block:IfBorders}
+    border-top: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    {/block:IfExtraBorders}
+}
+#footer .caixa-content {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: {select:Notes Font};
+    font-size: {text:Notes Font Size}px;
+    line-height: {text:Notes Font Size}px;
+    border: none;
+    {block:IfBorders}
+    border-top: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    padding: {text:Posts Padding Thickness}px;
+    border-radius: 0px;
+}
+
+#footer .caixa-content span {
+    display: inline-table;
+    margin: 0px 10px;
+}
+
+#footer .caixa-content a {color: {color:Links};}
+#footer .caixa-content a:hover {color: {color:Posts Font};}
+#footer .caixa-content i {margin-right: 5px;}
+
+
+/** loading message **/
+#loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99999999999;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-align-items: center; /* Safari 7.0+ */
+    align-items: center;
+    background: {color:Background} url('{image:Background}') fixed;
+    background-size: cover;
+    background-position: center;
+    font-size: {text:Posts font size}px;
+    opacity: 1;
+}
+#loading #loading-content {
+    -webkit-flex: 1; /* Safari 6.1+ */
+    flex: 1;
+}
+#loading .caixa {
+    display: table;
+    margin: 0px auto;
+    padding: calc({text:Extra Borders Thickness}px / 2);
+}
+#loading .caixa-content {
+    padding: 5px;
+}
+
+
+/*** BACK TO TOP BUTTON **/
+#backtotop.caixa {
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+    z-index: 9999999;
+    display: none;
+}
+#backtotop.caixa .caixa-content {
+    transition: .5s;
+    text-align: center;
+    font-size: {text:Posts Font Size}px;
+    width: {text:Posts Font Size}px;
+    height: {text:Posts Font Size}px;
+    padding: 10px;
+    background: {color:Header};
+    color: {color:Header Font};
+}
+#backtotop.caixa a, #backtotop.caixa i {color: {color:Header Font};}
+#backtotop.caixa:hover a, #backtotop.caixa:hover i {color: {color:Links};}
+
+
+/** ??? **/
+#ga_target {height: 0px;}
+
+
+
+/********************* FOLLOW BUTTON *********************/
+iframe.tmblr-iframe {
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   z-index: 999999999999999 !important;
+   transform: scale(0.8);
+   transform-origin: 100% 0%;
+}
+/********************* FOLLOW BUTTON *********************/
+
+
+
+/******************** MOBILE VERSION ********************/
+.mobile {display: none;}
+
+@media only screen and (max-width: 1000px) {
+    .caixa.post {
+        {block:IndexPage}
+        min-width: calc(33.3% - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness} * 2){/block:IfBorders});
+        {/block:IndexPage}
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .caixa.post {
+        {block:IndexPage}
+        width: calc(50% - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} - 1px {block:IfBorders}- ({text:Borders Thickness} * 2){/block:IfBorders});
+        {/block:IndexPage}
+    }
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .mobile {display: block;}
+    .mobile-inline {display: inline-block;}
+    .desktop {display: none !important;}
+    
+    body, .menu, .menu i {font-size: 16px; line-height: 16px;}
+    h1 {font-size: 30px; line-height: 30px;}
+    h2 {font-size: 26px; line-height: 26px;}
+    
+    #header {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    #content {
+        width: 100%;
+        margin: {text:Posts Spacing}px auto;
+    }
+    
+    #posts-section {
+        width: 100%;
+        margin-top: 0px;
+    }
+    
+    .caixa.post {
+        min-width: calc(100% - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
+    }
+    
+    #permalink, #permalink .caixa {width: 100%;}
+    
+
+}
+
+
+{CustomCSS}
+
+
+/** CREDITS - DO NOT REMOVE OR CHANGE WITHOUT MY AUTHORIZATION! **/
+#credits {
+    position: fixed;
+    top: 102px;
+    right: 8px;
+    background: {color:Header};
+    color: {color:Header Font};
+    font-size: 11px;
+    line-height: 11px;
+    vertical-align: middle;
+    text-align: center;
+    transition: .5s;
+    z-index: 99999999999;
+    border-radius: {select:Round Corners};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    box-shadow: {select:Shadow Style} {color:Shadows};
+}
+#credits a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    color: {color:Header Font};
+    white-space: nowrap;
+    width: 11px;
+    height: 11px;
+}
+
+#credits span {display: inline-block;}
+#credits span.credits-name {
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    transition: .5s;
+    background: {color:Posts Background};
+    color: {color:Posts Font};
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    border-radius: {select:Round Corners};
+    padding: 5px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: {select:Notes Font};
+    transform: scale(0);
+    transform-origin: 100% 0%;
+    box-shadow: {select:Shadow Style} {color:Shadows};
+}
+
+#credits span.credits-name u {color: {color:Links}; text-decoration: none;}
+
+#credits:hover span.credits-name {
+    opacity: 1;
+    top: 100%;
+    margin-top: 10px;
+    transform: scale(1);
+}
+
+#credits .credits-arrow {
+    position: absolute;
+    top: -6px;
+    right: 2px;
+    z-index: 1;
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    transform-origin: 0px 0px;
+    background: {color:Posts Background};
+    {block:IfBorders}
+    border-top: {text:Borders Thickness}px solid {color:Borders};
+    border-left: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+@media only screen and (max-width: 700px) {
+    #credits {top: 70%;}
+}
+/** CREDITS - DO NOT REMOVE OR CHANGE WITHOUT MY AUTHORIZATION! **/
+
+
+</style>
+</head>
+<body>
+<div id="all">
+
+
+<!-- CREDITS - DO NOT REMOVE OR CHANGE WITHOUT MY AUTHORIZATION! -->
+<div id="credits">
+<div id="credits-content">
+    <a href="https://anyhs-themes.tumblr.com" target="_blank">
+    <span>©</span> <span class="credits-name" title="Anyh's Themes">Code by <u>Anyh S.</u>
+        
+        <div class="credits-arrow">
+        <div class="credits-arrow-content"></div>
+        </div>
+        
+    </span>
+    
+    </a>
+</div><!-- #credits-content -->
+</div><!-- #credits -->
+<!-- CREDITS - DO NOT REMOVE OR CHANGE WITHOUT MY AUTHORIZATION! -->
+
+
+
+<!-- loading message -->
+<div id="loading">
+<div id="loading-content">
+<div class="caixa">
+<div class="caixa-content">
+<i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i>
+{lang:Loading}...
+</div><!-- .caixa-content -->
+</div><!-- .caixa -->
+</div><!-- #loading-content -->
+</div><!-- #loading -->
+<!-- loading message -->
+
+
+
+
+
+<!-------------------- HEADER [start] -------------------->
+<header id="header">
+
+<!-- DESKTOP HEADER [start] -->
+<div id="desktop-header" class="desktop">
+<div class="desktop-header-content">
+
+<!-- portrait -->
+<div class="caixa">
+<div class="caixa-content">
+<a href="/" title="{lang:Home}">
+<figure class="portrait"> <img src="{PortraitURL-128}"/> </figure>
+</a>
+</div><!-- .caixa-content-->
+</div><!-- .caixa -->
+
+<!-- title -->
+<div class="caixa">
+<div class="caixa-content">
+<h1 class="title"><a href="/" title="{lang:Home}">{Title}</a></h1>
+</div><!-- .caixa-content-->
+</div><!-- .caixa -->
+
+
+    <!----- DESKTOP MENU ----->
+    <div class="caixa">
+    <div class="caixa-content">
+    
+    <div id="desktop-menu-container">
+    <nav id="desktop-menu" class="menu">
+    
+    {block:IfButton1Link}
+    <div class="menu-button">
+    <a href="{text:Button1 Link}" title="{text:Button1 Title}">
+    <span class="menu-icon">{text:Button1 Icon}</span>
+    <span class="menu-title">{text:Button1 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton1Link}
+    
+    {block:IfButton2Link}
+    <div class="menu-button">
+    <a href="{text:Button2 Link}" title="{text:Button2 Title}">
+    <span class="menu-icon">{text:Button2 Icon}</span>
+    <span class="menu-title">{text:Button2 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton2Link}
+    
+    {block:IfButton3Link}
+    <div class="menu-button">
+    <a href="{text:Button3 Link}" title="{text:Button3 Title}">
+    <span class="menu-icon">{text:Button3 Icon}</span>
+    <span class="menu-title">{text:Button3 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton3Link}
+    
+    {block:IfButton4Link}
+    <div class="menu-button">
+    <a href="{text:Button4 Link}" title="{text:Button4 Title}">
+    <span class="menu-icon">{text:Button4 Icon}</span>
+    <span class="menu-title">{text:Button4 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton4Link}
+    
+    {block:IfButton5Link}
+    <div class="menu-button">
+    <a href="{text:Button5 Link}" title="{text:Button5 Title}">
+    <span class="menu-icon">{text:Button5 Icon}</span>
+    <span class="menu-title">{text:Button5 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton5Link}
+    
+    {block:IfButton6Link}
+    <div class="menu-button">
+    <a href="{text:Button6 Link}" title="{text:Button6 Title}">
+    <span class="menu-icon">{text:Button6 Icon}</span>
+    <span class="menu-title">{text:Button6 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton6Link}
+    
+    {block:IfButton7Link}
+    <div class="menu-button">
+    <a href="{text:Button7 Link}" title="{text:Button7 Title}">
+    <span class="menu-icon">{text:Button7 Icon}</span>
+    <span class="menu-title">{text:Button7 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton7Link}
+    
+    {block:IfButton8Link}
+    <div class="menu-button">
+    <a href="{text:Button8 Link}" title="{text:Button8 Title}">
+    <span class="menu-icon">{text:Button8 Icon}</span>
+    <span class="menu-title">{text:Button8 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton8Link}
+    
+    {block:IfButton9Link}
+    <div class="menu-button">
+    <a href="{text:Button9 Link}" title="{text:Button9 Title}">
+    <span class="menu-icon">{text:Button9 Icon}</span>
+    <span class="menu-title">{text:Button9 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton9Link}
+    
+    {block:IfButton10Link}
+    <div class="menu-button">
+    <a href="{text:Button10 Link}" title="{text:Button10 Title}">
+    <span class="menu-icon">{text:Button10 Icon}</span>
+    <span class="menu-title">{text:Button10 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton10Link}
+    
+    <div class="menu-button plus-btn">
+    <a href="#" onclick="javascript:return false;" title="{text:Plus Button Title}">
+    <span class="menu-icon">{text:Plus Button Icon}</span>
+    <span class="menu-title">{text:Plus Button Title}</span>
+    </a>
+    
+    <div class="plus-btn-content caixa">
+    <div class="caixa-content">
+
+{block:Description}
+<p class="description">{Description}</p>
+{/block:Description}
+    
+<!------------------------ MAIN SEARCHBAR [start] -->
+<div id="main-searchbar">
+
+<div class="search" id="main-search">
+<div class="search-content">
+<table><tr>
+
+<td class="search-item search-form">
+<form action="javascript:return false">
+<input type="text" placeholder="{block:PortugueseBR}Pesquise palavras-chave ou #tags...{/block:PortugueseBR}{block:PortuguesePT}Pesquise palavras-chave ou #tags...{/block:PortuguesePT}{block:Spanish}Busque por palabras o #tags ...{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Search keywords or #tags...{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}" title="{block:PortugueseBR}Use hashtag (#) para buscar por tags{/block:PortugueseBR}{block:PortuguesePT}Use hashtag (#) para buscar por tags{/block:PortuguesePT}{block:Spanish}Use hashtag (#) para buscar por tags{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Use hashtag (#) to search for tags{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}"/>
+</form>
+</td><!-- .search-form -->
+
+<td class="search-item search-button" title="{lang:Search}!">
+<i class="lnr lnr-magnifier"></i>
+</td><!-- .search-button -->
+
+</tr></table>
+</div><!-- .search-content -->
+</div><!-- .search -->
+
+</div><!-- #main-searchbar -->
+<!------------------------ MAIN SEARCHBAR [end] -->
+
+    </div><!-- .caixa-content -->
+    </div><!-- .plus-btn-content -->
+    </div><!-- .menu-button.plus-btn -->
+    
+    </nav><!-- #desktop-menu -->
+    </div><!-- #desktop-menu-container -->
+    
+    </div><!-- .caixa-content-->
+    </div><!-- .caixa -->
+    <!----- DESKTOP MENU [end] ----->
+    
+    
+</div><!-- .desktop-header-content -->
+</div><!-- #desktop-header [end] -->
+<!-- DESKTOP HEADER [end] -->
+
+
+<!-- MOBILE HEADER [end] -->
+<div id="mobile-header" class="mobile">
+
+<div class="caixa">
+<div class="caixa-content">
+
+    <!-- HEADER TOP [start] -->
+    <div class="header-top">
+    
+    <!----- MOBILE MENU ----->
+    <nav id="mobile-menu" class="menu">
+    
+    <div class="dropdown-button"> <i class="lnr lnr-menu"></i> </div>
+    
+    <div class="dropdown">
+    
+    {block:IfButton1Link}
+    <div class="menu-button">
+    <a href="{text:Button1 Link}" title="{text:Button1 Title}">
+    {block:IfButton1Icon}
+    <span class="menu-icon">{text:Button1 Icon}</span>
+    {/block:IfButton1Icon}
+    <span class="menu-title">{text:Button1 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton1Link}
+    
+    {block:IfButton2Link}
+    <div class="menu-button">
+    <a href="{text:Button2 Link}" title="{text:Button2 Title}">
+    {block:IfButton2Icon}
+    <span class="menu-icon">{text:Button2 Icon}</span>
+    {/block:IfButton2Icon}
+    <span class="menu-title">{text:Button2 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton2Link}
+    
+    {block:IfButton3Link}
+    <div class="menu-button">
+    <a href="{text:Button3 Link}" title="{text:Button3 Title}">
+    {block:IfButton3Icon}
+    <span class="menu-icon">{text:Button3 Icon}</span>
+    {/block:IfButton3Icon}
+    <span class="menu-title">{text:Button3 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton3Link}
+    
+    {block:IfButton4Link}
+    <div class="menu-button">
+    <a href="{text:Button4 Link}" title="{text:Button4 Title}">
+    {block:IfButton4Icon}
+    <span class="menu-icon">{text:Button4 Icon}</span>
+    {/block:IfButton4Icon}
+    <span class="menu-title">{text:Button4 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton4Link}
+    
+    {block:IfButton5Link}
+    <div class="menu-button">
+    <a href="{text:Button5 Link}" title="{text:Button5 Title}">
+    {block:IfButton5Icon}
+    <span class="menu-icon">{text:Button5 Icon}</span>
+    {/block:IfButton5Icon}
+    <span class="menu-title">{text:Button5 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton5Link}
+    
+    {block:IfButton6Link}
+    <div class="menu-button">
+    <a href="{text:Button6 Link}" title="{text:Button6 Title}">
+    {block:IfButton6Icon}
+    <span class="menu-icon">{text:Button6 Icon}</span>
+    {/block:IfButton6Icon}
+    <span class="menu-title">{text:Button6 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton6Link}
+    
+    {block:IfButton7Link}
+    <div class="menu-button">
+    <a href="{text:Button7 Link}" title="{text:Button7 Title}">
+    {block:IfButton7Icon}
+    <span class="menu-icon">{text:Button7 Icon}</span>
+    {/block:IfButton7Icon}
+    <span class="menu-title">{text:Button7 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton7Link}
+    
+    {block:IfButton8Link}
+    <div class="menu-button">
+    <a href="{text:Button8 Link}" title="{text:Button8 Title}">
+    {block:IfButton8Icon}
+    <span class="menu-icon">{text:Button8 Icon}</span>
+    {/block:IfButton8Icon}
+    <span class="menu-title">{text:Button8 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton8Link}
+    
+    {block:IfButton9Link}
+    <div class="menu-button">
+    <a href="{text:Button9 Link}" title="{text:Button9 Title}">
+    {block:IfButton9Icon}
+    <span class="menu-icon">{text:Button9 Icon}</span>
+    {/block:IfButton9Icon}
+    <span class="menu-title">{text:Button9 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton9Link}
+    
+    {block:IfButton10Link}
+    <div class="menu-button">
+    <a href="{text:Button10 Link}" title="{text:Button10 Title}">
+    {block:IfButton10Icon}
+    <span class="menu-icon">{text:Button10 Icon}</span>
+    {/block:IfButton10Icon}
+    <span class="menu-title">{text:Button10 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {block:IfButton10Link}
+    
+    </div><!-- .dropdown -->
+
+    </nav><!-- #mobile-menu -->
+    <!----- MAIN MENU ----->
+    
+    <h1 class="title"><a href="/">{Title}</a></h1>
+    
+    </div><!-- .header-top -->
+    <!----- HEADER TOP [end] ----->
+    
+    {block:Description}
+    <p class="description">{Description}</p>
+    {/block:Description}
+
+</div><!-- .caixa-content -->
+</div><!-- .caixa -->
+
+
+<!---------- MOBILE SEARCH FORM [start] -->
+<div class="search caixa" id="mobile-search">
+<div class="search-content">
+<table><tr>
+
+<td class="search-item search-form">
+<form action="javascript:return false">
+<input type="text" placeholder="{block:PortugueseBR}Pesquise palavras-chave ou #tags...{/block:PortugueseBR}{block:PortuguesePT}Pesquise palavras-chave ou #tags...{/block:PortuguesePT}{block:Spanish}Busque por palabras o #tags ...{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Search keywords or #tags...{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}" title="{block:PortugueseBR}Use hashtag (#) para buscar por tags{/block:PortugueseBR}{block:PortuguesePT}Use hashtag (#) para buscar por tags{/block:PortuguesePT}{block:Spanish}Use hashtag (#) para buscar por tags{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Use hashtag (#) to search for tags{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}"/>
+</form>
+</td><!-- .search-form -->
+
+<td class="search-item search-button" title="{lang:Search}!">
+<i class="lnr lnr-magnifier"></i>
+</td><!-- .search-button -->
+
+</tr></table>
+</div><!-- .search-content -->
+</div><!-- .search -->
+<!---------- MOBILE SEARCH FORM [end] -->
+
+</div><!-- #mobile-header -->
+<!-- MOBILE HEADER [end] -->
+
+
+</header><!-- #header -->
+<!-------------------- HEADER [end] -------------------->
+
+
+
+<!------------------------------------------ CONTENT [start] ---------->
+<div id="content">
+
+
+<!-- POSTS SECTION [start] -->
+<div id="posts-section">
+    
+<!---------- FILTER PAGES [start] ---------->
+<div id="filter-pages">
+
+<!----- search page ----->
+{block:SearchPage}
+<div class="caixa" id="searchpage_msg">
+<div class="caixa-content">
+
+{block:NoSearchResults}
+<h1>{lang:No results found}</h1>
+<p>{lang:Sorry no results for SearchQuery 2} <i class="far fa-frown"></i></p>
+
+<div class="read-more back-button">
+<a href="/" target="_self">{lang:Back}</a>
+</div><!-- .read-more.back-button -->
+{/block:NoSearchResults}
+
+<p>{lang:Showing SearchResultCount results for SearchQuery 2}</p>
+
+</div><!-- .caixa-content -->
+</div><!-- .caixa -->
+{/block:SearchPage}
+<!----- search page [end] ----->
+
+<!----- tags page ----->
+{block:TagPage}
+<div class="caixa" id="tagspage_msg">
+<div class="caixa-content">
+<p> {lang:Showing TagResultCount posts tagged Tag 2} </p>
+</div><!-- .caixa-content -->
+</div><!-- .caixa->
+{/block:TagPage}
+<!----- tags page ----->
+
+</div><!-- #filter-pages -->
+<!---------- FILTER PAGES [end] ---------->
+
+
+<!-------------------------------- POSTS BLOCK [start] -->
+<main id="posts">
+{block:Posts}
+
+<!----- post box [start] ----->
+<div class="post caixa {block:Date}hasdate{block:Date}" id="{PostID}" post-type="{PostType}">
+<div class="caixa-content">
+
+<!----- NOTES / POST MENU / POST INFO ----->
+{block:IndexPage}
+<div class="post-menu top {select:Notes Style}">
+<div class="post-menu-content">
+
+<div class="left">
+{block:PinnedPostLabel}
+<div class="button" title="{PinnedPostLabel}">
+<i class="lnr lnr-pushpin"></i> 
+</div><!-- .button -->
+{/block:PinnedPostLabel}
+
+{block:NotReblog}
+{block:Submission}
+<a class="button" href="{Permalink}" title="{lang:Submitted By}">
+<i class="lnr lnr-envelope"></i> 
+<span class="blogname">{lang:Submitted By}</span>
+</a><!-- .button -->
+{/block:Submission}
+{/block:NotReblog}
+
+{block:RebloggedFrom}
+<a class="button" href="{Permalink}#pmlink-info" title="{lang:Reblogged from ReblogParentName}">
+<i class="lnr lnr-sync"></i> {lang:Via} <span class="blogname">{ReblogParentName}</span>
+</a><!-- .button -->
+{/block:RebloggedFrom}
+</div><!-- .left -->
+
+<div class="right">
+<a class="button" href="{Permalink}" title="{lang:Learn more}">
+<i class="lnr lnr-clock"></i> {TimeAgo}
+</a><!-- .button -->
+</div><!-- .right -->
+
+</div><!-- .post-menu-content -->
+</div><!-- .post-menu.top -->
+{/block:IndexPage}
+<!----- NOTES / POST MENU / POST INFO ----->
+
+
+<!-- conteudo do post -->
+<div class="post-content">
+
+
+<!---- TEXT ---->
+{block:Text}
+<div class="text_post">
+
+{block:Title}
+<h1>
+{block:IndexPage}<a href="{Permalink}">{/block:IndexPage}
+{Title}
+{block:IndexPage}</a>{/block:IndexPage}
+</h1>
+{/block:Title}
+
+
+<!----- text captions ----->
+{block:NotReblog}
+<div class="text">{Body}</div>
+{/block:NotReblog}
+
+{block:RebloggedFrom}
+<div class="text reblog-list">
+{block:Reblogs}
+
+<div class="reblog-caption {block:isOriginalEntry}original-reblog{/block:isOriginalEntry}">
+<div class="reblog-header">
+
+{block:IsActive}
+<a class="{block:isNotOriginalEntry}sub-reblog{/block:isNotOriginalEntry}" href="{Permalink}" target="_blank" title="@{Username}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-avatar {block:isNotOriginalEntry}sub-reblog{/block:isNotOriginalEntry}" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</span>
+{/block:IsDeactivated}
+
+{block:IsActive}
+<a class="tumblr_blog" target="_blank" href="{Permalink}" title="@{Username}">{Username}</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-username" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">{Username}</span>
+{/block:IsDeactivated}
+
+</div><!-- .reblog-header -->
+
+<div class="reblog-content">{Body}</div><!-- .reblog-content -->
+
+</div><!-- .reblog-caption .original-reblog -->
+{/block:Reblogs}
+</div><!-- .text.caption.reblog-list -->
+{/block:RebloggedFrom}
+<!----- text captions ----->
+
+
+</div> <!-- .text_post -->
+{/block:Text}
+
+
+
+
+<!---- PHOTO ---->
+{block:Photo}
+<div class="photo_post">
+
+<div class="photo">
+{block:IndexPage}<a href="{Permalink}" alt="{PhotoAlt}">{/block:IndexPage}
+
+{block:PermalinkPage}
+<a href="#" onclick="Tumblr.Lightbox.init([{ width: {PhotoWidth-HighRes}, height: {PhotoHeight-HighRes}, low_res: '{PhotoURL-500}', high_res: '{PhotoURL-HighRes}' }]); $('body').toggleClass('tumblr_lightbox_active'); return false">
+{block:LinkURL}<a href="{LinkURL}" target="_blank">{/block:LinkURL}
+{/block:PermalinkPage}
+
+{block:IndexPage}
+<figure class="low-res"><img src="{PhotoURL-250}" data-lowres="{PhotoURL-250}" data-highres="{PhotoURL-HighRes}" alt="{PhotoAlt}"/></figure>
+
+<figure class="mid-res"><img src="{PhotoURL-500}" data-lowres="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}" alt="{PhotoAlt}"/></figure>
+
+<figure class="high-res"><img src="{PhotoURL-HighRes}" data-lowres="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}" alt="{PhotoAlt}"/></figure>
+{/block:IndexPage}
+
+{block:PermalinkPage}
+<figure><img src="{PhotoURL-HighRes}" data-lowres="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}" alt="{PhotoAlt}"/></figure>
+{/block:PermalinkPage}
+
+{block:PermalinkPage}
+{block:LinkURL}</a>{/block:LinkURL}
+</a>
+{/block:PermalinkPage}
+
+{block:IndexPage}</a>{/block:IndexPage}
+</div><!-- .photo -->
+
+
+<!-- EXIF [start] -->
+{block:Exif}
+{block:PermalinkPage}
+<div class="exif caption">
+
+<table>
+<tr>
+
+<th>
+{block:PortugueseBR}Informações da imagem:{/block:PortugueseBR}
+{block:PortuguesePT}Informações da imagem:{/block:PortuguesePT}
+{block:Spanish}Informaciones de imagen:{/block:Spanish}
+{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Image info:{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}
+</th>
+
+{block:Camera}
+<td>
+<i class="fas fa-camera"></i>
+<span>
+{block:PortugueseBR}Câmera:{/block:PortugueseBR}
+{block:PortuguesePT}Câmera:{/block:PortuguesePT}
+{block:Spanish}Cámara:{/block:Spanish}
+{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Camera:{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}
+</span>
+<span>{Camera}</span>
+</td>
+{/block:Camera}
+
+{block:Aperture}
+<td>
+<i class="fas fa-eye"></i>
+<span>
+{block:PortugueseBR}Abertura:{/block:PortugueseBR}
+{block:PortuguesePT}Abertura:{/block:PortuguesePT}
+{block:Spanish}Apertura:{/block:Spanish}
+{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Aperture:{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}
+</span>
+<span>{Aperture}</span>
+</td>
+{/block:Aperture}
+
+{block:Exposure}
+<td>
+<i class="fas fa-adjust"></i>
+<span>
+{block:PortugueseBR}Exposição:{/block:PortugueseBR}
+{block:PortuguesePT}Exposição:{/block:PortuguesePT}
+{block:Spanish}Exposição:{/block:Spanish}
+{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Exposure:{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}
+</span>
+<span>{Exposure}</span>
+</td>
+{/block:Exposure}
+
+{block:FocalLength}
+<td>
+<i class="fas fa-ruler"></i>
+<span>
+{block:PortugueseBR}Distância focal:{/block:PortugueseBR}
+{block:PortuguesePT}Distância focal:{/block:PortuguesePT}
+{block:Spanish}Distancia focal:{/block:Spanish}
+{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Focal lenght:{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}
+</span>
+<span>{FocalLength}</span>
+</td>
+{/block:FocalLength}
+
+</tr>
+</table>
+
+</div><!-- .exif -->
+{/block:PermalinkPage}
+{/block:Exif}
+<!-- EXIF [end] -->
+
+
+<!----- captions ----->
+{block:Caption}
+
+{block:NotReblog}
+<div class="text caption">
+{Caption}
+</div><!-- .text.caption -->
+{/block:NotReblog}
+
+{block:RebloggedFrom}
+<div class="text caption reblog-list">
+{block:Reblogs}
+
+<div class="reblog-caption {block:isOriginalEntry}original-reblog{/block:isOriginalEntry}">
+<div class="reblog-header">
+
+{block:IsActive}
+<a class="{block:isNotOriginalEntry}sub-reblog{/block:isNotOriginalEntry}" href="{Permalink}" target="_blank" title="@{Username}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-avatar {block:isNotOriginalEntry} sub-reblog{/block:isNotOriginalEntry}" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</span>
+{/block:IsDeactivated}
+
+{block:IsActive}
+<a class="tumblr_blog" target="_blank" href="{Permalink}" title="@{Username}">{Username}</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-username" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">{Username}</span>
+{/block:IsDeactivated}
+
+</div><!-- .reblog-header -->
+
+<div class="reblog-content">{Body}</div>
+
+</div><!-- .reblog-caption .original-reblog -->
+{/block:Reblogs}
+
+</div><!-- .text.caption.reblog-list -->
+{/block:RebloggedFrom}
+{/block:Caption}
+<!----- captions ----->
+
+
+
+</div> <!-- .photo_post -->
+{/block:Photo}
+
+
+
+<!---- PHOTOSET ---->
+{block:Photoset}
+<div class="photoset_post">
+
+<div class="photoset-container">
+<div class="photoset-grid" id="photoset_{PostID}" photoset-layout="{PhotosetLayout}" data-layout="{PhotosetLayout}">
+{block:Photos}
+<div data-lowres="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}" {block:PermalinkPage}onclick="lightbox(this)"{/block:PermalinkPage}>
+
+{block:IndexPage}<a href="{Permalink}">{/block:IndexPage}
+
+{block:IndexPage}
+<figure class="photoset-figure low-res"><img src="{PhotoURL-250}" data-lowres="{PhotoURL-250}" data-highres="{PhotoURL-HighRes}"/></figure><!-- .photoset-figure -->
+
+<figure class="photoset-figure mid-res"><img src="{PhotoURL-500}" data-lowres="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}"/></figure><!-- .photoset-figure -->
+
+<figure class="photoset-figure high-res"><img src="{PhotoURL-HighRes}" data-lowres="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}"/></figure><!-- .photoset-figure -->
+{/block:IndexPage}
+
+{block:PermalinkPage}
+<figure class="photoset-figure"><img src="{PhotoURL-HighRes}" data-lowres="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}"/></figure><!-- .photoset-figure -->
+{/block:PermalinkPage}
+
+{block:IndexPage}</a>{/block:IndexPage}
+
+</div>
+{/block:Photos}
+</div><!-- .photoset-grid -->
+</div><!-- .photoset-container -->
+
+
+
+<!----- captions ----->
+{block:Caption}
+{block:NotReblog}
+<div class="text caption">
+{Caption}
+</div><!-- .text.caption -->
+{/block:NotReblog}
+
+{block:RebloggedFrom}
+<div class="text caption reblog-list">
+{block:Reblogs}
+
+<div class="reblog-caption {block:isOriginalEntry}original-reblog{/block:isOriginalEntry}">
+<div class="reblog-header">
+
+{block:IsActive}
+<a class="{block:isNotOriginalEntry}sub-reblog{/block:isNotOriginalEntry}" href="{Permalink}" target="_blank" title="@{Username}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-avatar {block:isNotOriginalEntry} sub-reblog{/block:isNotOriginalEntry}" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</span>
+{/block:IsDeactivated}
+
+{block:IsActive}
+<a class="tumblr_blog" target="_blank" href="{Permalink}" title="@{Username}">{Username}</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-username" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">{Username}</span>
+{/block:IsDeactivated}
+
+</div><!-- .reblog-header -->
+
+<div class="reblog-content">{Body}</div>
+
+</div><!-- .reblog-caption .original-reblog -->
+{/block:Reblogs}
+
+
+</div><!-- .text.caption.reblog-list -->
+{/block:RebloggedFrom}
+{/block:Caption}
+<!----- captions ----->
+
+
+</div> <!-- .photoset_post -->
+{/block:Photoset}
+<!---- PHOTOSET ---->
+
+
+<!---- PANORAMA ---->
+{block:Panorama}
+<div class="panorama_post">
+
+{block:IndexPage}<a href="{Permalink}" alt="{PhotoAlt}">{/block:IndexPage}
+
+{block:PermalinkPage}
+{LinkOpenTag}
+{/block:PermalinkPage}
+
+<figure><img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" /></figure>
+
+{block:PermalinkPage}
+{LinkCloseTag}
+{/block:PermalinkPage}
+
+{block:IndexPage}</a>{/block:IndexPage}
+
+<!----- captions ----->
+{block:Caption}
+
+{block:NotReblog}
+<div class="text caption">
+{Caption}
+</div><!-- .text.caption -->
+{/block:NotReblog}
+
+{block:RebloggedFrom}
+<div class="text caption reblog-list">
+{block:Reblogs}
+
+<div class="reblog-caption {block:isOriginalEntry}original-reblog{/block:isOriginalEntry}">
+<div class="reblog-header">
+
+{block:IsActive}
+<a class="{block:isNotOriginalEntry}sub-reblog{/block:isNotOriginalEntry}" href="{Permalink}" target="_blank" title="@{Username}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-avatar {block:isNotOriginalEntry} sub-reblog{/block:isNotOriginalEntry}" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</span>
+{/block:IsDeactivated}
+
+{block:IsActive}
+<a class="tumblr_blog" target="_blank" href="{Permalink}" title="@{Username}">{Username}</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-username" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">{Username}</span>
+{/block:IsDeactivated}
+
+</div><!-- .reblog-header -->
+
+<div class="reblog-content">{Body}</div>
+
+</div><!-- .reblog-caption .original-reblog -->
+{/block:Reblogs}
+
+</div><!-- .text.caption.reblog-list -->
+{/block:RebloggedFrom}
+{/block:Caption}
+<!----- captions ----->
+
+</div><!-- .panorama_post -->
+{/block:Panorama}
+<!---- PANORAMA ---->
+
+
+<!---- VIDEO ---->
+{block:Video}
+<div class="video_post">
+
+<div class="video-player">{Video-500}</div><!-- .video-player -->
+
+
+<!----- captions ----->
+{block:Caption}
+{block:NotReblog}
+<div class="text caption">
+{Caption}
+</div><!-- .text.caption -->
+{/block:NotReblog}
+
+{block:RebloggedFrom}
+<div class="text caption reblog-list">
+{block:Reblogs}
+
+<div class="reblog-caption {block:isOriginalEntry}original-reblog{/block:isOriginalEntry}">
+<div class="reblog-header">
+
+{block:IsActive}
+<a class="{block:isNotOriginalEntry}sub-reblog{/block:isNotOriginalEntry}" href="{Permalink}" target="_blank" title="@{Username}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-avatar {block:isNotOriginalEntry} sub-reblog{/block:isNotOriginalEntry}" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</span>
+{/block:IsDeactivated}
+
+{block:IsActive}
+<a class="tumblr_blog" target="_blank" href="{Permalink}" title="@{Username}">{Username}</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-username" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">{Username}</span>
+{/block:IsDeactivated}
+
+</div><!-- .reblog-header -->
+
+<div class="reblog-content">{Body}</div>
+
+</div><!-- .reblog-caption .original-reblog -->
+{/block:Reblogs}
+
+</div><!-- .text.caption.reblog-list -->
+{/block:RebloggedFrom}
+{/block:Caption}
+<!----- captions ----->
+
+
+</div> <!-- .video_post -->
+{/block:Video}
+
+
+
+
+<!---- AUDIO ---->
+{block:Audio}
+<div class="audio_post">
+
+
+<div class="audio-content">
+
+<div class="audio-player">
+{block:AudioEmbed} {AudioEmbed} {/block:AudioEmbed}
+</div><!-- .audio-player -->
+
+<div class="audio-info">
+<table>
+
+{block:TrackName}
+<tr>
+<td> <i class="fas fa-headphones" aria-hidden="true"></i> Track:</td>
+<td> {TrackName}</td>
+</tr>
+{/block:TrackName}
+
+{block:Artist}
+<tr>
+<td> <i class="fas fa-microphone" aria-hidden="true"></i> Artist:</td>
+<td> {Artist}</td>
+</tr>
+{/block:Artist}
+
+{block:Album}
+<tr>
+<td> <i class="fas fa-compact-disc" aria-hidden="true"></i> Album:</td>
+<td> {Album}</td>
+</tr>
+{/block:Album}
+
+{block:ExternalAudio}
+<tr>
+<td><i class="fas fa-download" aria-hidden="true"></i> {lang:Download}:</td>
+<td> <a href="{ExternalAudioURL}" target="_blank">{lang:Download this track}</a></td>
+</tr>
+{/block:ExternalAudio}
+
+</table>
+</div> <!-- .audio-info -->
+
+</div><!-- .audio-content -->
+
+
+<!----- captions ----->
+{block:Caption}
+{block:NotReblog}
+<div class="text caption">
+{Caption}
+</div><!-- .text.caption -->
+{/block:NotReblog}
+
+{block:RebloggedFrom}
+<div class="text caption reblog-list">
+{block:Reblogs}
+
+<div class="reblog-caption {block:isOriginalEntry}original-reblog{/block:isOriginalEntry}">
+<div class="reblog-header">
+
+{block:IsActive}
+<a class="{block:isNotOriginalEntry}sub-reblog{/block:isNotOriginalEntry}" href="{Permalink}" target="_blank" title="@{Username}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-avatar {block:isNotOriginalEntry} sub-reblog{/block:isNotOriginalEntry}" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</span>
+{/block:IsDeactivated}
+
+{block:IsActive}
+<a class="tumblr_blog" target="_blank" href="{Permalink}" title="@{Username}">{Username}</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-username" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">{Username}</span>
+{/block:IsDeactivated}
+
+</div><!-- .reblog-header -->
+
+<div class="reblog-content">{Body}</div>
+
+</div><!-- .reblog-caption .original-reblog -->
+{/block:Reblogs}
+
+</div><!-- .text.caption.reblog-list -->
+{/block:RebloggedFrom}
+{/block:Caption}
+<!----- captions ----->
+
+
+
+</div> <!-- .audio_post -->
+{/block:Audio}
+
+
+
+
+<!---- QUOTE ---->
+{block:Quote}
+<div class="quote_post">
+
+<p class="quote">{Quote}</p><!-- .quote -->
+
+{block:Source}
+<p class="quote-source">&mdash; {Source} </p>
+{/block:Source}
+
+</div><!-- .quote_post -->
+{/block:Quote}
+
+
+
+
+<!---- CHAT ---->
+{block:Chat}
+<div class="chat_post">
+
+{block:Title}
+<h1>
+{block:IndexPage}<a href="{Permalink}">{/block:IndexPage}
+{Title}
+{block:IndexPage}</a>{/block:IndexPage}
+</h1>
+{/block:Title}
+
+<ul class="chat">
+{block:Lines}
+<li>
+{block:Label}<b>{Label}</b>{block:Label}
+<span>{Line}</span>
+</li>
+{/block:Lines}
+</ul>
+
+</div> <!-- .chat_post -->
+{/block:Chat}
+
+
+
+
+<!---- LINK ---->
+{block:Link}
+<div class="link_post">
+
+<a class="link" href="{URL}" {block:Host}title="{Host}"{/block:Host} {target}>
+
+<h1> <i class="lnr lnr-link" aria-hidden="true"></i> {Name} </h1>
+
+{block:Excerpt}
+<p class="excerpt">
+{Excerpt}
+</p><!-- .excerpt -->
+{/block:Excerpt}
+
+</a> <!-- .link -->
+
+
+
+<!----- link captions ----->
+{block:Description}
+{block:NotReblog}
+<div class="text">{Description}</div>
+{/block:NotReblog}
+
+{block:RebloggedFrom}
+<div class="text reblog-list">
+{block:Reblogs}
+
+<div class="reblog-caption {block:isOriginalEntry}original-reblog{/block:isOriginalEntry}">
+<div class="reblog-header">
+
+{block:IsActive}
+<a class="{block:isNotOriginalEntry}sub-reblog{/block:isNotOriginalEntry}" href="{Permalink}" target="_blank" title="@{Username}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-avatar {block:isNotOriginalEntry} sub-reblog{/block:isNotOriginalEntry}" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</span>
+{/block:IsDeactivated}
+
+{block:IsActive}
+<a class="tumblr_blog" target="_blank" href="{Permalink}" title="@{Username}">{Username}</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-username" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">{Username}</span>
+{/block:IsDeactivated}
+
+</div><!-- .reblog-header -->
+
+<div class="reblog-content">{Body}</div>
+
+</div><!-- .reblog-caption .original-reblog -->
+{/block:Reblogs}
+</div><!-- .text.caption.reblog-list -->
+{/block:RebloggedFrom}
+{/block:Description}
+<!----- link captions ----->
+
+</div><!-- .link_post -->
+{/block:Link}
+
+
+
+<!---- ANSWER/ASK POSTS ---->
+{block:Answer}
+<div class="ask_post">
+
+<div class="ask-content">
+
+<div class="ask-portrait">
+<a href="{AskerURL}" target="_blank" title="{AskerName}">
+<figure><img src="{AskerPortraitURL-64}" /></figure>
+</a>
+</div><!-- .ask-portrait-->
+
+
+<div class="question">
+
+    <div class="sign">{lang:Asker asked 2}:</div>
+
+    <div class="question-arrow">
+        <div class="question-arrow-content"></div>
+    </div>
+
+    {Question}
+
+</div> <!-- .question -->
+
+<div class="sign2">
+
+{block:NotReblog}
+<a href="/" target="_blank">@{Name}</a> {block:PortugueseBR}respondeu:{/block:PortugueseBR}{block:PortuguesePT}respondeu:{/block:PortuguesePT}{block:Spanish}respondió:{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}replied:{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}
+{/block:NotReblog}
+
+{block:Answerer}
+{Answerer} {block:PortugueseBR}respondeu:{/block:PortugueseBR}{block:PortuguesePT}respondeu:{/block:PortuguesePT}{block:Spanish}respondió:{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}replied:{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}
+{/block:Answerer}
+
+
+<div class="question-arrow"></div>
+</div><!-- .sign2 -->
+
+</div><!-- .ask-content -->
+
+<div class="text answer">{Answer}</div>
+
+
+
+<!----- ask captions ----->
+{block:RebloggedFrom}
+<div class="text reblog-list">
+{block:Reblogs}
+
+<div class="reblog-caption {block:isOriginalEntry}original-reblog{/block:isOriginalEntry}">
+<div class="reblog-header">
+
+{block:IsActive}
+<a class="{block:isNotOriginalEntry}sub-reblog{/block:isNotOriginalEntry}" href="{Permalink}" target="_blank" title="@{Username}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-avatar {block:isNotOriginalEntry} sub-reblog{/block:isNotOriginalEntry}" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">
+<figure class="captions-avatar"><img src="{PortraitURL-64}"/></figure>
+</span>
+{/block:IsDeactivated}
+
+{block:IsActive}
+<a class="tumblr_blog" target="_blank" href="{Permalink}" title="@{Username}">{Username}</a>
+{/block:IsActive}
+
+{block:IsDeactivated}
+<span class="inactive-username" title="{block:PortugueseBR}Blog desativado{/block:PortugueseBR}{block:PortuguesePT}Blog desativado{/block:PortuguesePT}{block:Spanish}Blog desactivado{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Deactivated blog{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">{Username}</span>
+{/block:IsDeactivated}
+
+</div><!-- .reblog-header -->
+
+<div class="reblog-content">{Replies}</div>
+
+</div><!-- .reblog-caption .original-reblog -->
+{/block:Reblogs}
+</div><!-- .text.caption.reblog-list -->
+{/block:RebloggedFrom}
+<!----- ask captions ----->
+
+</div><!-- .ask_post -->
+{/block:Answer}
+
+
+
+</div> <!-- .post-content -->
+<!-- conteudo da caixa -->
+
+
+<!----- NOTES / POST MENU / POST INFO ----->
+{block:IndexPage}
+<div class="post-menu bottom {select:Notes Style}">
+<div class="post-menu-content">
+
+<div class="left">
+<a class="button" href="{Permalink}" title="{lang:Permalink for this post}">
+<i class="lnr lnr-link"></i> 
+{block:IfNotNumberofLikes}{lang:Permalink}{/block:IfNotNumberofLikes}
+{block:IfNumberofLikes}{NoteCountWithLabel}{/block:IfNumberofLikes}
+</a><!-- .button -->
+</div><!-- .left -->
+
+<div class="right">
+<a class="button" href="#" onclick="return false;" title="Like">
+<div class="like_wrapper">
+{LikeButton}
+<span class="olike">
+<i class="lnr lnr-heart" aria-hidden="true"></i>
+</span>
+</div><!-- .like_wrapper -->
+</a><!-- .button -->
+
+<a class="button" href="{ReblogURL}" class="but" target="_blank" title="Reblog">
+<i class="lnr lnr-sync" aria-hidden="true"></i>
+</a><!-- .button -->
+
+{block:IfShareButtons}
+<a class="button" href="{Permalink}#share" class="but" title="{lang:Share this}">
+<i class="lnr lnr-bullhorn" aria-hidden="true"></i>
+</a><!-- .button -->
+{/block:IfShareButtons}
+</div><!-- .right -->
+
+</div><!-- .post-menu-content -->
+</div><!-- .post-menu.bottom -->
+{/block:IndexPage}
+<!----- NOTES / POST MENU / POST INFO ----->
+
+
+</div> <!-- .caixa-content -->
+</div> <!-- .post.caixa -->
+<!---------- CAIXA [end] ---------->
+
+
+
+<!--------------- PERMANENT LINK PAGES / PMLINK [start] --------------->
+{block:PermalinkPage}
+{block:Date}
+<div id="permalink">
+
+<!----- share buttons [start] ----->
+{block:IfShareButtons}
+<div class="caixa" id="share">
+<div class="caixa-content">
+<h1>{lang:Share this}:</h1>
+
+<div class="share">
+
+<!-- tumblr -->
+<a target="_blank" title="Reblog" href="{ReblogURL}">
+<i class="fab fa-tumblr" aria-hidden="true"></i>
+</a>
+
+<!-- twitter -->
+<a target="_blank" title="{lang:Tweet this}" href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}">
+<i class="fab fa-twitter" aria-hidden="true"></i>
+</a>
+
+<!-- facebook -->
+<a target="_blank" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u={Permalink}{block:PostSummary}&t={PostSummary}{/block:PostSummary}">
+<i class="fab fa-facebook-f" aria-hidden="true"></i>
+</a>
+
+<!-- pinterest -->
+<a target="_blank" title="Share on Pinterest" href="http://pinterest.com/pin/create/button/?url={Permalink}&media={PhotoURL-500}&description={URLEncodedTweetSummary}">
+<i class="fab fa-pinterest-p" aria-hidden="true"></i>
+</a>
+
+<!-- reddit -->
+<a target="_blank" title="Share on Reddit" href="https://www.reddit.com/submit?{block:PostSummary}title={PostSummary}&{/block:PostSummary}url={Permalink}">
+<i class="fab fa-reddit-alien" aria-hidden="true"></i>
+</a>
+
+<!-- linkedin -->
+<a target="_blank" title="Share on Linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url={Permalink}{block:PostSummary}&title={PostSummary}{/block:PostSummary}&source={SourceUrl}">
+<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+</a>
+
+<!-- blogger -->
+<a target="_blank" title="Share on Blogger" href="https://www.blogger.com/blog-this.g?u={Permalink}?spref=bl{block:PostSummary}&n={PostSummary}{/block:PostSummary}&t={URLEncodedTweetSummary}">
+<i class="fab fa-blogger-b" aria-hidden="true"></i>
+</a>
+
+<!-- whatsapp WEB-->
+<span class="desktop">
+<a target="_blank" title="Share on Whatsapp Web" href="https://web.whatsapp.com/send?text={URLEncodedTweetSummary}">
+<i class="fab fa-whatsapp" aria-hidden="true"></i>
+</a>
+</span><!-- .web -->
+
+<!-- whatsapp MOBILE -->
+<span class="mobile mobile-inline">
+<a target="_blank" title="Share on Whatsapp" href="whatsapp://send?text={URLEncodedTweetSummary}">
+<i class="fab fa-whatsapp" aria-hidden="true"></i>
+</a>
+</span><!-- .mobile -->
+
+
+<!-- embed -->
+<a target="_blank" title="{lang:Embed}" href="{EmbedUrl}">
+<i class="fas fa-code" aria-hidden="true"></i>
+</a>
+
+</div><!-- .share -->
+    
+</div> <!-- .caixa-content -->
+</div> <!-- .caixa -->
+{/block:IfShareButtons}
+<!----- share buttons [end] ----->
+
+<!----- post info [start] ----->
+<div class="caixa" id="pmlink-info">
+<div class="caixa-content">
+<h1>
+{block:PortugueseBR}Informações do post:{/block:PortugueseBR}
+{block:PortuguesePT}Informações do post:{/block:PortuguesePT}
+{block:Spanish}Informaciones del post:{/block:Spanish}
+
+{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Post info:{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}
+</h1>
+
+<table>
+
+<!-- post data -->
+<tr>
+<td><i class="lnr lnr-calendar-full" aria-hidden="true"></i></td>
+<td>{lang:Posted on DayOfWeek DayOfMonth Month Year}</td>
+</tr>
+<!-- post data -->
+
+<!-- post time -->
+<tr>
+<td><i class="lnr lnr-clock" aria-hidden="true"></i></td>
+<td>{lang:Posted at FormattedTime}</td>
+</tr>
+<!-- post time -->
+
+<!-- post author -->
+{block:NotReblog}
+{block:IfPostAuthor}
+<tr>
+<td><i class="lnr lnr-user" aria-hidden="true"></i></td>
+<td>{lang:Posted by PostAuthorName 2} {block:Submission} {lang:Via} <a href="/submit">Submit</a> {/block:Submission} </td>
+</tr>
+{/block:IfPostAuthor}
+{/block:NotReblog}
+<!-- post author -->
+
+<!----- reblogged posts ----->
+{block:RebloggedFrom}
+<!-- reblogged post author -->
+{block:IfPostAuthor}
+<tr>
+<td><i class="lnr lnr-user" aria-hidden="true"></i></td>
+<td>{lang:Reblogged} {lang:By PostAuthorName 2}</td>
+</tr>
+{/block:IfPostAuthor}
+<!-- reblogged post author -->
+
+<!-- reblogged via -->
+<tr>
+<td><i class="lnr lnr-sync" aria-hidden="true"></i></td>
+<td>{lang:Via} <a href="{ReblogParentURL}" target="_blank">{ReblogParentName}</a></td>
+</tr>
+<!-- reblogged via -->
+
+<!-- reblog posted by -->
+<tr>
+<td><i class="lnr lnr-home" aria-hidden="true"></i></td>
+<td>{lang:Originally from ReblogRootName 2}</td>
+</tr>
+<!-- reblog posted by -->
+{/block:RebloggedFrom}
+<!----- reblogged posts ----->
+
+<!-- post content source -->
+{block:ContentSource}
+<tr>
+<td>&copy;</td>
+<td>{lang:Source}: <a href="{SourceURL}" target="_blank">{SourceTitle}</a></td>
+</tr>
+{/block:ContentSource}
+<!-- post content source -->
+
+<!-- notes count -->
+{block:IfNumberofLikes}
+<tr>
+<td><i class="lnr lnr-heart" aria-hidden="true"></i></td>
+<td>{lang:This post has NoteCount notes}</td>
+</tr>
+{/block:IfNumberofLikes}
+<!-- notes count -->
+
+<!-- post tags -->
+{block:HasTags}
+<tr>
+<td><i class="lnr lnr-tag" aria-hidden="true"></i></td>
+<td>{lang:Tagged With}:
+{block:Tags}#<a href="{TagURL}">{Tag}</a> {/block:Tags}</td>
+</tr>
+{/block:HasTags}
+<!-- post tags -->
+
+</table>
+
+</div> <!-- .caixa-content -->
+</div> <!-- .caixa -->
+<!----- post info [end] ----->
+ 
+ 
+<!-- post notes [start] -->
+{block:IfNumberofLikes}
+{block:PostNotes}
+<div class="caixa">
+<div class="caixa-content">
+
+<h1> <i class="lnr lnr-history" aria-hidden="true"></i> {lang:Notes}:</h1>
+{PostNotes-64}
+
+</div> <!-- .caixa-content -->
+</div> <!-- .caixa -->
+{/block:PostNotes}
+{/block:IfNumberofLikes}
+<!-- post notes [end] -->
+
+
+<!-- pmlink navigation [start] -->
+{block:PermalinkPagination}
+<div id="permalink-navigation">
+
+    {block:NextPost}
+    <a href="{NextPost}" title="{lang:Next post}">
+    {/block:NextPost}
+        <div class="caixa-content button {block:NextPost}withlink{/block:NextPost}">
+        <i class="lnr lnr-arrow-left" aria-hidden="true"></i>
+        <span>&nbsp;&nbsp;{lang:Next post}</span>
+        </div><!-- .caixa-content -->
+    {block:NextPost}
+    </a>
+    {/block:NextPost} 
+    
+    {block:PreviousPost}
+    <a href="{PreviousPost}" title="{lang:Previous post}">
+    {/block:PreviousPost}
+        <div class="caixa-content button {block:PreviousPost}withlink{/block:PreviousPost}">
+        <span>{lang:Previous post}&nbsp;&nbsp;</span>
+        <i class="lnr lnr-arrow-right" aria-hidden="true"></i>
+        </div><!-- .caixa-content -->
+    {block:PreviousPost}
+    </a>
+    {/block:PreviousPost}
+    
+</div><!-- #permalink-navigation -->
+{/block:PermalinkPagination}
+<!-- pmlink navigation [end] -->
+
+
+
+</div> <!-- #permalink -->
+{/block:Date}
+{/block:PermalinkPage}
+<!------------------ PERMANENT LINK PAGES / PMLINK [end] ------------------>
+
+
+{/block:Posts}
+<!-------------------------------- POSTS BLOCK [end] -->
+
+
+<!-------------------------------- RELATED POSTS [start] -->
+{block:PermalinkPage}
+{block:IfRelatedPosts}
+{block:RelatedPosts}
+<div id="related-posts">
+
+<div class="caixa related-title"><div class="caixa-content">
+<h1>{lang:Related Posts}:</h1>
+</div></div><!-- .caixa -->
+
+<div class="related-posts-grid">
+{block:Posts}
+
+<!-- related text post -->
+{block:Title}
+<div class="caixa">
+<div class="caixa-content">
+
+<!-- related post permalink -->
+<a href="{Permalink}" title="{lang:See more}" class="related-post-link">
+<div class="cover"></div><!-- .cover -->
+<div class="icon"><i class="lnr lnr-magnifier"></i></div>
+</a>
+<!-- related post permalink -->
+
+<h1>{Title}</h1>
+
+{Body}
+
+</div><!-- .caixa-content -->
+</div><!-- .caixa -->
+{/block:Title}
+<!-- related text post -->
+
+
+<!-- related photo post -->
+{block:Photo}
+<div class="caixa">
+<div class="caixa-content">
+
+<!-- related post permalink -->
+<a href="{Permalink}" title="{lang:See more}" class="related-post-link">
+<div class="cover"></div><!-- .cover -->
+<div class="icon"><i class="lnr lnr-magnifier"></i></div>
+</a>
+<!-- related post permalink -->
+
+<figure><img src="{PhotoURL-250}" /></figure>
+{block:Caption}{Caption}{/block:Caption}
+
+</div><!-- .caixa-content -->
+</div><!-- .caixa -->
+{/block:Photo}
+<!-- related photo post -->
+
+
+<!-- related photoset post -->
+{block:Photoset}
+<div class="caixa">
+<div class="caixa-content">
+
+<!-- related post permalink -->
+<a href="{Permalink}" title="{lang:See more}" class="related-post-link">
+<div class="cover"></div><!-- .cover -->
+<div class="icon"><i class="lnr lnr-magnifier"></i></div>
+</a>
+<!-- related post permalink -->
+
+<div class="photoset-grid" id="photoset_{PostID}" photoset-layout="{PhotosetLayout}" data-layout="{PhotosetLayout}">
+{block:Photos}
+<div>
+<figure class="photoset-figure"> <img src="{PhotoURL-400}"/> </figure>
+</div>
+{/block:Photos}
+</div><!-- .photoset-grid -->
+
+{block:Caption}{Caption}{/block:Caption}
+
+</div><!-- .caixa-content -->
+</div><!-- .caixa -->
+{/block:Photoset}
+<!-- related photoset post -->
+
+
+<!-- related video post -->
+{block:Video}
+<div class="caixa">
+<div class="caixa-content">
+
+<!-- related post permalink -->
+<a href="{Permalink}" title="{lang:See more}" class="related-post-link">
+<div class="cover"></div><!-- .cover -->
+<div class="icon"><i class="lnr lnr-magnifier"></i></div>
+</a>
+<!-- related post permalink -->
+
+{Video-250}
+{block:Caption}{Caption}{/block:Caption}
+
+</div><!-- .caixa-content -->
+</div><!-- .caixa -->
+{/block:Video}
+<!-- related video post -->
+
+
+<!-- related audio post -->
+{block:Audio}
+<div class="caixa">
+<div class="caixa-content">
+
+<!-- related post permalink -->
+<a href="{Permalink}" title="{lang:See more}" class="related-post-link">
+<div class="cover"></div><!-- .cover -->
+<div class="icon"><i class="lnr lnr-magnifier"></i></div>
+</a>
+<!-- related post permalink -->
+
+{block:AudioEmbed} {AudioEmbed} {/block:AudioEmbed}
+{block:Caption}{Caption}{/block:Caption}
+
+</div><!-- .caixa-content -->
+</div><!-- .caixa -->
+{/block:Audio}
+<!-- related audio post -->
+
+
+<!-- related quote post -->
+{block:Quote}
+<div class="caixa">
+<div class="caixa-content">
+
+<!-- related post permalink -->
+<a href="{Permalink}" title="{lang:See more}" class="related-post-link">
+<div class="cover"></div><!-- .cover -->
+<div class="icon"><i class="lnr lnr-magnifier"></i></div>
+</a>
+<!-- related post permalink -->
+
+“{Quote}”
+
+{block:Source}<br><br>&mdash; {Source}{/block:Source}
+
+</div><!-- .caixa-content -->
+</div><!-- .caixa -->
+{/block:Quote}
+<!-- related quote post -->
+
+
+<!-- related chat post -->
+{block:Chat}
+<div class="caixa">
+<div class="caixa-content">
+
+<!-- related post permalink -->
+<a href="{Permalink}" title="{lang:See more}" class="related-post-link">
+<div class="cover"></div><!-- .cover -->
+<div class="icon"><i class="lnr lnr-magnifier"></i></div>
+</a>
+<!-- related post permalink -->
+
+{block:Title}<h1>{Title}</h1>{block:Title}
+
+{block:Lines}
+{block:Label}<b>{Label}</b>{block:Label}
+<span>{Line}</span><br>
+{/block:Lines}
+
+</div><!-- .caixa-content -->
+</div><!-- .caixa -->
+{/block:Chat}
+<!-- related chat post -->
+
+
+<!-- related link post -->
+{block:Link}
+<div class="caixa">
+<div class="caixa-content">
+
+<!-- related post permalink -->
+<a href="{Permalink}" title="{lang:See more}" class="related-post-link">
+<div class="cover"></div><!-- .cover -->
+<div class="icon"><i class="lnr lnr-magnifier"></i></div>
+</a>
+<!-- related post permalink -->
+
+<h1>{Name}</h1>
+
+{block:Excerpt}{Excerpt}{/block:Excerpt}
+<br><hr><br>
+{block:Description}{Description}{/block:Description}
+
+</div><!-- .caixa-content -->
+</div><!-- .caixa -->
+{/block:Link}
+<!-- related link post -->
+
+
+<!-- related answer post -->
+{block:Answer}
+<div class="caixa">
+<div class="caixa-content">
+
+<!-- related post permalink -->
+<a href="{Permalink}" title="{lang:See more}" class="related-post-link">
+<div class="cover"></div><!-- .cover -->
+<div class="icon"><i class="lnr lnr-magnifier"></i></div>
+</a>
+<!-- related post permalink -->
+
+<b>{lang:Asker asked 2}:</b><br>
+{Question}
+
+<br><hr><br>
+
+{Answer}
+
+</div><!-- .caixa-content -->
+</div><!-- .caixa -->
+{/block:Answer}
+<!-- related answer post -->
+
+
+{/block:Posts}
+</div><!-- .related-posts-grid -->
+
+</div><!-- #related-posts -->
+{/block:RelatedPosts}
+{/block:IfRelatedPosts}
+{/block:PermalinkPage}
+<!-------------------------------- RELATED POSTS [end] -->
+
+
+</main> <!-- #posts -->
+<!-------------------------------- POSTS DIV [end] -->
+
+
+
+<div style="clear:both;"></div>
+
+
+<!----- pagination [start] ----->
+{block:IfNotInfiniteScroll}
+{block:Pagination}
+<div id="pagination" class="caixa">
+<div class="pagination-content caixa-content">
+
+{block:PreviousPage}
+<a href="{PreviousPage}" title="{lang:Previous page}">
+<div class="button arrow">
+<i class="lnr lnr-arrow-left" aria-hidden="true"></i>
+</div><!-- button.arrow -->
+</a>
+{/block:PreviousPage}
+
+
+{block:JumpPagination length="8"}
+
+{block:CurrentPage}
+<div class="button current" title="{block:PortugueseBR}Você está aqui{/block:PortugueseBR}{block:PortuguesePT}Você está aqui{/block:PortuguesePT}{block:Spanish}Tu estás aquí{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}You are here{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}">
+{PageNumber}
+</div><!-- .button.current -->
+{/block:CurrentPage}
+
+{block:JumpPage}
+<a href="{URL}" title="{block:PortugueseBR}Ir para a página{/block:PortugueseBR}{block:PortuguesePT}Ir para a página{/block:PortuguesePT}{block:Spanish}Ir a la página{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}Go to page{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR} {PageNumber}">
+<div class="button">
+{PageNumber}
+</div><!-- .button -->
+</a>
+{/block:JumpPage}
+
+{/block:JumpPagination}
+
+ 
+{block:NextPage}
+<a href="{NextPage}" title="{lang:Next page}">
+<div class="button arrow">
+<i class="lnr lnr-arrow-right" aria-hidden="true"></i>
+</div><!-- button.arrow -->
+</a>
+{/block:NextPage}
+
+
+</div><!-- .pagination-content -->
+</div> <!-- #pagination -->
+{/block:Pagination}
+{/block:IfNotInfiniteScroll}
+<!----- pagination [end] ----->
+
+
+</div><!-- #posts-section -->
+<!-- POSTS SECTION [end] -->
+
+
+
+</div><!-- #content -->
+<!------------------------------------------ CONTENT [end] ---------->
+
+
+
+<!----- INFINITE SCROLL [start] ----->
+{block:IfInfiniteScroll}
+
+<div id="navigation">
+{block:Pagination}{block:PreviousPage}<a href="{PreviousPage}" id="prev-page">{/block:PreviousPage}{block:PreviousPage}</a>{/block:PreviousPage}
+{block:NextPage}<a href="{NextPage}" id="next-page">{/block:NextPage}{block:NextPage}</a>{/block:NextPage}{/block:Pagination}
+</div><!-- #navigation -->
+
+{/block:IfInfiniteScroll}
+<!----- INFINITE SCROLL [end] ----->
+
+
+
+
+
+
+
+<!-- BACK TO TOP BUTTON [start] -->
+<a href="#" target="_self" title="{lang:Back to top}">
+<div id="backtotop" class="caixa">
+<div class="caixa-content">
+
+<i class="lnr lnr-chevron-up"></i>
+
+</div><!-- .caixa-content -->
+</div><!-- #backtotop.caixa -->
+</a>
+<!-- BACK TO TOP BUTTON [end] -->
+
+
+<!------------------------- FOOTER [start] ------------------------->
+<footer id="footer">
+<div class="caixa">
+<div class="caixa-content">
+
+<!-- blog copyrights -->
+<span>&copy; <a href="/">{Title}</a> &mdash; {CopyrightYears}</span>
+<!-- blog copyrights -->
+
+<div class="mobile"><br/></div>
+
+<!-- platform -->
+<span><i class="lnr lnr-power-switch" aria-hidden="true"></i> Powered by <a href="https://tumblr.com" target="_blank">Tumblr</a></span>
+<!-- platform -->
+
+<!-- designer -->
+<span><i class="lnr lnr-code" aria-hidden="true"></i> Developed by <a href="https://anyhs-themes.tumblr.com" target="_blank">Anyh S.</a></span>
+<!-- designer -->
+
+</div><!-- .caixa-content -->
+</div><!-- .caixa -->
+</footer><!-- #footer -->
+<!------------------------- FOOTER [end] ------------------------->
+
+
+
+<!---- CUSTOM "404 NOT FOUND" PAGE (by anyhsthemes.tumblr.com) ---->
+<div id="page-not-found" style="display: none;">
+<div id="pnf-content">
+
+<h1>{lang:No posts found}</h1>
+
+<div class="p">
+{lang:Sorry no posts found} <i class="far fa-frown"></i>
+</div><!-- .p -->
+
+<div class="read-more back-button">
+<a href="/" target="_self">{lang:Back}</a>
+</div><!-- .read-more.back-button -->
+<!--- onclick="javascript: window.history.back(); return false;" -->
+
+</div><!-- #pnf-content -->
+</div><!-- #page-not-found -->
+<!---- CUSTOM "404 NOT FOUND" PAGE (by anyhsthemes.tumblr.com) ---->
+
+
+
+</div><!-- #all -->
+</body>
+
+<!-- JQuery (v1.7.1) + Masonry (v2) + Infinite Scroll (v2.0b2.110603) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://static.tumblr.com/me5sfsd/12Qlmj66n/script.js"></script>
+<!-- JQuery (v1.7.1) + Masonry (v2) + Infinite Scroll (v2.0b2.110603) -->
+
+
+<!---- CUSTOM "404 NOT FOUND" PAGE (by anyhsthemes.tumblr.com) ---->
+{block:PermalinkPage}
+<script>
+$(document).ready(function(){
+    $.get(location.href, function(){
+        return false;
+    });
+    $(document).ajaxError(function(e, xhr, opt){
+        var pageStatus = xhr.status + " " + xhr.statusText;
+        if(pageStatus == "404 Not Found" || pageStatus == "404 error"){
+            var pageContent = $("#page-not-found").html();
+            $("#posts .caixa:first-of-type .caixa-content").html(pageContent);
+        }
+    });
+});
+</script>
+{/block:PermalinkPage}
+<!---- CUSTOM "404 NOT FOUND" PAGE (by anyhsthemes.tumblr.com) ---->
+
+<!-- tooltips (by: http://manos.malihu.gr/style-my-tooltips-jquery-plugin/) -->
+{block:IfCustomTooltips}
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+<script>
+(function($){
+    $(document).ready(function(){
+        $("[title]").style_my_tooltips({
+            tip_follows_cursor:true,
+            tip_delay_time:0,
+            tip_fade_speed:600,
+            attribute:"title"
+        });
+    });
+})(jQuery);
+</script>
+</script>
+{/block:IfCustomTooltips}
+<!-- tooltips (by: http://manos.malihu.gr/style-my-tooltips-jquery-plugin/) -->
+
+<!-- smooth scroll (by: https://github.com/gblazex/smoothscroll) -->
+{block:IfSmoothScroll}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.js"></script>
+<script>
+SmoothScroll({
+    // Scrolling Core
+    animationTime    : 700, // [ms]
+    stepSize         : 100, // [px]
+    // Acceleration
+    accelerationDelta : 50,  // 50
+    accelerationMax   : 3,   // 3
+    // Keyboard Settings
+    keyboardSupport   : true,  // option
+    arrowScroll       : 100,    // [px]
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+    pulseAlgorithm   : true,
+    pulseScale       : 4,
+    pulseNormalize   : 1,
+    // Other
+    touchpadSupport   : false, // ignore touchpad by default
+    fixedBackground   : true, 
+    excluded          : ''   
+});
+</script>
+{/block:IfSmoothScroll}
+<!-- smooth scroll (by: https://github.com/gblazex/smoothscroll) -->
+
+<!-- Photosets (by @annasthms & @eggdesign) -->
+<script>
+function gatherData(images, arr) {
+  for (let i = 0; i < images.length; i++) {
+    let currentData = {
+      "width": images[i].getAttribute('data-width'),
+      "height": images[i].getAttribute('data-height'),
+      "low_res": images[i].getAttribute('data-lowres'),
+      "high_res": images[i].getAttribute('data-highres')
+    };
+    arr.push(currentData);
+  }
+}
+function getIndex(elem) {
+  let i = 0;
+  while( (elem = elem.previousElementSibling) != null ) i++;
+  return i;
+}
+function lightbox(elem) {
+  let currentPhotoset = elem.parentNode;
+  let photosetPhotos = currentPhotoset.getElementsByTagName('div');
+  let data = [];
+  gatherData(photosetPhotos, data);
+  Tumblr.Lightbox.init(data, getIndex(elem) + 1);
+}
+</script>
+<!-- Photosets (by @annasthms & @eggdesign) -->
+
+
+<script>
+$(document).ready(function () {
+    
+    /*** MOBILE DROPDOWN MENU [start] ***/
+    $("#mobile-menu .dropdown-button").click(function(){
+        $(".dropdown").slideToggle();
+    });
+    /*** MOBILE DROPDOWN MENU [end] ***/
+
+    
+    /*** POSTS IMG WIDTH SETTINGS [start] ***/
+    {block:IndexPage}
+    $(".caixa").each(function(){
+        if(($(this).width() <= 500) && ($(this).width() > 250)) {
+            $(".mid-res").show();
+            $(".low-res").hide();
+        } else if($(this).width() > 500) {
+            $(".high-res").show();
+            $(".low-res").hide();
+            $(".mid-res").hide();
+        }
+    });
+    {/block:IndexPage}
+    /*** POSTS IMG WIDTH SETTINGS [end] ***/
+    
+    /*** COLUMNS SETTINGS [start] ***/
+    // if 1 column is selected:
+    {block:IndexPage}
+    if("{select:Number of Columns}" == "100%") {
+        $("#posts").css({"max-width":"600px"});
+    };
+    {/block:IndexPage}
+    /*** COLUMNS SETTINGS [end] ***/
+    
+    
+    /********** search forms [start] **********/
+    function sidebarSearchForm() {
+        var keyword = $("#main-search form input:first-child").val();
+        if(keyword.startsWith("#")) {
+            filteredKeyword = keyword.replace(/#/g, "");
+            location.assign("/tagged/" + filteredKeyword);
+        } else {
+            location.assign("/search/" + keyword);
+        }
+    }; // function
+    $("#main-search form").submit(function(){
+        sidebarSearchForm();
+    }); // submit
+    $("#main-search .search-button").click(function(){
+        sidebarSearchForm();
+        return false;
+    }); // click
+    
+    
+    function mobileSearchForm() {
+        var keyword = $("#mobile-search form input:first-child").val();
+        if(keyword.startsWith("#")) {
+            filteredKeyword = keyword.replace(/#/g, "");
+            location.assign("/tagged/" + filteredKeyword);
+        } else {
+            location.assign("/search/" + keyword);
+        }
+    }; // function
+    $("#mobile-search form").submit(function(){
+        mobileSearchForm();
+    }); // submit
+    $("#mobile-search .search-button").click(function(){
+        mobileSearchForm();
+        return false;
+    }); // click
+    /********** search forms **********/
+    
+    
+    /** smooth scroll to hash **/
+    /** scroll to hash **/
+	var locHash = location.hash;
+    var locHash_boo = Boolean(locHash);
+    // var hashID = locHash.replace(/#/g, "");
+    
+	if(locHash_boo == true) {
+	    var elementPosition = $(locHash).offset().top;
+	    var scrollTo = elementPosition - 40;
+		$("html, body").animate({
+        	scrollTop: scrollTo + 'px',
+        }, 1000);
+    };
+	/** smooth scroll to hash **/
+
+    
+    /********** back to top button [start] **********/
+    $(this).scroll(function(){
+        if ($(this).scrollTop() >= 100) {
+            $('#backtotop').fadeIn(500);
+        } else {
+            $('#backtotop').fadeOut(500);
+        };
+    });
+    $('#backtotop').click(function(){
+        $('html, body').animate({
+            scrollTop: '0px'
+        }, 500);
+        return false;
+    });
+   /********** back to top button [end] **********/
+   
+   /********** loading message **********/
+    setTimeout(function() {
+        $("#loading").fadeOut(1000, "swing");
+    }, 200); 
+    /** hide load message in Tumblr's preview **/
+    if (location.hostname == "assets.txmblr.com") {
+        $("#loading").css({"display":"none"});
+    };
+    /********** loading message [end] **********/
+    
+    
+    
+    function shortenNotes() {
+        let postWidth = $(".caixa.post").width();
+        if(postWidth <= 250) {
+            $('.post-menu .blogname').css({"display":"none"});
+        };
+    }; shortenNotes();
+    
+    function wrapNPFPhotosets() {
+        
+    // wrapping NPF photosets and lonely images (w/ help from @glenthemes: https://glenthemes.tumblr.com/post/659034084446748672)
+    $(".text figure:not(.captions-avatar), .npf_row").each(function(){
+        if(!$(this).parents().is(".photogroup")) {
+            if(!$(this).parent().is(".npf_col")){
+                if($(this).siblings("figure, .npf_row").length){
+                    $(this).not("figure + figure, .npf_row + .npf_row, figure + .npf_row, .npf_row + figure").each(function(){
+                        $(this).nextUntil(":not(figure, .npf_row)").andSelf().wrapAll('<div class="photogroup"></div>');
+                    });
+                } else {
+                    // if figure is by itself and is somehow not in a container
+                    $(this).wrap("<div class='photogroup'></div>");
+                };
+            };
+        };
+    });
+        
+}; wrapNPFPhotosets();
+    
+    /** hide NPF captions **/
+    function hideNPFcaptions() {
+        
+        {block:IfNotPhotosCaption}
+        {block:IndexPage}
+        
+        // empty p's
+        var pFirstChild = $("p:first-child");
+        pFirstChild.each(function(){
+            pFirstChildHeight = $(this).height();
+            if(pFirstChildHeight == 0) {
+                $(this).next(".photogroup").addClass("first-photogroup");
+            };
+        });
+        
+        // first photogroup
+        $(".photogroup:first-child").each(function(){
+            $(this).addClass("first-photogroup");
+        });
+        
+        // hide captions
+        $(".text .first-photogroup").each(function(){
+            $(this).nextAll(":not(.caption)").wrapAll("<div class='caption'></div>");
+        });
+        
+        // add "read-more" button
+        $(".caption:not(.shortened)").each(function(){
+            $(this).addClass("shortened");
+            var captionHeight = $(this).height();
+            var boxHeight = $(this).parents(".caixa-content").height();
+            var postID = $(this).parents(".post").attr("id");
+            // if captionHeight is 90% of boxHeight than add a .read-more button to this caption
+            var boxPercentage = (boxHeight * 90 / 100) - 1;
+            if(captionHeight >= boxPercentage) {
+                $(this).append('<div class="read-more-prev"></div> <div class="read-more tmblr-truncated-link"><a href="{BlogURL}post/' + postID + '"> {lang:Show more} </a></div><!-- .read-more.tmblr-truncated-link -->');
+            }
+        });
+        
+        {/block:IndexPage}
+        {/block:IfNotPhotosCaption}
+        
+    }; hideNPFcaptions();
+    /** hide NPF captions **/
+    
+    /** remove empty text spaces (by anyhsthemes.tumblr.com) **/
+    function removeEmptyTextBodies() {
+        
+        // remove empty p's
+        $("p").each(function(){
+            var textBodyHeight = $(this).height();
+            if(textBodyHeight == 0) {
+                $(this).css({"display":"none"});
+            };
+        });
+        
+        // remove empty .caption's
+        $(".caption").each(function(){
+            var childrenNumber = $(this).children().length;
+            if(childrenNumber == 0) {
+                $(this).css({"display":"none"});
+            };
+        });
+        
+    }; removeEmptyTextBodies();
+    /** remove empty text spaces **/
+    
+    
+    /** open all external links in new tab [start] **/
+    function externalLinks() {
+        $("a").each(function(){
+            var linkURL = $(this).attr("href");
+            if(linkURL != undefined) {
+                if(!linkURL.startsWith('https://{Name}') && !linkURL.startsWith('/') && !linkURL.startsWith('#')) {
+                    $(this).attr("target","_blank");
+                };
+            };
+        });
+    }; externalLinks();
+    /** open all external links in new tab [end] **/
+    
+    
+    /** Shorten Long Posts **/
+    function shortenLongPosts() {
+        
+        {block:IndexPage}
+        if("{text:Posts Max Height}" != "auto") {
+            $(".post-content").each(function() {
+                var postID = $(this).parents(".post").attr("id");
+                var postLink = "{BlogURL}post/" + postID;
+                var postHeight = $(this).innerHeight();
+                if(postHeight > {text:Posts Max Height}) {
+                    var heightCalc = {text:Posts Max Height} - 20;
+                    $(this).css({'height':heightCalc + 'px','overflow':'hidden'});
+                    $(this).append('<div class="read-more-prev"></div> <div class="read-more tmblr-truncated-link"><a href="{BlogURL}post/' + postID + '"> {lang:Show more} </a></div><!-- .read-more.tmblr-truncated-link -->');
+                };
+            });
+        };
+        {/block:IndexPage}
+        
+    }; shortenLongPosts();
+    /** Shorten Long Posts (by anyhsthemes.tumblr.com) **/
+            
+    
+/** align posts **/
+{block:IndexPage}
+var $grid = $('#posts');
+$grid.imagesLoaded(function(){
+    $grid.masonry({
+        itemSelector: '.post',
+        transitionDuration: '0.5s',
+        stagger: 30
+    });
+});
+{/block:IndexPage}
+/** align posts **/
+
+
+/** infinite scroll **/
+{block:IndexPage}
+{block:IfInfiniteScroll}
+$grid.infinitescroll({
+navSelector : "#navigation",
+nextSelector : "#next-page",
+itemSelector : '.post',
+loadingImg : '',
+loadingText : '<div class="infscr-loading-content caixa"><div class="caixa-content"> <i class="fas fa-spinner fa-pulse fa-fw" aria-hidden="true"></i> {lang:Loading}... </div></div>',
+donetext : " ",
+extraScrollPx : 0,
+bufferPx : 10000,
+debug : false,
+errorCallback: function() {
+$('#infscr-loading').animate({opacity: 0.8},2000).fadeOut('normal');
+}},
+function( newElements ) {
+
+        // functions:
+        shortenNotes();
+        wrapNPFPhotosets();
+        hideNPFcaptions();
+        removeEmptyTextBodies();
+        externalLinks();
+        shortenLongPosts();
+
+var $newElems = $( newElements );
+
+/** make like button works **/
+var $newElemsIDs = $newElems.map(function(){ 
+    return this.id; 
+}).get();
+console.log($newElems, $newElemsIDs);
+Tumblr.LikeButton.get_status_by_post_ids($newElemsIDs);
+/** make like button works **/
+
+$newElems.hide();
+$newElems.imagesLoaded(function(){
+$grid.masonry( 'appended', $newElems, {isAnimated: true, animationOptions: {duration: 250, easing: 'linear', queue: false}}, function(){$newElems.fadeIn('slow');} );
+});
+
+    
+}); $grid.show(500);
+{/block:IfInfiniteScroll}
+{/block:IndexPage}
+/** infinite scroll **/
+    
+});
+</script>
+</html>
