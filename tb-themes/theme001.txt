@@ -1,11 +1,11 @@
 <!--
  
  
-           — THEME #001: GENESIS —
+           — THEME #001 —
            by Anyh Salinas © 2022
            http://anyhs-themes.tumblr.com
            
-           (Last update: 21/02/2022 — 18:26hrs)
+           (Last update: 16/02/2022 — 15:07hrs)
 
 
 
@@ -90,16 +90,16 @@
 
 
     <!-- select options: fonts: titles -->
-    <link href='https://fonts.googleapis.com/css?family=Amatic SC|Lobster|Grand Hotel|Sacramento|Rouge Script|UnifrakturMaguntia|Astloch|Megrim|Amatic SC|Special Elite|Vidaloka|Anton|Share Tech Mono|Oranienbaum|Wire One|Abril Fatface|VT323|La Belle Aurore|Reenie Beanie|Economica' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC|Lobster|Grand Hotel|Sacramento|Rouge Script|UnifrakturMaguntia|Astloch|Megrim|Amatic SC|Special Elite|DM Serif Display|Vidaloka|Anton|Share Tech Mono|Oranienbaum|Wire One|Abril Fatface|VT323|La Belle Aurore|Reenie Beanie' rel='stylesheet' type='text/css'/>
     <meta name="select:Titles Font" content="Quicksand"/>
     <meta name="select:Titles Font" content="Dosis"/>
-    <meta name="select:Titles Font" content="Economica"/>
     <meta name="select:Titles Font" content="Wire One"/>
     <meta name="select:Titles Font" content="Rajdhani"/>
     <meta name="select:Titles Font" content="Play"/>
     <meta name="select:Titles Font" content="Teko"/>
     <meta name="select:Titles Font" content="Anton"/>
     <meta name="select:Titles Font" content="Abril Fatface"/>
+    <meta name="select:Titles Font" content="DM Serif Display"/>
     <meta name="select:Titles Font" content="Vidaloka"/>
     <meta name="select:Titles Font" content="Oranienbaum"/>
     <meta name="select:Titles Font" content="Special Elite"/>
@@ -1563,7 +1563,7 @@ h1 + .text.reblog-list .reblog-caption:first-child .reblog-header {border-top: n
     width: {text:Layout Width};
     min-height: 540px;
     margin: 0px auto;
-    margin-top: calc({text:Header Font Size}px + ({text:Posts Padding Thickness}px * 2) + ({text:Posts Spacing}px * 2) {block:IfExtraBorders}+ ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}+ ({text:Borders Thickness}px * 2){/block:IfBorders});
+    margin-top: calc(30px + ({text:Posts Padding Thickness}px * 2) + ({text:Posts Spacing}px * 2) {block:IfExtraBorders}+ ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}+ ({text:Borders Thickness}px * 2){/block:IfBorders});
     {block:PermalinkPage}
     width: 85%;
     {/block:PermalinkPage}
