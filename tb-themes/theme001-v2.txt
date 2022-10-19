@@ -5,7 +5,7 @@
            by Anyh's Themes © 2022
            http://anyhs-themes.tumblr.com
            
-           (Last update: 19/10/2022 — 01:38hrs)
+           (Last update: 19/10/2022 — 01:45hrs)
 
 
 
@@ -1938,8 +1938,6 @@ header#header {
 }
 
 .caixa.post {
-    transition: .5s;
-    
     width: calc({select:Number of Columns} - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
     
     {block:IndexPage}
@@ -5042,7 +5040,7 @@ function lightbox(elem) {
     AOS.init({
         offset: 40, // offset (in px) from the original trigger point
         duration: 1000, // values from 0 to 3000, with step 50ms
-        delay: 500, // values from 0 to 3000, with step 50ms
+        delay: 0, // values from 0 to 3000, with step 50ms
         easing: 'ease', // default easing for AOS animations
         once: true // whether animation should happen only once - while scrolling down
     });
@@ -5281,7 +5279,7 @@ function lightbox(elem) {
     function masonryGrid() {
         var msnry = new Masonry(grid, {
             itemSelector: '.post',
-            stagger: 30
+            stagger: 0
         }); // msnry
         imagesLoaded(grid, function() {
             msnry.layout();
