@@ -5,7 +5,7 @@
            by Anyh's Themes © 2022
            http://anyhs-themes.tumblr.com
            
-           (Last update: 18/10/2022 — 22:56hrs)
+           (Last update: 19/10/2022 — 01:38hrs)
 
 
 
@@ -220,11 +220,13 @@
     <meta name="select:Images Effect" title="Black and White" content="grayscale(100%)"/>
     <meta name="select:Images Effect" title="Dark Black and White" content="grayscale(100%) contrast(1.3) brightness(.9)"/>
     <meta name="select:Images Effect" title="Greyish" content="grayscale(40%) saturate(100%) contrast(120%)"/>
+    <meta name="select:Images Effect" title="Boho" content="contrast(120%) sepia(60%) brightness(80%)"/>
     <meta name="select:Images Effect" title="Dark" content="contrast(1.5) brightness(.9)"/>
+    <meta name="select:Images Effect" title="Old" content="contrast(90%) sepia(50%) brightness(100%)"/>
+    <meta name="select:Images Effect" title="Very Old" content="contrast(50%) sepia(50%) brightness(120%)"/>
     <meta name="select:Images Effect" title="Sepia" content="sepia(1)"/>
-    <meta name="select:Images Effect" title="Old" content="contrast(50%) sepia(50%) brightness(120%)"/>
-    <meta name="select:Images Effect" title="Coffee" content="sepia(30%) saturate(180%)"/>
-    <meta name="select:Images Effect" title="Vintage" content="sepia(30%) hue-rotate(-30deg) saturate(180%) contrast(90%) brightness(100%)"/>
+    <meta name="select:Images Effect" title="Magic" content="sepia(30%) hue-rotate(-30deg) saturate(180%) contrast(90%) brightness(100%)"/>
+    <meta name="select:Images Effect" title="Sweet" content="sepia(30%) hue-rotate(-20deg) saturate(70%) contrast(80%) brightness(120%)"/>
     <meta name="select:Images Effect" title="Colorful" content="saturate(220%)"/>
     <meta name="select:Images Effect" title="Deep" content="saturate(220%) contrast(1.3) brightness(.9)"/>
     <meta name="select:Images Effect" title="Inverted" content="invert(1)"/>
@@ -1936,6 +1938,8 @@ header#header {
 }
 
 .caixa.post {
+    transition: .5s;
+    
     width: calc({select:Number of Columns} - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
     
     {block:IndexPage}
@@ -2607,6 +2611,16 @@ header#header {
     background: {color:AltPalette Posts Background};
 }
 
+#infscr-postsend {
+    position: relative;
+    margin: 0px auto;
+    padding: {text:Posts Spacing}px 0px;
+}
+#infscr-postsend .caixa {
+    display: table;
+    margin: 0px auto;
+}
+#infscr-postsend .caixa-content {padding: {text:Posts Padding}px;}
 
 
 
@@ -5029,10 +5043,22 @@ function lightbox(elem) {
         offset: 40, // offset (in px) from the original trigger point
         duration: 1000, // values from 0 to 3000, with step 50ms
         delay: 500, // values from 0 to 3000, with step 50ms
-        easing: 'ease' // default easing for AOS animations
+        easing: 'ease', // default easing for AOS animations
+        once: true // whether animation should happen only once - while scrolling down
     });
     {/block:IfSmoothEffects}
     
+    
+    /** fix hidden captions bottom situation with certain Notes Styles **/
+    function captionsFix() {
+        {block:IfNotPhotosCaption}
+        if("{select:Notes Style}" != "style1" && "{select:Notes Style}" != "style2") {
+            document.querySelectorAll(".caption").forEach(function(item) {
+                item.style.marginBottom="{text:Posts Padding}px";
+            });
+        };
+        {/block:IfNotPhotosCaption}
+    }; captionsFix();
     
     
     /** REMOVE EMPTY TEXT SPACES (by anyhs-themes.tumblr.com) **/
@@ -5255,7 +5281,7 @@ function lightbox(elem) {
     function masonryGrid() {
         var msnry = new Masonry(grid, {
             itemSelector: '.post',
-            stagger: 0
+            stagger: 30
         }); // msnry
         imagesLoaded(grid, function() {
             msnry.layout();
@@ -5404,6 +5430,7 @@ function lightbox(elem) {
                     let postsCode = nextPageContent.slice(postsStart, postsEnd);
                     document.querySelector("#posts").insertAdjacentHTML("beforeend", postsCode);
                 } else {
+                    document.querySelector("#infscr-button").style.display="none";
                     document.querySelector("#infscr-postsend").style.visibility="visible";
                     document.querySelector("#infscr-postsend").style.opacity="1";
                 }; // else
@@ -5421,6 +5448,7 @@ function lightbox(elem) {
             wrapNPFPhotosets();
             hideNPFcaptions();
             shortenLongPosts();
+            captionsFix();
             masonryGrid();
             translatePage();
             vIcons();
