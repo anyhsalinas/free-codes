@@ -5,7 +5,7 @@
            by Anyh's Themes © 2022
            http://anyhs-themes.tumblr.com
            
-           (Last update: 19/10/2022 — 01:45hrs)
+           (Last update: 24/10/2022 — 01:12hrs)
 
 
 
@@ -2477,9 +2477,23 @@ header#header {
     display: table;
     margin: 40px auto;
     color: {color:Header Font};
-    padding: {text:Posts Padding}px;
+    
+    {block:IfExtraBorders}
+    padding-top: {text:Extra Borders Thickness}px;
+    {block:IfBorders}
+    border: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+    {/block:IfExtraBorders}
+    
+    {block:IfNotExtraBorders}
+    border: none;
+    {/block:IfNotExtraBorders}
+    
 }
-#pagination.alt-palette {color: {color:AltPalette Header Font};}
+#pagination.alt-palette {
+    color: {color:AltPalette Header Font};
+    border-color: {color:AltPalette Borders};
+}
 
 #pagination .pagination-content {
     text-align: center;
@@ -5328,9 +5342,15 @@ function lightbox(elem) {
         
         // switch button icon:
         if(icon_ori.style.display == "block") {
-            Cookies.set('altPalette', '1', {expires: 180, sameSite: 'strict'});
+            // if not on Tumblr's Preview:
+            if(!location.hostname.startsWith("assets.txmblr")) {
+                Cookies.set('altPalette', '1', {expires: 180, sameSite: 'strict'});
+            } else {altPaletteCookie = 1;}; // if
         } else {
-            Cookies.set('altPalette', '0', {expires: 180, sameSite: 'strict'});
+            // if not on Tumblr's Preview:
+            if(!location.hostname.startsWith("assets.txmblr")) {
+                Cookies.set('altPalette', '0', {expires: 180, sameSite: 'strict'});
+            } else {altPaletteCookie = 0;}; // if
         };
         
         // switch palette:
@@ -5340,9 +5360,14 @@ function lightbox(elem) {
     
     
     // switch palette function:
+    var altPaletteCookie = 0;
+    
     function altPalette() {
         
-        var altPaletteCookie = Cookies.get('altPalette');
+        // if not on Tumblr's Preview:
+        if(!location.hostname.startsWith("assets.txmblr")) {
+            altPaletteCookie = Cookies.get('altPalette');
+        }; // if
         
         if(altPaletteCookie == 1){
             icon_ori.style.display="none";
@@ -5357,18 +5382,28 @@ function lightbox(elem) {
                 item.classList.remove('alt-palette');
             }); // forEach
         }; // if
-    
+        
     }; // altPalette();
     altPalette();
     
-    // Cookies message:
-    var cookiesConsent = Cookies.get('at1cookiesConsent');
+    // --------- COOKIES MESSAGE:
+    var cookiesConsent = 0;
+    
+    // if not on Tumblr's Preview:
+    if(!location.hostname.startsWith("assets.txmblr")) {
+        cookiesConsent = Cookies.get('at1cookiesConsent');
+    }; // if
+    
     function checkCookiesConsent() {
         if(cookiesConsent) {document.querySelector("#cookies-notice").style.display="none"};
     }; checkCookiesConsent();
     document.querySelector(".cookies-notice-button").onclick = function() {
-        Cookies.set('at1cookiesConsent', '1', {expires: 180, sameSite: 'strict'});
-        cookiesConsent = Cookies.get('at1cookiesConsent');
+        // if not on Tumblr's Preview:
+        if(!location.hostname.startsWith("assets.txmblr")) {
+            Cookies.set('at1cookiesConsent', '1', {expires: 180, sameSite: 'strict'});
+            cookiesConsent = Cookies.get('at1cookiesConsent');
+        } else {cookiesConsent = 1;}; // if
+        
         checkCookiesConsent();
     };
     {/block:IfShowAltPaletteButton}
