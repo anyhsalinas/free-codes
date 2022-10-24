@@ -122,7 +122,7 @@
     <meta name="color:AltPalette Links" content="#63844d"/>
     <meta name="color:AltPalette Borders" content="#222"/>
     <meta name="color:AltPalette Extra Borders Background" content="#555"/>
-    <meta name="color:AltPalette Shadows" content="#555"/>
+    <meta name="color:AltPalette Shadows" content="#000"/>
     <meta name="color:AltPalette Highlights Background" content="#050505"/>
     <meta name="color:AltPalette Highlights Font" content="#ababab"/>
     <meta name="color:AltPalette Notes Background" content="#0a0a0a"/>
