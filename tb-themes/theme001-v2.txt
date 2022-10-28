@@ -3,9 +3,9 @@
  
            — THEME #001: Fresh —
            by Anyh's Themes © 2022
-           http://anyhs-themes.tumblr.com
+           https://anyhs-themes.tumblr.com
            
-           (Last update: 28/10/2022 — 19:02hrs)
+           (Last update: 28/10/2022 — 19:17hrs)
 
 
 
@@ -2366,7 +2366,7 @@ header#header {
 }
 
 
-#permalink.alt-palette ol li {
+#permalink ol li {
     transition: .5s;
     padding: {text:Notes Padding}px calc({text:Notes Padding}px + 5px);
     margin-bottom: 2px;
