@@ -5,7 +5,7 @@
            by Anyh's Themes © 2022
            http://anyhs-themes.tumblr.com
            
-           (Last update: 24/10/2022 — 01:12hrs)
+           (Last update: 28/10/2022 — 19:02hrs)
 
 
 
@@ -240,7 +240,7 @@
     <meta name="if:Margin on Images" content="0"/>
     <meta name="if:First Captions Header" content="1"/>
     <meta name="if:Photos Caption" content="0"/>
-    <meta name="if:Number of Likes" content="0"/>
+    <meta name="if:Show Number of Likes" content="1"/>
     <meta name="if:Share Buttons" content="1"/>
     <meta name="if:Post Author" content="0"/>
     <meta name="if:Related Posts" content="1"/>
@@ -262,7 +262,7 @@
     <meta name="text:Images Spacing" content="5"/>
     
     <!-- text options: fonts size -->
-    <meta name="text:Header Font Size" content="20"/>
+    <meta name="text:Header Font Size" content="18"/>
     <meta name="text:Titles Font Size" content="28"/>
     <meta name="text:Posts Font Size" content="13"/>
     <meta name="text:Posts Line Spacing" content="15"/>
@@ -1014,7 +1014,10 @@ iframe {
 
 
 /*** ANSWER/ASK ***/
-#ask_form, #submit_form {margin: {text:Posts Padding}px;}
+#ask_form, #submit_form {
+    margin: {text:Posts Padding}px;
+    width: calc(100% - ({text:Posts Padding}px * 2));
+}
 
 .ask_post {}
 
@@ -1051,6 +1054,12 @@ iframe {
     {block:IfBorders}
     border: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
+    
+    {block:IfNotMarginonImages}
+    border-left: none;
+    border-top: none;
+    {/block:IfNotMarginonImages}
+    
 }
 .ask-portrait figure.alt-palette {border-color: {color:AltPalette Borders};}
 
@@ -1087,6 +1096,7 @@ iframe {
     {block:IfNotMarginonImages}
     border-left: 0px;
     border-right: 0px;
+    border-top: 0px;
     {/block:IfNotMarginonImages}
 }
 
@@ -1185,6 +1195,7 @@ iframe {
     top: calc(100% - 4px);
 }
 .answerer:before {content: "@";}
+
 
 
 
@@ -1546,11 +1557,12 @@ header#header {
 /** desktop menu **/
 #desktop-menu {
     display: flex;
-    font-size: {text:Header Font Size}px;
+    font-size: calc({text:Header Font Size}px - 3px);
 }
 #desktop-menu .menu-button {
     flex: 1;
     margin: 0px;
+    padding: 1.5px 0px;
     {block:IfBorders}
     border-left: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
@@ -2228,6 +2240,7 @@ header#header {
 
 
 
+
 /***** PERMALINK *****/
 #permalink {
     width: 40%;
@@ -2296,7 +2309,8 @@ header#header {
     width: calc(100% - ({text:Posts Padding}px * 2));
 }
 #permalink table {
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0px 2px;
 }
 #permalink table td {
     padding: {text:Notes Padding}px;
@@ -2319,6 +2333,7 @@ header#header {
     color: {color:Notes Font};
     padding: {text:Notes Padding}px;
     width: {text:Notes Font Size}px;
+    border-right: none;
 }
 #permalink.alt-palette table tr td:first-child {
     background: {color:AltPalette Notes Background};
@@ -2354,7 +2369,7 @@ header#header {
 #permalink.alt-palette ol li {
     transition: .5s;
     padding: {text:Notes Padding}px calc({text:Notes Padding}px + 5px);
-    margin-bottom: 1px;
+    margin-bottom: 2px;
     margin-right: 5px;
     line-height: 25px;
     /** check \i/ **/
@@ -2404,6 +2419,8 @@ header#header {
     margin: 5px 0px 0px 40px;
     padding: 0px 0px 0px 10px;
 }
+
+
 
 
 /**** permalink pagination ****/
@@ -2475,7 +2492,7 @@ header#header {
 /********** PAGINATION **********/
 #pagination {
     display: table;
-    margin: 40px auto;
+    margin: calc({text:Posts Spacing}px * 3) auto;
     color: {color:Header Font};
     
     {block:IfExtraBorders}
@@ -2515,11 +2532,10 @@ header#header {
     {block:IfBorders}
     border: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
-    border-radius: {select:Round Corners};
     border-left-width: 0px;
     transition: .5s;
 }
-#pagination .pagination-content > .button {
+#pagination .pagination-content > .button, #pagination .pagination-content > a .button {
     border-left-width: 1px;
 }
 #pagination .button.alt-palette {
@@ -2890,6 +2906,7 @@ iframe.tmblr-iframe {
     padding: {text:Posts Padding}px;
     z-index: 9999999999999;
     font-size: 1.2em;
+    line-height: 1em;
     display: table;
     
     background: {color:Header};
@@ -2912,7 +2929,8 @@ iframe.tmblr-iframe {
 #cookies-notice p {
     width: calc(100% - 110px);
     margin: 0px !important;
-    padding: 0px !important;
+    padding: 0px;
+    padding-right: {text:Posts Padding}px;
     display: table-cell;
     vertical-align: middle;
 }
@@ -4217,8 +4235,8 @@ iframe.tmblr-iframe {
 <i class="v-icon fas fa-link" data-li="lnr lnr-link" data-cp="cp cp-link" data-cp-o="cp cp-link"></i>
 
 <span class="buttontitle">
-{block:IfNotNumberofLikes}{lang:Permalink}{/block:IfNotNumberofLikes}
-{block:IfNumberofLikes}{NoteCountWithLabel}{/block:IfNumberofLikes}
+{block:IfNotShowNumberofLikes}{lang:Permalink}{/block:IfNotShowNumberofLikes}
+{block:IfShowNumberofLikes}{NoteCountWithLabel}{/block:IfShowNumberofLikes}
 </span>
 </a><!-- .button -->
 </div><!-- .left -->
@@ -4406,12 +4424,12 @@ iframe.tmblr-iframe {
 <!-- post content source -->
 
 <!-- notes count -->
-{block:IfNumberofLikes}
+{block:IfShowNumberofLikes}
 <tr>
 <td><i class="v-icon fas fa-chart-bar" data-li="lnr lnr-chart-bars" data-cp="cp cp-graph" data-cp-o="cp cp-graph-o"></i></td>
 <td>{lang:This post has NoteCount notes}</td>
 </tr>
-{/block:IfNumberofLikes}
+{/block:IfShowNumberofLikes}
 <!-- notes count -->
 
 <!-- post tags -->
@@ -4432,7 +4450,7 @@ iframe.tmblr-iframe {
  
  
 <!-- post notes [start] -->
-{block:IfNumberofLikes}
+{block:IfShowNumberofLikes}
 {block:PostNotes}
 <div class="caixa">
 <div class="caixa-content">
@@ -4443,7 +4461,7 @@ iframe.tmblr-iframe {
 </div> <!-- .caixa-content -->
 </div> <!-- .caixa -->
 {/block:PostNotes}
-{/block:IfNumberofLikes}
+{/block:IfShowNumberofLikes}
 <!-- post notes [end] -->
 
 
@@ -4862,7 +4880,7 @@ iframe.tmblr-iframe {
 <!-- platform -->
 
 <!-- designer -->
-<span><i class="v-icon fas fa-code" data-li="lnr lnr-code" data-cp="cp cp-code" data-cp-o="cp cp-code"></i> Developed by <a href="https://anyhs-themes.tumblr.com" target="_blank">Anyh S.</a></span>
+<span><i class="v-icon fas fa-code" data-li="lnr lnr-code" data-cp="cp cp-code" data-cp-o="cp cp-code"></i> Theme by <a href="https://anyhs-themes.tumblr.com" target="_blank">Anyh's Themes</a></span>
 <!-- designer -->
 
 </div><!-- .caixa-content -->
