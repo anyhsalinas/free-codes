@@ -5,7 +5,7 @@
            by Anyh's Themes © 2022
            https://anyhs-themes.tumblr.com
            
-           (Last update: 28/10/2022 — 19:17hrs)
+           (Last update: 28/10/2022 — 20:11hrs)
 
 
 
@@ -185,16 +185,19 @@
     
     <!-- select options: shadow tyle -->
     <meta name="select:Shadow Style" content="0px 0px 0px 0px" title="No Shadows"/>
-     <meta name="select:Shadow Style" content="1px 1px 1px 0px" title="Shadow Style 1"/>
-     <meta name="select:Shadow Style" content="2px 2px 2px 0px" title="Shadow Style 2"/>
-    <meta name="select:Shadow Style" content="2px 2px 5px 0px" title="Shadow Style 3"/>
-    <meta name="select:Shadow Style" content="4px 4px 8px 0px" title="Shadow Style 4"/>
-    <meta name="select:Shadow Style" content="3px 3px 0px 0px" title="Shadow Style 5"/>
-    <meta name="select:Shadow Style" content="5px 5px 0px 0px" title="Shadow Style 6"/>
-    <meta name="select:Shadow Style" content="0px 0px 5px 2px" title="Shadow Style 7"/>
-    <meta name="select:Shadow Style" content="0px 0px 10px 5px" title="Shadow Style 8"/>
-    <meta name="select:Shadow Style" content="0px 0px 0px 5px" title="Shadow Style 9"/>
-    <meta name="select:Shadow Style" content="0px 0px 0px 9px" title="Shadow Style 10"/>
+     <meta name="select:Shadow Style" content="1px 1px 3px 0px" title="Angled Soft 1px"/>
+     <meta name="select:Shadow Style" content="2px 2px 3px 0px" title="Angled Soft 2px"/>
+    <meta name="select:Shadow Style" content="4px 4px 5px 0px" title="Angled Soft 5px"/>
+    <meta name="select:Shadow Style" content="1px 1px 0px 0px" title="Angled Hard 1px"/>
+    <meta name="select:Shadow Style" content="3px 3px 0px 0px" title="Angled Hard 3px"/>
+    <meta name="select:Shadow Style" content="5px 5px 0px 0px" title="Angled Hard 5px"/>
+    <meta name="select:Shadow Style" content="0px 5px 5px -5px" title="Bottom Soft 5px"/>
+    <meta name="select:Shadow Style" content="0px 2px 0px -1px" title="Bottom Hard 1px"/>
+    <meta name="select:Shadow Style" content="0px 0px 5px 2px" title="Contour Soft 5px"/>
+    <meta name="select:Shadow Style" content="0px 0px 10px 5px" title="Contour Soft 10px"/>
+    <meta name="select:Shadow Style" content="0px 0px 0px 1px" title="Contour Hard 1px"/>
+    <meta name="select:Shadow Style" content="0px 0px 0px 5px" title="Contour Hard 5px"/>
+    <meta name="select:Shadow Style" content="0px 0px 0px 10px" title="Contour Hard 10px"/>
     
     <!-- select options: round corners -->
     <meta name="select:Round Corners" content="0px"/>
