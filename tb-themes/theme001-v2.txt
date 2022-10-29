@@ -5,7 +5,7 @@
            by Anyh's Themes © 2022
            https://anyhs-themes.tumblr.com
            
-           (Last update: 28/10/2022 — 20:11hrs)
+           (Last update: 28/10/2022 — 21:29hrs)
 
 
 
@@ -2945,6 +2945,7 @@ iframe.tmblr-iframe {
     cursor: pointer;
     vertical-align: middle;
     padding: 10px;
+    transition: .5s;
     background: {color:Notes Background};
     color: {color:Notes Font};
     border-radius: {select:Round Corners};
@@ -2961,6 +2962,15 @@ iframe.tmblr-iframe {
     border-color: {color:AltPalette Borders};
     {/block:IfBorders}
 }
+.cookies-notice-button:hover {
+    background: {color:Posts Background};
+    color: {color:Links};
+}
+.cookies-notice-button.alt-palette:hover {
+    background: {color:AltPalette Posts Background};
+    color: {color:AltPalette Links};
+}
+
 
 
 /** CREDITS - DO NOT REMOVE OR CHANGE WITHOUT MY AUTHORIZATION! **/
