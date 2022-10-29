@@ -5,7 +5,7 @@
            by Anyh's Themes © 2022
            https://anyhs-themes.tumblr.com
            
-           (Last update: 28/10/2022 — 21:29hrs)
+           (Last update: 29/10/2022 — 00:36hrs)
 
 
 
@@ -497,6 +497,8 @@ h1 a.alt-palette:hover {color: {color:AltPalette Links};}
 
 .caixa .post-content h1:first-child, #permalink .caixa h1:first-child {border-top: 0px;}
 
+.caixa .post-content h1:last-child {border-bottom: 0px;}
+
 /** if h1 is :first-child of a .reblog-content [start] **/
 .text h1:first-child, .text .reblog-content + h1:first-child, .text .reblog-content p[style]:first-child + h1 {
     margin-top: calc({text:Posts Padding}px - {text:Posts Padding}px);
@@ -546,6 +548,7 @@ blockquote img {
 }
 
 blockquote p:first-child {margin-top: 0px;}
+blockquote div:last-child {margin-bottom: calc({text:Posts Padding}px / 2);}
 
 /** text content spacing **/
 h1, h2, h3, h4, h5, h6, p, ol, ul, pre, blockquote, blockquote div {
@@ -1012,6 +1015,23 @@ iframe {
     background: {color:AltPalette Highlights Background};
     color: {color:AltPalette Highlights Font};
     border-color: {color:AltPalette Borders};
+}
+
+.npf-link-block .title {
+    margin: {text:Posts Padding}px;
+    font-family: {text:Custom Titles Font};
+    font-size: {text:Titles Font Size}px;
+    padding: 0px;
+}
+.npf-link-block .bottom {
+    padding: {text:Posts Padding}px;
+    padding-top: 0px;
+}
+
+.npf-link-block:first-child {
+    margin: 0px;
+    border-width: 0px;
+    border-bottom-width: {text:Borders Thickness}px;
 }
 
 
@@ -2573,13 +2593,11 @@ header#header {
 
 /** infinite scroll loading message **/
 #infscr-loading, #infscr-postsend {
-    position: fixed;
-    bottom: 20px;
-    left: 0px;
+    position: relative;
     width: 100%;
     z-index: 10;
     transition: .5s;
-    visibility: hidden;
+    display: none;
     opacity: 0;
 }
 #infscr-loading .caixa.infscr-loading-content, #infscr-postsend .caixa.infscr-loading-content {
@@ -2591,6 +2609,25 @@ header#header {
     font-size: {text:Posts Font Size}px;
 }
 
+#infscr-loading {
+    position: relative;
+    display: none;
+    opacity: 0;
+}
+.infscr-loading-content {
+    display: table;
+    margin: 0px auto;
+}
+.infscr-loading-content .caixa {
+    margin: 0px;
+    position: fixed;
+    bottom: 30%;
+}
+.infscr-loading-content .caixa.filler {
+    position: relative;
+    visibility: hidden;
+}
+
 #infscr-button {
     width: 100%;
     padding: 20px 0px !important;
@@ -2599,25 +2636,25 @@ header#header {
     display: table;
     margin: 0px auto;
     cursor: pointer;
-    color: {color:Header Font};
+    color: {color:Sidebar Font};
     {block:IfNotExtraBorders}
-    background: {color:Header};
+    background: {color:Sidebar Background};
     {/block:IfNotExtraBorders}
 }
 #infscr-button .caixa.alt-palette {
-    color: {color:AltPalette Header Font};
+    color: {color:AltPalette Sidebar Font};
     {block:IfNotExtraBorders}
-    background: {color:AltPalette Header};
+    background: {color:AltPalette Sidebar Background};
     {/block:IfNotExtraBorders}
     transition: .5s;
 }
 #infscr-button .caixa-content {
     padding: {text:Posts Padding}px;
-    background: {color:Header};
+    background: {color:Sidebar Background};
     transition: .5s;
 }
 #infscr-button .caixa-content.alt-palette {
-    background: {color:AltPalette Header};
+    background: {color:AltPalette Sidebar Background};
 }
 
 #infscr-button .caixa:hover {
@@ -2643,7 +2680,6 @@ header#header {
 }
 
 #infscr-postsend {
-    position: relative;
     margin: 0px auto;
     padding: {text:Posts Spacing}px 0px;
 }
@@ -4825,25 +4861,26 @@ iframe.tmblr-iframe {
 {/block:IfInfiniteScroll}
 <!----- INFINITE BUTTON [end] ----->
 
-</div><!-- #posts-section -->
-<!-- POSTS SECTION [end] -->
-
-
-
-</div><!-- #content -->
-<!------------------------------------------ CONTENT [end] ---------->
 
 
 
 <!----- INFINITE SCROLL MESSAGES [start] ----->
 {block:IfInfiniteScroll}
 <div id="infscr-loading">
-<div class="infscr-loading-content caixa">
+<div class="infscr-loading-content">
 
-    <div class="caixa-content">
-        <i class="fas fa-spinner fa-pulse fa-fw" aria-hidden="true"></i>
-        {lang:Loading}...
-    </div><!-- .caixa-content -->
+    <div class="caixa filler">
+        <div class="caixa-content">
+            -- {lang:Loading}...
+        </div><!-- .caixa-content -->
+    </div><!-- .caixa -->
+
+    <div class="caixa">
+        <div class="caixa-content">
+            <i class="fas fa-spinner fa-pulse fa-fw" aria-hidden="true"></i>
+            {lang:Loading}...
+        </div><!-- .caixa-content -->
+    </div><!-- .caixa -->
         
 </div><!-- .infscr-loading-content -->
 </div><!-- #infscr-loading -->
@@ -4862,6 +4899,15 @@ iframe.tmblr-iframe {
 
 
 
+</div><!-- #posts-section -->
+<!-- POSTS SECTION [end] -->
+
+
+
+</div><!-- #content -->
+<!------------------------------------------ CONTENT [end] ---------->
+
+
 
 
 <!-- BACK TO TOP BUTTON [start] -->
@@ -4875,6 +4921,7 @@ iframe.tmblr-iframe {
 </div><!-- #backtotop.caixa -->
 </a>
 <!-- BACK TO TOP BUTTON [end] -->
+
 
 
 <!------------------------- FOOTER [start] ------------------------->
@@ -5108,7 +5155,7 @@ function lightbox(elem) {
     function removeEmptyTextBodies() {
         
         // remove empty p's
-        document.querySelectorAll(".caixa.post p").forEach(function(item, index){
+        document.querySelectorAll(".caixa.post p, div.text").forEach(function(item, index){
            let textBodyHeight = item.offsetHeight;
            if(textBodyHeight == 0) {
                item.remove();
@@ -5125,6 +5172,21 @@ function lightbox(elem) {
        
     }; removeEmptyTextBodies();
     /** REMOVE EMPTY TEXT SPACES [end] **/
+    
+    
+    /** LAST TITLES **/
+    function lastTitles() {
+        document.querySelectorAll(".caixa").forEach(function(item, index){
+            var textPost = item.querySelector(".post-content .text_post");
+            var postMenuBottom = item.querySelector(".post-menu.bottom");
+            if(textPost && postMenuBottom) {
+                if(textPost.lastElementChild.tagName == "H1") {
+                    postMenuBottom.style.marginTop="0px";
+                }; // if
+            }; // if
+        }); // each
+    }; lastTitles();
+    
     
     
     /** get Posts Width: **/
@@ -5481,46 +5543,58 @@ function lightbox(elem) {
         }; // if
         
         function loadNextPage() {
-            const xhttp = new XMLHttpRequest();
-            xhttp.onload = function() {
-                    
-                let nextPageContent = this.responseText;
-                let postsStart = nextPageContent.search('<div class="post caixa hasdate');
-                    
-                var pageContentExists = postsStart < 120000;
-                    
-                if(pageContentExists) {
-                    let postsEnd = nextPageContent.search('</main> <!-- #posts -->');
-                    let postsCode = nextPageContent.slice(postsStart, postsEnd);
-                    document.querySelector("#posts").insertAdjacentHTML("beforeend", postsCode);
-                } else {
-                    document.querySelector("#infscr-button").style.display="none";
-                    document.querySelector("#infscr-postsend").style.visibility="visible";
-                    document.querySelector("#infscr-postsend").style.opacity="1";
-                }; // else
-                    
-            }; // onload
-                
-            xhttp.open("GET", currentLoc + "/page/" + nextPageNumber);
-            xhttp.send();
-            nextPageNumber += 1;
-                
-            // after load functions:
-            removeEmptyTextBodies();
-            shortenNotes();
-            imgsRes();
-            wrapNPFPhotosets();
-            hideNPFcaptions();
-            shortenLongPosts();
-            captionsFix();
-            masonryGrid();
-            translatePage();
-            vIcons();
-            altPalette();
             
-            // after load msg:
-            document.querySelector("#infscr-loading").style.visibility="hidden";
-            document.querySelector("#infscr-loading").style.opacity="0";
+            // before load msg:
+            document.querySelector("#infscr-loading").style.display="block";
+            document.querySelector("#infscr-loading").style.opacity="1";
+            
+            setTimeout(function() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                        
+                    let nextPageContent = this.responseText;
+                    let postsStart = nextPageContent.search('<div class="post caixa hasdate');
+                        
+                    var pageContentExists = postsStart < 120000;
+                        
+                    if(pageContentExists) {
+                        let postsEnd = nextPageContent.search('</main> <!-- #posts -->');
+                        let postsCode = nextPageContent.slice(postsStart, postsEnd);
+                        document.querySelector("#posts").insertAdjacentHTML("beforeend", postsCode);
+                    } else {
+                        document.querySelector("#infscr-postsend").style.display="block";
+                        document.querySelector("#infscr-button").style.opacity="0";
+                        setTimeout(function() {
+                            document.querySelector("#infscr-postsend").style.opacity="1";           
+                            document.querySelector("#infscr-button").style.display="none";
+                        }, 300); // setTimeout
+                    }; // else
+                        
+                }; // onload
+                    
+                xhttp.open("GET", currentLoc + "/page/" + nextPageNumber);
+                xhttp.send();
+                nextPageNumber += 1;
+                    
+                // after load functions:
+                removeEmptyTextBodies();
+                lastTitles();
+                shortenNotes();
+                imgsRes();
+                wrapNPFPhotosets();
+                hideNPFcaptions();
+                shortenLongPosts();
+                captionsFix();
+                masonryGrid();
+                translatePage();
+                vIcons();
+                altPalette();
+                
+                // after load msg:
+                document.querySelector("#infscr-loading").style.display="none";
+                document.querySelector("#infscr-loading").style.opacity="0";
+                
+            }, 100);
                 
         }; // function loadNextPage();
         
@@ -5533,7 +5607,7 @@ function lightbox(elem) {
         
         
         {block:IfAutomaticInfiniteScroll}
-        document.onscroll = function() {
+        window.onscroll = function() {
             let pageHeight = document.querySelector("#all").offsetHeight;
             let endOfPage = pageHeight - window.innerHeight - 20;
             // load next page:
