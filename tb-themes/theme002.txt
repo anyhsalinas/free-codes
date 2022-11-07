@@ -5,7 +5,7 @@
            by Anyh's Themes © 2022
            https://anyhs-themes.tumblr.com
            
-           (Last update: 06/11/2022 — 21:35hrs)
+           (Last update: 06/11/2022 — 22:21hrs)
 
 
 
@@ -584,9 +584,10 @@ p:last-child, ol:last-child, ul:last-child, blockquote:last-child, pre:last-chil
 }
 .read-more, .tmblr-truncated-link {
     position: absolute;
-    bottom: -10px;
+    bottom: 0px;
     z-index: 3;
     width: 100%;
+    margin-top: 10px;
 }
 .read-more a, .tmblr-truncated-link a {
     display: table;
@@ -2613,6 +2614,8 @@ header, header .caixa {margin: 0px;}
 #infscr-button .caixa-content.alt-palette {
     background: {color:AltPalette Sidebar Background};
 }
+
+#infscr-button .caixa-content i {margin-left: 10px;}
 
 #infscr-button .caixa:hover {
     color: {color:Posts Font};
@@ -4798,7 +4801,7 @@ iframe.tmblr-iframe {
 <div id="infscr-button">
 <div class="infscr-button-content caixa">
     <div class="caixa-content">
-        {lang:Load more posts}
+        {lang:Load more posts} <i class="v-icon fas fa-chevron-down" data-li="lnr lnr-chevron-down" data-cp="cp cp-arrow-down" data-cp-o="cp cp-chevron-down"></i>
     </div><!-- .caixa-content -->
 </div><!-- .infscr-button-content -->
 </div><!-- #infscr-button -->
