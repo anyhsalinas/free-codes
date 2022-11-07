@@ -5,7 +5,7 @@
            by Anyh's Themes © 2022
            https://anyhs-themes.tumblr.com
            
-           (Last update: 29/10/2022 — 00:36hrs)
+           (Last update: 06/11/2022 — 21:48hrs)
 
 
 
@@ -25,7 +25,6 @@
     PLUGINS & ASSETS:
     ♦ Masonry: https://masonry.desandro.com/
     ♦ ImagesLoaded: https://imagesloaded.desandro.com/
-    ♦ Animate on Scroll: https://michalsnik.github.io/aos/
     ♦ Smooth Scroll: https://github.com/gblazex/smoothscroll
     ♦ Photosets: https://annasthms.github.io/photosets/
     ♦ Tooltips: http://manos.malihu.gr/style-my-tooltips-jquery-plugin/
@@ -74,12 +73,6 @@
 
 <!-- ImagesLoaded (imagesloaded.desandro.com): -->
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-
-<!-- Animate On Scroll (by michalsnik.github.io/aos): -->
-{block:IfSmoothEffects}
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-{/block:IfSmoothEffects}
 
 <!-- Fonts: -->
 {text:Custom Fonts Script}
@@ -337,6 +330,8 @@
 
 html, body {height: 100%;}
 
+#all {transition: .5s;}
+
 body {
     margin: 0px;
     background: {color:Background} url('{image:Background}') fixed;
@@ -585,7 +580,7 @@ p:last-child, ol:last-child, ul:last-child, blockquote:last-child, pre:last-chil
 }
 .read-more, .tmblr-truncated-link {
     position: absolute;
-    bottom: 0px;
+    bottom: -10px;
     z-index: 3;
     width: 100%;
 }
@@ -1608,7 +1603,6 @@ header#header {
 #desktop-menu .menu-button a:hover {background: {color:Posts Background};}
 
 #desktop-menu .menu-button a.alt-palette:hover, #desktop-menu .menu-button a:hover i.alt-palette {color: {color:AltPalette Links};}
-#desktop-menu .menu-button a.alt-palette:hover {background: {color:AltPalette Posts Background};}
 
 
 #desktop-menu .menu-title {display: none;}
@@ -1765,6 +1759,7 @@ header#header {
     {block:IfBorders}
     border-left: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
+    text-align: left;
 }
 #mobile-header .title.alt-palette {
     background: {color:AltPalette Header};
@@ -1940,6 +1935,14 @@ header#header {
     background: {color:Extra Borders Background} url('{image:Extra Borders Background}');
     padding: {text:Extra Borders Thickness}px;
     {/block:IfExtraBorders}
+
+    opacity: 0;
+    transform: translate(0px, 100px);
+    transition: 1s;
+}
+.caixa.slideup {
+    opacity: 1;
+    transform: translate(0px, 0px);
 }
 .caixa.alt-palette {
     box-shadow: {select:Shadow Style} {color:AltPalette Shadows};
@@ -1972,8 +1975,10 @@ header#header {
     border-color: {color:AltPalette Borders};
 }
 
-.caixa.post {
-    width: calc({select:Number of Columns} - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
+.post-container {
+    position: relative;
+    width: calc({select:Number of Columns} - ({text:Posts Spacing}px * 2));
+    margin: {text:Posts Spacing}px;
     
     {block:IndexPage}
     max-width: 600px;
@@ -1981,15 +1986,16 @@ header#header {
     
     {block:PermalinkPage}
     width: calc(60% - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
-    margin: {text:Posts Spacing}px auto;
-    {/block:PermalinkPage}
-}
-.caixa.post.hasdate {
-    {block:PermalinkPage}
     margin: {text:Posts Spacing}px;
     float: left;
     {/block:PermalinkPage}
+    
 }
+.caixa.post {
+    margin: 0px;
+    width: calc(100% {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
+}
+
 
 .post-content {
     position: relative;
@@ -2009,7 +2015,10 @@ header#header {
 
 #filter-pages .caixa-content {padding: 0px;}
 
-#filter-pages .caixa h1:first-child {margin: 0px;}
+#filter-pages .caixa h1:first-child {
+    margin: 0px;
+    border-top: 0px;
+}
 
 #filter-pages .caixa p i {margin-left: 5px;}
 
@@ -2024,7 +2033,10 @@ header#header {
 
 #pnf-content h1 {
     margin: 0px;
-    margin-bottom: {text:Posts Padding}px;
+    border-top: 0px;
+}
+#pnf-content .p {
+    margin-top: {text:Posts Padding}px;
 }
 
 /** if no results found **/
@@ -2621,7 +2633,7 @@ header#header {
 .infscr-loading-content .caixa {
     margin: 0px;
     position: fixed;
-    bottom: 30%;
+    bottom: 20%;
 }
 .infscr-loading-content .caixa.filler {
     position: relative;
@@ -2818,17 +2830,17 @@ iframe.tmblr-iframe {
 .mobile {display: none;}
 
 @media only screen and (max-width: 1000px) {
-    .caixa.post {
+    .post-container {
         {block:IndexPage}
-        min-width: calc(33.3% - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness} * 2){/block:IfBorders});
+        min-width: calc(33.3% - ({text:Posts Spacing}px * 2));
         {/block:IndexPage}
     }
 }
 
 @media only screen and (max-width: 900px) {
-    .caixa.post {
+    .post-container {
         {block:IndexPage}
-        width: calc(50% - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} - 1px {block:IfBorders}- ({text:Borders Thickness} * 2){/block:IfBorders});
+        width: calc(50% - ({text:Posts Spacing}px * 2));
         {/block:IndexPage}
     }
     
@@ -2846,6 +2858,7 @@ iframe.tmblr-iframe {
     header#header {
         width: 100%;
         margin: 0px;
+        position: relative;
     }
     
     #content {
@@ -2856,14 +2869,17 @@ iframe.tmblr-iframe {
     
     #posts-section {
         width: 100%;
-        margin-top: 0px;
+        margin: 0px;
     }
     
-    .caixa.post {
-        min-width: calc(100% - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
+    .post-container {
+        min-width: calc(100% - ({text:Posts Spacing}px * 2));
     }
     
-    #permalink, #permalink .caixa {width: 100%;}
+    #permalink {
+        float: none;
+        width: 100%;
+    }
     
 
 }
@@ -2921,6 +2937,13 @@ iframe.tmblr-iframe {
 
 
 /** slide buttons **/
+.slidebutton {
+    transition: 1s;
+    transform: translate(100px, 0px);
+}
+.slidebutton.slideright {
+    transform: translate(0px, 0px);
+}
 .slidebutton-name {
     overflow: hidden;
     display: inline-block;
@@ -3042,7 +3065,7 @@ iframe.tmblr-iframe {
 
 {block:IfShowAltPaletteButton}
 <!-- light/dark mode [start] -->
-<div id="lightdark-mode" class="topbutton slidebutton" {block:IfSmoothEffects}data-aos="fade-left" data-aos-delay="800"{/block:IfSmoothEffects}>
+<div id="lightdark-mode" class="topbutton slidebutton">
 
 <div id="lightdark-mode-content">
     <span class="button-item button-icon slidebutton-icon icon-ori">
@@ -3064,7 +3087,7 @@ iframe.tmblr-iframe {
 {/block:IfShowAltPaletteButton}
 
 <!-- CREDITS - DO NOT REMOVE OR CHANGE WITHOUT MY AUTHORIZATION! -->
-<div id="credits" class="topbutton slidebutton" {block:IfSmoothEffects}data-aos="fade-left" data-aos-delay="1000"{/block:IfSmoothEffects}>
+<div id="credits" class="topbutton slidebutton">
 <div id="credits-content" class="slidebutton-content">
     <a href="https://anyhs-themes.tumblr.com" target="_blank">
     
@@ -3083,7 +3106,7 @@ iframe.tmblr-iframe {
 
 
 <!-------------------- HEADER [start] -------------------->
-<header id="header" {block:IfSmoothEffects}data-aos="fade"{/block:IfSmoothEffects}>
+<header id="header">
 
 <!-- DESKTOP HEADER [start] -->
 <div id="desktop-header" class="desktop">
@@ -3482,7 +3505,8 @@ iframe.tmblr-iframe {
 {block:Posts}
 
 <!----- post box [start] ----->
-<div class="post caixa {block:Date}hasdate{block:Date}" {block:IfSmoothEffects}data-aos="fade-up"{/block:IfSmoothEffects} id="{PostID}" post-type="{PostType}">
+<div class="post-container">
+<div class="caixa post {block:Date}hasdate{/block:Date}" id="{PostID}" post-type="{PostType}">
 <div class="caixa-content">
 
 <!----- NOTES / POST MENU / POST INFO ----->
@@ -4317,8 +4341,9 @@ iframe.tmblr-iframe {
 <!----- NOTES / POST MENU / POST INFO ----->
 
 
-</div> <!-- .caixa-content -->
-</div> <!-- .post.caixa -->
+</div><!-- .caixa-content -->
+</div><!-- .caixa.post -->
+</div><!-- .post-container -->
 <!---------- CAIXA [end] ---------->
 
 
@@ -4952,7 +4977,7 @@ iframe.tmblr-iframe {
 
 <!---------- COOKIES NOTICE ---------->
 {block:IfShowAltPaletteButton}
-<div id="cookies-notice" data-aos="fade">
+<div id="cookies-notice">
     
     <p> 
         <span class="l_pt">⚠ Este tema utiliza Cookies apenas para armazenar sua preferência de cores através do botão "<span class="button-item button-icon slidebutton-icon icon-ori">{text:AltPalette Button Icon}</span> <span class="button-item button-name slidebutton-name">{text:AltPalette Button Title}</span>". Além disso, este blog está hospedado em Tumblr.com e está sujeito aos <a href="https://www.tumblr.com/privacy" target="_blank">Termos de Privacidade do Tumblr</a>. <i>Para saber como gerenciar Cookies no seu navegador, confira <a href="https://tecnoblog.net/responde/apagar-limpar-cookies-chrome-safari/" target="_blank">este tutorial</a>.</i></span>
@@ -5071,6 +5096,84 @@ function lightbox(elem) {
 
 <script>
 
+
+    /** external, internal and hashtag links behavior [start] **/
+    function linksBehavior() {
+        document.querySelectorAll("a").forEach(function(item){
+            if(!item.classList.contains("link-checked")) {
+                item.classList.add("link-checked");
+                var linkUrl = item.getAttribute("href");
+                
+                // if link is valid:
+                if(linkUrl != "" && linkUrl != "#" && linkUrl != undefined) {
+                    
+                    // if internal link:
+    			    if((linkUrl.startsWith("https://{Name}") || linkUrl.startsWith("/")) && !linkUrl.includes("#")) {
+    			        item.onclick = function() {
+        			        document.querySelector("#all").style.opacity="0";
+        				    setTimeout(function(){location=linkUrl;}, 500);
+    			        }; // onclick
+    			    }
+    			    
+    			    // if link contains hashtag and is local:
+                    else if((linkUrl.startsWith("https://{Name}") && linkUrl.includes("#")) || (linkUrl.startsWith("#") && linkUrl != "#")) {
+                        item.setAttribute("target", "_self");
+                        let hashPos = linkUrl.search("#");
+                        let elemIdString = linkUrl.slice(hashPos);
+                        if(document.querySelector(elemIdString)) {
+                            let elemPos = document.querySelector(elemIdString).offsetTop;
+                            let retreat = 40;
+                            elemPos = elemPos - 40;
+                            elemPos = Math.round(elemPos);
+                            item.onclick = function() {
+                                let currentScrollPos = document.querySelector("body").scrollTop;
+                                if(currentScrollPos == elemPos) {
+                                    return false;
+                                } else if(currentScrollPos <= elemPos) {
+                                    const scrollAnim = setInterval(smallerPos, 7);
+                                } else {
+                                    const scrollAnim = setInterval(biggerPos, 7);
+                                }; // if
+                                
+                                // if current position is smaller than destiny:
+                                function smallerPos() {
+                                    if(currentScrollPos >= elemPos) {
+                                        clearInterval(scrollAnim);
+                                    } else {
+                                        currentScrollPos += 5;
+                                        document.querySelector("body").scrollTop = currentScrollPos;
+                                    };
+                                }; // smallerPos()
+                                
+                                // if current position is bigger than destiny:
+                                function biggerPos() {
+                                    if(currentScrollPos <= elemPos) {
+                                        clearInterval(scrollAnim);
+                                    } else {
+                                        currentScrollPos -= 5;
+                                        document.querySelector("body").scrollTop = currentScrollPos;
+                                    };
+                                }; // biggerPos()
+                                
+                                return false;
+                            }; // onclick
+                        }; // if
+                    }
+    			    
+    			    // if external link:
+    			    else {
+    			        item.setAttribute("target", "_blank");
+    			    }; // if
+    			    
+        		}; // if link is valid [end]
+        		
+            }; // if
+	    }); // forEach
+    }; linksBehavior();
+    /** external, internal and hashtag links behavior [end] **/
+    
+
+
     /********** SEARCH FORMS **********/
     function webSearchForm() {
         var keyword = document.querySelector("#main-search form input:first-child").value;
@@ -5111,7 +5214,12 @@ function lightbox(elem) {
     
 
     /** SLIDE BUTTONS (by anyhs-themes.tumblr.com) [start] **/
+    let secs = 10;
     document.querySelectorAll(".slidebutton").forEach(function(item, index){
+        
+        setTimeout(function(){item.classList.add("slideright");}, secs);
+        secs += 100;
+        
         let slidebuttonWidth = item.querySelector(".slidebutton-name").offsetWidth;
         item.querySelector(".slidebutton-name").style.width="0px";
         
@@ -5126,18 +5234,6 @@ function lightbox(elem) {
     });
     /** SLIDE BUTTON (by anyhs-themes.tumblr.com) [end] **/
 
-
-    /** AOS: Animate On Scroll **/
-    {block:IfSmoothEffects}
-    AOS.init({
-        offset: 40, // offset (in px) from the original trigger point
-        duration: 1000, // values from 0 to 3000, with step 50ms
-        delay: 0, // values from 0 to 3000, with step 50ms
-        easing: 'ease', // default easing for AOS animations
-        once: true // whether animation should happen only once - while scrolling down
-    });
-    {/block:IfSmoothEffects}
-    
     
     /** fix hidden captions bottom situation with certain Notes Styles **/
     function captionsFix() {
@@ -5379,32 +5475,6 @@ function lightbox(elem) {
     }; shortenLongPosts();
     /** SHORTEN LONG POSTS [end] **/
 
-
-    /***** MASONRY + IMAGES LOADED *****/
-    {block:IndexPage}
-    let grid = document.querySelector('#posts');
-    function masonryGrid() {
-        var msnry = new Masonry(grid, {
-            itemSelector: '.post',
-            stagger: 0
-        }); // msnry
-        imagesLoaded(grid, function() {
-            msnry.layout();
-        }); // imagesLoaded
-    }; masonryGrid();
-    {/block:IndexPage}
-    
-
-    /*** COLUMNS SETTINGS [start] ***/
-    // if 1 column is selected:
-    {block:IndexPage}
-    if(("{select:Number of Columns}" == "100%") && (window.innerWidth > 700)) {
-        document.querySelector("#posts").style.maxWidth="600px";
-    };
-    {/block:IndexPage}
-    /*** COLUMNS SETTINGS [end] ***/
-    
-    
     
     /******************** VECTORIAL ICONS LIBRARY ********/
     function vIcons() {
@@ -5527,9 +5597,56 @@ function lightbox(elem) {
     /********** LANGUAGE / TRANSLATION [end] **********/
     
     
+    
+    /** fade in + slide up **/
+    setTimeout(function(){document.querySelector("#all").style.opacity="1";}, 500);
+    function slideUp() {
+        var caixas = document.querySelectorAll(".caixa");
+        let secs = 0;
+        caixas.forEach(function(item){
+            if(!item.classList.contains("slideup")) {
+                setTimeout(function(){item.classList.add("slideup");}, secs);
+                secs += 100;
+            }; // if
+        });
+    }; slideUp();
+    /** fade in + slide up [end] **/
+    
+    
+    
+    /***** MASONRY + IMAGES LOADED *****/
+    {block:IndexPage}
+    let grid = document.querySelector('#posts');
+    function masonryGrid() {
+        var msnry = new Masonry(grid, {
+            itemSelector: '.post-container',
+            stagger: 0
+        }); // msnry
+        imagesLoaded(grid, function() {
+            msnry.layout();
+        }); // imagesLoaded
+    }; masonryGrid();
+    {/block:IndexPage}
+    /***** MASONRY + IMAGES LOADED [end] *****/
+    
+
+    /*** COLUMNS SETTINGS [start] ***/
+    // if 1 column is selected:
+    {block:IndexPage}
+    if(("{select:Number of Columns}" == "100%") && (window.innerWidth > 700)) {
+        document.querySelector("#posts").style.maxWidth="600px";
+    };
+    {/block:IndexPage}
+    /*** COLUMNS SETTINGS [end] ***/
+    
+    
     /** Basic Infinite Scroll (by anyhs-themes.tumblr.com) **/
     {block:IfInfiniteScroll}
     {block:IndexPage}
+    var posts = document.querySelectorAll(".caixa.post");
+    posts.forEach(function(item){
+        item.classList.add('post-checked');
+    }); // forEach
     function basicInfiniteScroll() {
         
         var currentLoc = location;
@@ -5553,20 +5670,25 @@ function lightbox(elem) {
                 xhttp.onload = function() {
                         
                     let nextPageContent = this.responseText;
-                    let postsStart = nextPageContent.search('<div class="post caixa hasdate');
-                        
-                    var pageContentExists = postsStart < 120000;
-                        
+                    let postsStart = nextPageContent.search('<div class="post-container');
+                    let postsEnd = nextPageContent.search('</main> <!-- #posts -->');
+                    let postsCode = nextPageContent.slice(postsStart, postsEnd);
+                    
+                    // check if there are posts in the next page:
+                    var pageContentExists = postsCode.includes('<div class="caixa post hasdate');
                     if(pageContentExists) {
-                        let postsEnd = nextPageContent.search('</main> <!-- #posts -->');
-                        let postsCode = nextPageContent.slice(postsStart, postsEnd);
                         document.querySelector("#posts").insertAdjacentHTML("beforeend", postsCode);
                     } else {
                         document.querySelector("#infscr-postsend").style.display="block";
+                        {block:IfNotAutomaticInfiniteScroll}
                         document.querySelector("#infscr-button").style.opacity="0";
+                        {/block:IfNotAutomaticInfiniteScroll}
+                        
                         setTimeout(function() {
-                            document.querySelector("#infscr-postsend").style.opacity="1";           
+                            document.querySelector("#infscr-postsend").style.opacity="1";
+                            {block:IfNotAutomaticInfiniteScroll}
                             document.querySelector("#infscr-button").style.display="none";
+                            {/block:IfNotAutomaticInfiniteScroll}
                         }, 300); // setTimeout
                     }; // else
                         
@@ -5579,7 +5701,7 @@ function lightbox(elem) {
                 // after load functions:
                 removeEmptyTextBodies();
                 lastTitles();
-                shortenNotes();
+                linksBehavior();
                 imgsRes();
                 wrapNPFPhotosets();
                 hideNPFcaptions();
@@ -5589,6 +5711,22 @@ function lightbox(elem) {
                 translatePage();
                 vIcons();
                 altPalette();
+                slideUp();
+                
+                /*** LIKE BUTTON: ***/
+                posts = document.querySelectorAll(".caixa.post");
+                let postsIDs = [];
+                let i = 1;
+                // create a new Array
+                posts.forEach(function(item){
+                    if(!item.className.includes('post-checked')) {
+                        postsIDs[i] = item.id;
+                        i++;
+                        item.classList.add('post-checked');
+                    }; // if
+                }); // forEach
+                Tumblr.LikeButton.get_status_by_post_ids(postsIDs);
+                
                 
                 // after load msg:
                 document.querySelector("#infscr-loading").style.display="none";
@@ -5619,6 +5757,8 @@ function lightbox(elem) {
     }; basicInfiniteScroll();
     {/block:IndexPage}
     {/block:IfInfiniteScroll}
+    /** Basic Infinite Scroll [end] **/
+    
     
     /** back to top button **/
     var bttButton = document.querySelector("#backtotop");
