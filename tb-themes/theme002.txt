@@ -5,7 +5,7 @@
            by Anyh's Themes © 2022
            https://anyhs-themes.tumblr.com
            
-           (Last update: 06/11/2022 — 22:21hrs)
+           (Last update: 19/11/2022 — 13:39hrs)
 
 
 
@@ -274,8 +274,8 @@
     
     <!-- text options: top buttons -->
     <meta name="text:AltPalette Button Title" content="Switch color mode"/>
-    <meta name="text:AltPalette Button Icon" content="&lt;span class='lnr lnr-moon'&gt;&lt;/span&gt;"/>
-    <meta name="text:AltPalette Button Icon 2" content="&lt;span class='lnr lnr-sun'&gt;&lt;/span&gt;"/>
+    <meta name="text:AltPalette Button Icon" content="&lt;span class='lnr lnr-sun'&gt;&lt;/span&gt;"/>
+    <meta name="text:AltPalette Button Icon 2" content="&lt;span class='lnr lnr-moon'&gt;&lt;/span&gt;"/>
     <!-- text options: top buttons -->
     
     <!-- text options: menu buttons -->
@@ -582,14 +582,14 @@ p:last-child, ol:last-child, ul:last-child, blockquote:last-child, pre:last-chil
     background: {color:AltPalette Posts Background};
     box-shadow: 0px -10px 10px 10px {color:AltPalette Posts Background};
 }
-.read-more, .tmblr-truncated-link {
+.read-more, .tmblr-truncated-link, .tmblr-truncated {
     position: absolute;
     bottom: 0px;
     z-index: 3;
     width: 100%;
     margin-top: 10px;
 }
-.read-more a, .tmblr-truncated-link a {
+.read-more a, .tmblr-truncated-link a, .tmblr-truncated a {
     display: table;
     margin: 10px auto;
     text-align: center;
@@ -602,18 +602,18 @@ p:last-child, ol:last-child, ul:last-child, blockquote:last-child, pre:last-chil
     box-shadow: {select:Shadow Style} {color:Shadows};
     border-radius: {select:Round Corners};
 }
-.read-more a:hover, .tmblr-truncated-link a:hover {
+.read-more a:hover, .tmblr-truncated-link a:hover, .tmblr-truncated a:hover {
     background: {color:Posts Background};
     color: {color:Posts Font};
 }
 
-.read-more a.alt-palette, .tmblr-truncated-link a.alt-palette {
+.read-more a.alt-palette, .tmblr-truncated-link a.alt-palette, .tmblr-truncated a.alt-palette {
     background: {color:AltPalette Notes Background};
     color: {color:AltPalette Notes Font};
     border-color: {color:AltPalette Borders};
     box-shadow: {select:Shadow Style} {color:AltPalette Shadows};
 }
-.read-more a.alt-palette:hover, .tmblr-truncated-link a.alt-palette:hover {
+.read-more a.alt-palette:hover, .tmblr-truncated-link a.alt-palette:hover, .tmblr-truncated a.alt-palette:hover {
     background: {color:AltPalette Posts Background};
     color: {color:AltPalette Posts Font};
 }
@@ -624,6 +624,7 @@ p:last-child, ol:last-child, ul:last-child, blockquote:last-child, pre:last-chil
     position: relative;
     margin: {text:Posts Padding}px;
     margin-top: calc({text:Posts Padding}px + 5px);
+    padding-top: calc({text:Posts Padding}px * 2);
     font-size: {text:Quotes Font Size}px;
     line-height: calc({text:Quotes Font Size}px + 5px);
     font-family: {text:Custom Quotes Font} !important;
@@ -650,7 +651,7 @@ p:last-child, ol:last-child, ul:last-child, blockquote:last-child, pre:last-chil
 }
 .quote:before, .npf_quote:before {
     content: "❝";
-    top: 0px;
+    top: {text:Posts Padding}px;
     left: -10px;
 }
 .quote:after, .npf_quote:after {
@@ -689,11 +690,14 @@ figure img {
 }
 figure a, figure a.post_media_photo_anchor {}
 
-.caixa figure.tmblr-full {
+
+.post figure.tmblr-full {
+    width: 100%;
     margin-bottom: {text:Images Spacing}px;
 }
-.caixa figure.tmblr-full img {
+.post figure.tmblr-full img, figure.tmblr-full a {
     width: 100%;
+    margin: 0px;
     height: auto;
     cursor: pointer;
 }
@@ -867,6 +871,10 @@ figure:hover img, img:hover, .caixa:hover img, .caixa:hover .video-player iframe
 .video-player, .embed_iframe, .tumblr_video_container, .tumblr_video_container {
     width: 100% !important;
     height: auto !important;
+    
+    {block:IfMarginonImages}
+    width: calc(100% - ({text:Posts Padding}px * 2)) !important;
+    {/block:IfMarginonImages}
 }
 
 
@@ -1040,22 +1048,17 @@ iframe {
     margin: {text:Posts Padding}px;
     width: calc(100% - ({text:Posts Padding}px * 2));
 }
-
-.ask_post {}
-
 .ask-content {
-    {block:IfMarginonImages}
     margin: {text:Posts Padding}px;
-    {/block:IfMarginonImages}
 }
 
 .ask-portrait {
     float: left;
     position: relative;
     background: {color:Posts Background};
-    width: 70px;
-    height: 70px;
-    margin: 0px 20px 10px 0px;
+    width: calc(50px + 10px + (2 * {text:Borders Thickness}px));
+    height: calc(50px + 10px + (2 * {text:Borders Thickness}px));
+    margin: 0px {text:Posts Padding}px calc({text:Posts Padding}px / 2) 0px;
     z-index: 1;
     {block:IfBorders}
     border-right: {text:Borders Thickness}px solid {color:Borders};
@@ -1069,18 +1072,13 @@ iframe {
 
 .ask-portrait figure {
     overflow: hidden;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: 0px;
     border-radius: {select:Round Corners on Images} 0px {select:Round Corners on Images} 0px !important;
     {block:IfBorders}
     border: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
-    
-    {block:IfNotMarginonImages}
-    border-left: none;
-    border-top: none;
-    {/block:IfNotMarginonImages}
     
 }
 .ask-portrait figure.alt-palette {border-color: {color:AltPalette Borders};}
@@ -1093,13 +1091,16 @@ iframe {
     border-radius: {select:Round Corners on Images} 0px {select:Round Corners on Images} 0px;
 }
 
-
+.question p {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 
 .question, .answer {
     padding: {text:Posts Padding}px;
     margin-bottom: {text:Posts Padding}px;
     margin-left: 0px;
-    min-height: 40px;
+    min-height: 30px;
     position: relative;
     background: {color:Highlights background};
     color: {color:Highlights font};
@@ -1114,18 +1115,8 @@ iframe {
     border-color: {color:AltPalette Borders};
 }
 
-.question {
-    {block:IfNotMarginonImages}
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-    {/block:IfNotMarginonImages}
-}
-
 .text.answer {
     padding: 1px 0px !important;
-    
-    margin: {text:Posts Padding}px;
     margin-top: -{text:Posts Padding}px;
     
     {block:IfBorders}
@@ -1138,8 +1129,8 @@ iframe {
 
 
 /** asker **/
-.sign, .sign2 {
-    padding: 10px;
+.sign {
+    padding: {text:Notes Padding}px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .5px;
@@ -1149,34 +1140,30 @@ iframe {
     color: {color:Notes font};
     background: {color:Notes background};
     border-radius: {select:Round Corners on Images};
-}
-.sign {
-    margin: -20px;
-    margin-left: 0px;
+    margin: -{text:Posts Padding}px;
     margin-bottom: 10px;
     border-radius: 0px {select:Round Corners on Images} 0px 0px;
     {block:IfBorders}
     border-bottom: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
 }
-.sign.alt-palette, .sign2.alt-palette {
+.sign.alt-palette, .answer-section .sign.alt-palette {
     color: {color:AltPalette Notes font};
     background: {color:AltPalette Notes background};
     border-color: {color:AltPalette Borders};
 }
 
-.sign a, .sign2 a {color: {color:Posts Links};}
-.sign a.alt-palette , .sign2 a.alt-palette  {color: {color:AltPalette Posts Links};}
+.sign a, .answer-section .sign a {color: {color:Posts Links};}
+.sign a.alt-palette , .answer-section .sign a.alt-palette  {color: {color:AltPalette Posts Links};}
 
 .sign a:before {content: "@";}
 
-.sign2 {border-radius: {select:Round Corners on Images} {select:Round Corners on Images} 0px 0px;}
+.answer-section .sign {border-radius: {select:Round Corners on Images} {select:Round Corners on Images} 0px 0px;}
 
 
 .question-arrow {
     position: absolute;
-    top: 10px;
-    left: 65px;
+    top: {text:Notes Padding}px;
     z-index: 1;
     width: 8px;
     height: 8px;
@@ -1191,31 +1178,43 @@ iframe {
     background: {color:AltPalette Notes background};
     border-color: {color:AltPalette Borders};
 }
-
-.question-arrow-content {}
+.question-section .question-arrow {left: calc(50px + 5px + {text:Borders Thickness}px);}
 
 
 /** answerer **/
-.sign2 {
+.answer-section .ask-portrait {
+    float: right;
+    margin: 0px 0px calc({text:Posts Padding}px / 2) {text:Posts Padding}px;
+    margin-top: calc({text:Notes Padding}px - ({text:Notes Padding}px * 2) - {text:Borders Thickness}px);
+    margin-right: calc({text:Notes Padding}px - ({text:Notes Padding}px * 2) - {text:Borders Thickness}px);
+    {block:IfBorders}
+    border-right: none;
+    border-left: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+.answer-section .ask-portrait a:before {content: "";}
+.answer-section .ask-portrait.alt-palette {border-color: {color:AltPalette Borders};}
+
+.answer-section .ask-portrait figure {
+    float: right;
+}
+.answer-section .sign {
     position: relative;
+    margin: 0px;
+    margin-top: {text:Posts Padding}px;
+    margin-bottom: {text:Posts Padding}px;
+    z-index: 2;
     {block:IfBorders}
     border: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
-    
-    {block:IfNotMarginonImages}
-    margin: {text:Posts Padding}px;
-    {/block:IfNotMarginonImages}
-    
-    margin-top: calc(-{text:Posts Padding}px / 2);
-    z-index: 2;
 }
-.sign2.alt-palette {border-color: {color:AltPalette Borders};}
+.answer-section .sign.alt-palette {border-color: {color:AltPalette Borders};}
 
-.sign2 .question-arrow {
-    transform: rotate(-45deg);
-    left: 30px;
-    top: calc(100% - 4px);
+.answer-section .sign .question-arrow {
+    transform: rotate(-135deg);
+    right: calc(50px + 5px + {text:Borders Thickness}px);
 }
+
 .answerer:before {content: "@";}
 
 
@@ -1580,8 +1579,11 @@ header, header .caixa {margin: 0px;}
 
 
 /** mobile header **/
-#mobile-header {position: relative;}
+#mobile-header {
+    position: relative;
+}
 #mobile-header .caixa:first-of-type {
+    position: relative;
     padding: 0px;
     border-radius: 0px;
     border: none;
@@ -1592,6 +1594,7 @@ header, header .caixa {margin: 0px;}
     padding-bottom: {text:Extra Borders Thickness}px;
     {/block:IfExtraBorders}
     overflow: visible;
+    z-index: 2;
 }
 #mobile-header .caixa.alt-palette:first-of-type {border-color: {color:AltPalette Borders};}
 
@@ -1749,10 +1752,10 @@ header, header .caixa {margin: 0px;}
     font-style: italic;
 }
 .search-form form input:hover {
-    color: {color:Posts Titles Font};
+    color: {color:Titles Font};
     opacity: 1;
 }
-.search-form form input.alt-palette:hover {color: {color:AltPalette Posts Titles Font};}
+.search-form form input.alt-palette:hover {color: {color:AltPalette Titles Font};}
 
 
 .search-button {
@@ -1836,7 +1839,7 @@ header, header .caixa {margin: 0px;}
 /**** CONTENT ****/
 #content {
     position: relative;
-    width: {text:Layout Width};
+    width: calc({text:Layout Width} - ({text:Posts Spacing}px * 2));
     min-height: 540px;
     
     {select:Layout Position}
@@ -3105,7 +3108,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button1 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton1Link}
+    {/block:IfButton1Link}
     
     {block:IfButton2Link}
     <div class="menu-button">
@@ -3116,7 +3119,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button2 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton2Link}
+    {/block:IfButton2Link}
     
     {block:IfButton3Link}
     <div class="menu-button">
@@ -3127,7 +3130,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button3 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton3Link}
+    {/block:IfButton3Link}
     
     {block:IfButton4Link}
     <div class="menu-button">
@@ -3138,7 +3141,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button4 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton4Link}
+    {/block:IfButton4Link}
     
     {block:IfButton5Link}
     <div class="menu-button">
@@ -3149,7 +3152,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button5 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton5Link}
+    {/block:IfButton5Link}
     
     {block:IfButton6Link}
     <div class="menu-button">
@@ -3160,7 +3163,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button6 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton6Link}
+    {/block:IfButton6Link}
     
     {block:IfButton7Link}
     <div class="menu-button">
@@ -3171,7 +3174,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button7 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton7Link}
+    {/block:IfButton7Link}
     
     {block:IfButton8Link}
     <div class="menu-button">
@@ -3182,7 +3185,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button8 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton8Link}
+    {/block:IfButton8Link}
     
     {block:IfButton9Link}
     <div class="menu-button">
@@ -3193,7 +3196,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button9 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton9Link}
+    {/block:IfButton9Link}
     
     {block:IfButton10Link}
     <div class="menu-button">
@@ -3204,7 +3207,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button10 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton10Link}
+    {/block:IfButton10Link}
     
     </div><!-- .dropdown -->
 
@@ -3284,7 +3287,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button1 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton1Link}
+    {/block:IfButton1Link}
     
     {block:IfButton2Link}
     <div class="menu-button">
@@ -3293,7 +3296,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button2 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton2Link}
+    {/block:IfButton2Link}
     
     {block:IfButton3Link}
     <div class="menu-button">
@@ -3302,7 +3305,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button3 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton3Link}
+    {/block:IfButton3Link}
     
     {block:IfButton4Link}
     <div class="menu-button">
@@ -3311,7 +3314,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button4 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton4Link}
+    {/block:IfButton4Link}
     
     {block:IfButton5Link}
     <div class="menu-button">
@@ -3320,7 +3323,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button5 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton5Link}
+    {/block:IfButton5Link}
     
     {block:IfButton6Link}
     <div class="menu-button">
@@ -3329,7 +3332,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button6 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton6Link}
+    {/block:IfButton6Link}
     
     {block:IfButton7Link}
     <div class="menu-button">
@@ -3338,7 +3341,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button7 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton7Link}
+    {/block:IfButton7Link}
     
     {block:IfButton8Link}
     <div class="menu-button">
@@ -3347,7 +3350,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button8 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton8Link}
+    {/block:IfButton8Link}
     
     {block:IfButton9Link}
     <div class="menu-button">
@@ -3356,7 +3359,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button9 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton9Link}
+    {/block:IfButton9Link}
     
     {block:IfButton10Link}
     <div class="menu-button">
@@ -3365,7 +3368,7 @@ iframe.tmblr-iframe {
     <span class="menu-title">{text:Button10 Title}</span>
     </a>
     </div><!-- .menu-button -->
-    {block:IfButton10Link}
+    {/block:IfButton10Link}
     
     </nav><!-- #desktop-menu -->
     </div><!-- #desktop-menu-container -->
@@ -4133,15 +4136,16 @@ iframe.tmblr-iframe {
 <!---- ANSWER/ASK POSTS ---->
 {block:Answer}
 <div class="ask_post">
-
 <div class="ask-content">
+
+<!-- QUESTION SECTION [starts] -->
+<div class="question-section">
 
 <div class="ask-portrait">
 <a href="{AskerURL}" target="_blank" title="{AskerName}">
 <figure><img src="{AskerPortraitURL-64}" /></figure>
 </a>
 </div><!-- .ask-portrait-->
-
 
 <div class="question">
 
@@ -4155,23 +4159,46 @@ iframe.tmblr-iframe {
 
 </div> <!-- .question -->
 
-<div class="sign2">
+</div><!-- .question-section -->
+<!-- QUESTION SECTION [ends] -->
+
+
+<!-- ANSWER SECTION [starts] -->
+<div class="answer-section">
+<div class="sign">
 
 {block:NotReblog}
-<a href="/" target="_blank">@{Name}</a> {block:PortugueseBR}respondeu:{/block:PortugueseBR}{block:PortuguesePT}respondeu:{/block:PortuguesePT}{block:Spanish}respondió:{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}replied:{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}
+<div class="ask-portrait">
+<figure><img src="{PortraitURL-64}" /></figure>
+</a>
+</div><!-- .ask-portrait-->
+
+<a href="/" target="_blank">{Name}</a> {block:PortugueseBR}respondeu:{/block:PortugueseBR}{block:PortuguesePT}respondeu:{/block:PortuguesePT}{block:Spanish}respondió:{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}replied:{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}
 {/block:NotReblog}
+
+{block:Reblog}
+<div class="ask-portrait">
+<a href="{AnswererURL}" target="_blank" title="{AnswererName}">
+<figure><img src="{AnswererPortraitURL-64}" /></figure>
+</a>
+</a>
+</div><!-- .ask-portrait-->
 
 {block:Answerer}
 {Answerer} {block:PortugueseBR}respondeu:{/block:PortugueseBR}{block:PortuguesePT}respondeu:{/block:PortuguesePT}{block:Spanish}respondió:{/block:Spanish}{block:NotPortugueseBR}{block:NotPortuguesePT}{block:NotSpanish}replied:{/block:NotSpanish}{/block:NotPortuguesePT}{/block:NotPortugueseBR}
 {/block:Answerer}
+{/block:Reblog}
 
 
 <div class="question-arrow"></div>
-</div><!-- .sign2 -->
+</div><!-- .sign -->
 
 </div><!-- .ask-content -->
 
 <div class="text answer">{Answer}</div>
+
+</div><!-- .answer-section -->
+<!-- ANSWER SECTION [ends] -->
 
 
 
@@ -5096,43 +5123,8 @@ function lightbox(elem) {
     /** external, internal and hashtag links behavior [end] **/
 
 
-    /********** SEARCH FORMS **********/
-    function webSearchForm() {
-        var keyword = document.querySelector("#main-search form input:first-child").value;
-        if(keyword.startsWith("#")) {
-            filteredKeyword = keyword.replace(/#/g, "");
-            location.assign("/tagged/" + filteredKeyword);
-        } else {
-            location.assign("/search/" + keyword);
-        }
-    }; // function
-    
-    document.querySelector("#main-search form").onsubmit = function(){
-        webSearchForm();
-    }; // submit
-    document.querySelector("#main-search .search-button").onclick = function(){
-        webSearchForm();
-        return false;
-    }; // click
     
     
-    function mobileSearchForm() {
-        var keyword = document.querySelector("#mobile-search form input:first-child").value;
-        if(keyword.startsWith("#")) {
-            filteredKeyword = keyword.replace(/#/g, "");
-            location.assign("/tagged/" + filteredKeyword);
-        } else {
-            location.assign("/search/" + keyword);
-        }
-    }; // function
-    document.querySelector("#mobile-search form").onsubmit = function(){
-        mobileSearchForm();
-    }; // submit
-    document.querySelector("#mobile-search .search-button").onclick = function(){
-        mobileSearchForm();
-        return false;
-    }; // click
-    /********** SEARCH FORMS **********/
     
 
     /** SLIDE BUTTONS (by anyhs-themes.tumblr.com) [start] **/
@@ -5223,7 +5215,6 @@ function lightbox(elem) {
     /*** POSTS IMG WIDTH SETTINGS [start] ***/
     {block:IndexPage}
     function imgsRes() {
-        //alert("{JSPhotoURL-250}");
         document.querySelectorAll(".img-res").forEach(function(item){
             let imgLowRes = item.getAttribute('data-lowres');
             let imgMidRes = item.getAttribute('data-midres');
