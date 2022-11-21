@@ -5,7 +5,7 @@
            by Anyh's Themes © 2022
            https://anyhs-themes.tumblr.com
            
-           (Last update: 19/11/2022 — 13:39hrs)
+           (Last update: 21/11/2022 — 15:14hrs)
 
 
 
@@ -330,7 +330,7 @@
 
 html, body {height: 100%;}
 
-#all {transition: .5s;}
+#all {opacity: 0; transition: .5s;}
 
 body {
     margin: 0px;
@@ -1992,6 +1992,13 @@ header#header {
     {/block:PermalinkPage}
     
 }
+.post-container:not(.hasdate) {
+    {block:PermalinkPage}
+    float: none;
+    margin: {text:Posts Spacing}px auto;
+    {/block:PermalinkPage}
+}
+
 .caixa.post {
     margin: 0px;
     width: calc(100% {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
@@ -2651,23 +2658,23 @@ header#header {
     cursor: pointer;
     color: {color:Sidebar Font};
     {block:IfNotExtraBorders}
-    background: {color:Sidebar Background};
+    background: {color:Header};
     {/block:IfNotExtraBorders}
 }
 #infscr-button .caixa.alt-palette {
     color: {color:AltPalette Sidebar Font};
     {block:IfNotExtraBorders}
-    background: {color:AltPalette Sidebar Background};
+    background: {color:AltPalette Header};
     {/block:IfNotExtraBorders}
     transition: .5s;
 }
 #infscr-button .caixa-content {
     padding: {text:Posts Padding}px;
-    background: {color:Sidebar Background};
+    background: {color:Header};
     transition: .5s;
 }
 #infscr-button .caixa-content.alt-palette {
-    background: {color:AltPalette Sidebar Background};
+    background: {color:AltPalette Header};
 }
 
 #infscr-button .caixa-content i {margin-left: 10px;}
@@ -2975,7 +2982,7 @@ iframe.tmblr-iframe {
     display: table;
     
     background: {color:Header};
-    color: {color:AltPalette Header Font};
+    color: {color:Sidebar Font};
     border-radius: {select:Round Corners};
     
     {block:IfBorders}
@@ -2984,7 +2991,7 @@ iframe.tmblr-iframe {
 }
 #cookies-notice.alt-palette {
     background: {color:AltPalette Header};
-    color: {color:AltPalette Header Font};
+    color: {color:AltPalette Sidebar Font};
     
     {block:IfBorders}
     border-color: {color:AltPalette Borders};
@@ -3508,7 +3515,7 @@ iframe.tmblr-iframe {
 {block:Posts}
 
 <!----- post box [start] ----->
-<div class="post-container">
+<div class="post-container {block:Date}hasdate{/block:Date}">
 <div class="caixa post {block:Date}hasdate{/block:Date}" id="{PostID}" post-type="{PostType}">
 <div class="caixa-content">
 
