@@ -1,7 +1,7 @@
 <!--
  
  
-           — THEME #001: Fresh —
+           — THEME #002: October —
            by Anyh's Themes © 2022
            https://anyhs-themes.tumblr.com
            
@@ -71,8 +71,9 @@
 <!-- Masonry (masonry.desandro.com): -->
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
-<!-- ImagesLoaded (imagesloaded.desandro.com): -->
+<!-- Images Loaded (imagesloaded.desandro.com): -->
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
 
 <!-- Fonts: -->
 {text:Custom Fonts Script}
@@ -87,46 +88,52 @@
     <meta name="image:AltPalette Extra Borders Background" content=""/>
     
     <!-- colors: main palette -->
-    <meta name="color:Background" content="#eee"/>
-    <meta name="color:Header" content="#fff"/>
-    <meta name="color:Header Font" content="#444444"/>
-    <meta name="color:Titles Background" content="#f5f5f5"/>
-    <meta name="color:Titles Font" content="#444"/>
-    <meta name="color:Posts Background" content="#fff"/>
-    <meta name="color:Posts Font" content="#a2a2a2"/>
-    <meta name="color:Links" content="#86ac6d"/>
-    <meta name="color:Borders" content="#ddd"/>
-    <meta name="color:Extra Borders Background" content="#aaa"/>
+    <meta name="color:Background" content="#1d1d1d"/>
+    <meta name="color:Sidebar Background" content="#252525"/>
+    <meta name="color:Sidebar Font" content="#707070"/>
+    <meta name="color:Titles Background" content="#2f2f2f"/>
+    <meta name="color:Titles Font" content="#a0a0a0"/>
+    <meta name="color:Posts Background" content="#2a2a2a"/>
+    <meta name="color:Posts Font" content="#797979"/>
+    <meta name="color:Links" content="#ba7d57"/>
+    <meta name="color:Borders" content="#3d3d3d"/>
+    <meta name="color:Extra Borders Background" content="#aaaaaa"/>
     <meta name="color:Shadows" content="#aaa"/>
-    <meta name="color:Highlights Background" content="#fafafa"/>
-    <meta name="color:Highlights Font" content="#656565"/>
-    <meta name="color:Notes Background" content="#f5f5f5"/>
-    <meta name="color:Notes Font" content="#444"/>
-    <meta name="color:Notes Font Hover" content="#86ac6d"/>
+    <meta name="color:Highlights Background" content="#202020"/>
+    <meta name="color:Highlights Font" content="#707070"/>
+    <meta name="color:Notes Background" content="#252525"/>
+    <meta name="color:Notes Font" content="#707070"/>
+    <meta name="color:Notes Font Hover" content="#ba7d57"/>
     
     <!-- colors: alternative palette -->
-    <meta name="color:AltPalette Background" content="#111"/>
-    <meta name="color:AltPalette Header" content="#000"/>
-    <meta name="color:AltPalette Header Font" content="#ccc"/>
-    <meta name="color:AltPalette Titles Background" content="#0a0a0a"/>
-    <meta name="color:AltPalette Titles Font" content="#ccc"/>
-    <meta name="color:AltPalette Posts Background" content="#000"/>
+    <meta name="color:AltPalette Background" content="#ededed"/>
+    <meta name="color:AltPalette Sidebar Background" content="#fff"/>
+    <meta name="color:AltPalette Sidebar Font" content="#3b3b3b"/>
+    <meta name="color:AltPalette Titles Background" content="#e6e6e6"/>
+    <meta name="color:AltPalette Titles Font" content="#575757"/>
+    <meta name="color:AltPalette Posts Background" content="#f1f1f1"/>
     <meta name="color:AltPalette Posts Font" content="#6d6d6d"/>
-    <meta name="color:AltPalette Links" content="#63844d"/>
-    <meta name="color:AltPalette Borders" content="#222"/>
-    <meta name="color:AltPalette Extra Borders Background" content="#555"/>
-    <meta name="color:AltPalette Shadows" content="#000"/>
-    <meta name="color:AltPalette Highlights Background" content="#050505"/>
+    <meta name="color:AltPalette Links" content="#ba7d57"/>
+    <meta name="color:AltPalette Borders" content="#c5c5c5"/>
+    <meta name="color:AltPalette Extra Borders Background" content="#dadada"/>
+    <meta name="color:AltPalette Shadows" content="#939393"/>
+    <meta name="color:AltPalette Highlights Background" content="#f5f5f5"/>
     <meta name="color:AltPalette Highlights Font" content="#ababab"/>
-    <meta name="color:AltPalette Notes Background" content="#0a0a0a"/>
-    <meta name="color:AltPalette Notes Font" content="#ccc"/>
-    <meta name="color:AltPalette Notes Font Hover" content="#63844d"/>
+    <meta name="color:AltPalette Notes Background" content="#fafafa"/>
+    <meta name="color:AltPalette Notes Font" content="#414141"/>
+    <meta name="color:AltPalette Notes Font Hover" content="#ba7d57"/>
     
     
     <!-- select options: layout position -->
     <meta name="select:Layout Position" title="Center" content="margin: 0px auto;"/>
     <meta name="select:Layout Position" title="Left" content="margin: 0px;"/>
     <meta name="select:Layout Position" title="Right" content="float: right;"/>
+    
+    <!-- select options: sidebar position -->
+    <meta name="select:Sidebar Position" content="Bottom Left"/>
+    <meta name="select:Sidebar Position" content="Top Left"/>
+    <meta name="select:Sidebar Position" content="Bottom Right"/>
+    <meta name="select:Sidebar Position" content="Top Right"/>
     
     <!-- select: posts columns -->
     <meta name="select:Number of Columns" content="20%" title="5 Columns"/>
@@ -229,7 +236,7 @@
     
     
     <meta name="if:Show AltPalette Button" content="1"/>
-    <meta name="if:Fixed Header" content="1"/>
+    <meta name="if:Show Portrait on Sidebar" content="1"/>
     <meta name="if:Borders" content="1"/>
     <meta name="if:Borders on Images" content="0"/>
     <meta name="if:Extra Borders" content="0"/>
@@ -258,23 +265,20 @@
     <meta name="text:Images Spacing" content="5"/>
     
     <!-- text options: fonts size -->
-    <meta name="text:Header Font Size" content="18"/>
-    <meta name="text:Titles Font Size" content="28"/>
-    <meta name="text:Posts Font Size" content="13"/>
+    <meta name="text:Sidebar Font Size" content="16"/>
+    <meta name="text:Titles Font Size" content="20"/>
+    <meta name="text:Posts Font Size" content="12"/>
     <meta name="text:Posts Line Spacing" content="15"/>
     <meta name="text:Quotes Font Size" content="17"/>
     <meta name="text:Notes Font Size" content="9"/>
     
     <!-- text options: top buttons -->
     <meta name="text:AltPalette Button Title" content="Switch color mode"/>
-    <meta name="text:AltPalette Button Icon" content="&lt;span class='lnr lnr-moon'&gt;&lt;/span&gt;"/>
-    <meta name="text:AltPalette Button Icon 2" content="&lt;span class='lnr lnr-sun'&gt;&lt;/span&gt;"/>
+    <meta name="text:AltPalette Button Icon" content="&lt;span class='lnr lnr-sun'&gt;&lt;/span&gt;"/>
+    <meta name="text:AltPalette Button Icon 2" content="&lt;span class='lnr lnr-moon'&gt;&lt;/span&gt;"/>
     <!-- text options: top buttons -->
     
     <!-- text options: menu buttons -->
-    <meta name="text:Plus Button Title" content="More"/>
-    <meta name="text:Plus Button Icon" content="&lt;span class='lnr lnr-chevron-down'&gt;&lt;/span&gt;"/>
-    
     <meta name="text:Button1 Link" content="/"/>
     <meta name="text:Button1 Title" content="Home"/>
     <meta name="text:Button1 Icon" content="&lt;span class='lnr lnr-home'&gt;&lt;/span&gt;"/>
@@ -366,7 +370,7 @@ body.alt-palette {
     background: {color:Extra Borders Background} url('{image:Extra Borders Background}');
     {/block:IfExtraBorders}
 }
-::-webkit-scrollbar-thumb:hover {background: {color:Header};}
+::-webkit-scrollbar-thumb:hover {background: {color:Sidebar Background};}
 
 .alt-palette::-webkit-scrollbar {background: {color:AltPalette Background};}
 .alt-palette::-webkit-scrollbar-thumb  {
@@ -376,7 +380,7 @@ body.alt-palette {
     background: {color:AltPalette Extra Borders Background} url('{image:AltPalette Extra Borders Background}');
     {/block:IfExtraBorders}
 }
-.alt-palette::-webkit-scrollbar-thumb:hover {background: {color:AltPalette Header};}
+.alt-palette::-webkit-scrollbar-thumb:hover {background: {color:AltPalette Sidebar Background};}
 
 .caixa::-webkit-scrollbar {background: {color:Posts Background};}
 .caixa::-webkit-scrollbar-thumb {background: {color:Titles Font};}
@@ -492,7 +496,7 @@ h1 a.alt-palette:hover {color: {color:AltPalette Links};}
 
 .caixa .post-content h1:first-child, #permalink .caixa h1:first-child {border-top: 0px;}
 
-.caixa .post-content h1:last-child {border-bottom: 0px;}
+.caixa .post-content .text_post h1:last-child {border-bottom: 0px;}
 
 /** if h1 is :first-child of a .reblog-content [start] **/
 .text h1:first-child, .text .reblog-content + h1:first-child, .text .reblog-content p[style]:first-child + h1 {
@@ -583,10 +587,11 @@ p:last-child, ol:last-child, ul:last-child, blockquote:last-child, pre:last-chil
     bottom: 0px;
     z-index: 3;
     width: 100%;
+    margin-top: 10px;
 }
 .read-more a, .tmblr-truncated-link a, .tmblr-truncated a {
     display: table;
-    margin: 0px auto 10px auto;
+    margin: 10px auto;
     text-align: center;
     padding: {text:Notes Padding}px calc({text:Notes Padding}px + 3px);
     background: {color:Notes Background};
@@ -619,6 +624,7 @@ p:last-child, ol:last-child, ul:last-child, blockquote:last-child, pre:last-chil
     position: relative;
     margin: {text:Posts Padding}px;
     margin-top: calc({text:Posts Padding}px + 5px);
+    padding-top: calc({text:Posts Padding}px * 2);
     font-size: {text:Quotes Font Size}px;
     line-height: calc({text:Quotes Font Size}px + 5px);
     font-family: {text:Custom Quotes Font} !important;
@@ -683,6 +689,7 @@ figure img {
     margin-bottom: -3px;
 }
 figure a, figure a.post_media_photo_anchor {}
+
 
 .post figure.tmblr-full {
     width: 100%;
@@ -1036,7 +1043,6 @@ iframe {
 }
 
 
-
 /*** ANSWER/ASK ***/
 #ask_form, #submit_form {
     margin: {text:Posts Padding}px;
@@ -1210,7 +1216,6 @@ iframe {
 }
 
 .answerer:before {content: "@";}
-
 
 
 
@@ -1462,81 +1467,57 @@ h1 + .text.reblog-list .reblog-caption:first-child .reblog-header {border-top: n
 
 
 
-
-
-/******************** HEADER ********************/
-header#header {
+/******************** SIDEBAR ********************/
+aside {
     position: relative;
     z-index: 4;
-    {block:IfFixedHeader}
-    width: {text:Layout Width};
-    transform: none;
-    {/block:IfFixedHeader}
-    border-top: 1px solid transparent;
+    width: calc({text:Sidebar Font Size}px {block:IfExtraBorders}+ ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}+ ({text:Borders Thickness}px * 2){/block:IfBorders} + ({text:Posts Spacing}px * 2));
+    padding: {text:Posts Spacing}px;
+    margin: {text:Posts Spacing}px 0px;
+    float: left;
 }
+aside .caixa {margin: 0px;}
 
-
-#header .caixa {margin: 0px;}
-
-#header .description {text-align: center;}
-
-
-/** desktop header **/
-#desktop-header {
-    {block:IfFixedHeader}
+#sidebar {
     position: fixed;
-    top: 30px;
-    left: 0px;
-    {/block:IfFixedHeader}
-    
-    {block:IfNotFixedHeader}
-    margin-top: 30px;
-    {/block:IfNotFixedHeader}
-    
-    width: 100%;
-    padding: 0px;
-    font-size: {text:Header Font Size}px;
+    font-size: {text:Sidebar Font Size}px;
 }
-#desktop-header .desktop-header-content {
-    width: calc({text:Layout Width} + ({text:Posts Spacing}px * 2));
-    display: table;
-    border-spacing: calc({text:Posts Spacing}px * 2);
-    {select:Layout Position}
-}
-#desktop-header .caixa {
+#sidebar.bottom {bottom: calc({text:Posts Spacing}px * 2);}
+#sidebar.top {}
+
+#sidebar .caixa {
     display: table-cell;
     vertical-align: middle;
     {block:IfNotExtraBorders}
-    background: {color:Header};
+    background: {color:Sidebar Background};
     {/block:IfNotExtraBorders}
     overflow: visible;
-    height: {text:Header Font Size}px;
+    height: {text:Sidebar Font Size}px;
 }
-#desktop-header .caixa.alt-palette {
+#sidebar .caixa.alt-palette {
     {block:IfNotExtraBorders}
-    background: {color:AltPalette Header};
+    background: {color:AltPalette Sidebar Background};
     {/block:IfNotExtraBorders}
 }
 
-#desktop-header .caixa-content {
+#sidebar .caixa-content {
     height: 100%;
-    background: {color:Header};
+    background: {color:Sidebar Background};
     vertical-align: middle;
     text-align: center;
-    overflow: visible;
-    border-radius: {select:Round Corners};
-}
-#desktop-header .caixa-content.alt-palette {background: {color:AltPalette Header};}
-
-#desktop-header .caixa:first-of-type {width: calc({text:Header Font Size}px + {text:Posts Padding}px);}
-
-#desktop-header .portrait {
-    border-radius: {select:Round Corners};
     overflow: hidden;
-    height: 100%;
-    width: calc({text:Header Font Size}px + {text:Posts Padding}px);
+    border-radius: {select:Round Corners};
 }
-#desktop-header .portrait img {
+#sidebar .caixa-content.alt-palette {background: {color:AltPalette Sidebar Background};}
+
+#sidebar .caixa:first-of-type {width: calc({text:Sidebar Font Size}px + {text:Posts Padding}px);}
+
+#sidebar .portrait {
+    overflow: hidden;
+    width: 100%;
+    height: calc({text:Sidebar Font Size}px + 20px);
+}
+#sidebar .portrait img {
     display: block;
     width: 100%;
     height: 100%;
@@ -1545,114 +1526,56 @@ header#header {
     border-radius: 0px;
 }
 
-#desktop-header .title {
-    background: none;
-    border: none;
-    padding: 0px;
-    margin: 0px;
-    color: {color:Header Font};
-    font-size: {text:Header Font Size}px;
-    white-space: pre;
-    
-}
-#desktop-header .title.alt-palette {color: {color:AltPalette Header Font};}
-
-#desktop-header .title a {
-    margin: 0px;
-    padding: 10px;
-    display: inline-block;
-    color: {color:Header Font};
-}
-#desktop-header .title a:hover {color: {color:Links};}
-
-#desktop-header .title a.alt-palette {color: {color:AltPalette Header Font};}
-#desktop-header .title a.alt-palette:hover {color: {color:AltPalette Header Font};}
-
-
 /** desktop menu **/
 #desktop-menu {
-    display: flex;
-    font-size: calc({text:Header Font Size}px - 3px);
+    font-size: {text:Sidebar Font Size}px;
 }
 #desktop-menu .menu-button {
-    flex: 1;
     margin: 0px;
-    padding: 1.5px 0px;
     {block:IfBorders}
-    border-left: {text:Borders Thickness}px solid {color:Borders};
+    border-top: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
 }
 #desktop-menu .menu-button.alt-palette {border-color: {color:AltPalette Borders};}
 
-#desktop-menu .menu-button:first-child {border: none;}
+#desktop-menu .menu-button:first-child {
+    {block:IfNotShowPortraitonSidebar}
+    border: none;
+    {/block:IfNotShowPortraitonSidebar}
+}
 
 #desktop-menu .menu-button a {
-    color: {color:Header Font};
+    color: {color:Sidebar Font};
     padding: 10px;
     display: block;
 }
-#desktop-menu .menu-button a.alt-palette {color: {color:AltPalette Header Font};}
+#desktop-menu .menu-button a.alt-palette {color: {color:AltPalette Sidebar Font};}
 
-#desktop-menu .menu-button i {color: {color:Header Font};}
-#desktop-menu .menu-button i.alt-palette {color: {color:AltPalette Header Font};}
+#desktop-menu .menu-button i {color: {color:Sidebar Font};}
+#desktop-menu .menu-button i.alt-palette {color: {color:AltPalette Sidebar Font};}
 
 #desktop-menu .menu-button a:hover, #desktop-menu .menu-button a:hover i {color: {color:Links};}
 #desktop-menu .menu-button a:hover {background: {color:Posts Background};}
 
 #desktop-menu .menu-button a.alt-palette:hover, #desktop-menu .menu-button a:hover i.alt-palette {color: {color:AltPalette Links};}
+#desktop-menu .menu-button a.alt-palette:hover {background: {color:AltPalette Posts Background};}
 
 
 #desktop-menu .menu-title {display: none;}
 
-#desktop-menu .plus-btn {position: relative;}
-#desktop-menu .plus-btn-content.caixa {
-    position: absolute;
-    right: -1px;
-    top: 100%;
-    {block:IfExtraBorders}
-    right: calc(-{text:Extra Borders Thickness}px - 1px);
-    top: calc(100% + {text:Extra Borders Thickness}px);
-    {/block:IfExtraBorders}
-    margin-top: 10px;
-    transition: .5s;
-    transform: scaleY(0);
-    transform-origin: 0% 0%;
-    background: none;
-    height: auto;
-    width: 400px;
-}
-
-#desktop-menu .plus-btn-content.caixa .caixa-content {
-    background: {color:Posts Background};
-    border-radius: {select:Round Corners};
-    overflow: hidden;
-    {block:IfExtraBorders}
-    {block:IfBorders}
-    border: {text:Borders Thickness}px solid {color:Borders};
-    {/block:IfBorders}
-    {/block:IfExtraBorders}
-}
-#desktop-menu .plus-btn-content.caixa .caixa-content.alt-palette {
-    background: {color:AltPalette Posts Background};
-    border-color: {color:AltPalette Borders};
-}
-
-#desktop-menu .plus-btn:hover .plus-btn-content.caixa {
-    transform: scaleY(1);
-}
 
 #desktop-menu .description {
     margin-bottom: {text:Posts Padding}px;
     font-size: {text:Posts Font Size}px;
 }
 
-#main-searchbar {
-    width: 100%;
-    {block:IfBorders}
-    border-top: {text:Borders Thickness}px solid {color:Borders};
-    {/block:IfBorders}
+
+/******************** HEADER ********************/
+header {
+    position: fixed;
+    z-index: 9;
 }
-#main-searchbar.alt-palette {border-color: {color:AltPalette Borders};}
+header, header .caixa {margin: 0px;}
 
 
 /** mobile header **/
@@ -1693,19 +1616,19 @@ header#header {
     position: relative;
     display: table-cell;
     border-collapse: collapse;
-    width: calc({text:Header Font Size}px + 5px + 20px);
+    width: calc({text:Sidebar Font Size}px + 5px + 20px);
     vertical-align: middle;
 }
 
 #mobile-menu .dropdown-button {
     cursor: pointer;
     text-align: center;
-    color: {color:Header Font};
-    font-size: calc({text:Header Font Size}px + 5px);
-    line-height: calc({text:Header Font Size}px + 5px);
+    color: {color:Sidebar Font};
+    font-size: calc({text:Sidebar Font Size}px + 5px);
+    line-height: calc({text:Sidebar Font Size}px + 5px);
     padding: 10px;
 }
-#mobile-menu .dropdown-button.alt-palette {color: {color:AltPalette Header Font};}
+#mobile-menu .dropdown-button.alt-palette {color: {color:AltPalette Sidebar Font};}
 
 #mobile-menu .dropdown {
     position: absolute;
@@ -1713,16 +1636,16 @@ header#header {
     top: 100%;
     left: 0px;
     z-index: 10;
-    background: {color:Header};
-    color: {color:Header Font};
+    background: {color:Sidebar Background};
+    color: {color:Sidebar Font};
     {block:IfBorders}
     border: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
     display: none;
 }
 #mobile-menu .dropdown.alt-palette {
-    background: {color:AltPalette Header};
-    color: {color:AltPalette Header Font};
+    background: {color:AltPalette Sidebar Background};
+    color: {color:AltPalette Sidebar Font};
     border-color: {color:AltPalette Borders};
 }
 
@@ -1739,11 +1662,11 @@ header#header {
 #mobile-menu .menu-button a {
     display: block;
     padding: 10px;
-    color: {color:Header Font};
+    color: {color:Sidebar Font};
 }
 #mobile-menu .menu-button a:hover {color: {color:Links};}
 
-#mobile-menu .menu-button a.alt-palette {color: {color:AltPalette Header Font};}
+#mobile-menu .menu-button a.alt-palette {color: {color:AltPalette Sidebar Font};}
 #mobile-menu .menu-button a.alt-palette:hover {color: {color:AltPalette Links};}
 
 #mobile-menu .menu-button:first-of-type {border-left: none;}
@@ -1753,8 +1676,8 @@ header#header {
 
 
 #mobile-header .title {
-    background: {color:Header};
-    color: {color:Header Font};
+    background: {color:Sidebar Background};
+    color: {color:Sidebar Font};
     display: table-cell;
     border: none;
     {block:IfBorders}
@@ -1763,25 +1686,16 @@ header#header {
     text-align: left;
 }
 #mobile-header .title.alt-palette {
-    background: {color:AltPalette Header};
-    color: {color:AltPalette Header Font};
+    background: {color:AltPalette Sidebar Background};
+    color: {color:AltPalette Sidebar Font};
     border-color: {color:AltPalette Borders};
 }
 
-#mobile-header .title a {color: {color:Header Font};}
+#mobile-header .title a {color: {color:Sidebar Font};}
 #mobile-header .title a:hover {color: {color:Links};}
 
-#mobile-header .title a.alt-palette {color: {color:AltPalette Header Font};}
+#mobile-header .title a.alt-palette {color: {color:AltPalette Sidebar Font};}
 #mobile-header .title a.alt-palette:hover {color: {color:AltPalette Links};}
-
-
-#mobile-search.caixa {
-    display: table;
-    margin: 0px auto;
-    margin-top: calc({text:Posts Spacing}px * 2);
-    width: calc(100% - 60px - ({text:Posts Spacing}px * 4) {block:IfExtraBorders}
-    - ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders});
-}
 
 
 /********** SEARCH FORM [start] ***/
@@ -1819,7 +1733,7 @@ header#header {
     border: none;
     outline: none;
     width: calc(100% - 15px);
-    padding: 10px;
+    padding: {text:Notes Padding}px;
     background: {color:Posts Background};
     color: {color:Posts Font};
     font-family: {text:Custom Posts Font};
@@ -1847,11 +1761,12 @@ header#header {
 .search-button {
     position: relative;
     cursor: pointer;
-    padding: 5px 5px 3px 5px;
     text-align: center;
+    padding: {text:Notes Padding}px;
     background: {color:Notes Background};
     color: {color:Notes Font};
     font-size: {text:Posts Font Size}px;
+    width: {text:Posts Font Size}px;
     line-height: {text:Posts Font Size}px;
     border: none;
     transition: .5s;
@@ -1874,6 +1789,45 @@ header#header {
     background: {color:AltPalette Posts Background};
     color: {color:AltPalette Links};
 }
+
+
+/** DESKTOP SEARCH **/
+#main-searchbar {
+    display: table;
+    margin: {text:Posts Spacing}px;
+    font-size: {text:Posts Font Size}px;
+}
+#main-searchbar.alt-palette {border-color: {color:AltPalette Borders};}
+
+#main-searchbar .search-form {
+    width: 0px;
+    transition: .5s;
+}
+#main-searchbar .search-form input {padding: {text:Notes Padding}px 0px;}
+#main-searchbar:hover .search-form {width: 300px;}
+#main-searchbar:hover .search-form input {padding: {text:Notes Padding}px;}
+
+
+#main-searchbar .search-button {
+    border-left-width: 0px;
+    transition: .5s;
+    background: {color:Sidebar Background};
+    color: {color:Sidebar Font};
+}
+#main-searchbar .search-button.alt-palette {
+    background: {color:AltPalette Sidebar Background};
+    color: {color:AltPalette Sidebar Font};
+}
+#main-searchbar:hover .search-button {border-left-width: 1px;}
+
+
+/** MOBILE SEARCH **/
+#mobile-search.caixa {
+    display: table;
+    margin: 0px auto;
+    margin-top: calc({text:Posts Spacing}px * 2);
+    width: calc(100% - 60px - ({text:Posts Spacing}px * 4) {block:IfExtraBorders} - ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders});
+}
 /********** SEARCH FORM [end] ***/
 
 
@@ -1887,26 +1841,20 @@ header#header {
     position: relative;
     width: calc({text:Layout Width} - ({text:Posts Spacing}px * 2));
     min-height: 540px;
-    margin: 0px auto;
     
     {select:Layout Position}
-    padding: 0px {text:Posts Spacing}px;
-    
-    {block:IfFixedHeader}
-    margin-top: calc(30px + {text:Header Font Size}px + ({text:Posts Padding}px * 2) + ({text:Posts Spacing}px * 2) {block:IfExtraBorders}+ ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}+ ({text:Borders Thickness}px * 2){/block:IfBorders});
-    {/block:IfFixedHeader}
-    
-   
+    padding: 30px {text:Posts Spacing}px 1px {text:Posts Spacing}px;
 }
-
-
-
 
 
 /****************************************** POSTS [start] **/
 #posts-section {
-    width: 100%;
-    /*margin-top: calc({text:Header Font Size}px + ({text:Posts Padding}px * 2) + {text:Posts Spacing}px * 2);*/
+    
+    width: calc(100% - {text:Sidebar Font Size}px {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 3){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders} - ({text:Posts Spacing}px * 4));
+    
+    margin-left: calc({text:Sidebar Font Size}px {block:IfExtraBorders}+ ({text:Extra Borders Thickness}px * 3){/block:IfExtraBorders} {block:IfBorders}+ ({text:Borders Thickness}px * 2){/block:IfBorders} + ({text:Posts Spacing}px * 4));
+    
+    margin-top: {text:Posts Spacing}px;
 }
 
 #posts, #filter-pages {margin: 0px auto;}
@@ -1916,7 +1864,8 @@ header#header {
     white-space: nowrap;
 }
 
-#posts {width: 100%;}
+
+
 
 
 
@@ -1954,6 +1903,7 @@ header#header {
     background: {color:AltPalette Extra Borders Background} url('{image:AltPalette Extra Borders Background}');
     {/block:IfExtraBorders}
 }
+
 
 .caixa-content {
     position: relative;
@@ -1998,7 +1948,6 @@ header#header {
     margin: {text:Posts Spacing}px auto;
     {/block:PermalinkPage}
 }
-
 .caixa.post {
     margin: 0px;
     width: calc(100% {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
@@ -2283,7 +2232,6 @@ header#header {
 
 
 
-
 /***** PERMALINK *****/
 #permalink {
     width: 40%;
@@ -2464,8 +2412,6 @@ header#header {
 }
 
 
-
-
 /**** permalink pagination ****/
 #permalink-navigation {
     display: table;
@@ -2536,7 +2482,7 @@ header#header {
 #pagination {
     display: table;
     margin: calc({text:Posts Spacing}px * 3) auto;
-    color: {color:Header Font};
+    color: {color:Sidebar Font};
     
     {block:IfExtraBorders}
     padding-top: {text:Extra Borders Thickness}px;
@@ -2551,7 +2497,7 @@ header#header {
     
 }
 #pagination.alt-palette {
-    color: {color:AltPalette Header Font};
+    color: {color:AltPalette Sidebar Font};
     border-color: {color:AltPalette Borders};
 }
 
@@ -2571,7 +2517,7 @@ header#header {
     position: relative;
     overflow: hidden;
     padding: {text:Notes Padding}px calc({text:Notes Padding}px * 2);
-    background: {color:Header};
+    background: {color:Sidebar Background};
     {block:IfBorders}
     border: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
@@ -2582,7 +2528,7 @@ header#header {
     border-left-width: 1px;
 }
 #pagination .button.alt-palette {
-    background: {color:AltPalette Header};
+    background: {color:AltPalette Sidebar Background};
     {block:IfBorders}
     border-color: {color:AltPalette Borders};
     {/block:IfBorders}
@@ -2599,12 +2545,12 @@ header#header {
 }
 
 
-#pagination a, #pagination a i {color: {color:Header Font};}
+#pagination a, #pagination a i {color: {color:Sidebar Font};}
 #pagination a:hover, #pagination a:hover i {color: {color:Links};}
 
 #pagination a:hover .button {background: {color:Posts Background};}
 
-#pagination a.alt-palette, #pagination a i.alt-palette {color: {color:AltPalette Header Font};}
+#pagination a.alt-palette, #pagination a i.alt-palette {color: {color:AltPalette Sidebar Font};}
 #pagination a.alt-palette:hover, #pagination a:hover i.alt-palette {color: {color:AltPalette Links};}
 
 #pagination a.alt-palette:hover .button {background: {color:AltPalette Posts Background};}
@@ -2651,6 +2597,7 @@ header#header {
 #infscr-button {
     width: 100%;
     padding: 20px 0px !important;
+    opacity: 1;
 }
 #infscr-button .caixa {
     display: table;
@@ -2658,23 +2605,23 @@ header#header {
     cursor: pointer;
     color: {color:Sidebar Font};
     {block:IfNotExtraBorders}
-    background: {color:Header};
+    background: {color:Sidebar Background};
     {/block:IfNotExtraBorders}
 }
 #infscr-button .caixa.alt-palette {
     color: {color:AltPalette Sidebar Font};
     {block:IfNotExtraBorders}
-    background: {color:AltPalette Header};
+    background: {color:AltPalette Sidebar Background};
     {/block:IfNotExtraBorders}
     transition: .5s;
 }
 #infscr-button .caixa-content {
     padding: {text:Posts Padding}px;
-    background: {color:Header};
+    background: {color:Sidebar Background};
     transition: .5s;
 }
 #infscr-button .caixa-content.alt-palette {
-    background: {color:AltPalette Header};
+    background: {color:AltPalette Sidebar Background};
 }
 
 #infscr-button .caixa-content i {margin-left: 10px;}
@@ -2801,19 +2748,19 @@ header#header {
     width: {text:Posts Font Size}px;
     height: {text:Posts Font Size}px;
     padding: 10px;
-    background: {color:Header};
-    color: {color:Header Font};
+    background: {color:Sidebar Background};
+    color: {color:Sidebar Font};
 }
 #backtotop.caixa .caixa-content.alt-palette {
-    background: {color:AltPalette Header};
-    color: {color:AltPalette Header Font};
+    background: {color:AltPalette Sidebar Background};
+    color: {color:AltPalette Sidebar Font};
 }
 
-#backtotop.caixa a, #backtotop.caixa i {color: {color:Header Font};}
+#backtotop.caixa a, #backtotop.caixa i {color: {color:Sidebar Font};}
 #backtotop.caixa:hover a, #backtotop.caixa:hover i {color: {color:Links};}
 #backtotop.caixa:hover .caixa-content {color: {color:Posts Background};}
 
-#backtotop.caixa a.alt-palette, #backtotop.caixa i.alt-palette {color: {color:AltPalette Header Font};}
+#backtotop.caixa a.alt-palette, #backtotop.caixa i.alt-palette {color: {color:AltPalette Sidebar Font};}
 #backtotop.caixa:hover a.alt-palette, #backtotop.caixa:hover i.alt-palette {color: {color:AltPalette Links};}
 #backtotop.caixa:hover .caixa-content.alt-palette {color: {color:AltPalette Posts Background};}
 
@@ -2902,17 +2849,14 @@ iframe.tmblr-iframe {
     top: 40px;
     right: 8px;
     z-index: 99999999999;
-    {block:IfFixedHeader}
-    top: calc(30px + {text:Header Font Size}px + ({text:Posts Padding}px * 2) + {text:Posts Spacing}px * 2);
-    {/block:IfFixedHeader}
 }
 
 .topbutton {
     float: right;
     display: block;
     padding: {text:Notes Padding}px;
-    background: {color:Header};
-    color: {color:Header Font};
+    background: {color:Sidebar Background};
+    color: {color:Sidebar Font};
     font-size: {text:Notes Font Size}px;
     line-height: {text:Notes Font Size}px;
     font-family: {text:Custom Notes Font};
@@ -2927,13 +2871,14 @@ iframe.tmblr-iframe {
     text-align: right;
 }
 .topbutton.alt-palette {
-    background: {color:AltPalette Header};
-    color: {color:AltPalette Header Font};
+    background: {color:AltPalette Sidebar Background};
+    color: {color:AltPalette Sidebar Font};
     {block:IfBorders}
     border: {text:Borders Thickness}px solid {color:AltPalette Borders};
     {/block:IfBorders}
     box-shadow: {select:Shadow Style} {color:AltPalette Shadows};
 }
+
 
 .topbutton .button-item {border: 1px solid transparent;}
 .topbutton .button-icon {float: left;}
@@ -2962,6 +2907,7 @@ iframe.tmblr-iframe {
 }
 
 
+
 /** LIGHT/DARK MODE **/
 #lightdark-mode {}
 #lightdark-mode-content {
@@ -2981,7 +2927,7 @@ iframe.tmblr-iframe {
     line-height: 1em;
     display: table;
     
-    background: {color:Header};
+    background: {color:Sidebar Background};
     color: {color:Sidebar Font};
     border-radius: {select:Round Corners};
     
@@ -2990,7 +2936,7 @@ iframe.tmblr-iframe {
     {/block:IfBorders}
 }
 #cookies-notice.alt-palette {
-    background: {color:AltPalette Header};
+    background: {color:AltPalette Sidebar Background};
     color: {color:AltPalette Sidebar Font};
     
     {block:IfBorders}
@@ -3041,19 +2987,18 @@ iframe.tmblr-iframe {
 }
 
 
-
 /** CREDITS - DO NOT REMOVE OR CHANGE WITHOUT MY AUTHORIZATION! **/
 #credits a {
     width: 100%;
     height: 100%;
-    color: {color:Header Font};
+    color: {color:Sidebar Font};
 }
 #credits span.button-name u {
     color: {color:Links};
     text-decoration: none;
 }
 
-#credits a.alt-palette {color: {color:AltPalette Header Font};}
+#credits a.alt-palette {color: {color:AltPalette Sidebar Font};}
 #credits span.button-name u.alt-palette {color: {color:AltPalette Links};}
 
 
@@ -3118,142 +3063,11 @@ iframe.tmblr-iframe {
 <!-------------------- HEADER [start] -------------------->
 <header id="header">
 
-<!-- DESKTOP HEADER [start] -->
-<div id="desktop-header" class="desktop">
-<div class="desktop-header-content">
-
-<!-- portrait -->
-<div class="caixa">
-<div class="caixa-content">
-<a href="/" title="{lang:Home}">
-<figure class="portrait"> <img src="{PortraitURL-128}"/> </figure>
-</a>
-</div><!-- .caixa-content-->
-</div><!-- .caixa -->
-
-<!-- title -->
-<div class="caixa">
-<div class="caixa-content">
-<h1 class="title"><a href="/" title="{lang:Home}">{Title}</a></h1>
-</div><!-- .caixa-content-->
-</div><!-- .caixa -->
-
-
-    <!----- DESKTOP MENU ----->
-    <div class="caixa">
-    <div class="caixa-content">
-    
-    <div id="desktop-menu-container">
-    <nav id="desktop-menu" class="menu">
-    
-    {block:IfButton1Link}
-    <div class="menu-button">
-    <a href="{text:Button1 Link}" title="{text:Button1 Title}">
-    <span class="menu-icon">{text:Button1 Icon}</span>
-    <span class="menu-title">{text:Button1 Title}</span>
-    </a>
-    </div><!-- .menu-button -->
-    {/block:IfButton1Link}
-    
-    {block:IfButton2Link}
-    <div class="menu-button">
-    <a href="{text:Button2 Link}" title="{text:Button2 Title}">
-    <span class="menu-icon">{text:Button2 Icon}</span>
-    <span class="menu-title">{text:Button2 Title}</span>
-    </a>
-    </div><!-- .menu-button -->
-    {/block:IfButton2Link}
-    
-    {block:IfButton3Link}
-    <div class="menu-button">
-    <a href="{text:Button3 Link}" title="{text:Button3 Title}">
-    <span class="menu-icon">{text:Button3 Icon}</span>
-    <span class="menu-title">{text:Button3 Title}</span>
-    </a>
-    </div><!-- .menu-button -->
-    {/block:IfButton3Link}
-    
-    {block:IfButton4Link}
-    <div class="menu-button">
-    <a href="{text:Button4 Link}" title="{text:Button4 Title}">
-    <span class="menu-icon">{text:Button4 Icon}</span>
-    <span class="menu-title">{text:Button4 Title}</span>
-    </a>
-    </div><!-- .menu-button -->
-    {/block:IfButton4Link}
-    
-    {block:IfButton5Link}
-    <div class="menu-button">
-    <a href="{text:Button5 Link}" title="{text:Button5 Title}">
-    <span class="menu-icon">{text:Button5 Icon}</span>
-    <span class="menu-title">{text:Button5 Title}</span>
-    </a>
-    </div><!-- .menu-button -->
-    {/block:IfButton5Link}
-    
-    {block:IfButton6Link}
-    <div class="menu-button">
-    <a href="{text:Button6 Link}" title="{text:Button6 Title}">
-    <span class="menu-icon">{text:Button6 Icon}</span>
-    <span class="menu-title">{text:Button6 Title}</span>
-    </a>
-    </div><!-- .menu-button -->
-    {/block:IfButton6Link}
-    
-    {block:IfButton7Link}
-    <div class="menu-button">
-    <a href="{text:Button7 Link}" title="{text:Button7 Title}">
-    <span class="menu-icon">{text:Button7 Icon}</span>
-    <span class="menu-title">{text:Button7 Title}</span>
-    </a>
-    </div><!-- .menu-button -->
-    {/block:IfButton7Link}
-    
-    {block:IfButton8Link}
-    <div class="menu-button">
-    <a href="{text:Button8 Link}" title="{text:Button8 Title}">
-    <span class="menu-icon">{text:Button8 Icon}</span>
-    <span class="menu-title">{text:Button8 Title}</span>
-    </a>
-    </div><!-- .menu-button -->
-    {/block:IfButton8Link}
-    
-    {block:IfButton9Link}
-    <div class="menu-button">
-    <a href="{text:Button9 Link}" title="{text:Button9 Title}">
-    <span class="menu-icon">{text:Button9 Icon}</span>
-    <span class="menu-title">{text:Button9 Title}</span>
-    </a>
-    </div><!-- .menu-button -->
-    {/block:IfButton9Link}
-    
-    {block:IfButton10Link}
-    <div class="menu-button">
-    <a href="{text:Button10 Link}" title="{text:Button10 Title}">
-    <span class="menu-icon">{text:Button10 Icon}</span>
-    <span class="menu-title">{text:Button10 Title}</span>
-    </a>
-    </div><!-- .menu-button -->
-    {/block:IfButton10Link}
-    
-    <div class="menu-button plus-btn">
-    <a href="#" onclick="javascript:return false;" title="{text:Plus Button Title}">
-    <span class="menu-icon">{text:Plus Button Icon}</span>
-    <span class="menu-title">{text:Plus Button Title}</span>
-    </a>
-    
-    <div class="plus-btn-content caixa">
-    <div class="caixa-content">
-
-{block:Description}
-<p class="description">{Description}</p>
-{/block:Description}
-    
 <!------------------------ MAIN SEARCHBAR [start] -->
-<div id="main-searchbar">
+<div id="main-searchbar" class="desktop">
 
-<div class="search" id="main-search">
-<div class="search-content">
+<div class="caixa search" id="main-search">
+<div class="caixa-content search-content">
 <table><tr>
 
 <td class="search-item search-form">
@@ -3272,23 +3086,6 @@ iframe.tmblr-iframe {
 
 </div><!-- #main-searchbar -->
 <!------------------------ MAIN SEARCHBAR [end] -->
-
-    </div><!-- .caixa-content -->
-    </div><!-- .plus-btn-content -->
-    </div><!-- .menu-button.plus-btn -->
-    
-    </nav><!-- #desktop-menu -->
-    </div><!-- #desktop-menu-container -->
-    
-    </div><!-- .caixa-content-->
-    </div><!-- .caixa -->
-    <!----- DESKTOP MENU [end] ----->
-    
-    
-</div><!-- .desktop-header-content -->
-</div><!-- #desktop-header [end] -->
-<!-- DESKTOP HEADER [end] -->
-
 
 <!-- MOBILE HEADER [end] -->
 <div id="mobile-header" class="mobile">
@@ -3467,6 +3264,132 @@ iframe.tmblr-iframe {
 
 <!------------------------------------------ CONTENT [start] ---------->
 <div id="content">
+
+
+<!-------------------- SIDEBAR [start] -------------------->
+<aside class="desktop">
+<div id="sidebar" class="bottom">
+<div class="sidebar-content">
+
+    <div class="caixa">
+    <div class="caixa-content">
+    
+    <!-- portrait -->
+    {block:IfShowPortraitonSidebar}
+    <a href="/" title="{lang:Home}">
+    <figure class="portrait"> <img src="{PortraitURL-128}"/> </figure>
+    </a>
+    {/block:IfShowPortraitonSidebar}
+    
+    
+    <!-- desktop menu -->
+    <div id="desktop-menu-container">
+    <nav id="desktop-menu" class="menu">
+    
+    {block:IfButton1Link}
+    <div class="menu-button">
+    <a href="{text:Button1 Link}" title="{text:Button1 Title}">
+    <span class="menu-icon">{text:Button1 Icon}</span>
+    <span class="menu-title">{text:Button1 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {/block:IfButton1Link}
+    
+    {block:IfButton2Link}
+    <div class="menu-button">
+    <a href="{text:Button2 Link}" title="{text:Button2 Title}">
+    <span class="menu-icon">{text:Button2 Icon}</span>
+    <span class="menu-title">{text:Button2 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {/block:IfButton2Link}
+    
+    {block:IfButton3Link}
+    <div class="menu-button">
+    <a href="{text:Button3 Link}" title="{text:Button3 Title}">
+    <span class="menu-icon">{text:Button3 Icon}</span>
+    <span class="menu-title">{text:Button3 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {/block:IfButton3Link}
+    
+    {block:IfButton4Link}
+    <div class="menu-button">
+    <a href="{text:Button4 Link}" title="{text:Button4 Title}">
+    <span class="menu-icon">{text:Button4 Icon}</span>
+    <span class="menu-title">{text:Button4 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {/block:IfButton4Link}
+    
+    {block:IfButton5Link}
+    <div class="menu-button">
+    <a href="{text:Button5 Link}" title="{text:Button5 Title}">
+    <span class="menu-icon">{text:Button5 Icon}</span>
+    <span class="menu-title">{text:Button5 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {/block:IfButton5Link}
+    
+    {block:IfButton6Link}
+    <div class="menu-button">
+    <a href="{text:Button6 Link}" title="{text:Button6 Title}">
+    <span class="menu-icon">{text:Button6 Icon}</span>
+    <span class="menu-title">{text:Button6 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {/block:IfButton6Link}
+    
+    {block:IfButton7Link}
+    <div class="menu-button">
+    <a href="{text:Button7 Link}" title="{text:Button7 Title}">
+    <span class="menu-icon">{text:Button7 Icon}</span>
+    <span class="menu-title">{text:Button7 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {/block:IfButton7Link}
+    
+    {block:IfButton8Link}
+    <div class="menu-button">
+    <a href="{text:Button8 Link}" title="{text:Button8 Title}">
+    <span class="menu-icon">{text:Button8 Icon}</span>
+    <span class="menu-title">{text:Button8 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {/block:IfButton8Link}
+    
+    {block:IfButton9Link}
+    <div class="menu-button">
+    <a href="{text:Button9 Link}" title="{text:Button9 Title}">
+    <span class="menu-icon">{text:Button9 Icon}</span>
+    <span class="menu-title">{text:Button9 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {/block:IfButton9Link}
+    
+    {block:IfButton10Link}
+    <div class="menu-button">
+    <a href="{text:Button10 Link}" title="{text:Button10 Title}">
+    <span class="menu-icon">{text:Button10 Icon}</span>
+    <span class="menu-title">{text:Button10 Title}</span>
+    </a>
+    </div><!-- .menu-button -->
+    {/block:IfButton10Link}
+    
+    </nav><!-- #desktop-menu -->
+    </div><!-- #desktop-menu-container -->
+    
+    </div><!-- .caixa-content-->
+    </div><!-- .caixa -->
+    <!----- DESKTOP MENU [end] ----->
+    
+    
+</div><!-- .sidebar-content -->
+</div><!-- #sidebar [end] -->
+</aside>
+<!-------------------- SIDEBAR [end] -------------------->
+
+
 
 
 <!-- POSTS SECTION [start] -->
@@ -4921,8 +4844,6 @@ iframe.tmblr-iframe {
 <!----- INFINITE BUTTON [end] ----->
 
 
-
-
 <!----- INFINITE SCROLL MESSAGES [start] ----->
 {block:IfInfiniteScroll}
 <div id="infscr-loading">
@@ -4957,7 +4878,6 @@ iframe.tmblr-iframe {
 <!----- INFINITE SCROLL MESSAGES [end] ----->
 
 
-
 </div><!-- #posts-section -->
 <!-- POSTS SECTION [end] -->
 
@@ -4984,6 +4904,7 @@ iframe.tmblr-iframe {
 
 
 <!------------------------- FOOTER [start] ------------------------->
+{block:PermalinkPage}
 <footer id="footer">
 <div class="caixa">
 <div class="caixa-content">
@@ -5005,6 +4926,7 @@ iframe.tmblr-iframe {
 </div><!-- .caixa-content -->
 </div><!-- .caixa -->
 </footer><!-- #footer -->
+{/block:PermalinkPage}
 <!------------------------- FOOTER [end] ------------------------->
 
 
@@ -5130,7 +5052,7 @@ function lightbox(elem) {
 
 <script>
 
-
+    
     /** external, internal and hashtag links behavior [start] **/
     function linksBehavior() {
         document.querySelectorAll("a").forEach(function(item){
@@ -5205,46 +5127,10 @@ function lightbox(elem) {
 	    }); // forEach
     }; linksBehavior();
     /** external, internal and hashtag links behavior [end] **/
-    
 
 
-    /********** SEARCHBAR FORMS **********/
-    function webSearchForm() {
-        var keyword = document.querySelector("#main-search form input:first-child").value;
-        if(keyword.startsWith("#")) {
-            filteredKeyword = keyword.replace(/#/g, "");
-            location.assign("/tagged/" + filteredKeyword);
-        } else {
-            location.assign("/search/" + keyword);
-        }
-    }; // function
-    
-    document.querySelector("#main-search form").onsubmit = function(){
-        webSearchForm();
-    }; // submit
-    document.querySelector("#main-search .search-button").onclick = function(){
-        webSearchForm();
-        return false;
-    }; // click
     
     
-    function mobileSearchForm() {
-        var keyword = document.querySelector("#mobile-search form input:first-child").value;
-        if(keyword.startsWith("#")) {
-            filteredKeyword = keyword.replace(/#/g, "");
-            location.assign("/tagged/" + filteredKeyword);
-        } else {
-            location.assign("/search/" + keyword);
-        }
-    }; // function
-    document.querySelector("#mobile-search form").onsubmit = function(){
-        mobileSearchForm();
-    }; // submit
-    document.querySelector("#mobile-search .search-button").onclick = function(){
-        mobileSearchForm();
-        return false;
-    }; // click
-    /********** SEARCHBAR FORMS [end] **********/
     
 
     /** SLIDE BUTTONS (by anyhs-themes.tumblr.com) [start] **/
@@ -5268,7 +5154,7 @@ function lightbox(elem) {
     });
     /** SLIDE BUTTON (by anyhs-themes.tumblr.com) [end] **/
 
-    
+
     /** fix hidden captions bottom situation with certain Notes Styles **/
     function captionsFix() {
         {block:IfNotPhotosCaption}
@@ -5509,6 +5395,26 @@ function lightbox(elem) {
     /** SHORTEN LONG POSTS [end] **/
 
     
+    
+    /*** SIDEBAR POSITION [start] ***/
+    // --- Left or Right:
+    if("{select:Sidebar Position}" == "Bottom Left" || "{select:Sidebar Position}" == "Top Left") {
+        // default
+    } else if ("{select:Sidebar Position}" == "Bottom Right" || "{select:Sidebar Position}" == "Top Right") {
+        document.querySelector("aside").style.float="right";
+        document.querySelector("#posts-section").style.marginLeft="0px";
+    }; // else if
+    // --- Top or Bottom:
+    if("{select:Sidebar Position}" == "Bottom Left" || "{select:Sidebar Position}" == "Bottom Right") {
+        // default
+    } else if ("{select:Sidebar Position}" == "Top Left" || "{select:Sidebar Position}" == "Top Right") {
+        document.querySelector("#sidebar").classList.remove('bottom');
+        document.querySelector("#sidebar").classList.add('top');
+    }; // else if
+    /*** SIDEBAR POSITION [end] ***/
+    
+    
+    
     /******************** VECTORIAL ICONS LIBRARY ********/
     function vIcons() {
         document.querySelectorAll(".v-icon").forEach(function(item){
@@ -5630,7 +5536,6 @@ function lightbox(elem) {
     /********** LANGUAGE / TRANSLATION [end] **********/
     
     
-    
     /** fade in + slide up **/
     setTimeout(function(){document.querySelector("#all").style.opacity="1";}, 500);
     function slideUp() {
@@ -5644,7 +5549,6 @@ function lightbox(elem) {
         });
     }; slideUp();
     /** fade in + slide up [end] **/
-    
     
     
     /***** MASONRY + IMAGES LOADED *****/
@@ -5662,6 +5566,7 @@ function lightbox(elem) {
     {/block:IndexPage}
     /***** MASONRY + IMAGES LOADED [end] *****/
     
+
 
     /*** COLUMNS SETTINGS [start] ***/
     // if 1 column is selected:
@@ -5791,6 +5696,7 @@ function lightbox(elem) {
     {/block:IndexPage}
     {/block:IfInfiniteScroll}
     /** Basic Infinite Scroll [end] **/
+    
     
     
     /** back to top button **/
