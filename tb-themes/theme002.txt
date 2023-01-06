@@ -2,10 +2,10 @@
  
  
            — THEME #002: October —
-           by Anyh's Themes © 2022
-           https://anyhs-themes.tumblr.com
+           by Anyh's Themes © 2023
+           https://anyhs-themes.tumblr.com 
            
-           (Last update: 21/11/2022 — 15:14hrs)
+           (Last update: 06/01/2023 — 15:19hrs)
 
 
 
@@ -104,6 +104,7 @@
     <meta name="color:Notes Background" content="#252525"/>
     <meta name="color:Notes Font" content="#707070"/>
     <meta name="color:Notes Font Hover" content="#ba7d57"/>
+    <meta name="color:Notes Links" content="#ba7d57"/>
     
     <!-- colors: alternative palette -->
     <meta name="color:AltPalette Background" content="#ededed"/>
@@ -122,6 +123,7 @@
     <meta name="color:AltPalette Notes Background" content="#fafafa"/>
     <meta name="color:AltPalette Notes Font" content="#414141"/>
     <meta name="color:AltPalette Notes Font Hover" content="#ba7d57"/>
+    <meta name="color:AltPalette Notes Links" content="#ba7d57"/>
     
     
     <!-- select options: layout position -->
@@ -199,6 +201,17 @@
     <meta name="select:Shadow Style" content="0px 0px 0px 5px" title="Contour Hard 5px"/>
     <meta name="select:Shadow Style" content="0px 0px 0px 10px" title="Contour Hard 10px"/>
     
+    
+    <!-- select options: pagination -->
+    <meta name="select:Pagination Style" content="1" title="Numbered Pagination"/>
+    <meta name="select:Pagination Style" content="2" title="Manual Infinite Scroll"/>
+    <meta name="select:Pagination Style" content="3" title="Automatic Infinite Scroll"/>
+    
+    <!-- select options: captions display -->
+    <meta name="select:Captions Display" content="1" title="Normal"/>
+    <meta name="select:Captions Display" content="2" title="On mouse over"/>
+    <meta name="select:Captions Display" content="3" title="On Permanent Links only"/>
+    
     <!-- select options: round corners -->
     <meta name="select:Round Corners" content="0px"/>
     <meta name="select:Round Corners" content="3px"/>
@@ -240,15 +253,12 @@
     <meta name="if:Borders" content="1"/>
     <meta name="if:Borders on Images" content="0"/>
     <meta name="if:Extra Borders" content="0"/>
-    <meta name="if:Margin on Images" content="0"/>
+    <meta name="if:Margin on Content" content="0"/>
     <meta name="if:First Captions Header" content="1"/>
-    <meta name="if:Photos Caption" content="0"/>
     <meta name="if:Show Number of Likes" content="1"/>
     <meta name="if:Share Buttons" content="1"/>
     <meta name="if:Post Author" content="0"/>
     <meta name="if:Related Posts" content="1"/>
-    <meta name="if:Infinite Scroll" content="0"/>
-    <meta name="if:Automatic Infinite Scroll" content="0"/>
     <meta name="if:Smooth Effects" content="1"/>
     <meta name="if:Custom Tooltips" content="1"/>
     
@@ -256,6 +266,7 @@
     <!-- text options: several stuff -->
     <meta name="text:Scrollbar Thickness" content="8"/>
     <meta name="text:Layout Width" content="90%"/>
+    <meta name="text:Page Padding" content="10"/>
     <meta name="text:Posts Max Height" content="auto"/>
     <meta name="text:Posts Spacing" content="10"/>
     <meta name="text:Posts Padding" content="20"/>
@@ -552,12 +563,6 @@ blockquote div:last-child {margin-bottom: calc({text:Posts Padding}px / 2);}
 /** text content spacing **/
 h1, h2, h3, h4, h5, h6, p, ol, ul, pre, blockquote, blockquote div {
     margin: calc({text:Posts Padding}px / 2) {text:Posts Padding}px;
-    
-    {block:IfNotPhotosCaption}
-    {block:IndexPage}
-    margin-bottom: 0px;
-    {/block:IndexPage}
-    {/block:IfNotPhotosCaption}
 }
 
 p:first-child, ol:first-child, ul:first-child, blockquote:first-child, pre:first-child {
@@ -620,11 +625,11 @@ p:last-child, ol:last-child, ul:last-child, blockquote:last-child, pre:last-chil
 
 
 /***** quotes *****/
-.quote, .npf_quote {
+p.quote, .npf_quote {
     position: relative;
     margin: {text:Posts Padding}px;
-    margin-top: calc({text:Posts Padding}px + 5px);
-    padding-top: calc({text:Posts Padding}px * 2);
+    margin-top: calc({text:Posts Padding}px / 2) !important;
+    padding-top: calc({text:Posts Padding}px * 1);
     font-size: {text:Quotes Font Size}px;
     line-height: calc({text:Quotes Font Size}px + 5px);
     font-family: {text:Custom Quotes Font} !important;
@@ -633,14 +638,14 @@ p:last-child, ol:last-child, ul:last-child, blockquote:last-child, pre:last-chil
     z-index: 1;
     text-indent: 10px;
 }
-.quote.alt-palette, .npf_quote.alt-palette {color: {color:AltPalette Posts Font};}
+p.quote.alt-palette, .npf_quote.alt-palette {color: {color:AltPalette Posts Font};}
 
-.quote:first-letter, .npf_quote:first-letter {
+p.quote:first-letter, .npf_quote:first-letter {
     font-size: calc({text:Quotes Font Size}px + 50%);
     line-height: {text:Quotes Font Size}px;
     font-family: {text:Custom Titles Font};
 }
-.quote:before, .npf_quote:before, .quote:after, .npf_quote:after {
+p.quote:before, .npf_quote:before, .quote:after, .npf_quote:after {
     font-family: 'Georgia', sans-serif;
     font-size: 40px;
     line-height: {text:Quotes Font Size}px;
@@ -649,12 +654,12 @@ p:last-child, ol:last-child, ul:last-child, blockquote:last-child, pre:last-chil
     position: absolute;
     z-index: 0;
 }
-.quote:before, .npf_quote:before {
+p.quote:before, .npf_quote:before {
     content: "❝";
     top: {text:Posts Padding}px;
     left: -10px;
 }
-.quote:after, .npf_quote:after {
+p.quote:after, .npf_quote:after {
     content: "❞";
     bottom: -12px;
     right: 0px;
@@ -710,26 +715,16 @@ figure a, figure a.post_media_photo_anchor {}
 .first-photogroup {margin: 0px;}
 
 .photo, .photogroup, .photoset-container {
-    {block:IfMarginonImages}
+    {block:IfMarginonContent}
     margin: {text:Posts Padding}px;
-    {/block:IfMarginonImages}
-    
-    {block:IfNotPhotosCaption}
-    {block:IndexPage}
-    margin-bottom: {text:Posts Padding}px;
-    
-    {block:IfNotMarginonImages}
-    margin-bottom: -{text:Posts Padding}px;
-    {/block:IfNotMarginonImages}
-    {/block:IndexPage}
-    {/block:IfNotPhotosCaption}
+    {/block:IfMarginonContent}
 }
 
 
 .photoset-container:last-child {
-    {block:IfNotMarginonImages}
+    {block:IfNotMarginonContent}
     margin-bottom: 0px;
-    {/block:IfNotMarginonImages}
+    {/block:IfNotMarginonContent}
 }
 
 .photogroup .tmblr-full + .npf_row {margin-top: {text:Images Spacing}px !important;}
@@ -745,7 +740,7 @@ figure a, figure a.post_media_photo_anchor {}
 
 .caixa figure img.alt-palette, .caixa .npf_row figure img.alt-palette {border-color: {color:AltPalette Borders} !important;}
 
-{block:IfNotMarginonImages}
+{block:IfNotMarginonContent}
 .caixa figure.tmblr-full img {
     border-left: 0px;
     border-right: 0px;
@@ -759,7 +754,7 @@ figure a, figure a.post_media_photo_anchor {}
 .caixa .npf_row .npf_col:first-child figure img {border-left: 0px !important;}
 .caixa .npf_row .npf_col:last-child figure img {border-right: 0px !important;}
 
-{/block:IfNotMarginonImages}
+{/block:IfNotMarginonContent}
 {/block:IfBordersonImages}
 
 
@@ -801,6 +796,7 @@ figure:hover img, img:hover, .caixa:hover img, .caixa:hover .video-player iframe
     filter: none;
     -webkit-filter: none;
 }
+
 
 
 
@@ -852,7 +848,7 @@ figure:hover img, img:hover, .caixa:hover img, .caixa:hover .video-player iframe
     border-bottom: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
     
-    {block:IfMarginonImages}
+    {block:IfMarginonContent}
     margin: {text:Posts Padding}px;
     border-radius: {select:Round Corners on Images};
 
@@ -860,7 +856,7 @@ figure:hover img, img:hover, .caixa:hover img, .caixa:hover .video-player iframe
     border: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
     
-    {/block:IfMarginonImages}
+    {/block:IfMarginonContent}
 
 }
 .video-player.alt-palette, .audio-content.alt-palette {
@@ -868,14 +864,19 @@ figure:hover img, img:hover, .caixa:hover img, .caixa:hover .video-player iframe
     border-color: {color:AltPalette Borders};
 }
 
-.video-player, .embed_iframe, .tumblr_video_container, .tumblr_video_container {
+.video-player, .video-player iframe, .embed_iframe, .tumblr_video_container, .tumblr_video_container {
     width: 100% !important;
     height: auto !important;
     
-    {block:IfMarginonImages}
+    {block:PermalinkPage}
+    min-height: 400px !important;
+    {/block:PermalinkPage}
+    
+    {block:IfMarginonContent}
     width: calc(100% - ({text:Posts Padding}px * 2)) !important;
-    {/block:IfMarginonImages}
+    {/block:IfMarginonContent}
 }
+.video-player iframe {width: 100% !important;}
 
 
 .audio-player {
@@ -1005,16 +1006,16 @@ iframe {
     
     border: {text:Borders Thickness}px solid {color:Borders};
     
-    {block:IfNotMarginonImages}
+    {block:IfNotMarginonContent}
     border-left: none;
     border-right: none;
-    {/block:IfNotMarginonImages}
+    {/block:IfNotMarginonContent}
     
     {/block:IfBorders}
     
-    {block:IfMarginonImages}
+    {block:IfMarginonContent}
     margin: {text:Posts Padding}px;
-    {/block:IfMarginonImages}
+    {/block:IfMarginonContent}
 }
 .npf-link-block:first-child {margin-top: 0px;}
 .npf-link-block:hover {opacity: .6;}
@@ -1153,8 +1154,8 @@ iframe {
     border-color: {color:AltPalette Borders};
 }
 
-.sign a, .answer-section .sign a {color: {color:Posts Links};}
-.sign a.alt-palette , .answer-section .sign a.alt-palette  {color: {color:AltPalette Posts Links};}
+.sign a, .answer-section .sign a {color: {color:Notes Links};}
+.sign a.alt-palette , .answer-section .sign a.alt-palette  {color: {color:AltPalette Notes Links};}
 
 .sign a:before {content: "@";}
 
@@ -1222,8 +1223,8 @@ iframe {
 /** CAPTIONS **/
 .caption {
     position: relative;
-    
-    {block:IfNotPhotosCaption}
+}
+.caption.hidden {
     {block:IndexPage}
     margin: 0px;
     transition: .7s;
@@ -1242,9 +1243,14 @@ iframe {
     border-top: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
     {/block:IndexPage}
-    {/block:IfNotPhotosCaption}
-    
 }
+.caixa:hover .caption.hidden {
+    {block:IndexPage}
+    transform: scaleY(1);
+    opacity: 1;
+    {/block:IndexPage}
+}
+
 .caption.shortened {
     max-height: 90%;
 }
@@ -1253,14 +1259,7 @@ iframe {
     border-color: {color:AltPalette Borders};
 }
 
-.caixa:hover .caption {
-    {block:IfNotPhotosCaption}
-    {block:IndexPage}
-    transform: scaleY(1);
-    opacity: 1;
-    {/block:IndexPage}
-    {/block:IfNotPhotosCaption}
-}
+
 
 .text {
     font-size: {text:Posts Font Size}px;
@@ -1283,12 +1282,14 @@ iframe {
     {/block:IfBorders}
 }
 .text.reblog-list:first-child .reblog-caption:first-child .reblog-header {border-top:none;}
+.text.reblog-list .reblog-header a {color: {color:Notes Links};}
 
 .text.reblog-list .reblog-header.alt-palette {
     background: {color:AltPalette Notes Background};
     color: {color:AltPalette Font};
     border-color: {color:AltPalette Borders};
 }
+.text.reblog-list .reblog-header.alt-palette a {color: {color:AltPalette Notes Links};}
 
 /** if .reblog-list has a h1 right before it [start] **/
 h1 + .text.reblog-list:first- .reblog-caption:first-child {margin-top: 0px !important;}
@@ -1697,6 +1698,18 @@ header, header .caixa {margin: 0px;}
 #mobile-header .title a.alt-palette {color: {color:AltPalette Sidebar Font};}
 #mobile-header .title a.alt-palette:hover {color: {color:AltPalette Links};}
 
+#mobile-header .cover {
+    width: 100%;
+    overflow: hidden;
+    {block:IfBorders}
+    border-bottom: {text:Borders Thickness}px solid {color:Borders};
+    {/block:IfBorders}
+}
+#mobile-header .cover.alt-palette {border-color: {color:AltPalette Borders};}
+
+#mobile-header .cover img {
+    width: 100%;
+}
 
 /********** SEARCH FORM [start] ***/
 .search {
@@ -1794,7 +1807,7 @@ header, header .caixa {margin: 0px;}
 /** DESKTOP SEARCH **/
 #main-searchbar {
     display: table;
-    margin: {text:Posts Spacing}px;
+    margin: {text:Page Padding}px;
     font-size: {text:Posts Font Size}px;
 }
 #main-searchbar.alt-palette {border-color: {color:AltPalette Borders};}
@@ -1910,10 +1923,6 @@ header, header .caixa {margin: 0px;}
     overflow: hidden;
     background: {color:Posts Background};
     
-    {block:IfPhotosCaption}
-    padding-bottom: 0px;
-    {/block:IfPhotosCaption}
-    
     {block:IfExtraBorders}
     border-radius: calc({select:Round Corners} - ({select:Round Corners} / 2));
     {block:IfBorders}
@@ -1941,12 +1950,6 @@ header, header .caixa {margin: 0px;}
     float: left;
     {/block:PermalinkPage}
     
-}
-.post-container:not(.hasdate) {
-    {block:PermalinkPage}
-    float: none;
-    margin: {text:Posts Spacing}px auto;
-    {/block:PermalinkPage}
 }
 .caixa.post {
     margin: 0px;
@@ -2073,9 +2076,6 @@ header, header .caixa {margin: 0px;}
     {block:IfBorders}
     border-top: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
-    {block:IfPhotosCaption}
-    margin-bottom: 0px;
-    {/block:IfPhotosCaption}
 }
 .post-menu.alt-palette.style1.bottom, .post-menu.alt-palette.style2.bottom {
     border-color: {color:AltPalette Borders};
@@ -2597,7 +2597,8 @@ header, header .caixa {margin: 0px;}
 #infscr-button {
     width: 100%;
     padding: 20px 0px !important;
-    opacity: 1;
+    opacity: 0;
+    display: none;
 }
 #infscr-button .caixa {
     display: table;
@@ -2668,11 +2669,6 @@ header, header .caixa {margin: 0px;}
     margin: 0px;
     margin-top: 40px;
     z-index: 0;
-    {block:IfInfiniteScroll}
-    {block:IndexPage}
-    display: none;
-    {/block:IndexPage}
-    {/block:IfInfiniteScroll}
 }
 #footer .caixa {
     width: auto;
@@ -2734,8 +2730,9 @@ header, header .caixa {margin: 0px;}
 
 /*** BACK TO TOP BUTTON **/
 #backtotop.caixa {
-    bottom: 10px;
-    right: 10px;
+    bottom: {text:Page Padding}px;
+    right: {text:Page Padding}px;
+    margin: 0px;
     position: fixed;
     z-index: 9999999;
     opacity: 0;
@@ -2887,7 +2884,8 @@ iframe.tmblr-iframe {
     display: none;
 }
 
-
+.topbutton i {color: {color:Sidebar Font};}
+.topbutton.alt-palette i {color: {color:AltPalette Sidebar Font};}
 
 
 
@@ -3046,7 +3044,10 @@ iframe.tmblr-iframe {
 <div id="credits-content" class="slidebutton-content">
     <a href="https://anyhs-themes.tumblr.com" target="_blank">
     
-        <span class="button-item button-icon slidebutton-icon">©</span>
+        <span class="button-item button-icon slidebutton-icon">
+            <i class="far fa-copyright"></i>
+            <span class="cr">&copy;</span>
+        </span>
         <span class="button-item button-name slidebutton-name" title="anyhs-themes.tumblr.com">Code by <u>Anyh's Themes</u></span>
     
     </a>
@@ -3224,6 +3225,12 @@ iframe.tmblr-iframe {
     
     </div><!-- .header-top -->
     <!----- HEADER TOP [end] ----->
+    
+    {block:ShowHeaderImage}
+    <figure class="cover">
+        <img src="{HeaderImage}" alt="Header Image"/>
+    </figure>
+    {/block:ShowHeaderImage}
     
     {block:Description}
     <p class="description">{Description}</p>
@@ -3438,7 +3445,7 @@ iframe.tmblr-iframe {
 {block:Posts}
 
 <!----- post box [start] ----->
-<div class="post-container {block:Date}hasdate{/block:Date}">
+<div class="post-container">
 <div class="caixa post {block:Date}hasdate{/block:Date}" id="{PostID}" post-type="{PostType}">
 <div class="caixa-content">
 
@@ -4779,7 +4786,7 @@ iframe.tmblr-iframe {
 
 
 <!----- pagination [start] ----->
-{block:IfNotInfiniteScroll}
+{block:IndexPage}
 {block:Pagination}
 <div id="pagination" class="caixa">
 <div class="pagination-content caixa-content">
@@ -4824,12 +4831,10 @@ iframe.tmblr-iframe {
 </div><!-- .pagination-content -->
 </div> <!-- #pagination -->
 {/block:Pagination}
-{/block:IfNotInfiniteScroll}
+{/block:IndexPage}
 <!----- pagination [end] ----->
 
 <!----- INFINITE BUTTON [start] ----->
-{block:IfInfiniteScroll}
-{block:IfNotAutomaticInfiniteScroll}
 {block:IndexPage}
 <div id="infscr-button">
 <div class="infscr-button-content caixa">
@@ -4839,13 +4844,10 @@ iframe.tmblr-iframe {
 </div><!-- .infscr-button-content -->
 </div><!-- #infscr-button -->
 {/block:IndexPage}
-{/block:IfNotAutomaticInfiniteScroll}
-{/block:IfInfiniteScroll}
 <!----- INFINITE BUTTON [end] ----->
 
 
 <!----- INFINITE SCROLL MESSAGES [start] ----->
-{block:IfInfiniteScroll}
 <div id="infscr-loading">
 <div class="infscr-loading-content">
 
@@ -4874,7 +4876,6 @@ iframe.tmblr-iframe {
         
 </div><!-- .infscr-postsend-content -->
 </div><!-- #infscr-postsend -->
-{/block:IfInfiniteScroll}
 <!----- INFINITE SCROLL MESSAGES [end] ----->
 
 
@@ -5154,18 +5155,6 @@ function lightbox(elem) {
     });
     /** SLIDE BUTTON (by anyhs-themes.tumblr.com) [end] **/
 
-
-    /** fix hidden captions bottom situation with certain Notes Styles **/
-    function captionsFix() {
-        {block:IfNotPhotosCaption}
-        if("{select:Notes Style}" != "style1" && "{select:Notes Style}" != "style2") {
-            document.querySelectorAll(".caption").forEach(function(item) {
-                item.style.marginBottom="{text:Posts Padding}px";
-            });
-        };
-        {/block:IfNotPhotosCaption}
-    }; captionsFix();
-    
     
     /** REMOVE EMPTY TEXT SPACES (by anyhs-themes.tumblr.com) **/
     function removeEmptyTextBodies() {
@@ -5305,7 +5294,7 @@ function lightbox(elem) {
     
     
     /** hide NPF captions **/
-    function hideNPFcaptions() {
+    function wrapNPFCaptions() {
         
         // first photogroups
         document.querySelectorAll(".photogroup:first-child").forEach(function(item, index){
@@ -5313,9 +5302,7 @@ function lightbox(elem) {
         }); // forEach
         
         {block:IndexPage}
-        {block:IfNotPhotosCaption}
-        
-        // hide captions
+        // wrap captions
         document.querySelectorAll(".first-photogroup").forEach(function(item, index){
             
             if(item.nextElementSibling) {
@@ -5363,12 +5350,55 @@ function lightbox(elem) {
             } // if
             
         }); // forEach
-        
-        {/block:IfNotPhotosCaption}
         {/block:IndexPage}
         
-    }; hideNPFcaptions();
+    }; wrapNPFCaptions();
     /** hide NPF captions **/
+    
+    
+    /** captions display **/
+    function captionsDisplay() {
+        {block:IndexPage}
+        document.querySelectorAll(".caption").forEach(function(caption) {
+            
+            if(!caption.classList.contains("caption-checked")) {
+                
+                var caixaContent = caption.parentElement.parentElement.parentElement;
+                
+                if({select:Captions Display} == 3) {
+                    caption.style.display="none";
+                } else if({select:Captions Display} == 2) {
+                    caption.classList.add("hidden");
+                    if("{select:Notes Style}" != "style1" && "{select:Notes Style}" != "style2") {
+                        {block:IfNotMarginonContent}
+                        caption.style.marginBottom="{text:Posts Padding}px";
+                        {/block:IfNotMarginonContent}
+                    }; // if
+                    caption.querySelectorAll("h1, h2, h3, h4, h5, h6, p, ol, ul, pre, blockquote, blockquote div").forEach(function(item1){
+                        item1.style.marginBottom="0px";
+                    }); // forEach
+                    caption.parentElement.querySelectorAll(".photo, .photogroup, .photoset-container, .video-player").forEach(function(item2){
+                        item2.style.marginBottom="{text:Posts Padding}px";
+                        {block:IfNotMarginonContent}
+                        item2.style.marginBottom="-{text:Posts Padding}px";
+                        {/block:IfNotMarginonContent}
+                    }); // forEach
+                    let notesStyles1and2 = caixaContent.querySelectorAll(".post-menu.style1.bottom, .post-menu.style2.bottom");
+                    if(notesStyles1and2) {
+                        notesStyles1and2.forEach(function(item3){
+                            item3.style.marginBottom="0px";
+                        }); // forEach
+                    }; // if
+                } else {
+                    // display captions normally
+                }; // if
+                
+                caption.classList.add("caption-checked");
+                
+            }; // if
+        }); // forEach
+        {/block:IndexPage}
+    }; captionsDisplay();
     
     
     
@@ -5430,6 +5460,15 @@ function lightbox(elem) {
             }; // if
         }); // forEach
     }; vIcons();
+    
+    /** copyright button icon: **/
+    if("{select:Notes Icons}" == "Font Awesome") {
+        document.querySelector("#credits .slidebutton-icon i").style.display="block";
+        document.querySelector("#credits .slidebutton-icon span.cr").style.display="none";
+    } else {
+        document.querySelector("#credits .slidebutton-icon i").style.display="none";
+        document.querySelector("#credits .slidebutton-icon span.cr").style.display="block";
+    }; // if
     /******************** VECTORIAL ICONS LIBRARY [end] ********/
 
 
@@ -5566,135 +5605,135 @@ function lightbox(elem) {
     {/block:IndexPage}
     /***** MASONRY + IMAGES LOADED [end] *****/
     
-
-
-    /*** COLUMNS SETTINGS [start] ***/
-    // if 1 column is selected:
-    {block:IndexPage}
-    if(("{select:Number of Columns}" == "100%") && (window.innerWidth > 700)) {
-        document.querySelector("#posts").style.maxWidth="600px";
-    };
-    {/block:IndexPage}
-    /*** COLUMNS SETTINGS [end] ***/
-    
     
     /** Basic Infinite Scroll (by anyhs-themes.tumblr.com) **/
-    {block:IfInfiniteScroll}
-    {block:IndexPage}
-    var posts = document.querySelectorAll(".caixa.post");
-    posts.forEach(function(item){
-        item.classList.add('post-checked');
-    }); // forEach
-    function basicInfiniteScroll() {
+    if("{select:Pagination Style}" != 1) {
         
-        var currentLoc = location;
-        var nextPageNumber = 2;
-                
-        if(location.pathname.includes('/page/')) {
-            let pageNumberPos = location.pathname.search("/page/") + 6;
-            let pageNumber = location.pathname.slice(pageNumberPos, location.pathname.length);
-            currentLoc = location.origin + location.pathname.slice(0, pageNumberPos - 6);
-            nextPageNumber = Number(pageNumber) + 1;
+        // layout adjustments:
+        {block:IndexPage}
+        document.querySelector("#pagination").remove();
+        // if manual infinite scroll is on:
+        if("{select:Pagination Style}" == 2) {
+            document.querySelector("#infscr-button").style.display="block";
+            document.querySelector("#infscr-button").style.opacity="1";
         }; // if
         
-        function loadNextPage() {
+        // infinite scroll script starts:
+        var posts = document.querySelectorAll(".caixa.post");
+        posts.forEach(function(item){
+            item.classList.add('post-checked');
+        }); // forEach
+        function basicInfiniteScroll() {
             
-            // before load msg:
-            document.querySelector("#infscr-loading").style.display="block";
-            document.querySelector("#infscr-loading").style.opacity="1";
+            var currentLoc = location;
+            var nextPageNumber = 2;
+                    
+            if(location.pathname.includes('/page/')) {
+                let pageNumberPos = location.pathname.search("/page/") + 6;
+                let pageNumber = location.pathname.slice(pageNumberPos, location.pathname.length);
+                currentLoc = location.origin + location.pathname.slice(0, pageNumberPos - 6);
+                nextPageNumber = Number(pageNumber) + 1;
+            }; // if
             
-            setTimeout(function() {
-                const xhttp = new XMLHttpRequest();
-                xhttp.onload = function() {
+            function loadNextPage() {
+                
+                // before load msg:
+                document.querySelector("#infscr-loading").style.display="block";
+                document.querySelector("#infscr-loading").style.opacity="1";
+                
+                setTimeout(function() {
+                    const xhttp = new XMLHttpRequest();
+                    xhttp.onload = function() {
+                            
+                        let nextPageContent = this.responseText;
+                        let postsStart = nextPageContent.search('<div class="post-container');
+                        let postsEnd = nextPageContent.search('</main> <!-- #posts -->');
+                        let postsCode = nextPageContent.slice(postsStart, postsEnd);
                         
-                    let nextPageContent = this.responseText;
-                    let postsStart = nextPageContent.search('<div class="post-container');
-                    let postsEnd = nextPageContent.search('</main> <!-- #posts -->');
-                    let postsCode = nextPageContent.slice(postsStart, postsEnd);
-                    
-                    // check if there are posts in the next page:
-                    var pageContentExists = postsCode.includes('<div class="caixa post hasdate');
-                    if(pageContentExists) {
-                        document.querySelector("#posts").insertAdjacentHTML("beforeend", postsCode);
-                    } else {
-                        document.querySelector("#infscr-postsend").style.display="block";
-                        {block:IfNotAutomaticInfiniteScroll}
-                        document.querySelector("#infscr-button").style.opacity="0";
-                        {/block:IfNotAutomaticInfiniteScroll}
+                        // check if there are posts in the next page:
+                        var pageContentExists = postsCode.includes('<div class="caixa post hasdate');
+                        if(pageContentExists) {
+                            document.querySelector("#posts").insertAdjacentHTML("beforeend", postsCode);
+                        } else {
+                            document.querySelector("#infscr-postsend").style.display="block";
+                            // if manual infinite scroll:
+                            if ("{select:Pagination Style}" == 2) {
+                                document.querySelector("#infscr-button").style.opacity="0";
+                            }; // if
+                            
+                            setTimeout(function() {
+                                document.querySelector("#infscr-postsend").style.opacity="1";
+                                
+                            if ("{select:Pagination Style}" == 2) {
+                                document.querySelector("#infscr-button").style.display="none";
+                            }; // if
+                            }, 300); // setTimeout
+                        }; // else
+                            
+                    }; // onload
                         
-                        setTimeout(function() {
-                            document.querySelector("#infscr-postsend").style.opacity="1";
-                            {block:IfNotAutomaticInfiniteScroll}
-                            document.querySelector("#infscr-button").style.display="none";
-                            {/block:IfNotAutomaticInfiniteScroll}
-                        }, 300); // setTimeout
-                    }; // else
+                    xhttp.open("GET", currentLoc + "/page/" + nextPageNumber);
+                    xhttp.send();
+                    nextPageNumber += 1;
                         
-                }; // onload
+                    // after load functions:
+                    removeEmptyTextBodies();
+                    lastTitles();
+                    linksBehavior();
+                    imgsRes();
+                    wrapNPFPhotosets();
+                    wrapNPFCaptions();
+                    captionsDisplay();
+                    shortenLongPosts();
+                    masonryGrid();
+                    translatePage();
+                    vIcons();
+                    altPalette();
+                    slideUp();
                     
-                xhttp.open("GET", currentLoc + "/page/" + nextPageNumber);
-                xhttp.send();
-                nextPageNumber += 1;
+                    /*** LIKE BUTTON: ***/
+                    posts = document.querySelectorAll(".caixa.post");
+                    let postsIDs = [];
+                    let i = 1;
+                    // create a new Array
+                    posts.forEach(function(item){
+                        if(!item.className.includes('post-checked')) {
+                            postsIDs[i] = item.id;
+                            i++;
+                            item.classList.add('post-checked');
+                        }; // if
+                    }); // forEach
+                    Tumblr.LikeButton.get_status_by_post_ids(postsIDs);
                     
-                // after load functions:
-                removeEmptyTextBodies();
-                lastTitles();
-                linksBehavior();
-                imgsRes();
-                wrapNPFPhotosets();
-                hideNPFcaptions();
-                shortenLongPosts();
-                captionsFix();
-                masonryGrid();
-                translatePage();
-                vIcons();
-                altPalette();
-                slideUp();
-                
-                /*** LIKE BUTTON: ***/
-                posts = document.querySelectorAll(".caixa.post");
-                let postsIDs = [];
-                let i = 1;
-                // create a new Array
-                posts.forEach(function(item){
-                    if(!item.className.includes('post-checked')) {
-                        postsIDs[i] = item.id;
-                        i++;
-                        item.classList.add('post-checked');
-                    }; // if
-                }); // forEach
-                Tumblr.LikeButton.get_status_by_post_ids(postsIDs);
-                
-                
-                // after load msg:
-                document.querySelector("#infscr-loading").style.display="none";
-                document.querySelector("#infscr-loading").style.opacity="0";
-                
-            }, 100);
-                
-        }; // function loadNextPage();
-        
-        
-        {block:IfNotAutomaticInfiniteScroll}
-        document.querySelector("#infscr-button").onclick = function() {
-            loadNextPage();
-        };
-        {/block:IfNotAutomaticInfiniteScroll}
-        
-        
-        {block:IfAutomaticInfiniteScroll}
-        window.onscroll = function() {
-            let pageHeight = document.querySelector("#all").offsetHeight;
-            let endOfPage = pageHeight - window.innerHeight - 20;
-            // load next page:
-            if(window.pageYOffset >= endOfPage) {loadNextPage();};
-        }; // onscroll
-        {/block:IfAutomaticInfiniteScroll}
-        
-        
-    }; basicInfiniteScroll();
-    {/block:IndexPage}
-    {/block:IfInfiniteScroll}
+                    
+                    // after load msg:
+                    document.querySelector("#infscr-loading").style.display="none";
+                    document.querySelector("#infscr-loading").style.opacity="0";
+                    
+                }, 100);
+                    
+            }; // function loadNextPage();
+            
+            /** if manual infinite scroll: **/
+            if("{select:Pagination Style}" == 2) {
+                document.querySelector("#infscr-button").onclick = function() {
+                    loadNextPage();
+                };
+            }
+            /** if automatic infinite scroll: **/
+            else if ("{select:Pagination Style}" == 3) {
+                window.onscroll = function() {
+                    let pageHeight = document.querySelector("#all").offsetHeight;
+                    let endOfPage = pageHeight - window.innerHeight - 20;
+                    // load next page:
+                    if(window.pageYOffset >= endOfPage) {loadNextPage();};
+                }; // onscroll
+            }; // if
+            
+            
+        }; basicInfiniteScroll();
+        {/block:IndexPage}
+    }; // if
     /** Basic Infinite Scroll [end] **/
     
     
