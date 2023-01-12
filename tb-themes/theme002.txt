@@ -2,10 +2,10 @@
  
  
            — THEME #002: October —
-           by Anyh's Themes © 2023
+           by Anyh's Themes © 2022
            https://anyhs-themes.tumblr.com 
            
-           (Last update: 06/01/2023 — 15:19hrs)
+           (Last update: 12/01/2023 — 09:02hrs)
 
 
 
@@ -864,19 +864,23 @@ figure:hover img, img:hover, .caixa:hover img, .caixa:hover .video-player iframe
     border-color: {color:AltPalette Borders};
 }
 
-.video-player, .video-player iframe, .embed_iframe, .tumblr_video_container, .tumblr_video_container {
-    width: 100% !important;
+.video-player, .video-player iframe, .embed_iframe, .tumblr_video_container, .tumblr_video_container iframe, .video-player .tumblr_video_container {
     height: auto !important;
+    width: 100% !important;
     
     {block:PermalinkPage}
     min-height: 400px !important;
     {/block:PermalinkPage}
+}
+.video-player, .tumblr_video_container {
+    {block:IfNotMarginonContent}
+    width: 100% !important;
+    {/block:IfNotMarginonContent}
     
     {block:IfMarginonContent}
     width: calc(100% - ({text:Posts Padding}px * 2)) !important;
     {/block:IfMarginonContent}
 }
-.video-player iframe {width: 100% !important;}
 
 
 .audio-player {
@@ -5130,6 +5134,44 @@ function lightbox(elem) {
     /** external, internal and hashtag links behavior [end] **/
 
 
+    
+    /********** SEARCHBAR FORMS **********/
+    function webSearchForm() {
+        var keyword = document.querySelector("#main-search form input:first-child").value;
+        if(keyword.startsWith("#")) {
+            filteredKeyword = keyword.replace(/#/g, "");
+            location.assign("/tagged/" + filteredKeyword);
+        } else {
+            location.assign("/search/" + keyword);
+        }
+    }; // function
+    
+    document.querySelector("#main-search form").onsubmit = function(){
+        webSearchForm();
+    }; // submit
+    document.querySelector("#main-search .search-button").onclick = function(){
+        webSearchForm();
+        return false;
+    }; // click
+    
+    
+    function mobileSearchForm() {
+        var keyword = document.querySelector("#mobile-search form input:first-child").value;
+        if(keyword.startsWith("#")) {
+            filteredKeyword = keyword.replace(/#/g, "");
+            location.assign("/tagged/" + filteredKeyword);
+        } else {
+            location.assign("/search/" + keyword);
+        }
+    }; // function
+    document.querySelector("#mobile-search form").onsubmit = function(){
+        mobileSearchForm();
+    }; // submit
+    document.querySelector("#mobile-search .search-button").onclick = function(){
+        mobileSearchForm();
+        return false;
+    }; // click
+    /********** SEARCHBAR FORMS [end] **********/
     
     
     
