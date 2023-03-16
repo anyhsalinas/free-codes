@@ -5,7 +5,7 @@
            by Anyh's Themes © 2023
            https://anyhs-themes.tumblr.com 
            
-           (Last update: 16/03/2023 — 14:46hrs)
+           (Last update: 16/03/2023 — 15:23hrs)
 
 
 
@@ -514,6 +514,8 @@ h1 a.alt-palette:hover {color: {color:AltPalette Links};}
 ol, ul {padding-left: {text:Posts Padding}px;}
 
 pre {
+    white-space: pre-line;
+    word-wrap: break-word;
     padding: 5px;
     overflow-x: scroll;
     background: {color:Highlights Background};
