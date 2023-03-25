@@ -5,7 +5,7 @@
            by Anyh's Themes © 2023
            https://anyhs-themes.tumblr.com 
            
-           (Last update: 16/03/2023 — 15:23hrs)
+           (Last update: 25/03/2023 — 19:11hrs)
 
 
 
@@ -3052,8 +3052,7 @@ iframe.tmblr-iframe {
     <a href="https://anyhs-themes.tumblr.com" target="_blank">
     
         <span class="button-item button-icon slidebutton-icon">
-            <i class="far fa-copyright"></i>
-            <span class="cr">&copy;</span>
+            <i class="v-icon far fa-copyright" data-li="lnr lnr-code" data-cp="cp cp-cc" data-cp-o="cp cp-cc-o"></i>
         </span>
         <span class="button-item button-name slidebutton-name" title="anyhs-themes.tumblr.com">Code by <u>Anyh's Themes</u></span>
     
@@ -5191,10 +5190,12 @@ function lightbox(elem) {
         
         item.onmouseover = function() {
             item.querySelector(".slidebutton-name").style.width=slidebuttonWidth + "px";
+            item.querySelector(".slidebutton-name").style.marginLeft="5px";
         };
         
         item.onmouseleave = function() {
             item.querySelector(".slidebutton-name").style.width="0px";
+            item.querySelector(".slidebutton-name").style.marginLeft="0px";
         };
         
     });
@@ -5505,15 +5506,6 @@ function lightbox(elem) {
             }; // if
         }); // forEach
     }; vIcons();
-    
-    /** copyright button icon: **/
-    if("{select:Notes Icons}" == "Font Awesome") {
-        document.querySelector("#credits .slidebutton-icon i").style.display="block";
-        document.querySelector("#credits .slidebutton-icon span.cr").style.display="none";
-    } else {
-        document.querySelector("#credits .slidebutton-icon i").style.display="none";
-        document.querySelector("#credits .slidebutton-icon span.cr").style.display="block";
-    }; // if
     /******************** VECTORIAL ICONS LIBRARY [end] ********/
 
 
