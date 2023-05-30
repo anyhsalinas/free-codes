@@ -5,7 +5,7 @@
            by Anyh's Themes © 2023
            https://anyhs-themes.tumblr.com 
            
-           (Last update: 25/03/2023 — 19:11hrs)
+           (Last update: 30/05/2023 — 20:18hrs)
 
 
 
@@ -2024,6 +2024,13 @@ header#header {
 .post-content {
     position: relative;
     margin: 0px;
+}
+
+/** one column settings: **/
+.post-container.single-column {
+    {block:IndexPage}
+    margin: calc({text:Posts Spacing}px * 2) auto;
+    {/block:IndexPage}
 }
 
 
@@ -5555,6 +5562,17 @@ function lightbox(elem) {
         {/block:IndexPage}
     }; shortenLongPosts();
     /** SHORTEN LONG POSTS [end] **/
+    
+    /********** one column settings: **********/
+    function columnSettings() {
+        if("{select:Number of Columns}" == "100%") {
+            document.querySelectorAll(".post-container").forEach(function(item){
+                if(!item.className.includes('single-column')) {
+                    item.classList.add('single-column');
+                }; // if
+            }); // forEach
+        }; // if
+    }; columnSettings();
 
     
     /******************** VECTORIAL ICONS LIBRARY ********/
@@ -5699,13 +5717,15 @@ function lightbox(elem) {
     {block:IndexPage}
     let grid = document.querySelector('#posts');
     function masonryGrid() {
-        var msnry = new Masonry(grid, {
-            itemSelector: '.post-container',
-            stagger: 0
-        }); // msnry
-        imagesLoaded(grid, function() {
-            msnry.layout();
-        }); // imagesLoaded
+        if("{select:Number of Columns}" != "100%") {
+            var msnry = new Masonry(grid, {
+                itemSelector: '.post-container',
+                stagger: 0
+            }); // msnry
+            imagesLoaded(grid, function() {
+                msnry.layout();
+            }); // imagesLoaded
+        }; // if
     }; masonryGrid();
     {/block:IndexPage}
     /***** MASONRY + IMAGES LOADED [end] *****/
@@ -5792,9 +5812,12 @@ function lightbox(elem) {
                     shortenLongPosts();
                     masonryGrid();
                     translatePage();
+                    columnSettings();
                     vIcons();
                     altPalette();
-                    slideUp();
+                    imagesLoaded(grid, function() {
+                        slideUp();
+                    }); // imagesLoaded
                     
                     /*** LIKE BUTTON: ***/
                     posts = document.querySelectorAll(".caixa.post");
