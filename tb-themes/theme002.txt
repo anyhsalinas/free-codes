@@ -5,7 +5,7 @@
            by Anyh's Themes © 2023
            https://anyhs-themes.tumblr.com 
            
-           (Last update: 25/03/2023 — 19:11hrs)
+           (Last update: 30/05/2023 — 20:18hrs)
 
 
 
@@ -5726,7 +5726,9 @@ function lightbox(elem) {
                     translatePage();
                     vIcons();
                     altPalette();
-                    slideUp();
+                    imagesLoaded(grid, function() {
+                        slideUp();
+                    }); // imagesLoaded
                     
                     /*** LIKE BUTTON: ***/
                     posts = document.querySelectorAll(".caixa.post");
