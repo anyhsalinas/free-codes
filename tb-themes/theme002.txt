@@ -5,7 +5,7 @@
            by Anyh's Themes © 2023
            https://anyhs-themes.tumblr.com 
            
-           (Last update: 30/05/2023 — 20:18hrs)
+           (Last update: 11/06/2023 — 01:10hrs)
 
 
 
@@ -340,8 +340,9 @@
 <style>
 * {
   margin: 0px;
-  padding: 0px;
+  padding: 0.1px;
 }
+figure, img, a {padding: 0px;}
 
 html, body {height: 100%;}
 
@@ -697,10 +698,11 @@ figure img {
 }
 figure a, figure a.post_media_photo_anchor {}
 
-
 .post figure.tmblr-full {
     width: 100%;
+    max-width: 100%;
     margin-bottom: {text:Images Spacing}px;
+    overflow: hidden;
 }
 .post figure.tmblr-full img, figure.tmblr-full a {
     width: 100%;
@@ -708,6 +710,13 @@ figure a, figure a.post_media_photo_anchor {}
     height: auto;
     cursor: pointer;
 }
+
+.tmblr-attribution {
+    margin: 0px;
+    padding: 0px;
+    margin-top: {text:Posts Padding}px;
+}
+figure p:last-child {margin-bottom: 0px !important;}
 
 .photogroup {margin: {text:Posts Padding}px 0px;}
 .photogroup-item {}
@@ -1105,7 +1114,6 @@ iframe {
 
 .question, .answer {
     padding: {text:Posts Padding}px;
-    margin-bottom: {text:Posts Padding}px;
     margin-left: 0px;
     min-height: 30px;
     position: relative;
@@ -1345,6 +1353,7 @@ h1 + .text.reblog-list .reblog-caption:first-child .reblog-header {border-top: n
 
 #related-posts .related-title.caixa {
     width: calc(100% - ({text:Posts Spacing}px * 2) {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders});
+    aspect-ratio: auto !important;
 }
 #related-posts .related-title.caixa .caixa-content {
     height: auto;
@@ -1373,11 +1382,11 @@ h1 + .text.reblog-list .reblog-caption:first-child .reblog-header {border-top: n
 }
 
 #related-posts .caixa {
+    aspect-ratio: 1/1;
     display: inline-block;
     overflow: hidden;
     margin: 5px;
     font-size: 11px;
-    max-height: 150px;
 }
 #related-posts .caixa-content {
     position: relative;
@@ -1943,7 +1952,7 @@ header, header .caixa {margin: 0px;}
 
 .post-container {
     position: relative;
-    width: calc({select:Number of Columns} - ({text:Posts Spacing}px * 2));
+    width: calc({select:Number of Columns} - 0.1px - ({text:Posts Spacing}px * 2));
     margin: {text:Posts Spacing}px;
     
     {block:IndexPage}
@@ -2078,7 +2087,6 @@ header, header .caixa {margin: 0px;}
 
 .post-menu.style2.top {display: none;}
 .post-menu.style1.bottom, .post-menu.style2.bottom {
-    margin-top: {text:Posts Padding}px;
     {block:IfBorders}
     border-top: {text:Borders Thickness}px solid {color:Borders};
     {/block:IfBorders}
@@ -5417,7 +5425,7 @@ function lightbox(elem) {
                     caption.classList.add("hidden");
                     if("{select:Notes Style}" != "style1" && "{select:Notes Style}" != "style2") {
                         {block:IfNotMarginonContent}
-                        caption.style.marginBottom="{text:Posts Padding}px";
+                        caption.style.marginBottom="0px";
                         {/block:IfNotMarginonContent}
                     }; // if
                     caption.querySelectorAll("h1, h2, h3, h4, h5, h6, p, ol, ul, pre, blockquote, blockquote div").forEach(function(item1){
