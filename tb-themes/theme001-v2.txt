@@ -5,7 +5,7 @@
            by Anyh's Themes © 2023
            https://anyhs-themes.tumblr.com 
            
-           (Last update: 11/06/2023 — 01:10hrs)
+           (Last update: 17/06/2023 — 20:02hrs)
 
 
 
@@ -2218,7 +2218,7 @@ header#header {
    box-shadow: {select:Shadow Style} {color:AltPalette Shadows};
 }
 
-.post-menu.alt-palette.style3 .button:hover, .post-menu.alt-palette.style4 .button:hover {
+.post-menu.style3 .button:hover, .post-menu.style4 .button:hover {
     background: {color:Background};
 }
 .post-menu.alt-palette.style3 .button:hover, .post-menu.alt-palette.style4 .button:hover {
