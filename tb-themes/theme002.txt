@@ -5,7 +5,7 @@
            by Anyh's Themes © 2023
            https://anyhs-themes.tumblr.com 
            
-           (Last update: 16/07/2023 — 17:06hrs)
+           (Last update: 20/07/2023 — 16:10hrs)
 
 
 
@@ -5303,13 +5303,18 @@ function lightbox(elem) {
                         } else {
                             // middle image/row:
                             item.classList.add("photogroup-item");
-                            pgMidLine = item.outerHTML;
+                            // if there are multiple middle lines:
+                            if(!pgMidLine) {
+                                pgMidLine = item.outerHTML;
+                            } else {
+                                pgMidLine = pgMidLine + item.outerHTML;
+                            }; // if
                             // remove original code:
                             item.style.display="none";
                         }; // if else
                     } else {
                         // lonely image/row:
-                        if(!(item.nextElementSibling && item.previousElementSibling) || (item.previousElementSibling && !item.previousElementSibling.matches("figure, .npf_row"))) {
+                        if(!item.previousElementSibling || !item.previousElementSibling.matches("figure, .npf_row")) {
                             item.classList.add("photogroup-item-first");
                             item.outerHTML = '<div class="photogroup">' + item.outerHTML + "</div><!-- .photogroup -->";
                         } else {
@@ -5344,7 +5349,7 @@ function lightbox(elem) {
             
         }); // forEach
     }; wrapNPFPhotosets();
-    /** DETECT AND WRAP NPF PHOTOSETS: [end] **/
+    /** DETECT AND WRAP NPF PHOTOSETS [end] **/
     
     
     /** hide NPF captions **/
