@@ -5,7 +5,7 @@
            by Anyh's Themes © 2023
            https://anyhs-themes.tumblr.com 
            
-           (Last update: 20/07/2023 — 16:10hrs)
+           (Last update: 06/08/2023 — 11:40hrs)
 
 
 
@@ -2430,7 +2430,7 @@ header, header .caixa {margin: 0px;}
 /**** permalink pagination ****/
 #permalink-navigation {
     display: table;
-    width: calc(100% - 10px);
+    width: calc(100% - (2 * {text:Posts Spacing}px) + 10px);
     margin: 10px auto;
     text-align: center;
     display: -webkit-flex; /* Safari */
@@ -2440,8 +2440,7 @@ header, header .caixa {margin: 0px;}
 }
 
 #permalink-navigation a {
-    display: inline-table;
-    width: calc(100% - 50px);
+    flex: 50%;
 }
 #permalink-navigation a, #permalink-navigation a:hover {box-shadow: none;}
 
