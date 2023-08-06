@@ -5,7 +5,7 @@
            by Anyh's Themes © 2023
            https://anyhs-themes.tumblr.com 
            
-           (Last update: 06/08/2023 — 11:40hrs)
+           (Last update: 06/08/2023 — 11:44hrs)
 
 
 
@@ -340,7 +340,6 @@
 <style>
 * {
   margin: 0px;
-  padding: 0.1px;
 }
 figure, img, a {padding: 0px;}
 
@@ -562,6 +561,8 @@ blockquote img {
 
 blockquote p:first-child {margin-top: 0px;}
 blockquote div:last-child {margin-bottom: calc({text:Posts Padding}px / 2);}
+
+p, blockquote {padding: 0.1px 0px;}
 
 /** text content spacing **/
 h1, h2, h3, h4, h5, h6, p, ol, ul, pre, blockquote, blockquote div {
