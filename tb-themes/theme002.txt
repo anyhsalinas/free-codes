@@ -5,7 +5,7 @@
            by Anyh's Themes © 2023
            https://anyhs-themes.tumblr.com 
            
-           (Last update: 06/08/2023 — 11:44hrs)
+           (Last update: 16/09/2023 — 22:13hrs)
 
 
 
@@ -1488,18 +1488,16 @@ h1 + .text.reblog-list .reblog-caption:first-child .reblog-header {border-top: n
 aside {
     position: relative;
     z-index: 4;
-    width: calc({text:Sidebar Font Size}px {block:IfExtraBorders}+ ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}+ ({text:Borders Thickness}px * 2){/block:IfBorders} + ({text:Posts Spacing}px * 2));
-    padding: {text:Posts Spacing}px;
-    margin: {text:Posts Spacing}px 0px;
+    width: calc({text:Sidebar Font Size}px {block:IfExtraBorders}+ ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}+ ({text:Borders Thickness}px * 2){/block:IfBorders} + ({text:Posts Spacing}px * 2) + 20px);
     float: left;
 }
-aside .caixa {margin: 0px;}
+aside .caixa {margin: 0px; }
 
 #sidebar {
     position: fixed;
     font-size: {text:Sidebar Font Size}px;
 }
-#sidebar.bottom {bottom: calc({text:Posts Spacing}px * 2);}
+#sidebar.bottom {bottom: {text:Page Padding}px;}
 #sidebar.top {}
 
 #sidebar .caixa {
@@ -1873,15 +1871,16 @@ header, header .caixa {margin: 0px;}
     
     {select:Layout Position}
     padding: 30px {text:Posts Spacing}px 1px {text:Posts Spacing}px;
+
 }
 
 
 /****************************************** POSTS [start] **/
 #posts-section {
     
-    width: calc(100% - {text:Sidebar Font Size}px {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 3){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders} - ({text:Posts Spacing}px * 4));
+    padding-left: calc({text:Sidebar Font Size}px {block:IfExtraBorders}+ ({text:Extra Borders Thickness}px * 2){/block:IfExtraBorders} {block:IfBorders}+ ({text:Borders Thickness}px * 2){/block:IfBorders} + ({text:Posts Spacing}px * 2) + 20px);
     
-    margin-left: calc({text:Sidebar Font Size}px {block:IfExtraBorders}+ ({text:Extra Borders Thickness}px * 3){/block:IfExtraBorders} {block:IfBorders}+ ({text:Borders Thickness}px * 2){/block:IfBorders} + ({text:Posts Spacing}px * 4));
+    width: calc(100% - {text:Sidebar Font Size}px {block:IfExtraBorders}- ({text:Extra Borders Thickness}px * 3){/block:IfExtraBorders} {block:IfBorders}- ({text:Borders Thickness}px * 2){/block:IfBorders} - ({text:Posts Spacing}px * 4));
     
     margin-top: {text:Posts Spacing}px;
 }
