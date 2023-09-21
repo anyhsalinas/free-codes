@@ -5,7 +5,7 @@
            by Anyh's Themes © 2023
            https://anyhs-themes.tumblr.com 
            
-           (Last update: 06/08/2023 — 11:44hrs)
+           (Last update: 21/09/2023 — 11:36hrs)
 
 
 
@@ -46,7 +46,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 <!-- Icons: -->    
-<script src="https://kit.fontawesome.com/f7e4f513cb.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"></script>
 <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"/>
 <script src="https://pull.cappuccicons.com/cpf.js"></script>
 
